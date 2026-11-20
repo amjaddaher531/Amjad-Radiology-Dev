@@ -30,7 +30,7 @@ for(var x=0;x<W;x+=gap){var y=y0+Math.sin(x*.0055+k*.32+t*.00042)*amp+Math.sin(x
 e=Math.sin(Math.PI*Math.min(1,Math.max(0,x/W))),a=(.42+.58*u)*(.45+.55*e)*(.7+.3*Math.sin(x*.05+k+t*.0012));
 cx.fillStyle=((x/gap+k)%9<1)?'rgba(222,190,110,'+a+')':'rgba(125,215,255,'+a+')';
 cx.fillRect(x,y,sz,sz)}}}
-var lastT=0;function pf(t){if(t-lastT>(LITE?100:0)){lastT=t;dots(t)}if(!matchMedia('(prefers-reduced-motion:reduce)').matches)requestAnimationFrame(pf)}requestAnimationFrame(pf);
+var lastT=0;function pf(t){if(t-lastT>(LITE?100:0)){lastT=t;dots(t)}if(!matchMedia('(prefers-reduced-motion:reduce)').matches&&innerWidth>=800)requestAnimationFrame(pf)}requestAnimationFrame(pf);addEventListener('resize',function(){if(innerWidth<800)dots(0)});
 function lst(c,bd,A){var i=0,C=document.getElementById(c),B=document.getElementById(bd);
 function dr(){C.innerHTML=A.map(function(x,k){return '<button data-i="'+k+'" class="'+(k==i?'on':'')+'">'+b(x[0],x[1])+'</button>'}).join('');var x=A[i];B.innerHTML='<div class="box"><h3>'+b(x[0],x[1])+'</h3><ul>'+x[2].map(function(t){return '<li>'+b(t[0],t[1])+'</li>'}).join('')+'</ul></div>'}
 C.onclick=function(e){var t=e.target.closest('button');if(t){i=+t.dataset.i;dr()}};dr()}

@@ -1,15 +1,16 @@
 import * as THREE from 'three';
 import {GLTFLoader} from './GLTFLoader.js';
 import {OrbitControls} from './OrbitControls.js';
-const V=(x,y,z)=>new THREE.Vector3(x,y,z);
+const V=(x,y,z)=>new THREE.Vector3(x,y,z);let dirty=true;window.__renders=0;
 const stage=document.getElementById('stage'),cv=document.getElementById('cv'),lbBox=document.getElementById('lbs');
 const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,innerWidth<800?1.5:2));
 const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(35,1,.02,40);cam.position.set(2.6,1.2,2.4);
 const ctl=new OrbitControls(cam,cv);ctl.target.set(0,.9,0);ctl.enableDamping=true;ctl.dampingFactor=.08;ctl.minDistance=.3;ctl.maxDistance=8;ctl.update();
+ctl.addEventListener('change',()=>{dirty=true});
 scene.add(new THREE.HemisphereLight(0xcfe2ff,0x0a1a40,1.1));
 const d1=new THREE.DirectionalLight(0xffffff,1.8);d1.position.set(2,3,3);scene.add(d1);
 const d2=new THREE.DirectionalLight(0x6aa8ff,1.2);d2.position.set(-3,1.5,-2);scene.add(d2);
-function size(){const w=stage.clientWidth,h=stage.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}addEventListener('resize',size);new ResizeObserver(size).observe(stage);size();
+function size(){const w=stage.clientWidth,h=stage.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();dirty=true}addEventListener('resize',size);new ResizeObserver(size).observe(stage);size();
 const grid=new THREE.GridHelper(5,50,0x2a4a8a,0x142850);grid.material.transparent=true;grid.material.opacity=.45;scene.add(grid);
 const patient=new THREE.Group();scene.add(patient);const world=new THREE.Group();scene.add(world);
 const lang=()=>document.documentElement.lang,bi=a=>lang()=='ar'?a[0]:a[1];
@@ -25,7 +26,7 @@ function loadLayer(k){if(LM[k])return LM[k];loadEl.style.display='block';
    if(/\.g$/.test(nm)||/hair/i.test(nm)){o.visible=false;o.userData.skip=1}
    o.geometry.computeVertexNormals();o.geometry.computeBoundingBox();o.material=k=='skin'?mat.skin:k=='skeleton'?mat.bone:mat.organ;o.userData.base=o.material;meshes.push(o)});
   patient.add(g.scene);if(k=='skeleton'){let s=0,n=0;meshes.forEach(m=>{if(m.userData.layer=='skeleton'&&/\.l$/.test(m.userData.nm)){const c=m.geometry.boundingBox.getCenter(V(0,0,0));s+=c.x;n++}});sL=s>=0?1:-1}
-  loadEl.style.display='none';res()},null,()=>{loadEl.textContent='Load error';res()}));return LM[k]}
+  loadEl.style.display='none';dirty=true;res()},null,()=>{loadEl.textContent='Load error';res()}));return LM[k]}
 const eng=n=>NAMES[n]?NAMES[n][0]:n.replace(/\.[a-z]$/,'');
 function bodyMeshes(){return meshes.filter(m=>m.userData.layer!='skin'&&!m.userData.skip)}
 // poses
@@ -106,7 +107,7 @@ function build(ex){clearEq();eq=new THREE.Group();world.add(eq);const q=state.q,
  addLabel(entry.clone().add(up.clone().multiplyScalar(.13)).sub(dirW.clone().multiplyScalar(.04)),['نقطة الدخول'+(approx?' (تقريبية)':''),'Entry point'+(approx?' (approx.)':'')],'#35e08a');addLabel(exit.clone().sub(up.clone().multiplyScalar(.13)).add(dirW.clone().multiplyScalar(.03)),['نقطة الخروج','Exit point'],'#ff5a5a');
  addLabel(D.clone().add(up.clone().multiplyScalar(h/2+.05)),['الكاسيت '+Math.round(dw*100)+'×'+Math.round(dh*100)+' سم','Detector '+Math.round(dw*100)+'×'+Math.round(dh*100)+' cm']);
  addLabel(T.clone().lerp(D,.38).add(up.clone().multiplyScalar(h/2*.6+.12)),['SID '+sidTxt,'SID '+sidTxt]);
- fade=performance.now()}
+ fade=performance.now();fdone=false}
 function table0(ex){if(!state.erect){const c=state.sk.getCenter(V(0,0,0));table(eq,state.tableTop,c.z,Math.max(2.1,state.sk.getSize(V(0,0,0)).z+.5))}}
 function buildCT(ex,q,pos,crW,headW){const bot=structBox(ex.range[0],0),top=structBox(ex.range[1],0);const yb=bot?bot.min.y-.01:1.45,yt=top?top.max.y+.01:1.75;
  const c0=V(0,0,crW.clone().sub(pos).applyQuaternion(q.clone().invert()).z);
@@ -120,8 +121,8 @@ function buildCT(ex,q,pos,crW,headW){const bot=structBox(ex.range[0],0),top=stru
  ctState={gantry,disc,fan,yb,yt,c0,q,pos,uA,vA,headW,lab:null};
  addLabel(wb.clone().sub(uA.clone().multiplyScalar(.26)),['بداية المسح (قاعدة الجمجمة)','Scan start (skull base)'],'#ffd36b');addLabel(wt.clone().add(uA.clone().multiplyScalar(.26)),['نهاية المسح (قمة الرأس)','Scan end (vertex)'],'#ffd36b');
  ctState.lab=wb.clone();addLabel(wb.clone().add(vA.clone().multiplyScalar(.5)),['الجهاز (Gantry): يدور 360°','Gantry: rotates 360°']);ctState.gl=labels[labels.length-1];
- state.entry=null;state.exit=null;fade=performance.now();camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:crW.clone().add(V(1.5,.65,-1.7)),tt:crW.clone()}}
-let fade=0;
+ state.entry=null;state.exit=null;fade=performance.now();fdone=false;camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:crW.clone().add(V(1.5,.65,-1.7)),tt:crW.clone()}}
+let fade=0,fdone=true;
 function updCT(t){const s=ctState;if(!s)return;const p=(Math.sin(t/2600)+1)/2,y=s.yb+(s.yt-s.yb)*p;const c=V(s.c0.x,y,s.c0.z).applyQuaternion(s.q).add(s.pos);
  s.gantry.position.copy(c);s.disc.position.copy(c);const a=t/450,pt=(an,r)=>c.clone().add(s.uA.clone().multiplyScalar(Math.cos(an)*r)).add(s.vA.clone().multiplyScalar(Math.sin(an)*r));
  const S=pt(a,.34),P1=pt(a+Math.PI-.3,.34),P2=pt(a+Math.PI+.3,.34),pa=s.fan.geometry.attributes.position;pa.setXYZ(0,S.x,S.y,S.z);pa.setXYZ(1,P1.x,P1.y,P1.z);pa.setXYZ(2,P2.x,P2.y,P2.z);pa.needsUpdate=true;
@@ -154,12 +155,17 @@ document.getElementById('reset').onclick=()=>{clearEq();cur=null;meshes.forEach(
 // loop
 const ease=k=>k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
 function frame(t){requestAnimationFrame(frame);
- if(anim&&!anim.done){const k=Math.min(1,(t-anim.t0)/anim.dur),e=ease(k);patient.quaternion.slerpQuaternions(anim.from.q,anim.to.q,e);patient.position.lerpVectors(anim.from.p,anim.to.p,e);if(k>=1){anim.done=true;patient.quaternion.copy(anim.to.q);patient.position.copy(anim.to.p);patient.updateMatrixWorld(true);if(anim.ex)build(anim.ex)}}
- if(camAnim){const k=Math.min(1,(t-camAnim.t0)/1300),e=ease(k);cam.position.lerpVectors(camAnim.from,camAnim.to,e);ctl.target.lerpVectors(camAnim.ft,camAnim.tt,e);if(k>=1)camAnim=null}
- if(eqMats.length){const f=Math.min(1,(t-fade)/600);eqMats.forEach(m=>m.opacity=m.userData.op*f)}
- updCT(t);ctl.update();R.render(scene,cam);
+ if(anim&&!anim.done){dirty=true;const k=Math.min(1,(t-anim.t0)/anim.dur),e=ease(k);patient.quaternion.slerpQuaternions(anim.from.q,anim.to.q,e);patient.position.lerpVectors(anim.from.p,anim.to.p,e);if(k>=1){anim.done=true;patient.quaternion.copy(anim.to.q);patient.position.copy(anim.to.p);patient.updateMatrixWorld(true);if(anim.ex)build(anim.ex)}}
+ if(camAnim){dirty=true;const k=Math.min(1,(t-camAnim.t0)/1300),e=ease(k);cam.position.lerpVectors(camAnim.from,camAnim.to,e);ctl.target.lerpVectors(camAnim.ft,camAnim.tt,e);if(k>=1)camAnim=null}
+ let fd=false;if(eqMats.length&&!fdone){const f=Math.min(1,(t-fade)/600);eqMats.forEach(m=>m.opacity=m.userData.op*f);fd=true;if(f>=1)fdone=true}
+ updCT(t);const mv=ctl.update(),cont=mv||dirty||ctState||camAnim||(anim&&!anim.done)||fd;if(!cont)return;dirty=false;window.__renders++;R.render(scene,cam);
  const w=stage.clientWidth,h=stage.clientHeight;labels.forEach(l=>{const p=l.pos.clone().project(cam);const vis=p.z<1&&Math.abs(p.x)<1.1&&Math.abs(p.y)<1.1;l.el.style.display=vis?'block':'none';l.el.style.left=((p.x+1)/2*w)+'px';l.el.style.top=((1-p.y)/2*h)+'px'})}
 requestAnimationFrame(frame);
 Promise.all([fetch('names.json').then(r=>r.json()),fetch('exams.json').then(r=>r.json())]).then(([n,e])=>{NAMES=n;EXAMS=e;renderList();loadLayer('skeleton').then(()=>loadLayer('skin'))});
 new MutationObserver(()=>{renderList()}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+
+const touchy=matchMedia('(pointer:coarse)').matches,lk=document.getElementById('lock');
+function setLock(on){ctl.enabled=!on;cv.style.touchAction=on?'pan-y':'none';if(lk){lk.classList.toggle('open',!on);lk.innerHTML=on?'<span data-l="ar">حرّك الجسم</span><span data-l="en">Move the body</span>':'<span data-l="ar">تمرير الصفحة</span><span data-l="en">Scroll the page</span>'}dirty=true}
+if(touchy){setLock(true);lk.onclick=()=>setLock(!ctl.enabled?false:true)}
+
 window.__pos={chooseExam,state:()=>state,meshes,scene,cam,labels:()=>labels,EXAMS:()=>EXAMS};

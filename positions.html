@@ -11,7 +11,7 @@
 <style>
 .pgrid{display:grid;grid-template-columns:1.55fr 1fr;gap:18px;align-items:start;direction:ltr}
 html[lang=ar] .pgrid>*{direction:rtl}
-.stage{position:relative;height:clamp(500px,calc(100vh - 230px),800px);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,rgba(61,139,255,.16),transparent 65%),rgba(3,10,26,.55);touch-action:none}
+.stage{position:relative;height:clamp(500px,calc(100vh - 230px),800px);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,rgba(61,139,255,.16),transparent 65%),rgba(3,10,26,.55)}
 .stage canvas{display:block;width:100%;height:100%;outline:0}
 #lbs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .lb{position:absolute;transform:translate(8px,-50%);background:rgba(3,10,26,.82);border:1px solid var(--line);border-radius:8px;padding:2px 9px;font-size:12px;white-space:nowrap;color:var(--text);direction:inherit}
@@ -30,6 +30,7 @@ html[lang=ar] .pgrid>*{direction:rtl}
 .sec h5{font-size:14px;color:#ffd36b;margin:12px 0 4px}.sec p{margin:0;color:var(--mute);font-size:14px;line-height:1.8}.sec ul{margin:0;padding-inline-start:18px;color:var(--mute);font-size:14px}.sec li{margin:4px 0}.sec ol{margin:0;padding-inline-start:20px;color:var(--mute);font-size:14px}.sec .kv{margin:4px 0}
 details.ref{margin-top:26px;border:1px solid var(--line);border-radius:14px;padding:10px 16px}details.ref summary{cursor:pointer;font-size:17px}
 @media(max-width:900px){.pgrid{grid-template-columns:1fr}.stage{height:62vh}.side{max-height:none}}
+#lock{display:none;position:absolute;left:50%;bottom:10px;transform:translateX(-50%);z-index:4;background:rgba(61,139,255,.9);color:#fff;border:0;border-radius:22px;padding:8px 20px;font:inherit;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.4)}#lock.open{background:rgba(6,18,42,.9);border:1px solid var(--blue)}@media(pointer:coarse){#lock{display:block}}
 </style>
 </head>
 <body data-page="positions">
@@ -38,7 +39,7 @@ details.ref{margin-top:26px;border:1px solid var(--line);border-radius:14px;padd
 <h1><span data-l="ar">الوضعيات</span><span data-l="en">Positioning</span></h1>
 <p class="lead"><span data-l="ar">اختر فحصاً (أو اضغط على عضو من الجسم) فيتحرك الجسم لوضعيته، ويظهر الأنبوب والشعاع ونقطتا الدخول والخروج والكاسيت.</span><span data-l="en">Pick an exam (or tap an organ on the body) and the body moves into position, showing the tube, beam, entry and exit points and the detector.</span></p>
 <div class="pgrid">
-<div class="stage" id="stage"><canvas id="cv"></canvas><div id="lbs"></div><button id="reset"><span data-l="ar">إعادة ضبط</span><span data-l="en">Reset</span></button><div id="pick"></div><div id="load"></div><div id="hint"><span data-l="ar">اسحب للتدوير · قرّص للتكبير</span><span data-l="en">Drag to rotate · pinch to zoom</span></div></div>
+<div class="stage" id="stage"><canvas id="cv"></canvas><div id="lbs"></div><button id="lock" type="button"></button><button id="reset"><span data-l="ar">إعادة ضبط</span><span data-l="en">Reset</span></button><div id="pick"></div><div id="load"></div><div id="hint"><span data-l="ar">اسحب للتدوير · قرّص للتكبير</span><span data-l="en">Drag to rotate · pinch to zoom</span></div></div>
 <div class="side"><h3><span data-l="ar">الفحوصات</span><span data-l="en">Exams</span></h3><div id="exams"></div><div id="detail"></div></div>
 </div>
 <p class="note"><span data-l="ar">للأغراض التعليمية فقط. الأرقام والزوايا مسودة قيد المراجعة. الأنبوب والكاسيت رسوم توضيحية مبسطة.</span><span data-l="en">For educational use only. Values and angles are drafts under review. Tube and detector are simplified illustrations.</span></p>
@@ -47,7 +48,7 @@ details.ref{margin-top:26px;border:1px solid var(--line);border-radius:14px;padd
 <p class="lead" style="border:0;margin:10px 0"><span data-l="ar">اختر الجهاز ثم الجزء المطلوب.</span><span data-l="en">Pick the modality, then the body part.</span></p>
 <div class="tabs" id="mt"></div><div class="chips" id="pc"></div><div id="pb"></div></details>
 </main>
-<script src="common.js?v=5"></script>
+<script src="common.js?v=6"></script>
 <script>
 
 var P={xray:[
@@ -85,6 +86,6 @@ document.getElementById('pc').onclick=function(e){var m=e.target.closest('button
 drawM();
 
 </script>
-<script type="module" src="positions.js?v=2"></script>
+<script type="module" src="positions.js?v=3"></script>
 </body>
 </html>
