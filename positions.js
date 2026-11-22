@@ -64,27 +64,27 @@ async function showExam(ex){cur=ex;clearEq();document.getElementById('pick').cla
  state={q,pos,crW,tableTop,erect,sk:sk.clone().translate(pos),from};patient.quaternion.copy(from.q);patient.position.copy(from.p);
  anim={t0:performance.now(),dur:1100,from,to:{q,p:pos},done:false,ex};
 }
-function fly(crW,ex,q,erect){let dirB=beamDirBody(ex.beam);const dirW=dirB.clone().applyQuaternion(q);
+function fly(crW,ex,q,erect){let dirB=beamDirBody(ex.beam,ex.tilt);const dirW=dirB.clone().applyQuaternion(q);
  let s=V(0,0,0).crossVectors(dirW,V(0,1,0));if(s.length()<.2)s=V(1,0,0);s.normalize();const dist=ex.type=='ct'?2.3:(ex.pose=='erect'?3.2:2.5);
  camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:crW.clone().add(s.multiplyScalar(dist)).add(V(0,dist*.28,0)),tt:crW.clone()}}
 let camAnim=null;
-function beamDirBody(b){const l=V(sL,0,0);if(b=='AP')return V(0,0,-1);if(b=='PA')return V(0,0,1);if(b=='R-L')return l;return l.clone().negate()}
+function beamDirBody(b,tilt){const l=V(sL,0,0);let v=b=='AP'?V(0,0,-1):b=='PA'?V(0,0,1):b=='R-L'?l:l.clone().negate();if(tilt){const a=tilt*Math.PI/180;v=v.multiplyScalar(Math.cos(a)).add(V(0,Math.sin(a),0)).normalize()}return v}
 function build(ex){clearEq();eq=new THREE.Group();world.add(eq);const q=state.q,pos=state.pos,crW=state.crW;
- const dirW=beamDirBody(ex.beam).applyQuaternion(q).normalize();const headW=V(0,1,0).applyQuaternion(q);
+ const dirW=beamDirBody(ex.beam,ex.tilt).applyQuaternion(q).normalize();const headW=V(0,1,0).applyQuaternion(q);
  table0(ex);
  if(ex.type=='ct'){buildCT(ex,q,pos,crW,headW);return}
  // entry/exit
  const rc=new THREE.Raycaster(crW.clone().sub(dirW.clone().multiplyScalar(2)),dirW,0,5);
  const hits=rc.intersectObjects(meshes.filter(m=>m.userData.layer=='skin'&&!m.userData.skip&&m.visible),false);let entry,exit,approx=false;
- if(hits.length>=2){entry=hits[0].point.clone();exit=hits[hits.length-1].point.clone()}else{entry=crW.clone().sub(dirW.clone().multiplyScalar(.12));exit=crW.clone().add(dirW.clone().multiplyScalar(.12));approx=true}
- const D=exit.clone().add(dirW.clone().multiplyScalar(state.erect?.03:.065)),T=D.clone().sub(dirW.clone().multiplyScalar(ex.sid));
+ if(hits.length>=2){entry=hits[0].point.clone();exit=hits[hits.length-1].point.clone()}else{const bh=rc.intersectObjects(bodyMeshes().filter(m=>m.visible),false);if(bh.length>=2){entry=bh[0].point.clone().sub(dirW.clone().multiplyScalar(.04));exit=bh[bh.length-1].point.clone().add(dirW.clone().multiplyScalar(.04))}else{entry=crW.clone().sub(dirW.clone().multiplyScalar(.12));exit=crW.clone().add(dirW.clone().multiplyScalar(.12))}approx=true}
+ const horiz=Math.abs(dirW.y)<.5;const D=exit.clone().add(dirW.clone().multiplyScalar(horiz?.03:.065)),T=D.clone().sub(dirW.clone().multiplyScalar(ex.sid));
  state.entry=entry;state.exit=exit;state.D=D;state.T=T;state.approx=approx;
- {const mid=T.clone().lerp(D,.5);let s2=V(0,0,0).crossVectors(dirW,V(0,1,0));if(s2.length()<.2)s2=V(1,0,0);s2.normalize();const dist=Math.max(2,(ex.sid+.3)*1.85);camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:mid.clone().add(s2.multiplyScalar(dist)).add(V(0,dist*.2,0)),tt:mid.clone()}}
+ {const mid=T.clone().lerp(D,.5);let s2=V(0,0,0).crossVectors(dirW,headW);if(s2.length()<.2)s2=V(1,0,0);s2.normalize();let cd;if(Math.abs(s2.y)>.7){if(s2.y<0)s2.negate();cd=s2.clone().add(dirW.clone().multiplyScalar(-.35)).add(headW.clone().multiplyScalar(.5)).normalize()}else{cd=s2.clone().add(V(0,.2,0)).normalize()}const dist=Math.max(2,(ex.sid+.3)*1.85);camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:mid.clone().add(cd.multiplyScalar(dist)),tt:mid.clone()}}
  let up=headW.clone().sub(dirW.clone().multiplyScalar(headW.dot(dirW)));if(up.length()<.1)up=V(1,0,0);up.normalize();const right=V(0,0,0).crossVectors(up,dirW).normalize();
  const [dw,dh,or]=ex.det;const w=or=='portrait'?dw:dh,h=or=='portrait'?dh:dw;
  // detector
  const dm=track(new THREE.MeshStandardMaterial({color:0x4c8dff,emissive:0x1c4bb5,emissiveIntensity:.6,roughness:.4,metalness:.2}),.95);const det=new THREE.Mesh(new THREE.BoxGeometry(w,h,.014),dm);det.position.copy(D);det.quaternion.setFromRotationMatrix(new THREE.Matrix4().makeBasis(right,up,dirW));eq.add(det);
- if(state.erect){const st=new THREE.Mesh(new THREE.BoxGeometry(w+.1,1.5,.05),track(new THREE.MeshStandardMaterial({color:0x1b3a73,roughness:.6}),.5));st.position.copy(D.clone().add(dirW.clone().multiplyScalar(.04)));st.position.y=.75+.0;st.quaternion.copy(det.quaternion);eq.add(st)}
+ if(horiz){const st=new THREE.Mesh(new THREE.BoxGeometry(w+.1,1.5,.05),track(new THREE.MeshStandardMaterial({color:0x1b3a73,roughness:.6}),.5));st.position.copy(D.clone().add(dirW.clone().multiplyScalar(.04)));st.position.y=.75+.0;st.quaternion.copy(det.quaternion);eq.add(st)}
  // tube
  const tg=new THREE.Group();tg.position.copy(T);tg.quaternion.setFromUnitVectors(V(0,-1,0),dirW);
  const tm=track(new THREE.MeshStandardMaterial({color:0x3a4f7a,roughness:.35,metalness:.55}),1);
@@ -138,7 +138,28 @@ function onPick(o){const en=eng(o.userData.nm),la=NAMES[o.userData.nm]?NAMES[o.u
  h+=hits.length?hits.map(x=>'<button data-id="'+x.id+'">'+bi(x.name)+'</button>').join(''):'<span>'+bi(['لا توجد فحوصات مضافة لهذه البنية بعد.','No exams added for this structure yet.'])+'</span>';
  box.innerHTML=h+'</div>';box.classList.add('on');box.querySelectorAll('button').forEach(b=>b.onclick=()=>chooseExam(b.dataset.id))}
 // UI
-function renderList(){const L=document.getElementById('exams');L.innerHTML=EXAMS.map(x=>'<button class="ex'+(cur&&cur.id==x.id?' on':'')+'" data-id="'+x.id+'"><small>'+(x.mod=='ct'?'CT':'X-ray')+'</small>'+bi(x.name)+'</button>').join('');L.querySelectorAll('button').forEach(b=>b.onclick=()=>chooseExam(b.dataset.id))}
+let CAT=null,path=[],IDX=[];
+const FOCUS={head:[[0,1.58,.02],.95],neck:[[0,1.45,.02],.9],chest:[[0,1.3,0],1.4],'upper-limb':[[.4,1.1,0],1.9],'lower-limb':[[.1,.5,0],2.4],abdomen:[[0,1.02,0],1.5],pelvis:[[0,.85,0],1.5],spine:[[0,1.1,-.05],2.3]};
+const nd=p=>{let n=CAT;for(const id of p){const k=(n.kids||[]).find(x=>x.id==id);if(!k)break;n=k}return n};
+const leaves=n=>n.p?[n]:(n.kids||[]).flatMap(leaves);
+const stat=n=>{const L=leaves(n);return [L.length,new Set(L.filter(x=>x.ex).map(x=>x.ex)).size]};
+function indexCat(n,pa){(n.kids||[]).forEach(k=>{IDX.push({k,path:pa,t:(k.name[0]+' '+k.name[1]).toLowerCase()});if(!k.p)indexCat(k,pa.concat(k.id))})}
+function showRegion(id){const f=FOCUS[id];if(!f)return;if(cur)resetScene();const t=V(...f[0]),d=V(.35,.18,1).normalize().multiplyScalar(f[1]);camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:t.clone().add(d),tt:t};dirty=true}
+function showInfo(k){document.getElementById('detail').innerHTML='<h4>'+b(k.name[0],k.name[1])+'</h4><div class="draft">'+b('قيد الإضافة','Coming soon')+'</div>'+(k.d?'<div class="sec"><p>'+b(k.d[0],k.d[1])+'</p></div>':'')+'<p class="note">'+b('الشرح الكامل والمحاكاة ثلاثية الأبعاد لهذه الوضعية قيد الإضافة.','The full explanation and 3D simulation for this view are being added.')+'</p>'}
+function goProj(k){if(k.ex)chooseExam(k.ex);else showInfo(k)}
+function renderList(){if(!CAT)return;const n=nd(path);
+ const cr=['<button data-c="0">'+b('الأجهزة','Modalities')+'</button>'];path.forEach((id,i)=>{cr.push('<button data-c="'+(i+1)+'">'+b(nd(path.slice(0,i+1)).name[0],nd(path.slice(0,i+1)).name[1])+'</button>')});
+ document.getElementById('crumbs').innerHTML=cr.join(' / ');document.querySelectorAll('#crumbs button').forEach(bt=>bt.onclick=()=>{path=path.slice(0,+bt.dataset.c);renderList()});
+ const xr=CAT.kids.find(x=>x.id=='x-ray'),st=stat(xr);document.getElementById('prog').innerHTML=b('الأشعة السينية: '+st[1]+' فحصاً جاهزاً من '+st[0]+' وضعية مفهرسة','X-ray: '+st[1]+' exams ready out of '+st[0]+' indexed views');
+ const L=document.getElementById('navlist');let h='';const kids=n.kids||[];
+ if(kids.length&&kids.every(k=>k.p)){h=kids.map((k,i)=>'<button class="ex'+(cur&&k.ex==cur.id?' on':'')+'" data-a="p" data-i="'+i+'"><small>'+(k.ex?b('جاهز ✓','Ready ✓'):b('قيد الإضافة','Coming'))+'</small>'+b(k.name[0],k.name[1])+(k.d?'<em>'+b(k.d[0],k.d[1])+'</em>':'')+'</button>').join('')}
+ else{h=kids.map((k,i)=>{const s=stat(k);return '<button class="ex" data-a="g" data-i="'+i+'"><small>'+(k.coming?b('قريباً','Coming soon'):(s[0]?s[0]+' '+bi(['وضعيات','views'])+(s[1]?' · '+s[1]+' '+bi(['جاهز','ready']):''):''))+'</small>'+b(k.name[0],k.name[1])+(k.d&&!path.length?'<em>'+b(k.d[0],k.d[1])+'</em>':'')+'</button>'}).join('')}
+ if(n.coming){h+='<p class="note" style="margin-top:12px">'+b('هذا الجهاز قيد التجهيز. نبدأ بالأشعة السينية العادية ثم نضيف الباقي.','This modality is being prepared. We start with plain X-ray, then add the rest.')+'</p>';if(n.plan)h+='<ul class="plan">'+n.plan.map(x=>'<li>'+b(x[0],x[1])+'</li>').join('')+'</ul>'}
+ L.innerHTML=h;L.querySelectorAll('button').forEach(bt=>bt.onclick=()=>{const k=kids[+bt.dataset.i];if(bt.dataset.a=='p'){goProj(k)}else{path=path.concat(k.id);renderList();if(path.length==2&&path[0]=='x-ray')showRegion(path[1])}})}
+const qs=document.getElementById('qs'),sr2=document.getElementById('sres2');
+qs.oninput=()=>{const v=qs.value.trim().toLowerCase();sr2.innerHTML='';if(v.length<2)return;const R=IDX.filter(x=>x.t.includes(v)).slice(0,14);
+ sr2.innerHTML=R.map((x,i)=>'<button data-i="'+i+'">'+b(x.k.name[0],x.k.name[1])+'<small>'+(x.path.length?x.path.map(id=>{const nn=nd(x.path.slice(0,x.path.indexOf(id)+1));return bi(nn.name)}).join(' › '):'')+'</small></button>').join('');
+ sr2.querySelectorAll('button').forEach(bt=>bt.onclick=()=>{const x=R[+bt.dataset.i];qs.value='';sr2.innerHTML='';if(x.k.p){path=x.path;renderList();goProj(x.k)}else{path=x.path.concat(x.k.id);renderList();if(path.length==2&&path[0]=='x-ray')showRegion(path[1])}})};
 const BM={AP:['من الأمام إلى الخلف (AP)','Anterior to posterior (AP)'],PA:['من الخلف إلى الأمام (PA)','Posterior to anterior (PA)'],'R-L':['من اليمين إلى اليسار (جانبي)','Right to left (lateral)'],'L-R':['من اليسار إلى اليمين (جانبي)','Left to right (lateral)']};
 const PS={erect:['واقف','Erect'],supine:['مستلقٍ على الظهر','Supine'],prone:['مستلقٍ على البطن','Prone'],'lat-L':['على الجانب الأيسر','Left lateral decubitus'],'lat-R':['على الجانب الأيمن','Right lateral decubitus']};
 function sec(t,body){return '<div class="sec"><h5>'+b(t[0],t[1])+'</h5>'+body+'</div>'}
@@ -151,7 +172,8 @@ function renderDetail(ex){const d=document.getElementById('detail');const ct=ex.
  +sec(['الاستطباب','Indications'],'<p>'+b(ex.ind[0],ex.ind[1])+'</p>')+sec(['وضعية المريض','Patient position'],'<p>'+b(ex.pos[0],ex.pos[1])+'</p>')+sec(['الشعاع المركزي','Central ray'],'<p>'+b(ex.crt[0],ex.crt[1])+'</p>')+sec(['التنفس','Breathing'],'<p>'+b(ex.br[0],ex.br[1])+'</p>')
  +sec(['معايير قبول الصورة','Image acceptance criteria'],ul(ex.crit))+sec(['الأخطاء الشائعة','Common errors'],ul(ex.err))+sec(['نصائح','Tips'],'<p>'+b(ex.tips[0],ex.tips[1])+(ex.hideArms?' '+b('(الذراعان مخفيتان لوضوح المسار، وعادةً ترفعان عن مجال الشعاع.)','(Arms are hidden for clarity; they are normally raised out of the beam.)'):'')+'</p>')}
 async function chooseExam(id){const ex=EXAMS.find(x=>x.id==id);if(!ex)return;cur=ex;renderList();renderDetail(ex);await showExam(ex)}
-document.getElementById('reset').onclick=()=>{clearEq();cur=null;meshes.forEach(m=>{if(!m.userData.skip)m.visible=true});renderList();document.getElementById('detail').innerHTML='';bodyMeshes().forEach(m=>{m.material=m.userData.base;m.visible=true});anim={t0:performance.now(),dur:900,from:{q:patient.quaternion.clone(),p:patient.position.clone()},to:{q:new THREE.Quaternion(),p:V(0,0,0)},done:false,ex:null};camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:V(2.6,1.2,2.4),tt:V(0,.9,0)}};
+function resetScene(){clearEq();cur=null;meshes.forEach(m=>{if(!m.userData.skip)m.visible=true});renderList();document.getElementById('detail').innerHTML='';bodyMeshes().forEach(m=>{m.material=m.userData.base;m.visible=true});anim={t0:performance.now(),dur:900,from:{q:patient.quaternion.clone(),p:patient.position.clone()},to:{q:new THREE.Quaternion(),p:V(0,0,0)},done:false,ex:null};camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:V(2.6,1.2,2.4),tt:V(0,.9,0)}}
+document.getElementById('reset').onclick=resetScene;
 // loop
 const ease=k=>k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
 function frame(t){requestAnimationFrame(frame);
@@ -161,7 +183,7 @@ function frame(t){requestAnimationFrame(frame);
  updCT(t);const mv=ctl.update(),cont=mv||dirty||ctState||camAnim||(anim&&!anim.done)||fd;if(!cont)return;dirty=false;window.__renders++;R.render(scene,cam);
  const w=stage.clientWidth,h=stage.clientHeight;labels.forEach(l=>{const p=l.pos.clone().project(cam);const vis=p.z<1&&Math.abs(p.x)<1.1&&Math.abs(p.y)<1.1;l.el.style.display=vis?'block':'none';l.el.style.left=((p.x+1)/2*w)+'px';l.el.style.top=((1-p.y)/2*h)+'px'})}
 requestAnimationFrame(frame);
-Promise.all([fetch('names.json').then(r=>r.json()),fetch('exams.json').then(r=>r.json())]).then(([n,e])=>{NAMES=n;EXAMS=e;renderList();loadLayer('skeleton').then(()=>loadLayer('skin'))});
+Promise.all([fetch('names.json').then(r=>r.json()),fetch('exams.json').then(r=>r.json()),fetch('catalog.json').then(r=>r.json())]).then(([n,e,c])=>{NAMES=n;EXAMS=e;CAT=c;IDX=[];indexCat(CAT,[]);renderList();loadLayer('skeleton').then(()=>loadLayer('skin'))});
 new MutationObserver(()=>{renderList()}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 
 const touchy=matchMedia('(pointer:coarse)').matches,lk=document.getElementById('lock');

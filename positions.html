@@ -22,7 +22,7 @@ html[lang=ar] .pgrid>*{direction:rtl}
 #hint{position:absolute;right:12px;bottom:10px;font-size:12px;color:var(--mute);pointer-events:none}
 .side{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:16px;max-height:clamp(500px,calc(100vh - 230px),800px);overflow:auto}
 .side h3{font-size:18px;color:var(--ice);margin:0 0 10px}
-#exams{display:flex;flex-direction:column;gap:8px}
+#navlist{display:flex;flex-direction:column;gap:8px}
 .ex{background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:10px 14px;font:inherit;font-size:15px;cursor:pointer;text-align:start;transition:all .2s}
 .ex small{display:block;color:var(--mute);font-size:11px;letter-spacing:.1em}.ex:hover{border-color:var(--blue)}.ex.on{border-color:var(--blue);background:rgba(61,139,255,.18)}
 #detail h4{font-size:20px;color:var(--ice);margin:14px 0 4px}.draft{display:inline-block;font-size:11px;color:#ffd36b;border:1px solid #ffd36b55;border-radius:10px;padding:0 9px;margin-bottom:8px}
@@ -31,6 +31,9 @@ html[lang=ar] .pgrid>*{direction:rtl}
 details.ref{margin-top:26px;border:1px solid var(--line);border-radius:14px;padding:10px 16px}details.ref summary{cursor:pointer;font-size:17px}
 @media(max-width:900px){.pgrid{grid-template-columns:1fr}.stage{height:62vh}.side{max-height:none}}
 #lock{display:none;position:absolute;left:50%;bottom:10px;transform:translateX(-50%);z-index:4;background:rgba(61,139,255,.9);color:#fff;border:0;border-radius:22px;padding:8px 20px;font:inherit;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.4)}#lock.open{background:rgba(6,18,42,.9);border:1px solid var(--blue)}@media(pointer:coarse){#lock{display:block}}
+.crumbs{font-size:13px;margin-bottom:8px;color:var(--mute)}.crumbs button{background:none;border:0;color:var(--blue);cursor:pointer;font:inherit;padding:2px 3px}.crumbs button:last-child{color:var(--text)}
+.qs{width:100%;margin-bottom:6px}.sres2{display:flex;flex-direction:column;gap:4px;margin-bottom:8px}.sres2 button{background:rgba(61,139,255,.12);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:6px 12px;font:inherit;font-size:14px;text-align:start;cursor:pointer}.sres2 small{display:block;color:var(--mute);font-size:11px}
+.ex em{display:block;font-style:normal;color:var(--mute);font-size:12px;margin-top:2px}.plan{margin:6px 0 0;padding-inline-start:20px;color:var(--mute);font-size:14px}
 </style>
 </head>
 <body data-page="positions">
@@ -40,7 +43,7 @@ details.ref{margin-top:26px;border:1px solid var(--line);border-radius:14px;padd
 <p class="lead"><span data-l="ar">اختر فحصاً (أو اضغط على عضو من الجسم) فيتحرك الجسم لوضعيته، ويظهر الأنبوب والشعاع ونقطتا الدخول والخروج والكاسيت.</span><span data-l="en">Pick an exam (or tap an organ on the body) and the body moves into position, showing the tube, beam, entry and exit points and the detector.</span></p>
 <div class="pgrid">
 <div class="stage" id="stage"><canvas id="cv"></canvas><div id="lbs"></div><button id="lock" type="button"></button><button id="reset"><span data-l="ar">إعادة ضبط</span><span data-l="en">Reset</span></button><div id="pick"></div><div id="load"></div><div id="hint"><span data-l="ar">اسحب للتدوير · قرّص للتكبير</span><span data-l="en">Drag to rotate · pinch to zoom</span></div></div>
-<div class="side"><h3><span data-l="ar">الفحوصات</span><span data-l="en">Exams</span></h3><div id="exams"></div><div id="detail"></div></div>
+<div class="side"><h3><span data-l="ar">اختر الجهاز ثم المنطقة</span><span data-l="en">Pick the modality, then the region</span></h3><p id="prog" class="note" style="margin:0 0 8px"></p><div id="crumbs" class="crumbs"></div><input id="qs" type="search" class="qs" placeholder="بحث / Search" autocomplete="off"><div id="sres2" class="sres2"></div><div id="navlist"></div><div id="detail"></div></div>
 </div>
 <p class="note"><span data-l="ar">للأغراض التعليمية فقط. الأرقام والزوايا مسودة قيد المراجعة. الأنبوب والكاسيت رسوم توضيحية مبسطة.</span><span data-l="en">For educational use only. Values and angles are drafts under review. Tube and detector are simplified illustrations.</span></p>
 <p class="note credits"><span data-l="ar">النموذج ثلاثي الأبعاد: <a href="https://github.com/Z-Anatomy" target="_blank" rel="noopener">Z-Anatomy</a> (مبني على BodyParts3D)، بترخيص <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. تم تحويله وتبسيطه للعرض على الويب.</span><span data-l="en">3D model: <a href="https://github.com/Z-Anatomy" target="_blank" rel="noopener">Z-Anatomy</a> (based on BodyParts3D), licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Converted and simplified for the web.</span></p>
@@ -86,6 +89,6 @@ document.getElementById('pc').onclick=function(e){var m=e.target.closest('button
 drawM();
 
 </script>
-<script type="module" src="positions.js?v=3"></script>
+<script type="module" src="positions.js?v=5"></script>
 </body>
 </html>
