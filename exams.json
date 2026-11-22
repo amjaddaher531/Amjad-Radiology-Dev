@@ -150,6 +150,10 @@
     "راجع الصورة وفق المعايير، وتأكد من علامة الجهة (R أو L).",
     "Review against the criteria and check the side marker (R or L)."
    ]
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
   ]
  },
  {
@@ -296,6 +300,10 @@
     "راجع الصورة: الارتفاق والكليتان والعضلتان القطنيتان الكبيرتان.",
     "Review: symphysis, kidneys and psoas margins."
    ]
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
   ]
  },
  {
@@ -438,6 +446,10 @@
     "راجع تراكب الأجسام الفقرية ومسافات الأقراص وملتقى L5-S1.",
     "Check vertebral superimposition, disc spaces and the L5-S1 junction."
    ]
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
   ]
  },
  {
@@ -574,6 +586,1178 @@
    [
     "راجع الصور: التناظر وعدم الحركة وتمايز المادة الرمادية والبيضاء.",
     "Review symmetry, motion and grey-white differentiation."
+   ]
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ]
+ },
+ {
+  "id": "chest-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر جانبي (واقف)",
+   "Chest lateral (erect)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "تحديد موقع الآفات الرئوية التي ظهرت بمسقط PA، وتقييم الحيز خلف القص والحيز خلف القلب، وكشف انصباب جنبي صغير بالزاوية الخلفية، وانخماص الفصوص.",
+   "Localise lesions seen on the PA view, assess the retrosternal and retrocardiac spaces, detect small posterior pleural effusions and lobar collapse."
+  ],
+  "pos": [
+   "المريض واقف وجانبه الأيسر ملاصق للكاسيت (علامة L). الذراعان مرفوعتان فوق الرأس ومتشابكتان لإبعادهما عن الرئتين. الجسم غير مائل والقدمان متباعدتان قليلاً للثبات، والكتفان بنفس المستوى.",
+   "Patient erect with the left side against the detector (L marker). Arms raised above the head and clasped to clear the lung fields. Body not leaning, feet slightly apart for stability, shoulders level."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند T7 على الخط الإبطي المتوسط. SID حوالي 180 سم.",
+   "Horizontal central ray perpendicular to the detector at T7 in the mid-axillary line. SID about 180 cm."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس.",
+   "Full inspiration, hold the breath."
+  ],
+  "crit": [
+   [
+    "القفص الصدري كاملاً من القمم إلى الزوايا الضلعية الحجابية الخلفية.",
+    "Whole chest from the apices to the posterior costophrenic angles."
+   ],
+   [
+    "القص بوضعية جانبية صافية والذراعان خارج الحقل الرئوي.",
+    "Sternum in true lateral and arms clear of the lung fields."
+   ],
+   [
+    "الحواف الخلفية للرئتين والأضلاع الخلفية متراكبة تقريباً (بلا دوران).",
+    "Posterior lung margins and posterior ribs approximately superimposed (no rotation)."
+   ],
+   [
+    "الحيز خلف القص والحيز خلف القلب واضحان، والفقرات الصدرية السفلية ظاهرة.",
+    "Retrosternal and retrocardiac spaces clear, lower thoracic vertebrae visible."
+   ]
+  ],
+  "err": [
+   [
+    "دوران المريض: الأضلاع الخلفية غير متراكبة ويتشوه موضع الآفة.",
+    "Rotation: posterior ribs not superimposed and lesion position distorted."
+   ],
+   [
+    "الذراعان فوق الحقل الرئوي العلوي.",
+    "Arms over the upper lung fields."
+   ],
+   [
+    "ميلان الجسم للأمام أو للخلف.",
+    "Patient leaning forward or backward."
+   ],
+   [
+    "شهيق غير كافٍ: ازدحام القاعدتين.",
+    "Poor inspiration: crowded lung bases."
+   ]
+  ],
+  "tips": [
+   "ضع الجانب الذي فيه الآفة ملاصقاً للكاسيت لتقليل التكبير. اسأل عن الحمل. (الذراعان مرفوعتان عادةً، وقد أخفيتهما بالنموذج لوضوح المسار.)",
+   "Place the side of interest against the detector to reduce magnification. Ask about pregnancy. (Arms are normally raised; they are hidden in the model for clarity.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للصدر عند T7 على الخط الإبطي المتوسط ويخرج من الجانب الأيسر ملاصقاً للكاسيت (من اليمين إلى اليسار).",
+   "The beam enters the right side of the chest at T7 in the mid-axillary line and exits the left side against the detector (right to left)."
+  ],
+  "exp": {
+   "kv": [
+    "115–130",
+    "115–130"
+   ],
+   "mas": [
+    "6–12",
+    "6–12"
+   ],
+   "ex": [
+    "مثال: 400 mA × 0.02 ث = 8 mAs",
+    "Example: 400 mA × 0.02 s = 8 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن واطلب من المريض رفع ذراعيه وتشبيكهما فوق رأسه.",
+    "Remove necklaces and metal; ask the patient to raise and clasp the arms above the head."
+   ],
+   [
+    "ضع المريض واقفاً بجانبه الأيسر ملاصقاً للكاسيت دون ميلان أو دوران.",
+    "Stand the patient with the left side against the detector, no leaning or rotation."
+   ],
+   [
+    "اضبط ارتفاع الكاسيت: حافته العليا حوالي 4 إلى 5 سم فوق الكتفين.",
+    "Set the detector top edge about 4–5 cm above the shoulders."
+   ],
+   [
+    "مركّز الشعاع عند T7 على الخط الإبطي المتوسط، SID 180 سم، وضيّق المجال.",
+    "Centre at T7 in the mid-axillary line, 180 cm SID, and collimate."
+   ],
+   [
+    "اضبط kVp وmAs أو AEC (التعريض أعلى من PA).",
+    "Set kVp and mAs or AEC (higher exposure than PA)."
+   ],
+   [
+    "اطلب شهيقاً عميقاً وحبس النفس ثم اعرّض.",
+    "Ask for full inspiration, hold the breath, then expose."
+   ],
+   [
+    "راجع تراكب الأضلاع الخلفية وخلو الحقل من الذراعين.",
+    "Check superimposition of the posterior ribs and arms clear of the field."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "chest-ap-supine",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر AP مستلقٍ (متنقل)",
+   "Chest AP supine (portable)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "مرضى العناية والمرضى غير القادرين على الوقوف: تقييم الرئتين وموضع الأنابيب والخطوط (أنبوب التنفس، القسطرة المركزية، أنبوب المعدة، أنبوب الصدر)، وكشف الانصباب والاسترواح.",
+   "ICU and non-ambulatory patients: assess the lungs and the position of tubes and lines (endotracheal tube, central line, nasogastric tube, chest drain), and detect effusion and pneumothorax."
+  ],
+  "pos": [
+   "المريض مستلقٍ على السرير والكاسيت تحت الصدر مباشرة (بغطاء أو صينية) وحافته العليا حوالي 4 إلى 5 سم فوق الكتفين. الجسم دون دوران، الكتفان بنفس المستوى والذراعان بجانب الجسم. ارفع الرأس والصدر قليلاً إذا سمحت حالته، وسجّل الوضعية. أبعد الأسلاك عن مجال الصدر دون سحب أي خط.",
+   "Patient supine in bed with the detector directly under the chest (in a cover or tray), top edge about 4–5 cm above the shoulders. Body not rotated, shoulders level, arms by the sides. Raise the head and chest slightly if the condition allows and record the position. Move leads out of the field without pulling any line."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند منتصف القص (T7 تقريباً) على الخط الناصف. SID حوالي 100 سم أو حسب بروتوكول القسم. ضيّق المجال على الصدر.",
+   "Central ray perpendicular to the detector at the mid-sternum (about T7) on the midline. SID about 100 cm or per department protocol. Collimate to the chest."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس إن استطاع، وللمريض الموصول بجهاز التنفس يُعرَّض عند نهاية الشهيق.",
+   "Full inspiration and hold if able; for ventilated patients expose at end-inspiration."
+  ],
+  "crit": [
+   [
+    "الرئتان من القمم إلى الزوايا الضلعية الحجابية.",
+    "Lungs from the apices to the costophrenic angles."
+   ],
+   [
+    "بلا دوران: المفصلان القصيان الترقويان متناظران.",
+    "No rotation: sternoclavicular joints symmetric."
+   ],
+   [
+    "أطراف الأنابيب والخطوط ظاهرة بوضوح (مثال: نهاية أنبوب التنفس فوق الجؤجؤ).",
+    "Tube and line tips clearly included (for example the endotracheal tube tip above the carina)."
+   ],
+   [
+    "اختراق مناسب: العمود الصدري ظاهر بخفوت خلف القلب.",
+    "Adequate penetration: spine faintly visible behind the heart."
+   ]
+  ],
+  "err": [
+   [
+    "قطع القمم أو القواعد بسبب وضع الكاسيت.",
+    "Apices or bases cut off by detector placement."
+   ],
+   [
+    "دوران المريض: يشوه القلب والمنصف.",
+    "Patient rotation distorts the heart and mediastinum."
+   ],
+   [
+    "أسلاك أو ثنيات جلد تحاكي آفات.",
+    "Leads or skin folds mimic lesions."
+   ],
+   [
+    "عدم تسجيل الوضعية (مستلقٍ أو نصف جالس) يضلل التفسير.",
+    "Not recording the position (supine or semi-erect) misleads interpretation."
+   ]
+  ],
+  "tips": [
+   "في الصورة المستلقية يبدو القلب أكبر (مسافة أقصر وشعاع AP)، ويتجمع السائل خلفياً فتبدو الرئة معتمة، ويتجمع الهواء أمامياً. استخدم مئزر الرصاص للعاملين وابقَ على مسافة آمنة. اسأل عن الحمل.",
+   "In supine films the heart looks larger (short distance, AP beam), fluid layers posteriorly making the hemithorax hazy, and air collects anteriorly. Use staff lead aprons and keep a safe distance. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الصدر الأمامي عند منتصف القص ويخرج من الظهر نحو الكاسيت تحت المريض (من الأمام إلى الخلف).",
+   "The beam enters the anterior chest at mid-sternum and exits the back toward the detector under the patient (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "85–100",
+    "85–100"
+   ],
+   "mas": [
+    "3–8",
+    "3–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "حسب الجهاز: غالباً بدون شبكة",
+    "Per equipment: often no grid"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "جهّز الجهاز المتنقل وحافظ على السلامة الإشعاعية (مئزر ومسافة) وأبلغ من حول السرير.",
+    "Prepare the mobile unit and keep radiation safety (apron, distance); warn those near the bed."
+   ],
+   [
+    "ضع الكاسيت تحت الصدر دون سحب الخطوط أو الأنابيب.",
+    "Place the detector under the chest without pulling lines or tubes."
+   ],
+   [
+    "عدّل الجسم دون دوران وارفع الصدر قليلاً إذا أمكن.",
+    "Straighten the body without rotation and raise the chest slightly if possible."
+   ],
+   [
+    "مركّز الأنبوب فوق منتصف القص عمودياً بمسافة حوالي 100 سم.",
+    "Centre the tube above the mid-sternum, vertical, about 100 cm away."
+   ],
+   [
+    "اضبط التعريض يدوياً ثم اطلب شهيقاً إن أمكن واعرّض.",
+    "Set the exposure manually, ask for inspiration if possible, then expose."
+   ],
+   [
+    "راجع مواضع الأنابيب والخطوط وسجّل وضعية المريض.",
+    "Review tube and line positions and record the patient position."
+   ]
+  ]
+ },
+ {
+  "id": "abd-erect",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "البطن AP واقف",
+   "Abdomen AP erect"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L3$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^(Ascending|Transverse|Descending|Sigmoid) colon$",
+   "^Liver$"
+  ],
+  "ind": [
+   "الاشتباه بانسداد أو انثقاب معوي: مستويات الهواء والسائل والهواء الحر تحت الحجاب (يكفي غالباً صدر PA واقف لإظهار الهواء الحر)، وتقييم نمط الغازات.",
+   "Suspected obstruction or perforation: air-fluid levels and free air under the diaphragm (an erect chest PA often suffices for free air), and assessment of the gas pattern."
+  ],
+  "pos": [
+   "المريض واقف وظهره ملاصق للكاسيت، الخط الناصف في المنتصف دون دوران، والذراعان بعيدتان عن الجسم. يبقى منتصباً 5 دقائق على الأقل قبل التعريض ليصعد الهواء الحر.",
+   "Patient erect with the back against the detector, midline centred, no rotation, arms away from the body. Keep the patient upright for at least 5 minutes before exposure so free air can rise."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند L3 (حوالي 5 سم فوق عرف الحرقفة) على الخط الناصف. يجب تضمين الحجابين في أعلى الصورة.",
+   "Horizontal central ray perpendicular to the detector at L3 (about 5 cm above the iliac crest) on the midline. Both diaphragms must be included at the top of the image."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend at the end of expiration."
+  ],
+  "crit": [
+   [
+    "الحجابان الأيمن والأيسر ظاهران (للهواء الحر).",
+    "Both hemidiaphragms visible (for free air)."
+   ],
+   [
+    "الجدران البطنية الجانبية وحواف العضلتين القطنيتين ظاهرة.",
+    "Lateral abdominal walls and psoas margins visible."
+   ],
+   [
+    "مستويات الهواء والسائل ظاهرة كخطوط أفقية حادة.",
+    "Air-fluid levels seen as sharp horizontal lines."
+   ],
+   [
+    "بلا دوران ولا حركة.",
+    "No rotation or motion."
+   ]
+  ],
+  "err": [
+   [
+    "عدم الانتظار: الهواء الحر لم يصعد بعد.",
+    "Not waiting: free air has not risen yet."
+   ],
+   [
+    "الكاسيت منخفض: الحجابان غير ظاهرين.",
+    "Detector too low: diaphragms not included."
+   ],
+   [
+    "دوران المريض.",
+    "Patient rotation."
+   ],
+   [
+    "شعاع غير أفقي: المستويات السائلة غير ظاهرة بشكل صحيح.",
+    "Non-horizontal beam: fluid levels not shown correctly."
+   ]
+  ],
+  "tips": [
+   "إذا لم يستطع المريض الوقوف استعمل مسقط الاستلقاء الجانبي الأيسر. اسأل عن الحمل.",
+   "If the patient cannot stand use the left lateral decubitus view. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع الأفقي من جدار البطن الأمامي عند L3 ويخرج من الظهر ملاصقاً للكاسيت (من الأمام إلى الخلف).",
+   "The horizontal beam enters the anterior abdominal wall at L3 and exits the back against the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المعادن والأزرار فوق البطن وألبس المريض ثوباً.",
+    "Remove metal and buttons over the abdomen; gown."
+   ],
+   [
+    "أوقف المريض وظهره ملاصق للكاسيت وانتظر 5 دقائق على الأقل.",
+    "Stand the patient with the back to the detector and wait at least 5 minutes."
+   ],
+   [
+    "اضبط الكاسيت بحيث يظهر الحجابان في أعلى الصورة.",
+    "Set the detector so the diaphragms appear at the top."
+   ],
+   [
+    "مركّز الشعاع الأفقي عند L3 على بعد 100 سم وضيّق المجال.",
+    "Centre the horizontal beam at L3, 100 cm SID; collimate."
+   ],
+   [
+    "اضبط kVp وmAs أو AEC.",
+    "Set kVp and mAs or AEC."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration, hold the breath, then expose."
+   ],
+   [
+    "راجع ظهور الحجابين ومستويات الهواء والسائل.",
+    "Check that the diaphragms and air-fluid levels are visible."
+   ]
+  ]
+ },
+ {
+  "id": "abd-lat-decub",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "البطن بالاستلقاء الجانبي الأيسر",
+   "Abdomen left lateral decubitus"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "lat-L",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L3$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^(Ascending|Transverse|Descending|Sigmoid) colon$",
+   "^Liver$"
+  ],
+  "ind": [
+   "الاشتباه بالهواء الحر (انثقاب) عندما لا يستطيع المريض الوقوف، وكشف مستويات الهواء والسائل.",
+   "Suspected free air (perforation) when the patient cannot stand, and detection of air-fluid levels."
+  ],
+  "pos": [
+   "المريض مستلقٍ على جنبه الأيسر على سرير أو نقالة وظهره ملاصق للكاسيت العمودي، الركبتان مثنيتان والذراعان فوق الرأس. يبقى بهذا الوضع 5 إلى 10 دقائق قبل التعريض. ضع الجسم على وسادة لتجنب قطع الجدار الجانبي الأيسر. الحوض والكتفان عموديان على السرير.",
+   "Patient lying on the left side on a bed or trolley with the back against the vertical detector, knees flexed, arms above the head. Stay in this position 5–10 minutes before exposure. Raise the body on a pad so the left lateral wall is not cut off. Pelvis and shoulders vertical to the bed."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند عرف الحرقفة (L3 تقريباً)، يدخل من الأمام ويخرج من الظهر. يجب تضمين الحجاب الأيمن والجدار الجانبي الأيمن لإظهار الهواء الحر.",
+   "Horizontal central ray perpendicular to the detector at the iliac crest (about L3), entering anteriorly and exiting posteriorly. Include the right hemidiaphragm and right lateral wall to show free air."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend at the end of expiration."
+  ],
+  "crit": [
+   [
+    "الهواء الحر يظهر بين الكبد والجدار الأيمن العلوي.",
+    "Free air visible between the liver and the upper right abdominal wall."
+   ],
+   [
+    "الجدار الجانبي الأيمن والحجاب الأيمن ضمن الصورة.",
+    "Right lateral wall and right hemidiaphragm included."
+   ],
+   [
+    "علامة الاستلقاء الجانبي الأيسر ظاهرة.",
+    "Left lateral decubitus marker visible."
+   ],
+   [
+    "بلا دوران ولا حركة.",
+    "No rotation or motion."
+   ]
+  ],
+  "err": [
+   [
+    "عدم الانتظار 5 إلى 10 دقائق: لا يصعد الهواء الحر.",
+    "Not waiting 5–10 minutes: free air has not risen."
+   ],
+   [
+    "قطع الجدار الجانبي الأيمن أو الحجاب.",
+    "Right wall or diaphragm cut off."
+   ],
+   [
+    "دوران الجسم.",
+    "Body rotation."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل. الأمان أولاً: ثبّت السرير وراقب المريض أثناء الانتظار. (الذراعان مرفوعتان عادةً، وقد أخفيتهما بالنموذج لوضوح المسار.)",
+   "Ask about pregnancy. Safety first: lock the bed and monitor the patient while waiting. (Arms are normally raised; hidden in the model for clarity.)"
+  ],
+  "inout": [
+   "يدخل الشعاع الأفقي من جدار البطن الأمامي عند عرف الحرقفة ويخرج من الظهر ملاصقاً للكاسيت العمودي.",
+   "The horizontal beam enters the anterior abdominal wall at the iliac crest and exits the back against the vertical detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "ضع المريض على جنبه الأيسر وثبّت السرير واطلب منه رفع الذراعين.",
+    "Lay the patient on the left side, lock the bed and ask for the arms to be raised."
+   ],
+   [
+    "ضع الكاسيت العمودي خلف الظهر وارفع الجسم على وسادة.",
+    "Place the vertical detector behind the back and raise the body on a pad."
+   ],
+   [
+    "انتظر 5 إلى 10 دقائق ليصعد الهواء الحر.",
+    "Wait 5–10 minutes for free air to rise."
+   ],
+   [
+    "مركّز الشعاع الأفقي عند عرف الحرقفة وضيّق المجال.",
+    "Centre the horizontal beam at the iliac crest and collimate."
+   ],
+   [
+    "اضبط التعريض واطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Set the exposure, ask for expiration and hold, then expose."
+   ],
+   [
+    "راجع ظهور الهواء الحر وعلامة الوضعية.",
+    "Check for free air and the position marker."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "lumbar-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود القطني AP",
+   "Lumbar spine AP"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L3$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Vertebra L\\d$",
+   "^Sacrum$"
+  ],
+  "ind": [
+   "تقييم الفقرات القطنية: الكسور والتشوه والجنف والأقراص والمفاصل العجزية الحرقفية.",
+   "Evaluate the lumbar vertebrae: fractures, deformity, scoliosis, disc spaces and the sacroiliac joints."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر والخط الناصف في منتصف الطاولة، الركبتان مثنيتان والقدمان مسطحتان لتقليل الانحناء القطني، والذراعان على الصدر. الكتفان والحوض بنفس المستوى دون دوران.",
+   "Patient supine with the midline on the table centre, knees flexed and feet flat to reduce lumbar lordosis, arms on the chest. Shoulders and pelvis level, no rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند L3 على الخط الناصف (حوالي 4 سم فوق عرف الحرقفة). يُضمَّن العجز والمفصلان العجزيان الحرقفيان.",
+   "Vertical central ray perpendicular to the detector at L3 on the midline (about 4 cm above the iliac crest). Include the sacrum and both sacroiliac joints."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend at the end of expiration."
+  ],
+  "crit": [
+   [
+    "الفقرات L1 إلى L5 والعجز والمفصلان العجزيان الحرقفيان ظاهرة.",
+    "L1 to L5, the sacrum and both sacroiliac joints visible."
+   ],
+   [
+    "الزوائد الشوكية في منتصف أجسام الفقرات (بلا دوران).",
+    "Spinous processes centred over the vertebral bodies (no rotation)."
+   ],
+   [
+    "مسافات الأقراص مفتوحة (الانحناء مصحَّح).",
+    "Disc spaces open (lordosis corrected)."
+   ],
+   [
+    "حواف العضلتين القطنيتين الكبيرتين والزوائد المستعرضة متناظرة.",
+    "Psoas margins and transverse processes symmetric."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الحوض: الزوائد الشوكية خارج الوسط.",
+    "Pelvic rotation: spinous processes off-centre."
+   ],
+   [
+    "الانحناء غير مصحح: الأقراص تبدو ضيقة.",
+    "Uncorrected lordosis: disc spaces look narrow."
+   ],
+   [
+    "الشعاع مرتفع: يقطع L5 والعجز.",
+    "Beam too high: L5 and the sacrum cut off."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وأزل المعادن. بالإصابة الحادة لا تثنِ الركبتين دون إذن الطبيب.",
+   "Ask about pregnancy and remove metal. In acute injury do not flex the knees without the doctor’s clearance."
+  ],
+  "inout": [
+   "يدخل الشعاع من جدار البطن الأمامي عند L3 ويخرج من الظهر نحو الكاسيت تحت الطاولة (من الأمام إلى الخلف).",
+   "The beam enters the anterior abdominal wall at L3 and exits the back toward the detector under the table (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المعادن وألبس المريض ثوباً.",
+    "Remove metal; gown."
+   ],
+   [
+    "استلقِ المريض على الظهر مع ثني الركبتين والخط الناصف في المنتصف.",
+    "Lay the patient supine, knees flexed, midline centred."
+   ],
+   [
+    "مركّز الكاسيت والشعاع عند L3 وتأكد من تضمين العجز.",
+    "Centre the detector and beam at L3 and make sure the sacrum is included."
+   ],
+   [
+    "الشعاع عمودي على بعد 100 سم وضيّق المجال.",
+    "Vertical beam at 100 cm; collimate."
+   ],
+   [
+    "اضبط kVp وmAs أو AEC.",
+    "Set kVp and mAs or AEC."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration, hold the breath, then expose."
+   ],
+   [
+    "راجع تناظر الزوائد الشوكية ومسافات الأقراص.",
+    "Check spinous process symmetry and disc spaces."
+   ]
+  ]
+ },
+ {
+  "id": "pelvis-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الحوض AP",
+   "Pelvis AP"
+  ],
+  "region": [
+   "الحوض",
+   "Pelvis"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Hip bone$",
+   "^Sacrum$",
+   "^Coccyx$",
+   "^Femur$"
+  ],
+  "ind": [
+   "تقييم عظام الحوض والمفصلين الوركيين والعجز: الكسور، الخلع، التهاب المفاصل، وتقييم الورك عند الأطفال والبالغين.",
+   "Assess the pelvic bones, both hip joints and sacrum: fractures, dislocation, arthritis and hip assessment."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر والخط الناصف في منتصف الطاولة، الذراعان على الصدر. الساقان ممدودتان مع **دوران داخلي للقدمين بزاوية 15 إلى 20 درجة** لإظهار عنق الفخذ بطوله. الشوكتان الحرقفيتان الأماميتان العلويتان على نفس البعد من الطاولة.",
+   "Patient supine with the midline on the table centre, arms on the chest. Legs extended with the **feet rotated internally 15–20°** to show the femoral necks in profile. Both anterior superior iliac spines equidistant from the table."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على منتصف الكاسيت، فوق الارتفاق العاني بحوالي 5 سم (منتصف المسافة بين الشوكة الحرقفية الأمامية العلوية والارتفاق). يُضمَّن الحوض كاملاً والثلث العلوي للفخذين.",
+   "Vertical central ray at the detector centre, about 5 cm above the pubic symphysis (midway between the ASIS and the symphysis). Include the whole pelvis and the proximal third of both femora."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend at the end of expiration."
+  ],
+  "crit": [
+   [
+    "الحوض كاملاً مع الثلث العلوي للفخذين.",
+    "Whole pelvis with the proximal third of both femora."
+   ],
+   [
+    "الثقبان السدادان متناظران والشوكتان الإسكيتان متساويتان (بلا دوران).",
+    "Obturator foramina symmetric and ischial spines equal (no rotation)."
+   ],
+   [
+    "العصعص محاذٍ للارتفاق العاني.",
+    "Coccyx in line with the pubic symphysis."
+   ],
+   [
+    "المدور الصغير غير ظاهر أو بالكاد ظاهر (دوران داخلي كافٍ).",
+    "Lesser trochanters not seen or barely seen (adequate internal rotation)."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الحوض: اختلاف شكل الثقبين السدادين.",
+    "Pelvic rotation: unequal obturator foramina."
+   ],
+   [
+    "دوران خارجي للقدمين: عنق الفخذ قصير ويظهر المدور الصغير.",
+    "External rotation of the feet: short femoral necks with the lesser trochanters showing."
+   ],
+   [
+    "الشعاع مرتفع: يقطع قمم الفخذين.",
+    "Beam too high: proximal femora cut off."
+   ]
+  ],
+  "tips": [
+   "لا تدوّر القدمين داخلياً عند اشتباه كسر بالورك أو الفخذ، وصوّر الطرف كما هو. اسأل عن الحمل وأزل المعادن والأحزمة.",
+   "Do not internally rotate the feet when a hip or femoral fracture is suspected; image the limb as it lies. Ask about pregnancy and remove metal and belts."
+  ],
+  "inout": [
+   "يدخل الشعاع من أسفل البطن الأمامي فوق الارتفاق العاني بحوالي 5 سم ويخرج من الإليتين نحو الكاسيت تحت الطاولة (من الأمام إلى الخلف).",
+   "The beam enters the lower anterior abdomen about 5 cm above the pubic symphysis and exits through the buttocks toward the detector under the table (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–32",
+    "20–32"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المعادن والأحزمة والمحفظة وألبس المريض ثوباً.",
+    "Remove metal, belts and wallets; gown."
+   ],
+   [
+    "استلقِ المريض على الظهر وتأكد من تساوي الشوكتين الحرقفيتين من الطاولة.",
+    "Lay the patient supine and check both ASIS are equidistant from the table."
+   ],
+   [
+    "دوّر القدمين داخلياً 15 إلى 20 درجة ما لم يُشتبه بكسر.",
+    "Rotate the feet internally 15–20° unless a fracture is suspected."
+   ],
+   [
+    "مركّز الشعاع فوق الارتفاق العاني بحوالي 5 سم على بعد 100 سم.",
+    "Centre about 5 cm above the symphysis at 100 cm SID."
+   ],
+   [
+    "اضبط kVp وmAs أو AEC.",
+    "Set kVp and mAs or AEC."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration, hold the breath, then expose."
+   ],
+   [
+    "راجع تناظر الثقبين السدادين والمدورين الصغيرين.",
+    "Check obturator foramina symmetry and the lesser trochanters."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي جانبي (واقف)",
+   "Cervical spine lateral (erect)"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C4$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra C\\d$",
+   "^Atlas \\(C1\\)$",
+   "^Axis \\(C2\\)$"
+  ],
+  "ind": [
+   "ألم الرقبة وتقييم الرضوض (بعد بروتوكول استبعاد الإصابة أو بقرار الطبيب)، وتقييم الانحناء العنقي والأقراص والنسيج الرخو قبل الفقري.",
+   "Neck pain and trauma assessment (after clearance protocol or physician decision), cervical curvature, disc spaces and prevertebral soft tissue."
+  ],
+  "pos": [
+   "المريض جالس أو واقف وجانبه الأيسر ملاصق للكاسيت. الرأس مستقيم والذقن مرفوع قليلاً حتى لا يتراكب الفك السفلي على C1 وC2، والكتفان منخفضان قدر الإمكان (شد الذراعين للأسفل) لإظهار C7. الخط الناصف موازٍ للكاسيت.",
+   "Patient seated or standing with the left side against the detector. Head straight and chin slightly raised so the mandible does not overlie C1–C2, shoulders depressed as much as possible (pull the arms down) to show C7. Midsagittal plane parallel to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند C4 (مستوى الغضروف الدرقي تقريباً). SID كبير (حوالي 180 سم) لتقليل تكبير العمود.",
+   "Horizontal central ray perpendicular to the detector at C4 (about the thyroid cartilage level). A long SID (about 180 cm) reduces magnification of the spine."
+  ],
+  "br": [
+   "زفير وحبس النفس: هذا يخفض الكتفين.",
+   "Suspend at the end of expiration, which lowers the shoulders."
+  ],
+  "crit": [
+   [
+    "من قاعدة الجمجمة إلى الملتقى C7-T1.",
+    "From the skull base to the C7–T1 junction."
+   ],
+   [
+    "الفكان السفليان والمفاصل الوجهية متراكبة (بلا دوران).",
+    "Mandibular rami and facet joints superimposed (no rotation)."
+   ],
+   [
+    "مسافات الأقراص مفتوحة، والانحناء الأمامي طبيعي، والنسيج الرخو قبل الفقري ظاهر.",
+    "Open disc spaces, normal lordosis and visible prevertebral soft tissue."
+   ],
+   [
+    "الذقن لا يغطي C1 وC2.",
+    "Chin does not overlie C1–C2."
+   ]
+  ],
+  "err": [
+   [
+    "كتفان مرتفعان: لا يظهر C7 (استعمل مسقط Swimmer’s).",
+    "Raised shoulders: C7 not shown (use a swimmer’s view)."
+   ],
+   [
+    "دوران الرأس: الفكان غير متراكبين.",
+    "Head rotation: mandibular rami not superimposed."
+   ],
+   [
+    "الذقن منخفض فيغطي C1 وC2.",
+    "Chin tucked: overlies C1–C2."
+   ]
+  ],
+  "tips": [
+   "لا تحرّك رقبة مصاب بالرضوض: يُصوَّر بالشعاع الأفقي دون تحريك الرأس والطوق مثبت. اسأل عن الحمل.",
+   "Never move the neck of a trauma patient: use a horizontal cross-table beam without moving the head and keep the collar on. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للرقبة عند C4 ويخرج من الجانب الأيسر ملاصقاً للكاسيت (من اليمين إلى اليسار).",
+   "The beam enters the right side of the neck at C4 and exits the left side against the detector (right to left)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والأقراط وأي معادن من الرقبة والرأس.",
+    "Remove necklaces, earrings and any metal from the neck and head."
+   ],
+   [
+    "أجلس المريض أو أوقفه وجانبه الأيسر ملاصق للكاسيت والرأس مستقيم.",
+    "Seat or stand the patient with the left side against the detector and head straight."
+   ],
+   [
+    "ارفع الذقن قليلاً واطلب شد الكتفين للأسفل.",
+    "Raise the chin slightly and ask the patient to pull the shoulders down."
+   ],
+   [
+    "مركّز الشعاع الأفقي عند C4 على بعد 180 سم وضيّق المجال.",
+    "Centre the horizontal beam at C4 at 180 cm and collimate."
+   ],
+   [
+    "اضبط kVp وmAs.",
+    "Set kVp and mAs."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration, hold the breath, then expose."
+   ],
+   [
+    "راجع ظهور C7 وتراكب الفكين.",
+    "Check that C7 is shown and the mandibular rami are superimposed."
+   ]
+  ]
+ },
+ {
+  "id": "thoracic-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود الصدري AP",
+   "Thoracic spine AP"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra T\\d+$"
+  ],
+  "ind": [
+   "الكسور والتشوهات (جنف وحدب)، وتقييم الأقراص والفقرات الصدرية.",
+   "Fractures, deformity (scoliosis, kyphosis) and assessment of the thoracic vertebrae and discs."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر والخط الناصف في منتصف الطاولة، الركبتان مثنيتان لتقليل التحدب، الذراعان بجانب الجسم والكتفان والحوض بنفس المستوى. تُضمَّن الفقرات من C7 إلى L1 تقريباً.",
+   "Patient supine with the midline on the table centre, knees flexed to reduce kyphosis, arms by the sides, shoulders and pelvis level. Include from about C7 to L1."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند T7 (حوالي 8 سم تحت الشق الوداجي) على الخط الناصف. المجال طويل ليغطي العمود الصدري.",
+   "Vertical central ray perpendicular to the detector at T7 (about 8 cm below the jugular notch) on the midline. A long field covers the thoracic spine."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend at the end of expiration."
+  ],
+  "crit": [
+   [
+    "الفقرات من T1 إلى T12 ظاهرة مع العنقي السفلي والقطني العلوي قدر الإمكان.",
+    "T1 to T12 visible, with the lower cervical and upper lumbar levels where possible."
+   ],
+   [
+    "الأعناق (Pedicles) متناظرة والزوائد الشوكية في الوسط (بلا دوران).",
+    "Pedicles symmetric and spinous processes centred (no rotation)."
+   ],
+   [
+    "مسافات الأقراص مفتوحة.",
+    "Disc spaces open."
+   ],
+   [
+    "كثافة متجانسة من الأعلى للأسفل.",
+    "Even density from top to bottom."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الجسم: عدم تناظر الأعناق.",
+    "Body rotation: asymmetric pedicles."
+   ],
+   [
+    "الكاسيت لا يغطي الفقرات العليا أو السفلى.",
+    "Detector does not cover the upper or lower vertebrae."
+   ],
+   [
+    "كثافة غير متجانسة: ضع الأنود جهة الرأس (Heel effect).",
+    "Uneven density: place the anode toward the head (heel effect)."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وأزل الحمالات والمعادن. بالإصابة الحادة لا تثنِ الركبتين دون إذن الطبيب.",
+   "Ask about pregnancy and remove straps and metal. In acute injury do not flex the knees without the doctor’s clearance."
+  ],
+  "inout": [
+   "يدخل الشعاع من الصدر الأمامي عند T7 ويخرج من الظهر نحو الكاسيت تحت الطاولة (من الأمام إلى الخلف).",
+   "The beam enters the anterior chest at T7 and exits the back toward the detector under the table (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–40",
+    "20–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل الحمالات والمعادن وألبس المريض ثوباً.",
+    "Remove straps and metal; gown."
+   ],
+   [
+    "استلقِ المريض على الظهر مع ثني الركبتين والخط الناصف في المنتصف.",
+    "Lay the patient supine, knees flexed, midline centred."
+   ],
+   [
+    "مركّز الكاسيت والشعاع عند T7 وتأكد من تغطية T1 إلى T12.",
+    "Centre the detector and beam at T7 and make sure T1 to T12 are covered."
+   ],
+   [
+    "الشعاع عمودي على بعد 100 سم، وضع الأنود جهة الرأس إن أمكن.",
+    "Vertical beam at 100 cm; anode toward the head if possible."
+   ],
+   [
+    "اضبط kVp وmAs أو AEC.",
+    "Set kVp and mAs or AEC."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration, hold the breath, then expose."
+   ],
+   [
+    "راجع تناظر الأعناق وتغطية الفقرات.",
+    "Check pedicle symmetry and vertebral coverage."
    ]
   ]
  }
