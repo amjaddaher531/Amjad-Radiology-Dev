@@ -1760,5 +1760,3367 @@
     "Check pedicle symmetry and vertebral coverage."
    ]
   ]
+ },
+ {
+  "id": "hand-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "اليد PA",
+   "Hand PA"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "الكسور والخلع والتهاب مفاصل اليد والأصابع والمشطيات، وتقييم جسم غريب.",
+   "Fractures, dislocations and arthritis of the hand, fingers and metacarpals; foreign body assessment."
+  ],
+  "pos": [
+   "المريض جالس بجانب الطاولة واليد مبسوطة على الكاسيت وراحتها للأسفل (PA)، الأصابع مفرودة ومتباعدة قليلاً، والساعد على الطاولة بمحاذاة اليد.",
+   "Patient seated beside the table with the hand flat on the detector, palm down (PA), fingers extended and slightly separated, forearm resting on the table in line with the hand."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند رأس المشطية الثالثة (المفصل المشطي السلامي الثالث).",
+   "Central ray perpendicular to the detector at the head of the third metacarpal (3rd MCP joint)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "اليد كاملة من أطراف الأصابع إلى الرسغ القريب.",
+    "Whole hand from the fingertips to the proximal wrist."
+   ],
+   [
+    "مسافات المفاصل مفتوحة والأصابع غير متراكبة.",
+    "Open joint spaces and non-overlapping fingers."
+   ],
+   [
+    "بنية العظم واضحة (تعريض مناسب).",
+    "Clear bone trabeculae (adequate exposure)."
+   ]
+  ],
+  "err": [
+   [
+    "أصابع منحنية أو متراكبة: لا تظهر المفاصل.",
+    "Flexed or overlapping fingers hide the joints."
+   ],
+   [
+    "اليد مدارة: مسافات المفاصل غير متناظرة.",
+    "Rotated hand: asymmetric joint spaces."
+   ],
+   [
+    "قطع الرسغ أو أطراف الأصابع.",
+    "Wrist or fingertips cut off."
+   ]
+  ],
+  "tips": [
+   "اطلب إزالة الخواتم قبل التصوير. استعمل تثبيتاً خفيفاً للأطفال. (النموذج ثابت: الكف للأمام، والشعاع يدخل من الظهر الظهري.)",
+   "Remove rings first. Use gentle immobilisation for children. (The model is fixed with the palm forward; the beam enters the dorsum.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر اليد (الجهة الظهرية) ويخرج من الراحة نحو الكاسيت.",
+   "The beam enters the dorsum of the hand and exits the palm toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–60",
+    "50–60"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "اجلس المريض بجانب الطاولة وضع كفه للأسفل على الكاسيت وفرّج أصابعه قليلاً.",
+    "Seat the patient beside the table, place the palm down on the detector and separate the fingers slightly."
+   ],
+   [
+    "مركّز على المفصل المشطي السلامي الثالث وضيّق المجال على اليد.",
+    "Centre on the 3rd MCP joint and collimate to the hand."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "hand-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "اليد PA مائل",
+   "Hand PA oblique"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "كسور المشطيات (خاصة الرابعة والخامسة) وتقييم المفاصل دون تراكب.",
+   "Metacarpal fractures (especially the 4th and 5th) and joint assessment without overlap."
+  ],
+  "pos": [
+   "من وضعية PA تُدار اليد 45° للخارج (جهة الإبهام مرفوعة) وتُسند الأصابع على إسفنجة 45° لتبقى بمحاذاة الكاسيت. الرسغ والساعد على الطاولة.",
+   "From the PA position rotate the hand 45° laterally (thumb side raised) and support the fingers on a 45° sponge so they stay parallel to the detector. Wrist and forearm rest on the table."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند رأس المشطية الثالثة. تظهر المشطيات الثالثة إلى الخامسة منفصلة.",
+   "Perpendicular at the head of the third metacarpal; the 3rd to 5th metacarpals are shown separated."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "المشطيات من الثالثة إلى الخامسة منفصلة ومتراكبة فقط عند القواعد.",
+    "3rd to 5th metacarpals separated, overlapping only at the bases."
+   ],
+   [
+    "الأصابع متوازية للكاسيت ومنفصلة.",
+    "Fingers parallel to the detector and separated."
+   ],
+   [
+    "مفاصل الأصابع مفتوحة.",
+    "Open finger joints."
+   ]
+  ],
+  "err": [
+   [
+    "دوران أقل من 45°: تراكب المشطيات.",
+    "Rotation under 45° overlaps the metacarpals."
+   ],
+   [
+    "أصابع غير مسنودة: تبدو منحنية ومتراكبة.",
+    "Unsupported fingers look flexed and overlapped."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الإصابة وحرّك اليد بلطف. (النموذج ثابت، فالزاوية 45° ممثلة بميل الشعاع حول اليد.)",
+   "Ask about the injury and move the hand gently. (The model is fixed, so the 45° rotation is shown as a beam angle around the hand.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر اليد جهة الإبهام بزاوية 45° ويخرج من الراحة جهة الخنصر.",
+   "The beam enters the dorsum at the thumb side at 45° and exits the palm at the little-finger side."
+  ],
+  "exp": {
+   "kv": [
+    "50–60",
+    "50–60"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "دوّر اليد 45° للخارج وادعم الأصابع بإسفنجة.",
+    "Rotate the hand 45° laterally and support the fingers on a sponge."
+   ],
+   [
+    "مركّز عند رأس المشطية الثالثة وضيّق المجال.",
+    "Centre at the third metacarpal head and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "hand-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "اليد الجانبي (مروحة)",
+   "Hand lateral (fan)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^Second metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "تحديد إزاحة المشطيات والأجسام الغريبة والخلع بالمستوى الجانبي.",
+   "Metacarpal displacement, foreign bodies and dislocations in the lateral plane."
+  ],
+  "pos": [
+   "اليد على جانبها الزندي (جهة الخنصر) على الكاسيت والإبهام للأعلى، والأصابع مفتوحة كمروحة على إسفنجة لفصل السلاميات. الرسغ جانبي حقيقي.",
+   "Hand on its ulnar side (little finger down) with the thumb up and fingers fanned on a sponge to separate the phalanges. True lateral wrist."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند رأس المشطية الثانية وفي منتصف الكاسيت.",
+   "Perpendicular at the second metacarpal head, centred on the detector."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "المشطيات متراكبة وتظهر بالجانب.",
+    "Metacarpals superimposed in lateral."
+   ],
+   [
+    "الإبهام منفصل عن بقية اليد.",
+    "Thumb clear of the hand."
+   ],
+   [
+    "السلاميات منفصلة بالمروحة.",
+    "Phalanges separated by the fan."
+   ]
+  ],
+  "err": [
+   [
+    "الأصابع غير مفتوحة: تراكب السلاميات.",
+    "Unfanned fingers overlap the phalanges."
+   ],
+   [
+    "دوران اليد: المشطيات غير متراكبة.",
+    "Hand rotation: metacarpals not superimposed."
+   ]
+  ],
+  "tips": [
+   "مفيد لتحديد موضع الجسم الغريب وإزاحة الكسور. اسأل عن الحمل.",
+   "Useful to locate a foreign body and fracture displacement. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الكعبرية (جهة الإبهام) ويخرج من الجهة الزندية نحو الكاسيت.",
+   "The beam enters the radial (thumb) side and exits the ulnar side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–60",
+    "50–60"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "ضع اليد على جانبها الزندي وافتح الأصابع كمروحة.",
+    "Rest the hand on its ulnar side and fan the fingers."
+   ],
+   [
+    "مركّز عند المشطية الثانية وضيّق المجال.",
+    "Centre at the second metacarpal and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ PA",
+   "Wrist PA"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Capitate bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "كسور الرسغ وعظام الرسغ والكعبرة السفلية، وتقييم المفاصل الرسغية.",
+   "Wrist, carpal and distal radius fractures, and assessment of the carpal joints."
+  ],
+  "pos": [
+   "المريض جالس بجانب الطاولة، اليد والرسغ مبسوطان على الكاسيت وراحة اليد للأسفل، والأصابع مقبوضة قليلاً ليلامس الرسغ الكاسيت. الساعد بمحاذاة اليد.",
+   "Patient seated beside the table, hand and wrist flat on the detector, palm down, fingers slightly flexed so the wrist lies flat. Forearm in line with the hand."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند منتصف الرسغ (العظم الرأسي).",
+   "Perpendicular at the middle of the carpus (capitate)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الرسغ كاملاً مع ثلث الساعد القريب والثلث القريب من المشطيات.",
+    "Whole carpus with the distal radius and ulna and proximal metacarpals."
+   ],
+   [
+    "مسافات المفاصل الرسغية مفتوحة.",
+    "Open carpal joint spaces."
+   ],
+   [
+    "الأنسجة الرخوة والعظم ظاهران (تعريض مناسب).",
+    "Soft tissue and bone both visible (adequate exposure)."
+   ]
+  ],
+  "err": [
+   [
+    "الرسغ مدار أو مائل: الزورقي والعظام المجاورة تتراكب.",
+    "A rotated or tilted wrist overlaps the scaphoid and neighbours."
+   ],
+   [
+    "الأصابع مبسوطة تماماً: الرسغ مرفوع عن الكاسيت.",
+    "Fully extended fingers lift the wrist off the detector."
+   ]
+  ],
+  "tips": [
+   "يُطلب مع الجانبي كمسقطين أساسيين. بعد كسور الزورقي المشتبه بها أضف مسقطات الزورقي.",
+   "Taken with the lateral as the two basic views. Add scaphoid views when a scaphoid fracture is suspected."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الرسغ (الجهة الظهرية) ويخرج من الراحة نحو الكاسيت.",
+   "The beam enters the dorsum of the wrist and exits the palmar side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "ضع كف المريض للأسفل وقبض أصابعه قليلاً لتسطيح الرسغ.",
+    "Place the palm down and slightly flex the fingers to flatten the wrist."
+   ],
+   [
+    "مركّز على منتصف الرسغ وضيّق المجال.",
+    "Centre on the middle of the carpus and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ PA مائل 45°",
+   "Wrist PA oblique 45°"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Capitate bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "الجانب الكعبري للرسغ (الزورقي وشبه المنحرف) والمفاصل بينها، وإصابات الرسغ.",
+   "The radial side of the wrist (scaphoid and trapezium) and their joints; wrist injuries."
+  ],
+  "pos": [
+   "من وضعية PA تُدار اليد والرسغ 45° للخارج (جهة الإبهام مرفوعة) وتُسند على إسفنجة. الساعد بمحاذاة اليد.",
+   "From PA rotate the hand and wrist 45° laterally (thumb side raised) and support on a sponge. Forearm in line with the hand."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند منتصف الرسغ.",
+   "Perpendicular at the middle of the carpus."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الجانب الكعبري للرسغ (الزورقي وشبه المنحرف الكبير) مفتوح وبلا تراكب.",
+    "Radial side of the wrist (scaphoid and trapezium) open without overlap."
+   ],
+   [
+    "الدوران قريب من 45° لا أقل ولا أكثر.",
+    "Rotation close to 45°, no more and no less."
+   ],
+   [
+    "الرسغ كاملاً مع جزء من الساعد والمشطيات.",
+    "Whole carpus with part of the forearm and metacarpals."
+   ]
+  ],
+  "err": [
+   [
+    "دوران ناقص: الزورقي وشبه المنحرف يتراكبان.",
+    "Too little rotation: scaphoid and trapezium overlap."
+   ],
+   [
+    "دوران زائد: يقترب الشكل من الجانبي ويتراكب الصف الجانبي.",
+    "Too much rotation approaches a lateral and overlaps the carpals."
+   ]
+  ],
+  "tips": [
+   "مفيد لكسور الزورقي وشبه المنحرف. (الزاوية ممثلة بميل الشعاع حول الرسغ.)",
+   "Useful for scaphoid and trapezium fractures. (The rotation is shown as a beam angle around the wrist.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الرسغ جهة الإبهام بزاوية 45° ويخرج من الراحة جهة الخنصر.",
+   "The beam enters the dorsum at the thumb side at 45° and exits the palm at the little-finger side."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "دوّر الرسغ 45° للخارج وادعمه بإسفنجة.",
+    "Rotate the wrist 45° laterally and support it on a sponge."
+   ],
+   [
+    "مركّز على منتصف الرسغ وضيّق المجال.",
+    "Centre on the middle of the carpus and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "wrist-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ الجانبي",
+   "Wrist lateral"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^Capitate bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "انزياح الكسور وخلع الهلالي والرأسي، وجسم غريب.",
+   "Fracture displacement, lunate and capitate dislocation, foreign body."
+  ],
+  "pos": [
+   "الرسغ على جانبه الزندي، الإبهام للأعلى، والكوع بزاوية 90° إن أمكن. الكتف والكوع والرسغ بنفس المستوى.",
+   "Wrist on its ulnar side, thumb up, elbow at 90° if possible. Shoulder, elbow and wrist on the same plane."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند منتصف الرسغ.",
+   "Perpendicular at the middle of the carpus."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "عظما الساعد (الكعبرة والزند) متراكبان تقريباً.",
+    "Radius and ulna approximately superimposed."
+   ],
+   [
+    "الحمصي فوق القطب البعيد للزورقي (جانبي حقيقي).",
+    "Pisiform over the distal pole of the scaphoid (true lateral)."
+   ],
+   [
+    "الهلالي يحتضن الرأسي بمحاذاة طبيعية.",
+    "Lunate cupping the capitate in normal alignment."
+   ]
+  ],
+  "err": [
+   [
+    "الرسغ مدار: الحمصي بعيد عن الزورقي.",
+    "Rotated wrist: the pisiform is displaced from the scaphoid."
+   ],
+   [
+    "الكتف والكوع والرسغ ليست بنفس المستوى: ميلان.",
+    "Shoulder, elbow and wrist not on one plane: tilt."
+   ]
+  ],
+  "tips": [
+   "مع PA هو المسقط الأساسي. الجانبي يكشف خلع الهلالي الذي قد يخفى بالـPA.",
+   "With the PA it is the basic view. The lateral shows a lunate dislocation that the PA may hide."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الكعبرية ويخرج من الجهة الزندية نحو الكاسيت.",
+   "The beam enters the radial side and exits the ulnar side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "ضع الرسغ على جانبه الزندي والإبهام للأعلى.",
+    "Rest the wrist on its ulnar side with the thumb up."
+   ],
+   [
+    "مركّز على منتصف الرسغ وضيّق المجال.",
+    "Centre on the middle of the carpus and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-ulnar",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ PA بانحراف زندي (الزورقي)",
+   "Wrist PA ulnar deviation (scaphoid)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Scaphoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Scaphoid bone$",
+   "^(Lunate|Capitate|Trapezium|Trapezoid) bone$"
+  ],
+  "ind": [
+   "الاشتباه بكسر الزورقي: الانحراف الزندي يطيل الزورقي ويفتح الشقوق.",
+   "Suspected scaphoid fracture: ulnar deviation elongates the scaphoid and opens fracture lines."
+  ],
+  "pos": [
+   "من وضعية PA يُحرَّك الرسغ باتجاه الخنصر (انحراف زندي) بأقصى ما يتحمله المريض دون ألم مفرط، واليد مبسوطة على الكاسيت.",
+   "From PA move the wrist toward the little finger (ulnar deviation) as far as tolerated, hand flat on the detector."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند الزورقي (في الحفرة التشريحية).",
+   "Perpendicular at the scaphoid (anatomical snuffbox region)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الزورقي ممتد بطوله الكامل وغير مقصَّر.",
+    "The scaphoid is elongated and not foreshortened."
+   ],
+   [
+    "المسافات بين الزورقي والعظام المجاورة مفتوحة.",
+    "Open spaces between the scaphoid and neighbouring bones."
+   ],
+   [
+    "الرسغ كاملاً دون دوران.",
+    "Whole carpus without rotation."
+   ]
+  ],
+  "err": [
+   [
+    "انحراف زندي غير كافٍ: يبدو الزورقي قصيراً.",
+    "Insufficient deviation foreshortens the scaphoid."
+   ],
+   [
+    "دوران اليد: تراكب العظام.",
+    "Hand rotation overlaps the bones."
+   ]
+  ],
+  "tips": [
+   "يُكمَّل غالباً بمسقط ستيكر. إذا بقي الشك سريرياً فالتصوير المتابع أو MRI. (انحراف الرسغ غير ممثل بالنموذج.)",
+   "Often followed by the Stecher view. If suspicion persists clinically, follow-up films or MRI. (The deviation is not shown in the model.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الرسغ ويخرج من الراحة نحو الكاسيت.",
+   "The beam enters the dorsum of the wrist and exits the palm toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "اطلب انحرافاً زندياً أقصى بدون ألم شديد.",
+    "Ask for maximum comfortable ulnar deviation."
+   ],
+   [
+    "مركّز على الزورقي وضيّق المجال.",
+    "Centre on the scaphoid and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-stecher",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ PA محوري 20° (ستيكر)",
+   "Wrist PA axial 20° (Stecher)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 20,
+  "cr": {
+   "s": "^Scaphoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Scaphoid bone$",
+   "^(Lunate|Capitate|Trapezium|Trapezoid) bone$"
+  ],
+  "ind": [
+   "كسور الزورقي الخفية عندما تكون الصور العادية سلبية.",
+   "Occult scaphoid fractures when routine views are negative."
+  ],
+  "pos": [
+   "PA بانحراف زندي مع زاوية 20° للأنبوب باتجاه المرفق على طول محور الساعد (أو يُرفع الكاسيت بإسفنجة 20°).",
+   "PA with ulnar deviation and the tube angled 20° toward the elbow along the forearm axis (or raise the detector on a 20° sponge)."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 20° نحو المرفق (رأسياً) ويمر عبر الزورقي.",
+   "Central ray angled 20° toward the elbow (cephalad) through the scaphoid."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الزورقي ممدود ومنفصل بوضوح عن العظام المجاورة.",
+    "The scaphoid is elongated and clearly separated from neighbours."
+   ],
+   [
+    "القطبان القريب والبعيد للزورقي ظاهران.",
+    "Proximal and distal poles of the scaphoid visible."
+   ],
+   [
+    "الرسغ دون دوران.",
+    "No wrist rotation."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير 20°: يتقصر الزورقي.",
+    "An angle other than 20° foreshortens the scaphoid."
+   ],
+   [
+    "انحراف زندي غير كافٍ.",
+    "Insufficient ulnar deviation."
+   ]
+  ],
+  "tips": [
+   "يحتاج الزاوية الصحيحة والانحراف الزندي معاً. (الانحراف غير ممثل بالنموذج.)",
+   "Needs the correct angle and ulnar deviation together. (The deviation is not shown in the model.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الرسغ بزاوية نحو المرفق ويخرج من الراحة نحو الكاسيت.",
+   "The beam enters the dorsum angled toward the elbow and exits the palm toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "ثبّت الانحراف الزندي وأمل الأنبوب 20° نحو المرفق.",
+    "Hold the ulnar deviation and angle the tube 20° toward the elbow."
+   ],
+   [
+    "مركّز على الزورقي مع الميل 20° وضيّق المجال.",
+    "Centre on the scaphoid with the 20° tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "forearm-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الساعد AP",
+   "Forearm AP"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Radius$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.2,
+   0.43,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "كسور الكعبرة والزند، وتقييم الجسم الغريب وآلام الساعد.",
+   "Radius and ulna fractures, foreign body and forearm pain."
+  ],
+  "pos": [
+   "الساعد مبسوط على الطاولة وراحة اليد للأعلى (AP)، الكوع مبسوط، والرسغ والكوع على نفس المستوى. يجب تضمين المفصلين.",
+   "Forearm extended on the table, palm up (AP), elbow extended, wrist and elbow at the same level. Both joints must be included."
+  ],
+  "crt": [
+   "عمودي على منتصف الساعد وفي منتصف الكاسيت. إذا لم يكف كاسيت واحد خذ صورتين.",
+   "Perpendicular at mid-forearm, detector centred. If one detector is not enough use two exposures."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الرسغ والكوع ضمن الصورة.",
+    "Wrist and elbow both included."
+   ],
+   [
+    "الكعبرة والزند متوازيان غير متقاطعين.",
+    "Radius and ulna parallel, not crossed."
+   ],
+   [
+    "تظهر البنية العظمية بوضوح.",
+    "Bone detail clear."
+   ]
+  ],
+  "err": [
+   [
+    "الساعد مدار: يتقاطع العظمان.",
+    "A rotated forearm crosses the bones."
+   ],
+   [
+    "قطع أحد المفصلين.",
+    "One joint cut off."
+   ]
+  ],
+  "tips": [
+   "عند كسر واحد في أحد العظمين ابحث عن إصابة بالعظم الآخر أو المفصل القريب أو البعيد (مثل جاليازي ومونتيجيا).",
+   "With a fracture of one bone look for injury to the other bone or an adjacent joint (Galeazzi, Monteggia)."
+  ],
+  "inout": [
+   "يدخل الشعاع من السطح الأمامي (الراحي) للساعد ويخرج من السطح الظهري نحو الكاسيت.",
+   "The beam enters the anterior (volar) surface of the forearm and exits the dorsal surface toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "ابسط الساعد على الطاولة براحة للأعلى وتأكد من تضمين المفصلين.",
+    "Extend the forearm palm up on the table and make sure both joints are included."
+   ],
+   [
+    "مركّز على منتصف الساعد وضيّق المجال.",
+    "Centre at mid-forearm and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "forearm-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الساعد الجانبي",
+   "Forearm lateral"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^Radius$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.2,
+   0.43,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "إزاحة الكسور بالمستوى الجانبي وتقييم المفصلين.",
+   "Fracture displacement in the lateral plane and assessment of both joints."
+  ],
+  "pos": [
+   "الكوع مثني 90° والساعد على جانبه الزندي، الإبهام للأعلى، والكتف والكوع والرسغ بنفس المستوى.",
+   "Elbow flexed 90° with the forearm on its ulnar side, thumb up; shoulder, elbow and wrist in the same plane."
+  ],
+  "crt": [
+   "عمودي على منتصف الساعد وفي منتصف الكاسيت.",
+   "Perpendicular at mid-forearm, detector centred."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الكعبرة والزند متراكبان قرب الرسغ.",
+    "Radius and ulna superimposed near the wrist."
+   ],
+   [
+    "الكوع والرسغ ضمن الصورة.",
+    "Elbow and wrist both included."
+   ],
+   [
+    "اللقمتان العضديتان متراكبتان.",
+    "Humeral condyles superimposed."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الساعد: العظمان منفصلان.",
+    "Rotated forearm separates the bones."
+   ],
+   [
+    "الكوع غير بزاوية 90°.",
+    "Elbow not at 90°."
+   ]
+  ],
+  "tips": [
+   "(النموذج ثابت: الكوع مبسوط بالصورة المعروضة، والمسقط الفعلي بكوع مثني 90°.)",
+   "(The model is fixed: the elbow appears extended; the real view is taken with the elbow flexed at 90°.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الكعبرية ويخرج من الجهة الزندية نحو الكاسيت.",
+   "The beam enters the radial side and exits the ulnar side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "اثنِ الكوع 90° وضع الساعد على جانبه الزندي.",
+    "Flex the elbow 90° and rest the forearm on its ulnar side."
+   ],
+   [
+    "مركّز على منتصف الساعد وضيّق المجال.",
+    "Centre at mid-forearm and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "elbow-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكوع AP",
+   "Elbow AP"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Ulna$",
+   "at": "top",
+   "dy": -0.04
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "كسور الكوع والخلع والتهاب المفصل، وتقييم الجسم الحر.",
+   "Elbow fractures, dislocation, arthritis and loose bodies."
+  ],
+  "pos": [
+   "الذراع مبسوطة على الطاولة وراحة اليد للأعلى والكوع مبسوط تماماً، والكتف بنفس مستوى الكوع. بالإصابة الحادة لا يُبسط الكوع بالقوة، ويُصوَّر كما هو.",
+   "Arm fully extended on the table, palm up, elbow fully extended, shoulder at the level of the elbow. In acute injury do not force extension; image the elbow as it lies."
+  ],
+  "crt": [
+   "عمودي على مفصل الكوع عند منتصف المسافة بين اللقمتين.",
+   "Perpendicular to the elbow joint at the midpoint between the epicondyles."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "مفصل الكوع مفتوح، والعضد والساعد جزئياً ضمن الصورة.",
+    "Open elbow joint with part of the humerus and forearm included."
+   ],
+   [
+    "اللقمتان العضديتان بالمظهر الجانبي (بلا دوران).",
+    "Epicondyles in profile (no rotation)."
+   ],
+   [
+    "رأس الكعبرة يتراكب قليلاً مع الزند.",
+    "The radial head slightly overlaps the ulna."
+   ]
+  ],
+  "err": [
+   [
+    "الكوع غير مبسوط: تقصير العظام وإغلاق المفصل.",
+    "Non-extended elbow foreshortens bones and closes the joint."
+   ],
+   [
+    "دوران الذراع: اللقمتان غير متناظرتين.",
+    "Rotated arm gives asymmetric epicondyles."
+   ]
+  ],
+  "tips": [
+   "في الإصابة الحادة مع كوع مثني استعمل مسقطين: الساعد موازٍ للكاسيت ثم العضد موازٍ له.",
+   "In an injured flexed elbow take two views: forearm parallel to the detector, then humerus parallel."
+  ],
+  "inout": [
+   "يدخل الشعاع من السطح الأمامي للكوع ويخرج من الخلف نحو الكاسيت.",
+   "The beam enters the anterior surface of the elbow and exits the posterior surface toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "ابسط الذراع على الطاولة وراحة اليد للأعلى.",
+    "Extend the arm on the table with the palm up."
+   ],
+   [
+    "مركّز على مفصل الكوع وضيّق المجال.",
+    "Centre on the elbow joint and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "elbow-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكوع الجانبي (90°)",
+   "Elbow lateral (90°)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^Ulna$",
+   "at": "top",
+   "dy": -0.04
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "انصباب الكوع والكسور الخفية (الوسادة الدهنية)، وإزاحة الكسور فوق اللقمتين.",
+   "Elbow effusion and occult fractures (fat pad sign) and displacement of supracondylar fractures."
+  ],
+  "pos": [
+   "الكوع مثني 90° والساعد على جانبه الزندي والإبهام للأعلى. الكتف والكوع والرسغ بنفس المستوى.",
+   "Elbow flexed 90°, forearm on its ulnar side, thumb up. Shoulder, elbow and wrist on the same plane."
+  ],
+  "crt": [
+   "عمودي على اللقمة الوحشية للعضد (الكوع).",
+   "Perpendicular to the lateral epicondyle of the humerus."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "اللقمتان العضديتان متراكبتان ويظهر الأخدود الغرّيني بشكل ساعة رملية.",
+    "Epicondyles superimposed with an hourglass appearance of the trochlear sulcus."
+   ],
+   [
+    "رأس الكعبرة يتراكب جزئياً مع الناتئ الإكليلي.",
+    "The radial head partly overlaps the coronoid process."
+   ],
+   [
+    "الوسادتان الدهنيتان الأمامية والخلفية ظاهرتان للتقييم.",
+    "Anterior and posterior fat pads visible for assessment."
+   ]
+  ],
+  "err": [
+   [
+    "الكوع ليس على 90°: تتغير الوسادات الدهنية.",
+    "An elbow not at 90° alters the fat pads."
+   ],
+   [
+    "دوران: اللقمتان غير متراكبتين.",
+    "Rotation: epicondyles not superimposed."
+   ]
+  ],
+  "tips": [
+   "الوسادة الدهنية الخلفية الظاهرة دليل على انصباب وقد تعني كسراً خفياً. (النموذج ثابت: الكوع مبسوط بالصورة.)",
+   "A visible posterior fat pad suggests an effusion and possibly an occult fracture. (The model is fixed: the elbow appears extended.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الوحشية ويخرج من الجهة الإنسية نحو الكاسيت.",
+   "The beam enters the lateral side and exits the medial side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الخواتم والساعات والأساور والمعادن من المجال.",
+    "Remove rings, watches, bracelets and metal from the field."
+   ],
+   [
+    "اثنِ الكوع 90° وضع الساعد على جانبه الزندي.",
+    "Flex the elbow 90° and rest the forearm on its ulnar side."
+   ],
+   [
+    "مركّز على اللقمة الوحشية وضيّق المجال.",
+    "Centre on the lateral epicondyle and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكتف AP",
+   "Shoulder AP"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "كسور الكتف والترقوة والعضد القريب وخلع الكتف، والتهاب المفصل، والتكلسات.",
+   "Fractures of the shoulder, clavicle and proximal humerus, dislocation, arthritis and calcification."
+  ],
+  "pos": [
+   "المريض واقف أو جالس وظهره للكاسيت والكتف المصاب ملاصق له والذراع بجانب الجسم. يُدار الجسم 15 إلى 30° نحو الجانب المصاب لتصير الحُقّة موازية للكاسيت (مفصل مفتوح).",
+   "Patient erect or seated with the back to the detector, affected shoulder against it, arm by the side. Rotate the body 15–30° toward the affected side so the glenoid is parallel to the detector (open joint)."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند الناتئ الغرابي (حوالي 2.5 سم تحته). المجال يشمل الترقوة والعضد القريب.",
+   "Perpendicular to the detector at the coracoid process (about 2.5 cm below it). Include the clavicle and proximal humerus."
+  ],
+  "br": [
+   "شهيق ثم حبس النفس والثبات لتثبيت الكتف.",
+   "Suspend respiration after inspiration to keep the shoulder still."
+  ],
+  "crit": [
+   [
+    "رأس العضد والحُقّة والناتئ الأخرمي والترقوة ظاهرة.",
+    "Humeral head, glenoid, acromion and clavicle visible."
+   ],
+   [
+    "المفصل الحُقّي العضدي مفتوح (الجسم مدار بالقدر الكافي).",
+    "The glenohumeral joint is open (adequate body rotation)."
+   ],
+   [
+    "العضد القريب والحدبة الكبيرة ضمن الصورة.",
+    "Proximal humerus and greater tubercle included."
+   ]
+  ],
+  "err": [
+   [
+    "الجسم غير مدار: تتراكب الحُقّة مع رأس العضد.",
+    "An unrotated body overlaps the glenoid and humeral head."
+   ],
+   [
+    "قطع القمة العليا أو العضد القريب.",
+    "Upper margin or proximal humerus cut off."
+   ]
+  ],
+  "tips": [
+   "عند اشتباه خلع تُطلب صورة ثانية: Y الكتف أو الإبطي لتحديد اتجاه الخلع. بالإصابة لا تحرّك الذراع بقوة.",
+   "When dislocation is suspected add a Y view or an axillary view to define its direction. Do not force the injured arm."
+  ],
+  "inout": [
+   "يدخل الشعاع من الكتف الأمامي قرب الناتئ الغرابي ويخرج من الخلف نحو الكاسيت.",
+   "The beam enters the anterior shoulder near the coracoid and exits the posterior shoulder toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة اختيارية (حسب سماكة الكتف)",
+    "Grid optional (depends on shoulder thickness)"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والحمالات والمعادن من الكتف.",
+    "Remove necklaces, straps and metal from the shoulder."
+   ],
+   [
+    "ضع الكتف المصاب ملاصقاً للكاسيت وأدر الجسم قليلاً نحو الجانب المصاب.",
+    "Place the affected shoulder against the detector and rotate the body slightly toward it."
+   ],
+   [
+    "مركّز على الناتئ الغرابي وضيّق المجال.",
+    "Centre on the coracoid process and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "شهيق ثم حبس النفس والثبات لتثبيت الكتف.",
+    "Suspend respiration after inspiration to keep the shoulder still."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "foot-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القدم AP (ظهرية أخمصية)",
+   "Foot AP (dorsoplantar)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metatarsal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "كسور القدم الأمامية والمشطيات والأصابع، والخلع والتهاب المفاصل وجسم غريب.",
+   "Forefoot, metatarsal and toe fractures, dislocations, arthritis and foreign body."
+  ],
+  "pos": [
+   "المريض جالس والركبة مثنية والأخمص مسطح على الكاسيت. تُسند الساق بالركبة الأخرى أو بإسفنجة لتبقى ثابتة.",
+   "Patient seated with the knee flexed and the sole flat on the detector. Support the leg with the other knee or a sponge to keep it still."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 10° نحو العقب على قاعدة المشطية الثالثة (ليتماشى مع قوس القدم).",
+   "Central ray angled 10° toward the heel on the base of the third metatarsal (to follow the arch)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "أصابع القدم والمشطيات والعظام الرسغية الأمامية ظاهرة.",
+    "Toes, metatarsals and anterior tarsals visible."
+   ],
+   [
+    "المسافات بين المشطيات مفتوحة.",
+    "Open spaces between the metatarsals."
+   ],
+   [
+    "المفاصل الرسغية المشطية واضحة.",
+    "Tarsometatarsal joints clear."
+   ]
+  ],
+  "err": [
+   [
+    "القدم مدارة: مسافات المشطيات غير متساوية.",
+    "A rotated foot gives unequal metatarsal spaces."
+   ],
+   [
+    "زاوية 0°: المفاصل المشطية الرسغية تبدو مغلقة.",
+    "A 0° angle closes the tarsometatarsal joints."
+   ]
+  ],
+  "tips": [
+   "لتقييم الأقواس والمفصل الرسغي المشطي (ليسفرانك) استعمل مسقطاً بحمل الوزن. (النموذج واقف، والمسقط الفعلي جالساً.)",
+   "For the arches and the Lisfranc joint use a weight-bearing view. (The model stands; the real view is often taken seated.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر القدم (الجهة الظهرية) ويخرج من الأخمص نحو الكاسيت.",
+   "The beam enters the dorsum of the foot and exits the sole toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "ضع الأخمص مسطحاً على الكاسيت وثبّت الساق.",
+    "Place the sole flat on the detector and support the leg."
+   ],
+   [
+    "مركّز على قاعدة المشطية الثالثة مع الميل 10° وضيّق المجال.",
+    "Centre on the base of the third metatarsal with the 10° tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true,
+  "tiltF": -10
+ },
+ {
+  "id": "foot-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القدم مائل إنسي (30°)",
+   "Foot medial oblique (30°)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metatarsal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "الجانب الوحشي للقدم: المكعب والمشطيتان الرابعة والخامسة والمفاصل الرسغية المشطية.",
+   "Lateral foot: cuboid, 4th and 5th metatarsals and tarsometatarsal joints."
+  ],
+  "pos": [
+   "من وضعية AP تُدار الساق والقدم 30° للداخل (الجانب الوحشي مرفوع) فيصنع الأخمص زاوية 30° مع الكاسيت. تُسند القدم بإسفنجة 30°.",
+   "From AP rotate the leg and foot 30° medially (lateral side raised) so the sole makes 30° with the detector. Support the foot on a 30° sponge."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند قاعدة المشطية الثالثة.",
+   "Perpendicular to the detector at the base of the third metatarsal."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "المشطيات من الثالثة إلى الخامسة منفصلة بلا تراكب.",
+    "3rd to 5th metatarsals separated without overlap."
+   ],
+   [
+    "المكعب وبقية العظام الرسغية الوحشية ظاهرة.",
+    "The cuboid and lateral tarsals visible."
+   ],
+   [
+    "المفصل المكعبي المشطي الخامس مفتوح.",
+    "Open cuboid-fifth metatarsal joint."
+   ]
+  ],
+  "err": [
+   [
+    "دوران أقل من 30°: تراكب المشطيات.",
+    "Under 30° rotation overlaps the metatarsals."
+   ],
+   [
+    "دوران زائد: تراكب العظام الرسغية.",
+    "Too much rotation overlaps the tarsals."
+   ]
+  ],
+  "tips": [
+   "مع AP والجانبي يكوّن سلسلة القدم الأساسية. (الزاوية ممثلة بميل الشعاع حول القدم.)",
+   "With AP and lateral it forms the basic foot series. (The rotation is shown as a beam angle around the foot.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر القدم جهة الجانب الوحشي بزاوية 30° ويخرج من الأخمص جهة الجانب الإنسي.",
+   "The beam enters the dorsum on the lateral side at 30° and exits the sole on the medial side."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "دوّر الساق والقدم 30° للداخل وادعمها بإسفنجة.",
+    "Rotate the leg and foot 30° medially and support on a sponge."
+   ],
+   [
+    "مركّز على قاعدة المشطية الثالثة وضيّق المجال.",
+    "Centre on the base of the third metatarsal and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true,
+  "rot": 30
+ },
+ {
+  "id": "foot-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القدم الجانبي",
+   "Foot lateral"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Cuboid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "كسور العقب والحُق وعظام الرسغ، وتقييم القوس الطولاني وجسم غريب.",
+   "Calcaneus, talus and tarsal fractures, assessment of the longitudinal arch and foreign body."
+  ],
+  "pos": [
+   "القدم على جانبها الوحشي على الكاسيت، الساق مبسوطة والأخمص عمودي على الكاسيت، والكاحل بوضع 90°.",
+   "Foot on its lateral side on the detector, leg extended, sole vertical to the detector, ankle at 90°."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند منتصف القدم (المكعب).",
+   "Perpendicular to the detector at the midfoot (cuboid)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "العقب والحُق وعظام الرسغ والمشطيات ظاهرة.",
+    "Calcaneus, talus, tarsals and metatarsals visible."
+   ],
+   [
+    "القوس الطولاني للقدم ظاهر.",
+    "Longitudinal arch visible."
+   ],
+   [
+    "المشطيات متراكبة.",
+    "Metatarsals superimposed."
+   ]
+  ],
+  "err": [
+   [
+    "دوران القدم: لا تتراكب المشطيات.",
+    "A rotated foot leaves the metatarsals unsuperimposed."
+   ],
+   [
+    "الكاحل غير 90°: تشوه الزوايا.",
+    "An ankle not at 90° distorts the angles."
+   ]
+  ],
+  "tips": [
+   "لتقييم القوس وزاوية العقب استعمل المسقط الجانبي بحمل الوزن. (النموذج واقف.)",
+   "For the arch and calcaneal angle use a weight-bearing lateral. (The model stands.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الإنسية للقدم ويخرج من الجهة الوحشية نحو الكاسيت.",
+   "The beam enters the medial side of the foot and exits the lateral side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "ضع الجانب الوحشي للقدم على الكاسيت والكاحل 90°.",
+    "Rest the lateral side of the foot on the detector with the ankle at 90°."
+   ],
+   [
+    "مركّز على منتصف القدم وضيّق المجال.",
+    "Centre on the midfoot and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "ankle-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكاحل AP",
+   "Ankle AP"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "كسور الكاحل والكعبين، وتقييم المفصل الحُقّي والأربطة.",
+   "Ankle and malleolar fractures, assessment of the talar joint and ligaments."
+  ],
+  "pos": [
+   "المريض جالس والساق مبسوطة، والقدم بانثناء ظهري ليكون الأخمص عمودياً على الكاسيت. الكعبان على نفس البعد من الكاسيت.",
+   "Patient seated with the leg extended and the foot dorsiflexed so the sole is vertical to the detector. Both malleoli equidistant from the detector."
+  ],
+  "crt": [
+   "عمودي على منتصف الكاحل (بين الكعبين).",
+   "Perpendicular at the ankle midpoint between the malleoli."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الكاحل كاملاً مع الثلث السفلي للقصبة والشظية وقاعدة مشط القدم.",
+    "Whole ankle with the distal tibia and fibula and the base of the metatarsals."
+   ],
+   [
+    "الشظية تتراكب جزئياً مع القصبة (طبيعي في AP).",
+    "The fibula partly overlaps the tibia (normal on the AP)."
+   ],
+   [
+    "مفصل الكاحل الإنسي مفتوح.",
+    "Open medial ankle joint space."
+   ]
+  ],
+  "err": [
+   [
+    "الساق مدارة: يتغير تراكب الشظية.",
+    "A rotated leg changes the fibular overlap."
+   ],
+   [
+    "الأخمص غير عمودي: يتشوه الحُق.",
+    "An unvertical sole distorts the talus."
+   ]
+  ],
+  "tips": [
+   "مع المسقط الوتدي (Mortise) والجانبي يكوّن سلسلة الكاحل. اطلب صورة الساق كاملة عند ألم الشظية القريب.",
+   "With the mortise and lateral it forms the ankle series. Add a full leg film when there is proximal fibular pain."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام (الجهة الظهرية للكاحل) ويخرج من الخلف نحو الكاسيت.",
+   "The beam enters the front of the ankle and exits the back toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "ابسط الساق واجعل الأخمص عمودياً على الكاسيت.",
+    "Extend the leg and keep the sole vertical to the detector."
+   ],
+   [
+    "مركّز بين الكعبين وضيّق المجال.",
+    "Centre between the malleoli and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "ankle-mortise",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكاحل موتيس (دوران إنسي 15°)",
+   "Ankle mortise (15° medial rotation)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "الفراغ المفصلي الوحشي ومفصل الحُق، وإصابات الأربطة الداخلية (syndesmosis).",
+   "The lateral joint space, talar joint and syndesmotic injury."
+  ],
+  "pos": [
+   "من وضعية AP تُدار الساق والقدم 15 إلى 20° للداخل ليصير الخط بين الكعبين موازياً للكاسيت.",
+   "From AP rotate the leg and foot 15–20° medially so the intermalleolar line is parallel to the detector."
+  ],
+  "crt": [
+   "عمودي على منتصف الكاحل بين الكعبين.",
+   "Perpendicular at the midpoint between the malleoli."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "فراغ مفصلي متساوٍ حول الحُق (الإنسي والعلوي والوحشي) وهو شكل الـMortise.",
+    "Equal open joint space around the talus: medial, superior and lateral (the mortise)."
+   ],
+   [
+    "لا تراكب بين الشظية والحُق.",
+    "No overlap between the fibula and the talus."
+   ],
+   [
+    "الكاحل كاملاً مع القصبة والشظية السفليتين.",
+    "Whole ankle with the distal tibia and fibula."
+   ]
+  ],
+  "err": [
+   [
+    "دوران غير كافٍ: تراكب الشظية مع الحُق.",
+    "Insufficient rotation: the fibula overlaps the talus."
+   ],
+   [
+    "دوران زائد: الشكل يقترب من الجانبي.",
+    "Excess rotation approaches a lateral."
+   ]
+  ],
+  "tips": [
+   "المسقط الأفضل لتقييم الفراغ المفصلي. عند الألم القوي يُصوَّر بالإجهاد أو بحمل الوزن.",
+   "The best view for the joint space. With severe pain a stress or weight-bearing view may follow."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام والجهة الوحشية بزاوية 15° ويخرج من الخلف والجهة الإنسية.",
+   "The beam enters anterolateral at 15° and exits posteromedial."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "دوّر الساق للداخل 15 إلى 20°.",
+    "Rotate the leg inward 15–20°."
+   ],
+   [
+    "مركّز بين الكعبين وضيّق المجال.",
+    "Centre between the malleoli and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true,
+  "rot": 15
+ },
+ {
+  "id": "ankle-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكاحل الجانبي",
+   "Ankle lateral"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "كسور الكاحل والكعب الخلفي، وانصباب المفصل، وتقييم الحُق والعقب.",
+   "Ankle and posterior malleolus fractures, joint effusion, assessment of the talus and calcaneus."
+  ],
+  "pos": [
+   "الجانب الوحشي للساق ملاصق للكاسيت، القدم بوضعية جانبية والكاحل بزاوية 90°، والشظية خلف القصبة.",
+   "Lateral side of the leg against the detector, foot in profile, ankle at 90°, fibula behind the tibia."
+  ],
+  "crt": [
+   "عمودي على الكعب الإنسي (مستوى مفصل الكاحل).",
+   "Perpendicular to the medial malleolus (ankle joint level)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "القصبة والشظية متراكبتان عند طرفهما البعيد.",
+    "Tibia and fibula superimposed at their distal ends."
+   ],
+   [
+    "القبة الحُقّية ظاهرة بشكل جانبي نظيف.",
+    "The talar dome is seen in clean profile."
+   ],
+   [
+    "العقب ومفصل تحت الحُق ظاهران.",
+    "Calcaneus and subtalar joint visible."
+   ]
+  ],
+  "err": [
+   [
+    "دوران: الكعبان غير متراكبين.",
+    "Rotation: the malleoli are not superimposed."
+   ],
+   [
+    "القدم ليست 90°: تضيق الزاوية.",
+    "A foot not at 90° distorts the angle."
+   ]
+  ],
+  "tips": [
+   "انتبه للكعب الخلفي ولقاعدة المشط الخامس عند ألم الجانب الوحشي.",
+   "Look closely at the posterior malleolus and the base of the fifth metatarsal."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الإنسية ويخرج من الجهة الوحشية نحو الكاسيت.",
+   "The beam enters the medial side and exits the lateral side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة (جزء رقيق)",
+    "No grid (thin part)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "ضع الجانب الوحشي للكاحل على الكاسيت والقدم 90°.",
+    "Place the lateral ankle on the detector with the foot at 90°."
+   ],
+   [
+    "مركّز على الكاحل وضيّق المجال.",
+    "Centre on the ankle and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الركبة AP",
+   "Knee AP"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "كسور الركبة والرضفة والهضبة الظنبوبية، والتهاب المفصل، وتقييم الفراغ المفصلي.",
+   "Knee, patella and tibial plateau fractures, arthritis and joint-space assessment."
+  ],
+  "pos": [
+   "المريض مستلقٍ أو جالس والساق مبسوطة، الرضفة في الوسط وأصابع القدم للأعلى دون دوران. الخط بين اللقمتين موازٍ للكاسيت.",
+   "Patient supine or seated with the leg extended, the patella centred and toes up without rotation. The line between the epicondyles is parallel to the detector."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند مفصل الركبة (حوالي 1.5 سم تحت قمة الرضفة).",
+   "Perpendicular to the detector at the knee joint (about 1.5 cm below the patellar apex)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "الرضفة في منتصف اللقمتين الفخذيتين.",
+    "The patella is centred between the femoral condyles."
+   ],
+   [
+    "الفراغ الفخذي الظنبوبي مفتوح.",
+    "Open femorotibial joint space."
+   ],
+   [
+    "رأس الشظية يتراكب جزئياً مع الظنبوب.",
+    "The fibular head partly overlaps the tibia."
+   ]
+  ],
+  "err": [
+   [
+    "الدوران: الرضفة غير مركزية.",
+    "Rotation: the patella is off-centre."
+   ],
+   [
+    "الشعاع غير عند المفصل: يغلق الفراغ.",
+    "A beam off the joint closes the space."
+   ]
+  ],
+  "tips": [
+   "لتقييم الغضروف استعمل مسقطاً بحمل الوزن. اسأل عن الحمل. (النموذج واقف.)",
+   "Use a weight-bearing view for cartilage assessment. Ask about pregnancy. (The model stands.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من أمام الركبة ويخرج من الخلف (المأبض) نحو الكاسيت.",
+   "The beam enters the front of the knee and exits the back (popliteal fossa) toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "شبكة اختيارية (حسب سماكة الركبة)",
+    "Grid optional (depends on knee thickness)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "ابسط الساق وركّز الرضفة بالمنتصف دون دوران.",
+    "Extend the leg and centre the patella without rotation."
+   ],
+   [
+    "مركّز تحت قمة الرضفة وضيّق المجال.",
+    "Centre below the patellar apex and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الركبة الجانبي",
+   "Knee lateral"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "انصباب الركبة (دم ودهن) وكسور الرضفة وارتفاع الرضفة وتقييم الفراغ.",
+   "Knee effusion (lipohaemarthrosis), patellar fracture, patellar height and joint-space assessment."
+  ],
+  "pos": [
+   "الركبة مثنية 20 إلى 30° والجانب الوحشي على الكاسيت، والرضفة عمودية على الكاسيت. تُسند الركبة بإسفنجة.",
+   "Knee flexed 20–30° with the lateral side on the detector and the patella perpendicular to the detector. Support the knee on a sponge."
+  ],
+  "crt": [
+   "عمودي على الكاسيت عند المفصل (2.5 سم تحت اللقمة الإنسية).",
+   "Perpendicular at the joint (2.5 cm below the medial epicondyle)."
+  ],
+  "br": [
+   "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+   "Ask the patient to stay completely still, then expose."
+  ],
+  "crit": [
+   [
+    "اللقمتان الفخذيتان متراكبتان.",
+    "The femoral condyles are superimposed."
+   ],
+   [
+    "الفراغ الرضفي الفخذي مفتوح.",
+    "Open patellofemoral space."
+   ],
+   [
+    "الانصباب أو الدم والدهن ظاهر فوق الرضفة.",
+    "An effusion or lipohaemarthrosis is visible above the patella."
+   ]
+  ],
+  "err": [
+   [
+    "الدوران: اللقمتان منفصلتان.",
+    "Rotation separates the condyles."
+   ],
+   [
+    "الثني الزائد: يشوه الرضفة.",
+    "Excess flexion distorts the patella."
+   ]
+  ],
+  "tips": [
+   "لكشف سائل الدم والدهن بعد الرضوض استعمل الشعاع الأفقي المتقاطع (cross-table). (النموذج واقف، والركبة تظهر مبسوطة.)",
+   "Use a horizontal cross-table beam to show lipohaemarthrosis after trauma. (The model stands with an extended knee.)"
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الإنسية للركبة ويخرج من الجهة الوحشية نحو الكاسيت.",
+   "The beam enters the medial side of the knee and exits the lateral side toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "شبكة اختيارية (حسب سماكة الركبة)",
+    "Grid optional (depends on knee thickness)"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب والمعادن من المجال.",
+    "Remove the shoe, sock and metal from the field."
+   ],
+   [
+    "اثنِ الركبة 20 إلى 30° وضع الجانب الوحشي على الكاسيت.",
+    "Flex the knee 20–30° with the lateral side on the detector."
+   ],
+   [
+    "مركّز على مفصل الركبة وضيّق المجال.",
+    "Centre on the knee joint and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب من المريض البقاء ثابتاً دون حركة ثم اعرّض.",
+    "Ask the patient to stay completely still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "skull-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجمجمة PA",
+   "Skull PA"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "الرضوض وكسور القبو والالتهابات والأورام وتقييم الجبهة والجداري.",
+   "Trauma, vault fractures, infection, tumours and assessment of the frontal and parietal bones."
+  ],
+  "pos": [
+   "المريض جالس أو واقف أمام الكاسيت، الجبهة والأنف يلامسانه، والخط الناصف عمودي على منتصف الكاسيت. الخط الحجاجي الأذني (OML) عمودي على الكاسيت. لا ميلان ولا دوران.",
+   "Patient seated or standing facing the detector, forehead and nose touching it, midsagittal plane vertical and centred. The orbitomeatal line (OML) is perpendicular to the detector. No tilt or rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عمودي على الكاسيت ويخرج من الجذر الأنفي (nasion).",
+   "Horizontal central ray perpendicular to the detector, exiting at the nasion."
+  ],
+  "br": [
+   "اطلب حبس النفس والثبات التام ثم اعرّض.",
+   "Ask the patient to hold the breath and stay still, then expose."
+  ],
+  "crit": [
+   [
+    "الجمجمة كاملة والمسافة من الحافة الجانبية للجمجمة إلى الحجاج متساوية على الجانبين (بلا دوران).",
+    "Whole skull with equal distance from the lateral skull margin to the orbit on each side (no rotation)."
+   ],
+   [
+    "الحافتان الصخريتان تملآن الحجاجين.",
+    "The petrous ridges fill the orbits."
+   ],
+   [
+    "الدروز والقبو واضحة.",
+    "Sutures and vault clear."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس: عدم تناظر الحجاجين.",
+    "Head rotation: asymmetric orbits."
+   ],
+   [
+    "ميلان الذقن: تنتقل الحافتان الصخريتان.",
+    "Chin tilt: the petrous ridges move."
+   ]
+  ],
+  "tips": [
+   "في الرضوض يُصوَّر دون تحريك الرأس حتى استبعاد إصابة العنق. اسأل عن الحمل.",
+   "In trauma image without moving the head until a neck injury is excluded. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من مؤخرة الرأس (القذال) ويخرج من الجبهة عند الجذر الأنفي.",
+   "The beam enters the occiput and exits the forehead at the nasion."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع الجبهة والأنف على الكاسيت والخط الناصف عمودياً.",
+    "Place the forehead and nose on the detector with the midsagittal plane vertical."
+   ],
+   [
+    "مركّز عند الجذر الأنفي وضيّق المجال.",
+    "Centre at the nasion and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب حبس النفس والثبات التام ثم اعرّض.",
+    "Ask the patient to hold the breath and stay still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "skull-caldwell",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجمجمة PA محوري 15° (كالدويل)",
+   "Skull PA axial 15° (Caldwell)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -15,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "الجبهة والجيوب الجبهية والغربالية والجدران الحجاجية، وإصابات الوجه العلوي.",
+   "The frontal bone, frontal and ethmoid sinuses, orbital walls and upper facial injuries."
+  ],
+  "pos": [
+   "كما في PA، مع بقاء الخط الحجاجي الأذني عمودياً على الكاسيت. الجبهة والأنف على الكاسيت ولا دوران.",
+   "As for the PA, keeping the OML perpendicular to the detector. Forehead and nose on the detector, no rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15° نحو الأقدام (ذيلياً) ويخرج من الجذر الأنفي.",
+   "Central ray angled 15° caudally, exiting at the nasion."
+  ],
+  "br": [
+   "اطلب حبس النفس والثبات التام ثم اعرّض.",
+   "Ask the patient to hold the breath and stay still, then expose."
+  ],
+  "crit": [
+   [
+    "الحافتان الصخريتان في الثلث السفلي من الحجاجين.",
+    "The petrous ridges lie in the lower third of the orbits."
+   ],
+   [
+    "الجيوب الجبهية والغربالية مفتوحة وواضحة.",
+    "Frontal and ethmoid sinuses open and clear."
+   ],
+   [
+    "تناظر الجمجمة والحجاجين.",
+    "Symmetry of the skull and orbits."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية أقل من 15°: ترتفع الحافتان الصخريتان.",
+    "Less than 15° raises the petrous ridges."
+   ],
+   [
+    "دوران الرأس: عدم تناظر.",
+    "Head rotation: asymmetry."
+   ]
+  ],
+  "tips": [
+   "بديل للمصاب المستلقي: مسقط AP محوري عكسي (reverse Caldwell).",
+   "For a supine patient use the AP axial reverse Caldwell."
+  ],
+  "inout": [
+   "يدخل الشعاع من مؤخرة الرأس بزاوية نحو الأقدام ويخرج من الجبهة عند الجذر الأنفي.",
+   "The beam enters the occiput angled caudally and exits the forehead at the nasion."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع الجبهة والأنف على الكاسيت ثم أمل الأنبوب 15° ذيلياً.",
+    "Place the forehead and nose on the detector, then angle the tube 15° caudally."
+   ],
+   [
+    "مركّز عند الجذر الأنفي مع الميل 15° وضيّق المجال.",
+    "Centre at the nasion with the 15° tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب حبس النفس والثبات التام ثم اعرّض.",
+    "Ask the patient to hold the breath and stay still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "skull-towne",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجمجمة AP محوري 30° (تاون)",
+   "Skull AP axial 30° (Towne)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": -30,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "العظم القذالي والثقبة العظمية الكبيرة والسرج الخلفي والصخرتان.",
+   "The occipital bone, foramen magnum, dorsum sellae and petrous bones."
+  ],
+  "pos": [
+   "المريض جالس أو مستلقٍ وظهره للكاسيت، الذقن مثني بحيث يكون الخط الحجاجي الأذني (OML) عمودياً على الكاسيت. الخط الناصف عمودي على منتصف الكاسيت دون دوران.",
+   "Patient seated or supine with the back to the detector, chin tucked so the OML is perpendicular to the detector. Midsagittal plane perpendicular to the centre of the detector, no rotation."
+  ],
+  "crt": [
+   "مائل 30° نحو الأقدام (ذيلياً). يدخل حوالي 6 سم فوق الجبهة ويمر عبر الثقبة العظمية الكبيرة.",
+   "Angled 30° caudally; enters about 6 cm above the forehead and passes through the foramen magnum."
+  ],
+  "br": [
+   "اطلب حبس النفس والثبات التام ثم اعرّض.",
+   "Ask the patient to hold the breath and stay still, then expose."
+  ],
+  "crit": [
+   [
+    "السرج الخلفي (dorsum sellae) يظهر داخل الثقبة العظمية الكبيرة.",
+    "The dorsum sellae is seen within the foramen magnum."
+   ],
+   [
+    "الصخرتان متناظرتان والقذال بلا دوران.",
+    "Symmetric petrous bones with no occipital rotation."
+   ],
+   [
+    "الدرز اللامي ظاهر.",
+    "The lambdoid suture is visible."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: لا يظهر السرج داخل الثقبة.",
+    "Insufficient angle: the dorsum sellae is not seen within the foramen."
+   ],
+   [
+    "دوران الرأس: عدم تناظر.",
+    "Head rotation: asymmetry."
+   ]
+  ],
+  "tips": [
+   "عند صعوبة ثني الرقبة استعمل مسقط هاس. اسأل عن الحمل.",
+   "If neck flexion is difficult use the Haas view. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجبهة بزاوية نحو الأقدام ويخرج من القذال نحو الكاسيت.",
+   "The beam enters the forehead angled caudally and exits the occiput toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "اثنِ ذقن المريض حتى يصير الـOML عمودياً على الكاسيت.",
+    "Tuck the chin so the OML is perpendicular to the detector."
+   ],
+   [
+    "مركّز على الثقبة العظمية الكبيرة مع الميل 30° وضيّق المجال.",
+    "Centre on the foramen magnum with the 30° tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب حبس النفس والثبات التام ثم اعرّض.",
+    "Ask the patient to hold the breath and stay still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "skull-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجمجمة الجانبي",
+   "Skull lateral"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "كسور القبو، والسرج التركي، وتكلسات داخل القحف، وتقييم الجمجمة.",
+   "Vault fractures, the sella turcica, intracranial calcifications and skull assessment."
+  ],
+  "pos": [
+   "المريض جالس أو واقف، رأسه جانبي والجانب المصاب ملاصق للكاسيت. الخط الناصف موازٍ للكاسيت والخط بين الحدقتين عمودي، والـOML موازٍ للحافة السفلية للكاسيت.",
+   "Patient seated or standing with the head in profile and the affected side against the detector. Midsagittal plane parallel and interpupillary line vertical; OML parallel to the lower detector edge."
+  ],
+  "crt": [
+   "عمودي على الكاسيت، حوالي 5 سم فوق القناة السمعية الخارجية.",
+   "Perpendicular to the detector, about 5 cm above the external acoustic meatus."
+  ],
+  "br": [
+   "اطلب حبس النفس والثبات التام ثم اعرّض.",
+   "Ask the patient to hold the breath and stay still, then expose."
+  ],
+  "crit": [
+   [
+    "السرج التركي بشكل جانبي نظيف.",
+    "Sella turcica in clean profile."
+   ],
+   [
+    "الحجاجان متراكبان والقناتان السمعيتان متراكبتان.",
+    "Orbits and external acoustic meatuses superimposed."
+   ],
+   [
+    "الفكان السفليان متراكبان وبلا دوران.",
+    "Mandibular rami superimposed with no rotation."
+   ]
+  ],
+  "err": [
+   [
+    "دوران أو ميلان الرأس: القنوات السمعية غير متراكبة.",
+    "Rotation or tilt: the meatuses are not superimposed."
+   ],
+   [
+    "خط OML غير موازٍ: تتغير الأرضية.",
+    "OML not parallel changes the floor."
+   ]
+  ],
+  "tips": [
+   "في الرضوض استعمل الجانبي بشعاع أفقي (cross-table) دون تحريك المريض.",
+   "In trauma use a horizontal cross-table lateral without moving the patient."
+  ],
+  "inout": [
+   "يدخل الشعاع من جانب الجمجمة البعيد عن الكاسيت ويخرج من الجانب الملاصق للكاسيت.",
+   "The beam enters the skull side away from the detector and exits the side against the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع الجانب المصاب على الكاسيت والخط الناصف موازياً له.",
+    "Place the affected side on the detector with the midsagittal plane parallel."
+   ],
+   [
+    "مركّز فوق القناة السمعية الخارجية وضيّق المجال.",
+    "Centre above the external acoustic meatus and collimate."
+   ],
+   [
+    "اضبط kVp وmAs وضيّق المجال على الجزء المطلوب مع الحماية المناسبة.",
+    "Set kVp and mAs, collimate to the part and use suitable protection."
+   ],
+   [
+    "اطلب حبس النفس والثبات التام ثم اعرّض.",
+    "Ask the patient to hold the breath and stay still, then expose."
+   ],
+   [
+    "راجع الصورة وفق معايير القبول وتأكد من علامة الجهة.",
+    "Review against the acceptance criteria and check the side marker."
+   ]
+  ]
  }
 ]

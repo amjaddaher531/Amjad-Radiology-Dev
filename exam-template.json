@@ -1,0 +1,37 @@
+{
+ "id": "my-new-exam",
+ "mod": "xray",
+ "type": "xray",
+ "name": ["الاسم بالعربي", "Name in English"],
+ "region": ["الأطراف العلوية", "Upper limb"],
+ "limb": true,
+ "pose": "erect",
+ "beam": "PA",
+ "tilt": 0,
+ "cr": { "s": "^Capitate bone$", "at": "center" },
+ "sid": 1.0,
+ "det": [0.24, 0.30, "portrait"],
+ "dist": 1.8,
+ "layers": ["skeleton"],
+ "targets": ["^Scaphoid bone$"],
+ "ind": ["الاستطباب بالعربي", "Indications in English"],
+ "pos": ["وضعية المريض بالعربي", "Patient position in English"],
+ "crt": ["الشعاع المركزي بالعربي", "Central ray in English"],
+ "br": ["التنفس بالعربي", "Breathing in English"],
+ "crit": [["معيار قبول 1", "Criterion 1"], ["معيار قبول 2", "Criterion 2"], ["معيار قبول 3", "Criterion 3"]],
+ "err": [["خطأ شائع 1", "Common error 1"], ["خطأ شائع 2", "Common error 2"]],
+ "tips": ["نصيحة بالعربي", "Tip in English"],
+ "inout": ["من أين يدخل الشعاع وأين يخرج", "Where the beam enters and exits"],
+ "exp": {
+  "kv": ["55–62", "55–62"],
+  "mas": ["2–5", "2–5"],
+  "ex": ["مثال: 100 mA × 0.04 ث = 4 mAs", "Example: 100 mA × 0.04 s = 4 mAs"],
+  "grid": ["بدون شبكة", "No grid"],
+  "aec": ["تعريض يدوي", "Manual exposure"]
+ },
+ "steps": [
+  ["الخطوة 1", "Step 1"],
+  ["الخطوة 2", "Step 2"],
+  ["الخطوة 3", "Step 3"]
+ ]
+}

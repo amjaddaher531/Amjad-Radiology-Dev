@@ -34,7 +34,7 @@ function qFrom(h,f){const x=h.clone().cross(f).normalize(),m=new THREE.Matrix4()
 function poseQ(p){const up=V(0,1,0);
  if(p=='erect')return qFrom(up,V(0,0,1));if(p=='supine')return qFrom(V(0,0,-1),V(0,1,0));if(p=='prone')return qFrom(V(0,0,-1),V(0,-1,0));
  if(p=='lat-L')return qFrom(V(0,0,-1),V(sL,0,0));return qFrom(V(0,0,-1),V(-sL,0,0))}
-function structBox(rx,layer){const re=new RegExp(rx),b=new THREE.Box3();let n=0;meshes.forEach(m=>{if(!m.userData.skip&&m.userData.layer!='skin'&&re.test(eng(m.userData.nm))){b.union(m.geometry.boundingBox);n++}});return n?b:null}
+function structBox(rx,layer,sd){const re=new RegExp(rx),b=new THREE.Box3();let n=0;meshes.forEach(m=>{if(!m.userData.skip&&m.userData.layer!='skin'&&re.test(eng(m.userData.nm))&&(!sd||sideOK(m.userData.nm,sd))){b.union(m.geometry.boundingBox);n++}});return n?b:null}
 // equipment
 let eq=null,eqMats=[],labels=[],t0=0,ctState=null;
 function clearEq(){if(eq){world.remove(eq);eq.traverse(o=>{if(o.geometry)o.geometry.dispose()})}eq=null;eqMats=[];labels.forEach(l=>l.el.remove());labels=[];ctState=null}
@@ -49,7 +49,7 @@ let cur=null,anim=null,state=null;
 async function showExam(ex){cur=ex;clearEq();document.getElementById('pick').classList.remove('on');
  for(const k of ex.layers)await loadLayer(k);await loadLayer('skin');
  // focus materials
- const res=ex.targets.map(t=>new RegExp(t));bodyMeshes().forEach(m=>{const hit=res.some(r=>r.test(eng(m.userData.nm)));m.material=hit?mat.gold:(m.userData.layer=='skeleton'&&!hit&&ex.layers.length?mat.ghost:mat.ghost);m.userData.hit=hit});
+ const sd=ex.limb?limbSide:null;const res=ex.targets.map(t=>new RegExp(t));bodyMeshes().forEach(m=>{const hit=res.some(r=>r.test(eng(m.userData.nm)))&&(!sd||sideOK(m.userData.nm,sd));m.material=hit?mat.gold:(m.userData.layer=='skeleton'&&!hit&&ex.layers.length?mat.ghost:mat.ghost);m.userData.hit=hit});
  const ARMB=/^(Humerus|Radius|Ulna)$|carpal|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|phalanx of .* of hand/,ARMS=/arm$|elbow|forearm|wrist|cubital|bicipital|hand|^palm$|radial foveola|^nail plate$|^perionyx$|deltoid/i;
  meshes.forEach(m=>{if(m.userData.skip){m.visible=false;return}const nm=m.userData.nm.replace(/\.[a-z]$/,'');let v=m.userData.layer=='skin'||ex.layers.includes(m.userData.layer);
   if(v&&ex.hideArms){if(m.userData.layer=='skin'?ARMS.test(nm):ARMB.test(eng(m.userData.nm)))v=false}m.visible=v});
@@ -57,34 +57,41 @@ async function showExam(ex){cur=ex;clearEq();document.getElementById('pick').cla
  const q=poseQ(ex.pose);const from={q:patient.quaternion.clone(),p:patient.position.clone()};
  patient.quaternion.copy(q);patient.position.set(0,0,0);patient.updateMatrixWorld(true);
  const sk=new THREE.Box3();meshes.filter(m=>m.userData.layer=='skin'&&!m.userData.skip&&m.visible).forEach(m=>sk.union(new THREE.Box3().setFromObject(m)));
- const cb=structBox(ex.cr.s,0)||structBox('Vertebra',0);const cl=cb.getCenter(V(0,0,0));cl.x=0;
+ const cb=structBox(ex.cr.s,0,sd)||structBox('Vertebra',0);const cl=cb.getCenter(V(0,0,0));if(ex.cr.at=='top')cl.y=cb.max.y+(ex.cr.dy||0);else if(ex.cr.at=='bottom')cl.y=cb.min.y+(ex.cr.dy||0);else cl.y+=(ex.cr.dy||0);if(!ex.limb)cl.x=0;
  let pos=V(0,0,0);const crW0=cl.clone().applyQuaternion(q);
  const erect=ex.pose=='erect';let tableTop=0;if(!erect){tableTop=.9;pos.y=tableTop-sk.min.y}
  pos.x=-crW0.x;pos.z=-crW0.z;const crW=crW0.clone().add(pos);
  state={q,pos,crW,tableTop,erect,sk:sk.clone().translate(pos),from};patient.quaternion.copy(from.q);patient.position.copy(from.p);
  anim={t0:performance.now(),dur:1100,from,to:{q,p:pos},done:false,ex};
 }
-function fly(crW,ex,q,erect){let dirB=beamDirBody(ex.beam,ex.tilt);const dirW=dirB.clone().applyQuaternion(q);
+function fly(crW,ex,q,erect){let dirB=beamDirBody(ex);const dirW=dirB.clone().applyQuaternion(q);
  let s=V(0,0,0).crossVectors(dirW,V(0,1,0));if(s.length()<.2)s=V(1,0,0);s.normalize();const dist=ex.type=='ct'?2.3:(ex.pose=='erect'?3.2:2.5);
  camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:crW.clone().add(s.multiplyScalar(dist)).add(V(0,dist*.28,0)),tt:crW.clone()}}
 let camAnim=null;
-function beamDirBody(b,tilt){const l=V(sL,0,0);let v=b=='AP'?V(0,0,-1):b=='PA'?V(0,0,1):b=='R-L'?l:l.clone().negate();if(tilt){const a=tilt*Math.PI/180;v=v.multiplyScalar(Math.cos(a)).add(V(0,Math.sin(a),0)).normalize()}return v}
+let limbSide='R';
+function sideOK(nm,sd){if(/\.l$/.test(nm))return sd=='L';if(/\.r$/.test(nm))return sd=='R';return true}
+function beamDirBody(ex){const l=V(sL,0,0),u=V(0,1,0),f=V(0,0,1),med=ex.limb&&limbSide=='L'?l.clone().negate():l.clone(),b=ex.beam;
+ let v=b=='AP'?f.clone().negate():b=='PA'?f.clone():b=='R-L'?l.clone():b=='L-R'?l.clone().negate():b=='LM'?med.clone():b=='ML'?med.clone().negate():b=='SI'?u.clone().negate():u.clone();
+ if(ex.rot){const a=ex.rot*Math.PI/180;v=v.multiplyScalar(Math.cos(a)).add(med.clone().multiplyScalar(Math.sin(a)))}
+ if(ex.tiltF){const a=ex.tiltF*Math.PI/180;v=v.multiplyScalar(Math.cos(a)).add(f.clone().multiplyScalar(Math.sin(a)))}
+ if(ex.tilt){const a=ex.tilt*Math.PI/180;v=v.multiplyScalar(Math.cos(a)).add(u.clone().multiplyScalar(Math.sin(a)))}
+ return v.normalize()}
 function build(ex){clearEq();eq=new THREE.Group();world.add(eq);const q=state.q,pos=state.pos,crW=state.crW;
- const dirW=beamDirBody(ex.beam,ex.tilt).applyQuaternion(q).normalize();const headW=V(0,1,0).applyQuaternion(q);
+ const dirW=beamDirBody(ex).applyQuaternion(q).normalize();const headW=V(0,1,0).applyQuaternion(q);
  table0(ex);
  if(ex.type=='ct'){buildCT(ex,q,pos,crW,headW);return}
  // entry/exit
  const rc=new THREE.Raycaster(crW.clone().sub(dirW.clone().multiplyScalar(2)),dirW,0,5);
- const hits=rc.intersectObjects(meshes.filter(m=>m.userData.layer=='skin'&&!m.userData.skip&&m.visible),false);let entry,exit,approx=false;
+ const hits=rc.intersectObjects(meshes.filter(m=>m.userData.layer=='skin'&&!m.userData.skip&&m.visible&&(!ex.limb||sideOK(m.userData.nm,limbSide))),false);let entry,exit,approx=false;
  if(hits.length>=2){entry=hits[0].point.clone();exit=hits[hits.length-1].point.clone()}else{const bh=rc.intersectObjects(bodyMeshes().filter(m=>m.visible),false);if(bh.length>=2){entry=bh[0].point.clone().sub(dirW.clone().multiplyScalar(.04));exit=bh[bh.length-1].point.clone().add(dirW.clone().multiplyScalar(.04))}else{entry=crW.clone().sub(dirW.clone().multiplyScalar(.12));exit=crW.clone().add(dirW.clone().multiplyScalar(.12))}approx=true}
  const horiz=Math.abs(dirW.y)<.5;const D=exit.clone().add(dirW.clone().multiplyScalar(horiz?.03:.065)),T=D.clone().sub(dirW.clone().multiplyScalar(ex.sid));
  state.entry=entry;state.exit=exit;state.D=D;state.T=T;state.approx=approx;
- {const mid=T.clone().lerp(D,.5);let s2=V(0,0,0).crossVectors(dirW,headW);if(s2.length()<.2)s2=V(1,0,0);s2.normalize();let cd;if(Math.abs(s2.y)>.7){if(s2.y<0)s2.negate();cd=s2.clone().add(dirW.clone().multiplyScalar(-.35)).add(headW.clone().multiplyScalar(.5)).normalize()}else{cd=s2.clone().add(V(0,.2,0)).normalize()}const dist=Math.max(2,(ex.sid+.3)*1.85);camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:mid.clone().add(cd.multiplyScalar(dist)),tt:mid.clone()}}
+ {const mid=T.clone().lerp(D,.5);let s2=V(0,0,0).crossVectors(dirW,headW);if(s2.length()<.2)s2=V(1,0,0);s2.normalize();let cd;if(Math.abs(s2.y)>.7){if(s2.y<0)s2.negate();cd=s2.clone().add(dirW.clone().multiplyScalar(-.35)).add(headW.clone().multiplyScalar(.5)).normalize()}else{cd=s2.clone().add(V(0,.2,0)).normalize()}const dist=ex.dist||Math.max(2,(ex.sid+.3)*1.85);camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:mid.clone().add(cd.multiplyScalar(dist)),tt:mid.clone()}}
  let up=headW.clone().sub(dirW.clone().multiplyScalar(headW.dot(dirW)));if(up.length()<.1)up=V(1,0,0);up.normalize();const right=V(0,0,0).crossVectors(up,dirW).normalize();
  const [dw,dh,or]=ex.det;const w=or=='portrait'?dw:dh,h=or=='portrait'?dh:dw;
  // detector
  const dm=track(new THREE.MeshStandardMaterial({color:0x4c8dff,emissive:0x1c4bb5,emissiveIntensity:.6,roughness:.4,metalness:.2}),.95);const det=new THREE.Mesh(new THREE.BoxGeometry(w,h,.014),dm);det.position.copy(D);det.quaternion.setFromRotationMatrix(new THREE.Matrix4().makeBasis(right,up,dirW));eq.add(det);
- if(horiz){const st=new THREE.Mesh(new THREE.BoxGeometry(w+.1,1.5,.05),track(new THREE.MeshStandardMaterial({color:0x1b3a73,roughness:.6}),.5));st.position.copy(D.clone().add(dirW.clone().multiplyScalar(.04)));st.position.y=.75+.0;st.quaternion.copy(det.quaternion);eq.add(st)}
+ if(horiz&&!ex.limb){const st=new THREE.Mesh(new THREE.BoxGeometry(w+.1,1.5,.05),track(new THREE.MeshStandardMaterial({color:0x1b3a73,roughness:.6}),.5));st.position.copy(D.clone().add(dirW.clone().multiplyScalar(.04)));st.position.y=.75+.0;st.quaternion.copy(det.quaternion);eq.add(st)}
  // tube
  const tg=new THREE.Group();tg.position.copy(T);tg.quaternion.setFromUnitVectors(V(0,-1,0),dirW);
  const tm=track(new THREE.MeshStandardMaterial({color:0x3a4f7a,roughness:.35,metalness:.55}),1);
@@ -160,17 +167,24 @@ const qs=document.getElementById('qs'),sr2=document.getElementById('sres2');
 qs.oninput=()=>{const v=qs.value.trim().toLowerCase();sr2.innerHTML='';if(v.length<2)return;const R=IDX.filter(x=>x.t.includes(v)).slice(0,14);
  sr2.innerHTML=R.map((x,i)=>'<button data-i="'+i+'">'+b(x.k.name[0],x.k.name[1])+'<small>'+(x.path.length?x.path.map(id=>{const nn=nd(x.path.slice(0,x.path.indexOf(id)+1));return bi(nn.name)}).join(' › '):'')+'</small></button>').join('');
  sr2.querySelectorAll('button').forEach(bt=>bt.onclick=()=>{const x=R[+bt.dataset.i];qs.value='';sr2.innerHTML='';if(x.k.p){path=x.path;renderList();goProj(x.k)}else{path=x.path.concat(x.k.id);renderList();if(path.length==2&&path[0]=='x-ray')showRegion(path[1])}})};
+const BM2={SI:['من الأعلى إلى الأسفل (عمودي)','Superior to inferior (vertical)'],IS:['من الأسفل إلى الأعلى','Inferior to superior'],LM:['من الجهة الوحشية إلى الإنسية','Lateral to medial'],ML:['من الجهة الإنسية إلى الوحشية','Medial to lateral']};
+function beamTxt(ex){const base=BM[ex.beam]||BM2[ex.beam]||[ex.beam,ex.beam];let ar=base[0],en=base[1];
+ if(ex.rot){ar+=' · زاوية جانبية '+ex.rot+'°';en+=' · '+ex.rot+'° side angle'}
+ if(ex.tilt){ar+=' · زاوية '+Math.abs(ex.tilt)+'° '+(ex.tilt<0?'ذيلياً':'رأسياً');en+=' · '+Math.abs(ex.tilt)+'° '+(ex.tilt<0?'caudal':'cephalad')}
+ if(ex.tiltF){ar+=' · ميل '+Math.abs(ex.tiltF)+'° '+(ex.tiltF<0?'نحو الخلف':'نحو الأمام');en+=' · '+Math.abs(ex.tiltF)+'° '+(ex.tiltF<0?'posterior':'anterior')+' tilt'}
+ return [ar,en]}
 const BM={AP:['من الأمام إلى الخلف (AP)','Anterior to posterior (AP)'],PA:['من الخلف إلى الأمام (PA)','Posterior to anterior (PA)'],'R-L':['من اليمين إلى اليسار (جانبي)','Right to left (lateral)'],'L-R':['من اليسار إلى اليمين (جانبي)','Left to right (lateral)']};
 const PS={erect:['واقف','Erect'],supine:['مستلقٍ على الظهر','Supine'],prone:['مستلقٍ على البطن','Prone'],'lat-L':['على الجانب الأيسر','Left lateral decubitus'],'lat-R':['على الجانب الأيمن','Right lateral decubitus']};
 function sec(t,body){return '<div class="sec"><h5>'+b(t[0],t[1])+'</h5>'+body+'</div>'}
 function ul(a){return '<ul>'+a.map(x=>'<li>'+b(x[0],x[1])+'</li>').join('')+'</ul>'}
 function renderDetail(ex){const d=document.getElementById('detail');const ct=ex.type=='ct';
- const rows=[[['الوضعية','Position'],PS[ex.pose]],[['اتجاه الشعاع','Beam'],ct?['دوّار 360°','Rotating 360°']:BM[ex.beam]],[['المسافة SID','SID'],ct?['حسب الجهاز','Per scanner']:[Math.round(ex.sid*100)+' سم',Math.round(ex.sid*100)+' cm']],[['الكاسيت','Detector'],ct?['—','—']:[Math.round(ex.det[0]*100)+'×'+Math.round(ex.det[1]*100)+' سم',Math.round(ex.det[0]*100)+'×'+Math.round(ex.det[1]*100)+' cm']]];
- d.innerHTML='<h4>'+b(ex.name[0],ex.name[1])+'</h4><div class="draft">'+b('مسودة قيد المراجعة','Draft under review')+'</div><table class="kv">'+rows.map(r=>'<tr><th>'+b(r[0][0],r[0][1])+'</th><td>'+b(r[1][0],r[1][1])+'</td></tr>').join('')+'</table>'
+ const rows=[[['الوضعية','Position'],PS[ex.pose]],[['اتجاه الشعاع','Beam'],ct?['دوّار 360°','Rotating 360°']:beamTxt(ex)],[['المسافة SID','SID'],ct?['حسب الجهاز','Per scanner']:[Math.round(ex.sid*100)+' سم',Math.round(ex.sid*100)+' cm']],[['الكاسيت','Detector'],ct?['—','—']:[Math.round(ex.det[0]*100)+'×'+Math.round(ex.det[1]*100)+' سم',Math.round(ex.det[0]*100)+'×'+Math.round(ex.det[1]*100)+' cm']]];
+ d.innerHTML=(ex.limb?'<div class="sidesw"><span>'+b('الجهة','Side')+':</span><button data-s="R" class="'+(limbSide=='R'?'on':'')+'">'+b('يمين','Right')+'</button><button data-s="L" class="'+(limbSide=='L'?'on':'')+'">'+b('يسار','Left')+'</button></div>':'')+'<h4>'+b(ex.name[0],ex.name[1])+'</h4><div class="draft">'+b('مسودة قيد المراجعة','Draft under review')+'</div><table class="kv">'+rows.map(r=>'<tr><th>'+b(r[0][0],r[0][1])+'</th><td>'+b(r[1][0],r[1][1])+'</td></tr>').join('')+'</table>'
  +sec(['خطوات التصوير','Imaging steps'],'<ol>'+ex.steps.map(x=>'<li>'+b(x[0],x[1])+'</li>').join('')+'</ol>')+sec(['مسار الشعاع: الدخول والخروج','Beam path: entry and exit'],'<p>'+b(ex.inout[0],ex.inout[1])+'</p>')
  +sec(['معايير التعريض (إرشادية)','Exposure factors (indicative)'],'<table class="kv"><tr><th>kVp</th><td>'+b(ex.exp.kv[0],ex.exp.kv[1])+'</td></tr><tr><th>mAs / mA</th><td>'+b(ex.exp.mas[0],ex.exp.mas[1])+'</td></tr><tr><th>'+b('مثال','Example')+'</th><td>'+b(ex.exp.ex[0],ex.exp.ex[1])+'</td></tr><tr><th>'+b('الشبكة / AEC','Grid / AEC')+'</th><td>'+b(ex.exp.grid[0]+' · '+ex.exp.aec[0],ex.exp.grid[1]+' · '+ex.exp.aec[1])+'</td></tr></table><p>'+b('القيم تقريبية وتختلف حسب الجهاز والمريض وحجمه. اتبع بروتوكول قسمك ومستويات الجرعة المرجعية المحلية.','Values are approximate and vary with the equipment and patient size. Follow your department protocol and local reference dose levels.')+'</p>')
  +sec(['الاستطباب','Indications'],'<p>'+b(ex.ind[0],ex.ind[1])+'</p>')+sec(['وضعية المريض','Patient position'],'<p>'+b(ex.pos[0],ex.pos[1])+'</p>')+sec(['الشعاع المركزي','Central ray'],'<p>'+b(ex.crt[0],ex.crt[1])+'</p>')+sec(['التنفس','Breathing'],'<p>'+b(ex.br[0],ex.br[1])+'</p>')
  +sec(['معايير قبول الصورة','Image acceptance criteria'],ul(ex.crit))+sec(['الأخطاء الشائعة','Common errors'],ul(ex.err))+sec(['نصائح','Tips'],'<p>'+b(ex.tips[0],ex.tips[1])+(ex.hideArms?' '+b('(الذراعان مخفيتان لوضوح المسار، وعادةً ترفعان عن مجال الشعاع.)','(Arms are hidden for clarity; they are normally raised out of the beam.)'):'')+'</p>')}
+document.getElementById('detail').addEventListener('click',e=>{const bt=e.target.closest('.sidesw button');if(bt&&cur&&cur.limb){limbSide=bt.dataset.s;chooseExam(cur.id)}});
 async function chooseExam(id){const ex=EXAMS.find(x=>x.id==id);if(!ex)return;cur=ex;renderList();renderDetail(ex);await showExam(ex)}
 function resetScene(){clearEq();cur=null;meshes.forEach(m=>{if(!m.userData.skip)m.visible=true});renderList();document.getElementById('detail').innerHTML='';bodyMeshes().forEach(m=>{m.material=m.userData.base;m.visible=true});anim={t0:performance.now(),dur:900,from:{q:patient.quaternion.clone(),p:patient.position.clone()},to:{q:new THREE.Quaternion(),p:V(0,0,0)},done:false,ex:null};camAnim={t0:performance.now(),from:cam.position.clone(),ft:ctl.target.clone(),to:V(2.6,1.2,2.4),tt:V(0,.9,0)}}
 document.getElementById('reset').onclick=resetScene;

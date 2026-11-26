@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>فحص الملفات | Amjad Radiology</title>
+<style>body{font:16px/1.8 system-ui,Segoe UI,Tahoma,sans-serif;background:#06122a;color:#eaf1ff;margin:0;padding:24px}main{max-width:900px;margin:auto}h1{font-size:26px}h2{font-size:18px;margin-top:28px;color:#9cc4ff}
+.ok{color:#5fe39a}.er{color:#ff7a7a}.wr{color:#ffd36b}li{margin:4px 0}code{background:#0d1c3a;padding:1px 6px;border-radius:4px;direction:ltr;display:inline-block}.box{background:#0d1c3a;border:1px solid #223a68;border-radius:12px;padding:14px 18px}a{color:#9cc4ff}</style></head>
+<body><main><h1>فحص ملفات الوضعيات</h1><p>افتح هذه الصفحة بعد أي تعديل على <code>exams.json</code> أو <code>catalog.json</code> لتعرف إذا في خطأ قبل ما تراجع الموقع. <a href="positions.html">صفحة الوضعيات</a></p><div id="out" class="box">جارٍ الفحص...</div></main>
+<script>
+const POSES=['erect','supine','prone','lat-L','lat-R'],BEAMS=['AP','PA','R-L','L-R','LM','ML','SI','IS'];
+const E=[],W=[],I=[];
+const er=m=>E.push(m),wr=m=>W.push(m);
+const isPair=a=>Array.isArray(a)&&a.length==2&&a.every(x=>typeof x=='string'&&x.trim());
+async function load(f){const t=await (await fetch(f+'?'+Date.now())).text();try{return JSON.parse(t)}catch(e){er('الملف <code>'+f+'</code> فيه خطأ كتابة JSON: '+e.message+' (غالباً فاصلة ناقصة أو زائدة، أو علامة اقتباس ناقصة)');return null}}
+(async()=>{
+const ex=await load('exams.json'),cat=await load('catalog.json'),nm=await load('names.json');
+if(!ex||!cat||!nm){show();return}
+const names=[...new Set(Object.values(nm).map(v=>v[0]))];
+const ids=new Set();
+ex.forEach((e,i)=>{const w='الفحص #'+(i+1)+' (<code>'+(e.id||'بلا id')+'</code>)';
+ if(!e.id||!/^[a-z0-9-]+$/.test(e.id))er(w+': الحقل id مطلوب بأحرف إنجليزية صغيرة وأرقام وشرطات فقط');
+ if(ids.has(e.id))er(w+': id مكرر');ids.add(e.id);
+ if(!isPair(e.name))er(w+': name يجب أن يكون [عربي, إنجليزي]');
+ if(!isPair(e.region))er(w+': region يجب أن يكون [عربي, إنجليزي]');
+ if(e.type!='ct'){if(!POSES.includes(e.pose))er(w+': pose غير صحيح. المسموح: '+POSES.join(', '));if(!BEAMS.includes(e.beam))er(w+': beam غير صحيح. المسموح: '+BEAMS.join(', '))}
+ if(!e.cr||!e.cr.s)er(w+': cr.s مطلوب (اسم بنية للتمركز)');
+ if(typeof e.sid!='number')er(w+': sid رقم بالأمتار (مثلاً 1.0 يعني 100 سم)');
+ if(!(Array.isArray(e.det)&&e.det.length==3&&typeof e.det[0]=='number'&&typeof e.det[1]=='number'&&['portrait','landscape'].includes(e.det[2])))er(w+': det يجب أن يكون [عرض, ارتفاع, "portrait" أو "landscape"] بالأمتار');
+ if(!Array.isArray(e.layers)||!e.layers.length)er(w+': layers مطلوبة مثل ["skeleton"]');
+ if(!Array.isArray(e.targets)||!e.targets.length)er(w+': targets مطلوبة (قائمة)');
+ ['ind','pos','crt','br','tips','inout'].forEach(k=>{if(!isPair(e[k]))er(w+': الحقل <code>'+k+'</code> يجب أن يكون [عربي, إنجليزي]')});
+ ['crit','err'].forEach(k=>{if(!Array.isArray(e[k])||!e[k].length||!e[k].every(isPair))er(w+': الحقل <code>'+k+'</code> يجب أن يكون قائمة من [عربي, إنجليزي]')});
+ if(!Array.isArray(e.steps)||!e.steps.length||!e.steps.every(isPair))er(w+': steps يجب أن تكون قائمة من [عربي, إنجليزي]');
+ const x=e.exp;if(!x||!isPair(x.kv)||!isPair(x.mas)||!isPair(x.ex)||!isPair(x.grid)||!isPair(x.aec))er(w+': exp يحتاج kv و mas و ex و grid و aec، كلها [عربي, إنجليزي]');
+ const rx=s=>{try{return new RegExp(s)}catch(_){er(w+': تعبير غير صالح: <code>'+s+'</code>');return null}};
+ (e.targets||[]).forEach(t=>{const r=rx(t);if(r&&!names.some(n=>r.test(n)))er(w+': لا توجد بنية تطابق <code>'+t+'</code>. راجع structure-names.txt')});
+ if(e.cr&&e.cr.s){const r=rx(e.cr.s);if(r&&!names.some(n=>r.test(n)))er(w+': لا توجد بنية تطابق cr.s <code>'+e.cr.s+'</code>')}
+ if(e.limb&&!e.layers.includes('skeleton'))wr(w+': فحص طرف بدون طبقة skeleton');
+ if((e.crit||[]).length<3)wr(w+': أقل من 3 معايير قبول');
+});
+// catalog
+const used=new Set();let leaves=0;
+function walk(n,p){const sib=new Set();(n.kids||[]).forEach(k=>{const w='الكتالوج: <code>'+p+'/'+(k.id||'؟')+'</code>';
+ if(!k.id||!/^[a-z0-9-]+$/.test(k.id))er(w+': id مطلوب بأحرف إنجليزية صغيرة وأرقام وشرطات');
+ if(sib.has(k.id))er(w+': id مكرر داخل نفس القائمة');sib.add(k.id);
+ if(!isPair(k.name))er(w+': name يجب أن يكون [عربي, إنجليزي]');
+ if(k.p){leaves++;if(k.ex){used.add(k.ex);if(!ids.has(k.ex))er(w+': ex يشير إلى فحص غير موجود <code>'+k.ex+'</code>')}if(k.kids)er(w+': وضعية (p) لا يجب أن تحتوي kids')}
+ else{if(!k.kids&&!k.coming)wr(w+': قسم بدون kids');walk(k,p+'/'+k.id)}})}
+walk(cat,'');
+ex.forEach(e=>{if(!used.has(e.id))wr('الفحص <code>'+e.id+'</code> غير مربوط بأي وضعية في الكتالوج (أضف "ex":"'+e.id+'" للوضعية المناسبة)')});
+I.push('عدد الفحوصات الكاملة: <b>'+ex.length+'</b>');I.push('عدد الوضعيات المفهرسة في الكتالوج: <b>'+leaves+'</b>');I.push('وضعيات مربوطة بفحص كامل: <b>'+used.size+'</b> فحصاً');
+show()})();
+function show(){document.getElementById('out').innerHTML=(E.length?'<h2 class="er">أخطاء ('+E.length+') — لازم تُصلح</h2><ul>'+E.map(x=>'<li class="er">'+x+'</li>').join('')+'</ul>':'<h2 class="ok">لا توجد أخطاء ✓</h2>')+(W.length?'<h2 class="wr">تنبيهات ('+W.length+')</h2><ul>'+W.map(x=>'<li class="wr">'+x+'</li>').join('')+'</ul>':'')+(I.length?'<h2>ملخص</h2><ul>'+I.map(x=>'<li>'+x+'</li>').join('')+'</ul>':'')}
+</script></body></html>
