@@ -9,7 +9,7 @@
 <script>try{if(localStorage.getItem('lang')=='en'){document.documentElement.lang='en';document.documentElement.dir='ltr'}}catch(e){}</script>
 <script type="importmap">{"imports":{"three":"./three.module.js"}}</script>
 <style>
-.stage{position:relative;height:clamp(480px,calc(100vh - 250px),780px);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,rgba(61,139,255,.16),transparent 65%),rgba(3,10,26,.55);touch-action:none;direction:ltr}
+.stage{position:relative;height:clamp(480px,calc(100vh - 250px),780px);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,rgba(61,139,255,.16),transparent 65%),rgba(3,10,26,.55);direction:ltr}
 .stage canvas{display:block;width:100%;height:100%;outline:0}
 .cv{position:absolute;inset:0}
 .panel{position:absolute;z-index:3;background:rgba(6,18,42,.72);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14px;color:var(--text)}
@@ -42,6 +42,7 @@ html[lang=ar] .lay{direction:rtl}
  #sbox{order:1}#regions{order:2;flex-direction:row;flex-wrap:wrap;gap:6px}#layers{order:3;display:grid;grid-template-columns:1fr 1fr;column-gap:14px}#layers h4{grid-column:1/-1}#info{order:0}
  #regions button{padding:6px 12px}.lay small{display:none}#hint{display:none}
 }
+#lock{display:none;position:absolute;left:50%;bottom:10px;transform:translateX(-50%);z-index:4;background:rgba(61,139,255,.9);color:#fff;border:0;border-radius:22px;padding:8px 20px;font:inherit;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.4)}#lock.open{background:rgba(6,18,42,.9);border:1px solid var(--blue)}@media(pointer:coarse){#lock{display:block}}
 </style>
 </head>
 <body data-page="anatomy">
@@ -50,7 +51,7 @@ html[lang=ar] .lay{direction:rtl}
 <h1><span data-l="ar">التشريح</span><span data-l="en">Anatomy</span></h1>
 <p class="lead"><span data-l="ar">جسم إنسان ثلاثي الأبعاد. دوّر وكبّر، شغّل الطبقات، واضغط على أي بنية لتعرف اسمها بالعربية والإنجليزية واللاتينية.</span><span data-l="en">A 3D human body. Rotate and zoom, switch layers, and tap any structure to see its name in Arabic, English and Latin.</span></p>
 <div class="stage" id="stage">
-<div class="cv" id="cvw"><canvas id="cv"></canvas><div id="tip"></div><div id="load"></div><div id="hint"><span data-l="ar">اسحب للتدوير · قرّص للتكبير</span><span data-l="en">Drag to rotate · pinch to zoom</span></div></div>
+<div class="cv" id="cvw"><canvas id="cv"></canvas><button id="lock" type="button"></button><div id="tip"></div><div id="load"></div><div id="hint"><span data-l="ar">اسحب للتدوير · قرّص للتكبير</span><span data-l="en">Drag to rotate · pinch to zoom</span></div></div>
 <div class="panel" id="layers"><h4><span data-l="ar">الطبقات</span><span data-l="en">LAYERS</span></h4></div>
 <div class="panel" id="sbox"><input id="q" type="search" autocomplete="off" placeholder="Search / بحث"><div id="sres"></div></div>
 <div class="panel" id="regions"></div>
@@ -59,7 +60,7 @@ html[lang=ar] .lay{direction:rtl}
 <p class="note"><span data-l="ar">للأغراض التعليمية فقط. الأسماء العربية مسودة قيد المراجعة، وبعض البنى تظهر بالإنجليزية واللاتينية فقط حالياً.</span><span data-l="en">For educational use only. Arabic names are a draft under review; some structures currently show English and Latin only.</span></p>
 <p class="note credits"><span data-l="ar">النموذج ثلاثي الأبعاد: <a href="https://github.com/Z-Anatomy" target="_blank" rel="noopener">Z-Anatomy</a> (مبني على BodyParts3D)، بترخيص <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. تم تحويله وتبسيطه للعرض على الويب.</span><span data-l="en">3D model: <a href="https://github.com/Z-Anatomy" target="_blank" rel="noopener">Z-Anatomy</a> (based on BodyParts3D), licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Converted and simplified for the web.</span></p>
 </main>
-<script src="common.js?v=5"></script>
-<script type="module" src="anatomy.js?v=2"></script>
+<script src="common.js?v=6"></script>
+<script type="module" src="anatomy.js?v=3"></script>
 </body>
 </html>

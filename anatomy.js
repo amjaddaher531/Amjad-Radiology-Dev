@@ -1,15 +1,16 @@
 import * as THREE from 'three';
 import {GLTFLoader} from './GLTFLoader.js';
 import {OrbitControls} from './OrbitControls.js';
-const stage=document.getElementById('cvw'),cv=document.getElementById('cv');
+const stage=document.getElementById('cvw'),cv=document.getElementById('cv');let dirty=true;window.__renders=0;
 const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,innerWidth<800?1.5:2));
 const scene=new THREE.Scene();
 const cam=new THREE.PerspectiveCamera(35,1,.02,30);cam.position.set(0,.95,3.0);
 const ctl=new OrbitControls(cam,cv);ctl.target.set(0,.88,0);ctl.enableDamping=true;ctl.dampingFactor=.08;ctl.minDistance=.12;ctl.maxDistance=5;ctl.screenSpacePanning=true;ctl.update();
+ctl.addEventListener('change',()=>{dirty=true});
 scene.add(new THREE.HemisphereLight(0xcfe2ff,0x0a1a40,1.15));
 const d1=new THREE.DirectionalLight(0xffffff,1.9);d1.position.set(1.5,2.5,3);scene.add(d1);
 const d2=new THREE.DirectionalLight(0x6aa8ff,1.4);d2.position.set(-2,1.5,-2.5);scene.add(d2);
-function size(){const w=stage.clientWidth,h=stage.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+function size(){const w=stage.clientWidth,h=stage.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();dirty=true}
 addEventListener('resize',size);new ResizeObserver(size).observe(stage);size();
 const LAY=[
  {k:'skeleton',ar:'العظام والغضاريف',en:'Bones & cartilage',c:0xe3ebf7,mb:3.5,on:1},
@@ -32,12 +33,12 @@ function loadLayer(l){return new Promise(res=>{
  loader.load(l.k+'.glb',g=>{const grp=new THREE.Group();grp.name=l.k;
   g.scene.traverse(o=>{if(o.isMesh){const nm=o.userData.name||o.name;o.userData.nm=nm;if(/\.g$/.test(nm)){o.visible=false}
    o.geometry.computeVertexNormals();o.userData.layer=l.k;o.userData.base=matFor(l,nm);o.material=o.userData.base;meshes.push(o)}});
-  grp.add(g.scene);scene.add(grp);groups[l.k]=grp;loaded[l.k]=1;loadEl.style.display='none';res()},
+  grp.add(g.scene);scene.add(grp);groups[l.k]=grp;loaded[l.k]=1;loadEl.style.display='none';dirty=true;res()},
   e=>{if(e.total)loadEl.textContent=(document.documentElement.lang=='ar'?l.ar:l.en)+' '+Math.round(e.loaded/e.total*100)+'%'},
   ()=>{loadEl.textContent='Load error';res()})})}
 const P=document.getElementById('layers');
 LAY.forEach(l=>{const lb=document.createElement('label');lb.className='lay';lb.innerHTML='<input type="checkbox"><i style="background:#'+l.c.toString(16).padStart(6,'0')+'"></i><span><span data-l="ar">'+l.ar+'</span><span data-l="en">'+l.en+'</span></span><small>'+l.mb+' MB</small>';
- const ck=lb.querySelector('input');ck.checked=!!l.on;ck.onchange=async()=>{if(ck.checked){await loadLayer(l)}if(groups[l.k])groups[l.k].visible=ck.checked};P.appendChild(lb)});
+ const ck=lb.querySelector('input');ck.checked=!!l.on;ck.onchange=async()=>{if(ck.checked){await loadLayer(l)}if(groups[l.k])groups[l.k].visible=ck.checked;dirty=true};P.appendChild(lb)});
 loadLayer(LAY[0]);
 const RG=document.getElementById('regions');
 REG.forEach(r=>{const b=document.createElement('button');b.innerHTML='<span data-l="ar">'+r[0]+'</span><span data-l="en">'+r[1]+'</span>';b.onclick=()=>fly(new THREE.Vector3(...r[2]),r[3]);RG.appendChild(b)});
@@ -48,7 +49,7 @@ function pick(ev){const r=cv.getBoundingClientRect();mp.set((ev.clientX-r.left)/
  const vis=meshes.filter(m=>m.visible&&groups[m.userData.layer]&&groups[m.userData.layer].visible);const h=ray.intersectObjects(vis,false);return h.length?h[0].object:null}
 const lang=()=>document.documentElement.lang;
 function label(n){const i=NAMES[n.userData.nm];if(!i)return n.userData.nm;return lang()=='ar'&&i[2]?i[2]:i[0]}
-function select(o){if(sel)sel.material=sel.userData.base;sel=o;const box=document.getElementById('info');
+function select(o){dirty=true;if(sel)sel.material=sel.userData.base;sel=o;const box=document.getElementById('info');
  if(!o){box.classList.remove('on');return}
  o.material=gold;const i=NAMES[o.userData.nm]||[o.userData.nm.replace(/\.[a-z]$/,''),'','','',o.userData.layer];
  document.getElementById('iar').textContent=i[2]||'';document.getElementById('ien').textContent=i[0];document.getElementById('ila').textContent=i[1];
@@ -70,7 +71,12 @@ async function goTo(name){const i=NAMES[name];const l=LAY.find(x=>x.k==i[4]);sr.
  await loadLayer(l);groups[l.k].visible=true;P.querySelectorAll('input')[LAY.indexOf(l)].checked=true;
  const o=meshes.find(m=>m.userData.nm==name);if(!o)return;select(o);const b=new THREE.Box3().setFromObject(o),c=b.getCenter(new THREE.Vector3()),s=b.getSize(new THREE.Vector3()).length();fly(c,Math.max(.35,s*2.4))}
 function frame(t){requestAnimationFrame(frame);
- if(anim){const k=Math.min(1,(t-anim.t0)/900),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;cam.position.lerpVectors(anim.from,anim.to,e);ctl.target.lerpVectors(anim.ft,anim.tt,e);if(k>=1)anim=null}
- ctl.update();R.render(scene,cam)}
+ if(anim){dirty=true;const k=Math.min(1,(t-anim.t0)/900),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;cam.position.lerpVectors(anim.from,anim.to,e);ctl.target.lerpVectors(anim.ft,anim.tt,e);if(k>=1)anim=null}
+ const mv=ctl.update();if(mv||dirty||anim){R.render(scene,cam);dirty=false;window.__renders++}}
 requestAnimationFrame(frame);
+
+const touchy=matchMedia('(pointer:coarse)').matches,lk=document.getElementById('lock');
+function setLock(on){ctl.enabled=!on;cv.style.touchAction=on?'pan-y':'none';if(lk){lk.classList.toggle('open',!on);lk.innerHTML=on?'<span data-l="ar">حرّك الجسم</span><span data-l="en">Move the body</span>':'<span data-l="ar">تمرير الصفحة</span><span data-l="en">Scroll the page</span>'}dirty=true}
+if(touchy){setLock(true);lk.onclick=()=>setLock(!ctl.enabled?false:true)}
+
 window.__anat={scene,cam,ctl,meshes,loadLayer,LAY,select,NAMES:()=>NAMES};
