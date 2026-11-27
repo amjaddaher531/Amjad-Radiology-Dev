@@ -30283,10 +30283,10 @@
    "s": "^Maxilla$",
    "at": "center"
   },
-  "sid": 0.4,
+  "sid": 0.8,
   "det": [
-   0.03,
-   0.04,
+   0.12,
+   0.16,
    "portrait"
   ],
   "dist": 1.6,
@@ -30387,16 +30387,16 @@
    "Head"
   ],
   "pose": "erect",
-  "beam": "AP",
-  "tilt": 0,
+  "beam": "R-L",
+  "tilt": -8,
   "cr": {
    "s": "^Maxilla$",
    "at": "center"
   },
-  "sid": 0.4,
+  "sid": 0.8,
   "det": [
-   0.03,
-   0.04,
+   0.12,
+   0.16,
    "landscape"
   ],
   "dist": 1.6,
@@ -30489,16 +30489,16 @@
    "Head"
   ],
   "pose": "erect",
-  "beam": "SI",
-  "tilt": 0,
+  "beam": "AP",
+  "tilt": -55,
   "cr": {
    "s": "^Maxilla$",
    "at": "center"
   },
-  "sid": 0.4,
+  "sid": 0.8,
   "det": [
-   0.06,
-   0.08,
+   0.14,
+   0.18,
    "landscape"
   ],
   "dist": 1.6,
@@ -30592,12 +30592,12 @@
   ],
   "pose": "erect",
   "beam": "PA",
-  "tilt": 0,
+  "tilt": 7,
   "cr": {
    "s": "^Mandible$",
    "at": "center"
   },
-  "sid": 0.5,
+  "sid": 0.8,
   "det": [
    0.15,
    0.3,
@@ -30900,6 +30900,10 @@
     "اطلب الثبات التام ثم ابدأ المسح وراجع المقاطع.",
     "Ask for total stillness, scan and review reconstructions."
    ]
+  ],
+  "range": [
+   "^Mandible$",
+   "^Maxilla$"
   ]
  },
  {
