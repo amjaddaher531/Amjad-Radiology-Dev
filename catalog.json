@@ -3307,7 +3307,8 @@
           "حوض ضفدع",
           "Frog-leg pelvis"
          ],
-         "id": "frog-leg-pelvis"
+         "id": "frog-leg-pelvis",
+         "ex": "pelvis-frog"
         },
         {
          "p": 1,
@@ -3315,7 +3316,8 @@
           "المدخل (زاوية ذيلية)",
           "Inlet (caudal tilt)"
          ],
-         "id": "inlet-caudal-tilt"
+         "id": "inlet-caudal-tilt",
+         "ex": "pelvis-inlet"
         },
         {
          "p": 1,
@@ -3323,7 +3325,8 @@
           "المخرج (زاوية رأسية)",
           "Outlet (cephalic tilt)"
          ],
-         "id": "outlet-cephalic-tilt"
+         "id": "outlet-cephalic-tilt",
+         "ex": "pelvis-outlet"
         },
         {
          "p": 1,
@@ -3331,7 +3334,8 @@
           "جوديه (الحرقفة المائل)",
           "Judet iliac oblique"
          ],
-         "id": "judet-iliac-oblique"
+         "id": "judet-iliac-oblique",
+         "ex": "pelvis-judet-iliac"
         },
         {
          "p": 1,
@@ -3339,7 +3343,8 @@
           "جوديه (السدادي المائل)",
           "Judet obturator oblique"
          ],
-         "id": "judet-obturator-oblique"
+         "id": "judet-obturator-oblique",
+         "ex": "pelvis-judet-obturator"
         },
         {
          "p": 1,
@@ -3347,7 +3352,8 @@
           "المقطع الكاذب",
           "False profile"
          ],
-         "id": "false-profile"
+         "id": "false-profile",
+         "ex": "pelvis-false-profile"
         }
        ],
        "id": "pelvic-girdle"
@@ -3364,7 +3370,8 @@
           "AP محوري للعجزيين الحرقفيين",
           "AP axial SI joints (30–35° cephalad)"
          ],
-         "id": "ap-axial-si-joints-30-35-cephalad"
+         "id": "ap-axial-si-joints-30-35-cephalad",
+         "ex": "si-ap-axial"
         },
         {
          "p": 1,
@@ -3372,7 +3379,8 @@
           "RPO/LPO للمفاصل العجزية الحرقفية",
           "RPO/LPO SI joints"
          ],
-         "id": "rpo-lpo-si-joints"
+         "id": "rpo-lpo-si-joints",
+         "ex": "si-oblique"
         }
        ],
        "id": "sacroiliac-joints"
@@ -3389,7 +3397,8 @@
           "AP للارتفاق",
           "AP symphysis"
          ],
-         "id": "ap-symphysis"
+         "id": "ap-symphysis",
+         "ex": "symphysis-ap"
         },
         {
          "p": 1,
@@ -3401,7 +3410,8 @@
           "عدم استقرار الارتفاق",
           "Symphysis instability"
          ],
-         "id": "flamingo-single-leg-stress"
+         "id": "flamingo-single-leg-stress",
+         "ex": "symphysis-flamingo"
         }
        ],
        "id": "pubic-symphysis"
@@ -3418,7 +3428,8 @@
           "العجز AP محوري",
           "AP axial sacrum (15° cephalad)"
          ],
-         "id": "ap-axial-sacrum-15-cephalad"
+         "id": "ap-axial-sacrum-15-cephalad",
+         "ex": "sacrum-ap-axial"
         },
         {
          "p": 1,
@@ -3426,7 +3437,8 @@
           "العصعص AP محوري",
           "AP axial coccyx (10° caudad)"
          ],
-         "id": "ap-axial-coccyx-10-caudad"
+         "id": "ap-axial-coccyx-10-caudad",
+         "ex": "coccyx-ap-axial"
         },
         {
          "p": 1,
@@ -3434,7 +3446,8 @@
           "العجز والعصعص جانبي",
           "Lateral sacrum/coccyx"
          ],
-         "id": "lateral-sacrum-coccyx"
+         "id": "lateral-sacrum-coccyx",
+         "ex": "sacrum-coccyx-lat"
         }
        ],
        "id": "sacrum-coccyx"
@@ -3583,7 +3596,8 @@
           "صدري جانبي",
           "Lateral thoracic"
          ],
-         "id": "lateral-thoracic"
+         "id": "lateral-thoracic",
+         "ex": "thoracic-lat"
         },
         {
          "p": 1,
@@ -3591,7 +3605,8 @@
           "صدري مائل",
           "Oblique thoracic"
          ],
-         "id": "oblique-thoracic"
+         "id": "oblique-thoracic",
+         "ex": "thoracic-oblique"
         },
         {
          "p": 1,
@@ -3599,7 +3614,8 @@
           "جانبي أفقي (رضوض)",
           "Cross-table lateral (trauma)"
          ],
-         "id": "cross-table-lateral-trauma"
+         "id": "cross-table-lateral-trauma",
+         "ex": "thoracic-cross-table"
         },
         {
          "p": 1,
@@ -3607,7 +3623,8 @@
           "ثني/بسط",
           "Flexion/extension"
          ],
-         "id": "flexion-extension"
+         "id": "flexion-extension",
+         "ex": "thoracic-flex-ext"
         }
        ],
        "id": "thoracic"
@@ -3650,7 +3667,8 @@
           "الجزء بين المفصلي",
           "Pars interarticularis"
          ],
-         "id": "oblique-lumbar-scottie-dog"
+         "id": "oblique-lumbar-scottie-dog",
+         "ex": "lumbar-oblique"
         },
         {
          "p": 1,
@@ -3658,7 +3676,8 @@
           "L5-S1 جانبي (لقطة موضعية)",
           "L5–S1 lateral spot"
          ],
-         "id": "l5-s1-lateral-spot"
+         "id": "l5-s1-lateral-spot",
+         "ex": "lumbar-l5s1-lat"
         },
         {
          "p": 1,
@@ -3666,7 +3685,8 @@
           "AP محوري L5-S1",
           "AP axial L5–S1"
          ],
-         "id": "ap-axial-l5-s1"
+         "id": "ap-axial-l5-s1",
+         "ex": "lumbar-l5s1-ap"
         },
         {
          "p": 1,
@@ -3678,7 +3698,8 @@
           "الاستقرار",
           "Stability"
          ],
-         "id": "flexion-extension"
+         "id": "flexion-extension",
+         "ex": "lumbar-flex-ext"
         },
         {
          "p": 1,
@@ -3686,7 +3707,8 @@
           "جانبي أفقي (رضوض)",
           "Cross-table lateral (trauma)"
          ],
-         "id": "cross-table-lateral-trauma"
+         "id": "cross-table-lateral-trauma",
+         "ex": "lumbar-cross-table"
         }
        ],
        "id": "lumbar"
@@ -3703,7 +3725,8 @@
           "العمود كاملاً PA/AP واقف",
           "PA/AP full spine erect"
          ],
-         "id": "pa-ap-full-spine-erect"
+         "id": "pa-ap-full-spine-erect",
+         "ex": "scoliosis-full-pa"
         },
         {
          "p": 1,
@@ -3711,7 +3734,8 @@
           "العمود كاملاً جانبي واقف",
           "Lateral full spine erect"
          ],
-         "id": "lateral-full-spine-erect"
+         "id": "lateral-full-spine-erect",
+         "ex": "scoliosis-full-lat"
         },
         {
          "p": 1,
@@ -3719,7 +3743,8 @@
           "الانحناء الجانبي (فيرغسون)",
           "Side-bending (Ferguson)"
          ],
-         "id": "side-bending-ferguson"
+         "id": "side-bending-ferguson",
+         "ex": "scoliosis-bending"
         },
         {
          "p": 1,
@@ -3727,24 +3752,44 @@
           "عمر العظام (ريسر)",
           "Hand for bone age (Risser)"
          ],
-         "id": "hand-for-bone-age-risser"
+         "id": "hand-for-bone-age-risser",
+         "ex": "scoliosis-bone-age"
         }
        ],
        "id": "scoliosis"
       },
       {
        "name": [
-        "العجز والعصعص (انظر الحوض)",
-        "Sacrum & coccyx (see Pelvis)"
+        "العجز والعصعص",
+        "Sacrum & coccyx"
        ],
        "kids": [
         {
          "p": 1,
          "name": [
-          "انظر الحوض › العجز والعصعص",
-          "See Pelvis › Sacrum & coccyx"
+          "العجز AP محوري",
+          "AP axial sacrum (15° cephalad)"
          ],
-         "id": "see-pelvis-sacrum-coccyx"
+         "id": "ap-axial-sacrum-15-cephalad",
+         "ex": "sacrum-ap-axial"
+        },
+        {
+         "p": 1,
+         "name": [
+          "العصعص AP محوري",
+          "AP axial coccyx (10° caudad)"
+         ],
+         "id": "ap-axial-coccyx-10-caudad",
+         "ex": "coccyx-ap-axial"
+        },
+        {
+         "p": 1,
+         "name": [
+          "العجز والعصعص جانبي",
+          "Lateral sacrum/coccyx"
+         ],
+         "id": "lateral-sacrum-coccyx",
+         "ex": "sacrum-coccyx-lat"
         }
        ],
        "id": "sacrum-coccyx-see-pelvis"
