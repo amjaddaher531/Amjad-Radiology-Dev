@@ -5122,5 +5122,5994 @@
     "Review against the acceptance criteria and check the side marker."
    ]
   ]
+ },
+ {
+  "id": "chest-pa-expiration",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر PA في الزفير",
+   "Chest PA (expiration)"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "كشف استرواح الصدر الصغير وحبس الهواء (انسداد قصبي أو جسم غريب)؛ يظهر الاسترواح أوضح بالزفير.",
+   "Detect small pneumothorax and air trapping (bronchial obstruction or foreign body); a pneumothorax is more conspicuous on expiration."
+  ],
+  "pos": [
+   "نفس وضعية الصدر PA: المريض واقف وجهه للكاسيت، الذقن مرفوع، اليدان على الوركين والكوعان للأمام، دون دوران.",
+   "Same as the standard PA chest: patient erect facing the detector, chin raised, hands on hips with elbows forward, no rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مستوى T7 على الخط الناصف.",
+   "Horizontal central ray perpendicular to the detector at T7 on the midline."
+  ],
+  "br": [
+   "زفير كامل ثم حبس النفس قبل التعريض.",
+   "Full expiration, then hold the breath before exposure."
+  ],
+  "crit": [
+   [
+    "الرئتان كاملتان من القمم إلى الزوايا الضلعية الحجابية.",
+    "Both lungs fully included, apices to costophrenic angles."
+   ],
+   [
+    "الحجاب مرتفع وعدد الأضلاع الخلفية الظاهرة أقل (حوالي 8 مقابل 10 بالشهيق).",
+    "Diaphragm is higher and fewer posterior ribs are visible (about 8 vs 10 on inspiration)."
+   ],
+   [
+    "لا دوران: المفصلان القصيان الترقويان متساويا البعد عن العمود.",
+    "No rotation: sternoclavicular joints equidistant from the spine."
+   ]
+  ],
+  "err": [
+   [
+    "زفير غير كامل: تشبه الصورة صورة الشهيق وتضيع فائدتها.",
+    "Incomplete expiration: the image resembles an inspiration film and loses its value."
+   ],
+   [
+    "دوران المريض: تشوه في ظل القلب والمنصف.",
+    "Patient rotation distorts the heart and mediastinum."
+   ]
+  ],
+  "tips": [
+   "درّب المريض على الزفير الكامل قبل التصوير، وسجّل على الطلب أنها صورة زفير.",
+   "Coach the patient on full expiration beforehand and note on the request that it is an expiration film."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر المريض عند T7 ويخرج من الصدر الأمامي نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back at T7 and exits the anterior chest toward the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "110–125",
+    "110–125"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 400 mA × 0.01 ث = 4 mAs",
+    "Example: 400 mA × 0.01 s = 4 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) للبالغين",
+    "Grid for adults"
+   ],
+   "aec": [
+    "AEC: الغرفتان الجانبيتان",
+    "AEC: both outer chambers"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "اشرح للمريض الزفير الكامل وحبس النفس قبل التصوير.",
+    "Explain full expiration and the breath-hold beforehand."
+   ],
+   [
+    "ضع المريض واقفاً أمام الكاسيت وتأكد من عدم الدوران.",
+    "Stand the patient facing the detector and check there is no rotation."
+   ],
+   [
+    "مركّز الشعاع عند T7 على بعد 180 سم وضيّق المجال على الرئتين.",
+    "Centre at T7, 180 cm SID, and collimate to the lungs."
+   ],
+   [
+    "اطلب زفيراً كاملاً وحبس النفس ثم اعرّض.",
+    "Ask for full expiration, hold the breath, then expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ]
+ },
+ {
+  "id": "chest-ap-semi-erect",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر AP نصف جالس (متنقل)",
+   "Chest AP semi-erect (portable)"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "مرضى العناية والأقسام غير القادرين على الوقوف: متابعة الرئتين والأنابيب والخطوط الطبية.",
+   "ICU and ward patients who cannot stand: follow-up of the lungs, tubes and lines."
+  ],
+  "pos": [
+   "المريض جالس أو نصف جالس بأقصى ما يتحمل، الكاسيت خلف الظهر، الكتفان للأمام ملامسان للكاسيت، الرأس بلا دوران.",
+   "Patient sitting or semi-erect as far as tolerated, detector behind the back, shoulders rolled forward, head not rotated."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند منتصف الصدر (مستوى T7) على الخط الناصف، على بعد حوالي 100 إلى 120 سم.",
+   "Central ray perpendicular to the detector at mid-chest (T7) on the midline, at about 100 to 120 cm."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس قدر الإمكان.",
+   "Full inspiration and breath-hold as far as the patient can."
+  ],
+  "crit": [
+   [
+    "الرئتان كاملتان بما فيها الزوايا الضلعية الحجابية.",
+    "Both lungs included with the costophrenic angles."
+   ],
+   [
+    "لا دوران: المفصلان القصيان الترقويان متساويا البعد.",
+    "No rotation: sternoclavicular joints equidistant."
+   ],
+   [
+    "ظهور الأنابيب والخطوط بوضوح مع طرفها.",
+    "Tubes and lines visible including their tips."
+   ]
+  ],
+  "err": [
+   [
+    "دوران المريض أو ميل الكاسيت: تشوه في ظل القلب.",
+    "Patient rotation or detector tilt distorts the cardiac shadow."
+   ],
+   [
+    "بُعد أقصر من اللازم يكبّر القلب (AP يكبّره أصلاً).",
+    "Short distance enlarges the heart (AP already magnifies it)."
+   ]
+  ],
+  "tips": [
+   "دوّن أن الصورة AP نصف جالس بالمعلومات الواضحة، لأنها تغيّر تقييم حجم القلب وسوائل الجنب.",
+   "Record that it is AP semi-erect, as this affects assessment of heart size and pleural fluid."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام ويخرج من الظهر إلى الكاسيت (من الأمام إلى الخلف).",
+   "The beam enters the front and exits the back onto the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "90–110",
+    "90–110"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "شبكة إن توفرت، وإلا بدونها",
+    "Grid if available, otherwise none"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض.",
+    "Check the request and patient ID."
+   ],
+   [
+    "ارفع رأس السرير أو أجلس المريض ثم ضع الكاسيت خلف الظهر.",
+    "Raise the bed head or sit the patient up, then place the detector behind the back."
+   ],
+   [
+    "تأكد من عدم الدوران وأبعد الأسلاك عن الحقل الرئوي.",
+    "Check there is no rotation and move leads off the lung field."
+   ],
+   [
+    "مركّز عند T7 على 100 إلى 120 سم.",
+    "Centre at T7 at 100 to 120 cm."
+   ],
+   [
+    "اطلب شهيقاً عميقاً ثم اعرّض.",
+    "Ask for a deep breath, then expose."
+   ],
+   [
+    "دوّن الوضعية وراجع الصورة.",
+    "Note the position and review the image."
+   ]
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ]
+ },
+ {
+  "id": "chest-lat-decubitus",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر استلقاء جانبي (AP أفقي)",
+   "Chest lateral decubitus (horizontal AP)"
+  ],
+  "pose": "lat-L",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "كشف انصباب جنبي صغير (الجهة المصابة للأسفل) أو استرواح الصدر (الجهة المصابة للأعلى)، وتمييز السائل الحر من المحصور.",
+   "Detect small pleural effusion (affected side down) or pneumothorax (affected side up), and distinguish free from loculated fluid."
+  ],
+  "pos": [
+   "المريض مستلقٍ على جنبه فوق وسادة أو حامل، الذراعان فوق الرأس، الوجه للأمام. الكاسيت عمودي خلف الظهر.",
+   "Patient lying on one side on a pad or stretcher, arms raised above the head, face forward. Detector upright behind the back."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عند T7 على الخط الناصف، من الأمام إلى الخلف. ينتظر المريض 5 دقائق في الوضعية قبل التعريض.",
+   "Horizontal central ray at T7 on the midline, anterior to posterior. The patient stays in position about 5 minutes before exposure."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس.",
+   "Full inspiration, hold the breath."
+  ],
+  "crit": [
+   [
+    "الرئتان كاملتان وظهور الحد السفلي للسائل أو الهواء بوضوح.",
+    "Both lungs fully included with the fluid or air level clearly visible."
+   ],
+   [
+    "لا دوران وبلا ثنيات جلدية تقلّد استرواحاً.",
+    "No rotation and no skin folds mimicking a pneumothorax."
+   ],
+   [
+    "علامة (Decubitus) واتجاه الجهة السفلى مسجلان.",
+    "Decubitus marker and dependent side recorded."
+   ]
+  ],
+  "err": [
+   [
+    "عدم الانتظار الكافي: لا يتحرك السائل.",
+    "Not waiting long enough: fluid does not shift."
+   ],
+   [
+    "دوران الجسم: تشوه في ظل القلب.",
+    "Body rotation distorts the cardiac shadow."
+   ]
+  ],
+  "tips": [
+   "ضع الوسادة تحت المريض لرفع الصدر عن السرير، واطلب منه رفع الذراعين فوق الرأس بعيداً عن الحقل الرئوي.",
+   "Place a pad under the patient to raise the chest off the bed and move the arms above the head."
+  ],
+  "inout": [
+   "يدخل الشعاع من صدر المريض الأمامي ويخرج من الظهر إلى الكاسيت (من الأمام إلى الخلف، أفقياً).",
+   "The beam enters the anterior chest and exits the back onto the detector (horizontal, anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "110–125",
+    "110–125"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 400 mA × 0.01 ث = 4 mAs",
+    "Example: 400 mA × 0.01 s = 4 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) للبالغين",
+    "Grid for adults"
+   ],
+   "aec": [
+    "AEC: الغرفتان الجانبيتان",
+    "AEC: both outer chambers"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة المصابة واسأل عن الحمل.",
+    "Check the request and the affected side; ask about pregnancy."
+   ],
+   [
+    "ضع المريض على جنبه فوق وسادة والذراعين فوق الرأس.",
+    "Lie the patient on the side on a pad, arms above the head."
+   ],
+   [
+    "ضع الكاسيت عمودياً خلف الظهر.",
+    "Place the detector upright behind the back."
+   ],
+   [
+    "مركّز أفقياً عند T7 وضيّق المجال.",
+    "Centre horizontally at T7 and collimate."
+   ],
+   [
+    "انتظر حوالي 5 دقائق ثم اطلب حبس النفس واعرّض.",
+    "Wait about 5 minutes, then ask for a breath-hold and expose."
+   ],
+   [
+    "ضع علامة Decubitus وراجع الصورة.",
+    "Add the decubitus marker and review the image."
+   ]
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "chest-ap-lordotic",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر AP لوردوزي (القمم)",
+   "Chest AP lordotic (apices)"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 15,
+  "cr": {
+   "s": "^Manubrium of sternum$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Clavicle$"
+  ],
+  "ind": [
+   "إظهار قمم الرئتين بعيداً عن الترقوتين والضلع الأول: آفات القمة، ورم باستد، سل.",
+   "Show the lung apices clear of the clavicles and first rib: apical lesions, Pancoast tumour, tuberculosis."
+  ],
+  "pos": [
+   "المريض واقف وظهره للكاسيت، يميل للخلف بالظهر مقوّساً العمود الفقري (لوردوز) أو الشعاع المائل، والكتفان ملامسان للكاسيت.",
+   "Patient erect with the back to the detector, leaning backwards in lordosis (or use an angled beam), shoulders against the detector."
+  ],
+  "crt": [
+   "إن استُعمل الشعاع المائل: 15 إلى 20 درجة نحو الرأس عند المنبر (Manubrium) على الخط الناصف.",
+   "If a tube angle is used: 15 to 20 degrees cephalad at the manubrium on the midline."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس.",
+   "Full inspiration, hold the breath."
+  ],
+  "crit": [
+   [
+    "القمم ظاهرة فوق الترقوتين دون تداخل.",
+    "Apices visible above the clavicles without overlap."
+   ],
+   [
+    "الترقوتان تقعان فوق القمم.",
+    "Clavicles projected above the apices."
+   ],
+   [
+    "لا دوران والمنتصف في المنتصف.",
+    "No rotation, midline centred."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: الترقوتان تغطيان القمم.",
+    "Insufficient angle: clavicles overlie the apices."
+   ],
+   [
+    "دوران المريض: تشوه الحقول.",
+    "Patient rotation distorts the fields."
+   ]
+  ],
+  "tips": [
+   "إن لم يستطع المريض الميل، استعمل شعاعاً مائلاً نحو الرأس مع بقاء المريض مستقيماً.",
+   "If the patient cannot lean, use a cephalad angle with the patient upright."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام عند المنبر ويخرج من الظهر نحو الكاسيت، مائلاً نحو الرأس.",
+   "The beam enters the front at the manubrium and exits the back onto the detector, angled cephalad."
+  ],
+  "exp": {
+   "kv": [
+    "110–125",
+    "110–125"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 400 mA × 0.01 ث = 4 mAs",
+    "Example: 400 mA × 0.01 s = 4 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) للبالغين",
+    "Grid for adults"
+   ],
+   "aec": [
+    "AEC: الغرفتان الجانبيتان",
+    "AEC: both outer chambers"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check the request and ID; ask about pregnancy."
+   ],
+   [
+    "ضع المريض واقفاً بظهره للكاسيت.",
+    "Stand the patient with the back to the detector."
+   ],
+   [
+    "اطلب الميل للخلف أو اضبط الأنبوب 15 إلى 20 درجة نحو الرأس.",
+    "Ask for a backward lean or angle the tube 15 to 20 degrees cephalad."
+   ],
+   [
+    "مركّز عند المنبر وضيّق المجال على القمم.",
+    "Centre at the manubrium and collimate to the apices."
+   ],
+   [
+    "اطلب شهيقاً عميقاً ثم اعرّض.",
+    "Ask for full inspiration, then expose."
+   ],
+   [
+    "راجع الصورة.",
+    "Review the image."
+   ]
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ]
+ },
+ {
+  "id": "chest-cross-table-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر جانبي بشعاع أفقي (Cross-table)",
+   "Chest cross-table lateral"
+  ],
+  "pose": "supine",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "مرضى الرضوض أو غير القادرين على الوقوف أو الحركة: تقييم الرئتين والمنصف من الجانب.",
+   "Trauma or immobile patients who cannot stand or turn: lateral view of the lungs and mediastinum."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره، الذراعان فوق الرأس، الكاسيت عمودياً بجانب الصدر ملاصقاً للجسم.",
+   "Patient supine, arms raised above the head, detector upright against the side of the chest."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عند مستوى T7 على الخط الناصف الإبطي، موازياً للسرير.",
+   "Horizontal central ray at T7 at the mid-axillary line, parallel to the bed."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس.",
+   "Full inspiration, hold the breath."
+  ],
+  "crit": [
+   [
+    "الرئتان كاملتان من القمم إلى الحجاب.",
+    "Both lungs fully included, apices to diaphragm."
+   ],
+   [
+    "الأضلاع الخلفية متراكبة (لا دوران).",
+    "Posterior ribs superimposed (no rotation)."
+   ],
+   [
+    "لا ظهور للذراعين فوق الحقول.",
+    "Arms clear of the lung fields."
+   ]
+  ],
+  "err": [
+   [
+    "بقاء الذراعين بجانب الصدر: يحجبان المنصف.",
+    "Arms left by the sides obscure the mediastinum."
+   ],
+   [
+    "ميل الكاسيت أو الشعاع: تشوه الحقول.",
+    "Tilt of the detector or beam distorts the fields."
+   ]
+  ],
+  "tips": [
+   "ثبّت الكاسيت بدعامة واطلب من المريض إبقاء الذراعين فوق الرأس قدر الإمكان.",
+   "Support the detector and keep the arms above the head as far as possible."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الجانب الأيمن ويخرج من الأيسر نحو الكاسيت.",
+   "The beam enters horizontally from the right and exits the left onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "110–125",
+    "110–125"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 400 mA × 0.01 ث = 4 mAs",
+    "Example: 400 mA × 0.01 s = 4 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) للبالغين",
+    "Grid for adults"
+   ],
+   "aec": [
+    "AEC: الغرفتان الجانبيتان",
+    "AEC: both outer chambers"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية.",
+    "Check the request and ID."
+   ],
+   [
+    "ارفع الذراعين فوق الرأس وضع الكاسيت عمودياً بجانب الصدر.",
+    "Raise the arms and place the detector upright beside the chest."
+   ],
+   [
+    "مركّز أفقياً عند T7 بالخط الإبطي.",
+    "Centre horizontally at T7 at the mid-axillary line."
+   ],
+   [
+    "اطلب شهيقاً عميقاً ثم اعرّض.",
+    "Ask for full inspiration, then expose."
+   ],
+   [
+    "راجع الصورة.",
+    "Review the image."
+   ]
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "chest-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر مائل RAO/LAO",
+   "Chest oblique RAO/LAO"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "تقييم القلب والرئتين من زاوية مائلة، وتحديد موضع آفة صدرية أو كتلة.",
+   "Evaluate the heart and lungs from an oblique angle and localise a chest lesion or mass."
+  ],
+  "pos": [
+   "المريض واقف، يلف 45 درجة نحو الكاسيت (RAO أو LAO حسب الجهة)، اليد القريبة من الكاسيت على الورك واليد الأخرى فوق الرأس.",
+   "Patient erect, turned about 45 degrees toward the detector (RAO or LAO), near hand on the hip and the other above the head."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عمودي على الكاسيت عند T7 على بعد 180 سم.",
+   "Horizontal central ray perpendicular to the detector at T7 at 180 cm."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس.",
+   "Full inspiration, hold the breath."
+  ],
+  "crit": [
+   [
+    "الرئتان كاملتان بما فيها الزوايا.",
+    "Both lungs fully included with the angles."
+   ],
+   [
+    "زاوية دوران نحو 45 درجة.",
+    "About 45 degrees of rotation."
+   ],
+   [
+    "يظهر ظل القلب بوضوح دون تراكب الكتف.",
+    "Cardiac shadow clear without scapular overlap."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية أقل من 45 درجة: لا يتغير ظل القلب كثيراً.",
+    "Less than 45 degrees: the cardiac shadow barely changes."
+   ],
+   [
+    "بقاء اليدين على الصدر: تراكب على الحقول.",
+    "Hands left on the chest overlap the fields."
+   ]
+  ],
+  "tips": [
+   "حدّد الجهة (RAO أو LAO) على الطلب قبل وضع المريض.",
+   "Confirm RAO or LAO on the request before positioning."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر المريض مائلاً ويخرج من الصدر الأمامي نحو الكاسيت.",
+   "The beam enters the back obliquely and exits the anterior chest toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "110–125",
+    "110–125"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 400 mA × 0.01 ث = 4 mAs",
+    "Example: 400 mA × 0.01 s = 4 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) للبالغين",
+    "Grid for adults"
+   ],
+   "aec": [
+    "AEC: الغرفتان الجانبيتان",
+    "AEC: both outer chambers"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة المطلوبة.",
+    "Check the request and the required side."
+   ],
+   [
+    "ضع المريض واقفاً وأدره 45 درجة.",
+    "Stand the patient and turn him 45 degrees."
+   ],
+   [
+    "ضع اليدين كما هو موضح.",
+    "Position the hands as described."
+   ],
+   [
+    "مركّز عند T7 على 180 سم.",
+    "Centre at T7 at 180 cm."
+   ],
+   [
+    "اطلب شهيقاً عميقاً ثم اعرّض.",
+    "Ask for full inspiration, then expose."
+   ],
+   [
+    "ضع علامة الجهة وراجع الصورة.",
+    "Add the side marker and review the image."
+   ]
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "rot": 45
+ },
+ {
+  "id": "skull-haas",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجمجمة هاس (PA محوري 25°)",
+   "Skull Haas (PA axial 25°)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 25,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "تقييم العظم القذالي وكسوره، وبديل لوضعية تاون عند صعوبة ثني الرقبة؛ جرعة أقل على عدسة العين لأن الشعاع يدخل من الخلف.",
+   "Evaluate the occipital bone and its fractures; an alternative to Towne when neck flexion is difficult, with lower lens dose because the beam enters from behind."
+  ],
+  "pos": [
+   "المريض منبطح أو واقف ووجهه للكاسيت، الجبهة والأنف ملامسان له، الخط الناصف في منتصفه، والـOML عمودي على الكاسيت.",
+   "Patient prone or erect facing the detector, forehead and nose touching it, midsagittal plane centred, OML perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 25° نحو الرأس، يدخل على الخط الناصف تحت الإينيون ويخرج قرب النازيون.",
+   "Central ray angled 25° cephalad, entering on the midline below the inion and exiting near the nasion."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "السرج الخلفي (dorsum sellae) يظهر داخل الثقبة العظمية الكبيرة.",
+    "The dorsum sellae is seen within the foramen magnum."
+   ],
+   [
+    "الصخرتان متناظرتان والقذال بلا دوران.",
+    "Symmetric petrous bones with no occipital rotation."
+   ],
+   [
+    "العظم القذالي كاملاً بحدود واضحة.",
+    "Occipital bone fully shown with clear margins."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية أقل من اللازم: يختفي السرج الخلفي خارج الثقبة الكبيرة.",
+    "Too little angle: the dorsum sellae falls outside the foramen magnum."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الصخرتين.",
+    "Head rotation makes the petrous bones asymmetric."
+   ]
+  ],
+  "tips": [
+   "وضعية بديلة لتاون عند المصاب بتيبس الرقبة. اسأل عن الحمل.",
+   "An alternative to Towne for patients with a stiff neck. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج من الجبهة نحو الكاسيت (من الخلف إلى الأمام) مائلاً نحو الرأس.",
+   "The beam enters the back of the head and exits the forehead onto the detector (posterior to anterior), angled cephalad."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع المريض ووجهه للكاسيت وتأكد أن الـOML عمودي.",
+    "Face the patient to the detector and check the OML is perpendicular."
+   ],
+   [
+    "مركّز مع ميل 25° نحو الرأس وضيّق المجال.",
+    "Centre with a 25° cephalad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs أو استخدم AEC.",
+    "Set kVp and mAs or use AEC."
+   ],
+   [
+    "اطلب حبس النفس والثبات ثم اعرّض.",
+    "Ask for breath-hold and stillness, then expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير.",
+    "Review against the criteria."
+   ]
+  ]
+ },
+ {
+  "id": "skull-smv",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "قاعدة الجمجمة تحت الذقن إلى القمة (SMV)",
+   "Skull base submentovertex (SMV)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "IS",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "تقييم قاعدة الجمجمة والجيب الوتدي والقوسين الوجنيين والفك السفلي والصخرتين.",
+   "Evaluate the skull base, sphenoid sinus, zygomatic arches, mandible and petrous bones."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ والرقبة ممدودة للخلف، قمة الرأس ملامسة للكاسيت أو الذقن مرفوع، الخط IOML موازٍ للكاسيت والناصف عمودي عليه.",
+   "Patient erect or supine with the neck hyperextended, vertex or chin raised, IOML parallel to the detector and midsagittal plane perpendicular to it."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الـIOML، يدخل على الخط الناصف بين زاويتي الفك ويخرج عند القمة.",
+   "Central ray perpendicular to the IOML, entering on the midline between the mandibular angles and exiting at the vertex."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان متناظرتان والخط الناصف عمودي على الكاسيت.",
+    "Petrous bones symmetric with the midline perpendicular to the detector."
+   ],
+   [
+    "الفكان متساويا البعد عن الخط الناصف.",
+    "Mandibular rami equidistant from the midline."
+   ],
+   [
+    "قاعدة الجمجمة واضحة بدون تراكب الفك على الجيب الوتدي.",
+    "Skull base clear without the mandible overlying the sphenoid sinus."
+   ]
+  ],
+  "err": [
+   [
+    "IOML غير موازٍ: يتشوه شكل القاعدة.",
+    "IOML not parallel: the skull base is distorted."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الصخرتين.",
+    "Head rotation makes the petrous bones asymmetric."
+   ]
+  ],
+  "tips": [
+   "لا تجرِ هذا المسقط عند الاشتباه بإصابة العمود الرقبي لأنه يتطلب مد الرقبة بقوة.",
+   "Do not perform this view if a cervical spine injury is suspected, as it needs full neck extension."
+  ],
+  "inout": [
+   "يدخل الشعاع من تحت الذقن بين زاويتي الفك ويخرج من قمة الرأس نحو الكاسيت (من الأسفل إلى الأعلى).",
+   "The beam enters under the chin between the mandibular angles and exits the vertex onto the detector (inferior to superior)."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–35",
+    "25–35"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "اسأل عن ألم الرقبة قبل مدها، واستبعد إصابة العمود الرقبي.",
+    "Ask about neck pain first and exclude cervical spine injury."
+   ],
+   [
+    "مدّ الرقبة وضع الـIOML موازياً للكاسيت.",
+    "Extend the neck and set the IOML parallel to the detector."
+   ],
+   [
+    "مركّز عمودياً على IOML وضيّق المجال.",
+    "Centre perpendicular to the IOML and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة.",
+    "Review the image."
+   ]
+  ]
+ },
+ {
+  "id": "skull-sella-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "السرج التركي جانبي",
+   "Sella turcica lateral"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "تقييم الحفرة النخامية والسرج التركي: كتل النخامية وتآكل السرج وتكلسات.",
+   "Assess the pituitary fossa and sella turcica: pituitary masses, erosion and calcification."
+  ],
+  "pos": [
+   "المريض واقف أو جالس والرأس بوضع جانبي حقيقي، الجانب المراد قريباً من الكاسيت، المستوى بين الحدقتين عمودي والـIOML موازٍ للحافة السفلية للكاسيت.",
+   "Patient erect or seated with the head in a true lateral, the side of interest against the detector, interpupillary line vertical and IOML parallel to the lower detector edge."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت، يدخل أمام وفوق الـEAM بحوالي 2 سم ويخرج من السرج التركي.",
+   "Central ray perpendicular to the detector, entering about 2 cm anterior and superior to the EAM and passing through the sella turcica."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "السرج التركي في وضع جانبي حقيقي بدون دوران.",
+    "Sella turcica in true lateral with no rotation."
+   ],
+   [
+    "الجدار الأمامي والخلفي للسرج واضحان وغير متراكبين.",
+    "Anterior and posterior walls of the sella clear and not superimposed."
+   ],
+   [
+    "الفكان متراكبان تقريباً.",
+    "The rami are approximately superimposed."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس: السرج يظهر مزدوج الحدود.",
+    "Head rotation produces a double contour of the sella."
+   ],
+   [
+    "مجال واسع: تقل الدقة.",
+    "Wide collimation reduces detail."
+   ]
+  ],
+  "tips": [
+   "استعمل تضييقاً شديداً للمجال لتحسين وضوح الحدود الدقيقة.",
+   "Collimate tightly to improve fine bony detail."
+  ],
+  "inout": [
+   "يدخل الشعاع من أحد جانبي الرأس عند أمام وفوق الـEAM ويخرج من الجانب الآخر نحو الكاسيت (جانبي).",
+   "The beam enters one side of the head anterior and superior to the EAM and exits the other side onto the detector (lateral)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع الرأس بوضع جانبي حقيقي وراجع الخط بين الحدقتين.",
+    "Place a true lateral head and check the interpupillary line."
+   ],
+   [
+    "مركّز عمودياً عند السرج التركي وضيّق المجال.",
+    "Centre perpendicular at the sella and collimate tightly."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة.",
+    "Review the image."
+   ]
+  ]
+ },
+ {
+  "id": "skull-cross-table-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجمجمة جانبي بشعاع أفقي (رضوض)",
+   "Skull cross-table lateral (trauma)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "supine",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "مصاب رضوض على ظهره: كسور القبة، والهواء داخل القحف، ومستويات السائل بالجيب الوتدي دون تحريك الرأس.",
+   "Supine trauma patient: vault fractures, intracranial air and sphenoid sinus fluid levels without moving the head."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره لا يُحرَّك رأسه، الكاسيت عمودياً ملاصقاً لجانب الرأس، الخط بين الحدقتين عمودياً على الطاولة.",
+   "Patient supine with the head not moved, the detector upright against the side of the head, interpupillary line vertical to the table."
+  ],
+  "crt": [
+   "شعاع أفقي عمودي على الكاسيت، يدخل أمام وفوق الـEAM بحوالي 5 سم.",
+   "Horizontal beam perpendicular to the detector, entering about 5 cm anterior and superior to the EAM."
+  ],
+  "br": [
+   "حبس النفس إن أمكن.",
+   "Breath-hold if possible."
+  ],
+  "crit": [
+   [
+    "الجمجمة كاملة بدون تحريك المريض.",
+    "Whole skull shown without moving the patient."
+   ],
+   [
+    "لا دوران: الفكان متراكبان تقريباً.",
+    "No rotation: the rami approximately superimposed."
+   ],
+   [
+    "إن وُجد مستوى سائل بالجيب الوتدي فهو ظاهر.",
+    "Any sphenoid sinus fluid level is visible."
+   ]
+  ],
+  "err": [
+   [
+    "ميل الكاسيت: تشوه الأبعاد.",
+    "Detector tilt distorts dimensions."
+   ],
+   [
+    "تحريك الرأس: خطر على العمود الرقبي.",
+    "Moving the head risks the cervical spine."
+   ]
+  ],
+  "tips": [
+   "لا تحرك الرأس حتى استبعاد إصابة العمود الرقبي، وابحث عن مستوى سائل-هواء بالجيب الوتدي.",
+   "Do not move the head until a cervical spine injury is excluded; look for a sphenoid air-fluid level."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من جانب الرأس ويخرج من الجانب الآخر إلى الكاسيت (جانبي).",
+   "The beam enters horizontally from the side of the head and exits the other side onto the detector (lateral)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أبقِ المريض مستلقياً ولا تحرك رأسه.",
+    "Keep the patient supine and do not move the head."
+   ],
+   [
+    "ضع الكاسيت عمودياً بجانب الرأس وثبّته.",
+    "Place the detector upright beside the head and support it."
+   ],
+   [
+    "مركّز أفقياً وضيّق المجال.",
+    "Centre horizontally and collimate."
+   ],
+   [
+    "اضبط kVp وmAs واعرّض.",
+    "Set kVp and mAs and expose."
+   ],
+   [
+    "راجع الصورة.",
+    "Review the image."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "skull-reverse-caldwell",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "AP محوري 15° رأسياً (كالدويل المعكوس)",
+   "AP axial 15° cephalad (reverse Caldwell)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 15,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid|Ethmoid) bone$|^Mandible$|^Maxilla$"
+  ],
+  "ind": [
+   "بديل لكالدويل للمصاب على ظهره: الجبهة والجيوب والحجاج والعظم الجبهي.",
+   "Alternative to Caldwell for a supine patient: frontal bone, sinuses and orbits."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره، الخط الناصف في منتصف الكاسيت، الـOML عمودي على الكاسيت.",
+   "Patient supine, midsagittal plane centred on the detector, OML perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15° نحو الرأس، يدخل على الخط الناصف ويخرج عند النازيون.",
+   "Central ray angled 15° cephalad, entering on the midline and exiting at the nasion."
+  ],
+  "br": [
+   "حبس النفس والثبات.",
+   "Hold the breath and stay still."
+  ],
+  "crit": [
+   [
+    "الصخرتان تقعان في الثلث السفلي من الحجاج.",
+    "Petrous ridges lie in the lower third of the orbits."
+   ],
+   [
+    "تناظر الحجاجين والخط الناصف في المنتصف.",
+    "Symmetric orbits and midline centred."
+   ],
+   [
+    "العظم الجبهي والجيوب الجبهية ظاهران.",
+    "Frontal bone and frontal sinuses shown."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية خاطئة: تتحرك الصخرتان عن الثلث السفلي للحجاج.",
+    "Wrong angle: the petrous ridges move off the lower third of the orbits."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الحجاجين.",
+    "Head rotation makes the orbits asymmetric."
+   ]
+  ],
+  "tips": [
+   "يتكبّر الحجاج قليلاً عند الـAP مقارنة بـPA، وهذا طبيعي.",
+   "Orbits look slightly magnified on AP compared with PA; this is expected."
+  ],
+  "inout": [
+   "يدخل الشعاع من الوجه ويخرج من خلف الرأس نحو الكاسيت (من الأمام إلى الخلف) مائلاً نحو الرأس.",
+   "The beam enters the face and exits the back of the head onto the detector (anterior to posterior), angled cephalad."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع المريض على ظهره والـOML عمودياً على الكاسيت.",
+    "Supine patient with the OML perpendicular to the detector."
+   ],
+   [
+    "مركّز مع ميل 15° نحو الرأس وضيّق المجال.",
+    "Centre with a 15° cephalad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs واعرّض.",
+    "Set kVp and mAs and expose."
+   ],
+   [
+    "راجع الصورة.",
+    "Review the image."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "face-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "عظام الوجه جانبي",
+   "Facial bones lateral"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Zygomatic bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Maxilla|Zygomatic bone|Nasal bone|Lacrimal bone|Palatine bone|Vomer|Inferior nasal concha bone|Mandible)$"
+  ],
+  "ind": [
+   "تقييم عظام الوجه بالمسقط الجانبي: كسور الأنف والفكين والعظم الوجني وسوائل الجيوب.",
+   "Evaluate facial bones in profile: nasal, maxillary and zygomatic fractures and sinus fluid."
+  ],
+  "pos": [
+   "المريض واقف أو جالس، الرأس بوضع جانبي حقيقي والجانب المصاب قريب من الكاسيت، الخط بين الحدقتين عمودي والـIOML موازٍ لحافة الكاسيت السفلية.",
+   "Patient erect or seated, head in a true lateral with the injured side against the detector, interpupillary line vertical and IOML parallel to the lower detector edge."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند العظم الوجني، في منتصف المسافة بين الزاوية الخارجية للعين والـEAM.",
+   "Central ray perpendicular to the detector at the zygomatic bone, midway between the outer canthus and the EAM."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الفكان متراكبان تقريباً بلا دوران.",
+    "Mandibular rami approximately superimposed with no rotation."
+   ],
+   [
+    "سقفا الحجاجين متراكبان.",
+    "Orbital roofs superimposed."
+   ],
+   [
+    "عظام الوجه كاملة من الجبهة إلى الفك.",
+    "Facial bones fully shown from the frontal region to the mandible."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس: عدم تراكب الفكين والحجاجين.",
+    "Head rotation prevents superimposition of the rami and orbits."
+   ],
+   [
+    "ميل الرأس للأمام أو الخلف: تشوه الشكل.",
+    "Head tilt forward or back distorts the shape."
+   ]
+  ],
+  "tips": [
+   "في الرضوض أبقِ الرأس ثابتاً واستعمل الشعاع الأفقي إن لزم.",
+   "In trauma keep the head still and use a horizontal beam if needed."
+  ],
+  "inout": [
+   "يدخل الشعاع من أحد جانبي الوجه عند العظم الوجني ويخرج من الجانب الآخر نحو الكاسيت (جانبي).",
+   "The beam enters one side of the face at the zygomatic bone and exits the other side onto the detector (lateral)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الرأس بوضع جانبي حقيقي وراجع الخط بين الحدقتين.",
+    "Place a true lateral head and check the interpupillary line."
+   ],
+   [
+    "مركّز عند العظم الوجني وضيّق المجال.",
+    "Centre at the zygomatic bone and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "face-waters",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "عظام الوجه الجداري-الشوكي (واترز)",
+   "Facial bones parietoacanthial (Waters)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -53,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Maxilla|Zygomatic bone|Nasal bone|Lacrimal bone|Palatine bone|Vomer|Inferior nasal concha bone|Mandible)$"
+  ],
+  "ind": [
+   "أفضل مسقط واحد لعظام الوجه: الجيوب الفكية والعظم الوجني وأرضية الحجاج وكسور الوجه الوسطى.",
+   "The best single view of the face: maxillary sinuses, zygomatic bones, orbital floors and mid-face fractures."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الذقن والأنف مرفوعان بحيث يكون الـMML عمودياً على الكاسيت والـOML بزاوية 37° معه، والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, chin and nose raised so the MML is perpendicular to the detector and the OML at 37° to it, midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت ويخرج عند الأكانثيون (طرف الأنف الأمامي).",
+   "Central ray perpendicular to the detector, exiting at the acanthion."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان تقعان أسفل الجيوب الفكية.",
+    "Petrous ridges project below the maxillary sinuses."
+   ],
+   [
+    "تناظر الحجاجين والبعد المتساوي عن حافة الجمجمة (بلا دوران).",
+    "Symmetric orbits equidistant from the skull margins (no rotation)."
+   ],
+   [
+    "الجيوب الفكية والحجاجان والعظم الوجني ظاهرة بوضوح.",
+    "Maxillary sinuses, orbits and zygomatic bones clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "ذقن غير مرفوع كفاية: تتراكب الصخرتان على الجيوب.",
+    "Chin not raised enough: the petrous ridges overlie the sinuses."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الحجاجين.",
+    "Head rotation makes the orbits asymmetric."
+   ]
+  ],
+  "tips": [
+   "للتأكد من مستوى سائل بالجيب الفكي اطلب التصوير والمريض واقف.",
+   "To demonstrate an air-fluid level in the maxillary sinus, image with the patient erect."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند الأكانثيون نحو الكاسيت (من الخلف إلى الأمام)، ومع رفع الذقن صار مائلاً نحو الأقدام بالنسبة للجمجمة.",
+   "The beam enters the back of the head and exits at the acanthion onto the detector (posterior to anterior); with the chin raised it is angled caudad relative to the skull."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ارفع ذقن المريض حتى يصير الـMML عمودياً على الكاسيت.",
+    "Raise the chin until the MML is perpendicular to the detector."
+   ],
+   [
+    "مركّز عند الأكانثيون وضيّق المجال.",
+    "Centre at the acanthion and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "face-modified-waters",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "واترز المعدّل",
+   "Modified Waters"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -35,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Maxilla|Zygomatic bone|Nasal bone|Lacrimal bone|Palatine bone|Vomer|Inferior nasal concha bone|Mandible)$"
+  ],
+  "ind": [
+   "إظهار أرضية الحجاج وحوافه والجدار السفلي، وكسور الانفجار (blowout) أفضل من واترز العادي.",
+   "Show the orbital floors and rims better than standard Waters, including blowout fractures."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الرأس مرفوع أقل من واترز بحيث يكون الـOML بزاوية 55° مع الكاسيت والأنف والذقن ملامسان له، والخط الناصف في المنتصف.",
+   "Patient erect facing the detector with less extension than Waters so the OML is at 55° to the detector, nose and chin close to it, midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند الأكانثيون.",
+   "Central ray perpendicular to the detector at the acanthion."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان في الثلث السفلي من الجيوب الفكية.",
+    "Petrous ridges at the lower portion of the maxillary sinuses."
+   ],
+   [
+    "حواف الحجاج وأرضيته ظاهرة بلا تراكب.",
+    "Orbital rims and floors visible without overlap."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية خاطئة: تتراكب الصخرتان على أرضية الحجاج.",
+    "Wrong angle: petrous ridges overlie the orbital floors."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الحجاجين.",
+    "Head rotation makes the orbits asymmetric."
+   ]
+  ],
+  "tips": [
+   "يفيد في الاشتباه بكسر انفجاري لأرضية الحجاج، ويرافقه عادة CT.",
+   "Helpful when an orbital floor blowout fracture is suspected; CT usually follows."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند الأكانثيون نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the acanthion onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الرأس بزاوية الـOML المطلوبة (55°).",
+    "Set the head so the OML is at about 55°."
+   ],
+   [
+    "مركّز عند الأكانثيون وضيّق المجال.",
+    "Centre at the acanthion and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "face-caldwell",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الوجه PA محوري (كالدويل)",
+   "Facial PA axial (Caldwell)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -15,
+  "cr": {
+   "s": "^Nasal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Maxilla|Zygomatic bone|Nasal bone|Lacrimal bone|Palatine bone|Vomer|Inferior nasal concha bone|Mandible)$"
+  ],
+  "ind": [
+   "تقييم الجدران الحجاجية والجيوب الجبهية والغربالية وكسور الحجاج.",
+   "Evaluate the orbital walls and the frontal and ethmoid sinuses, and orbital fractures."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الجبهة والأنف ملامسان له، الـOML عمودي عليه والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, forehead and nose against it, OML perpendicular and midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15° نحو الأقدام، يخرج عند النازيون.",
+   "Central ray angled 15° caudad, exiting at the nasion."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان تقعان في الثلث السفلي من الحجاجين.",
+    "Petrous ridges lie in the lower third of the orbits."
+   ],
+   [
+    "تناظر الحجاجين وبعد متساوٍ عن حافة الجمجمة.",
+    "Symmetric orbits equidistant from the skull margins."
+   ],
+   [
+    "الجيوب الجبهية والغربالية ظاهرة.",
+    "Frontal and ethmoid sinuses shown."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية خاطئة: تتحرك الصخرتان عن الثلث السفلي للحجاج.",
+    "Wrong angle: petrous ridges move off the lower third of the orbits."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الحجاجين.",
+    "Head rotation makes the orbits asymmetric."
+   ]
+  ],
+  "tips": [
+   "عند صعوبة وضع المريض واقفاً استعمل كالدويل المعكوس على الظهر.",
+   "If the patient cannot stand, use the reverse Caldwell supine."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند النازيون نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the nasion onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الجبهة والأنف ملامسين للكاسيت والـOML عمودياً.",
+    "Place forehead and nose against the detector with the OML perpendicular."
+   ],
+   [
+    "مركّز مع ميل 15° نحو الأقدام عند النازيون وضيّق المجال.",
+    "Centre at the nasion with a 15° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "face-reverse-waters",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الوجه الشوكي-الجداري (واترز المعكوس)",
+   "Facial acanthioparietal (reverse Waters)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 53,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Maxilla|Zygomatic bone|Nasal bone|Lacrimal bone|Palatine bone|Vomer|Inferior nasal concha bone|Mandible)$"
+  ],
+  "ind": [
+   "بديل واترز للمصاب المستلقي على ظهره: الجيوب الفكية وكسور الوجه الوسطى والحجاج.",
+   "Waters alternative for the supine patient: maxillary sinuses, mid-face and orbital fractures."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره، الذقن مرفوع بحيث يكون الـMML عمودياً على الكاسيت والـOML بزاوية 37°، والخط الناصف في المنتصف.",
+   "Patient supine with the chin raised so the MML is perpendicular to the detector and the OML at 37°, midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت ويدخل عند الأكانثيون.",
+   "Central ray perpendicular to the detector, entering at the acanthion."
+  ],
+  "br": [
+   "حبس النفس إن أمكن.",
+   "Hold the breath if possible."
+  ],
+  "crit": [
+   [
+    "الصخرتان تقعان أسفل الجيوب الفكية.",
+    "Petrous ridges project below the maxillary sinuses."
+   ],
+   [
+    "تناظر الحجاجين بلا دوران.",
+    "Symmetric orbits with no rotation."
+   ],
+   [
+    "الجيوب الفكية والعظم الوجني ظاهران.",
+    "Maxillary sinuses and zygomatic bones shown."
+   ]
+  ],
+  "err": [
+   [
+    "ذقن غير مرفوع كفاية: تتراكب الصخرتان على الجيوب.",
+    "Chin not raised enough: petrous ridges overlie the sinuses."
+   ],
+   [
+    "دوران الرأس.",
+    "Head rotation."
+   ]
+  ],
+  "tips": [
+   "لا تمد الرقبة قبل استبعاد إصابة العمود الرقبي عند المصاب برضوض.",
+   "Do not extend the neck until a cervical spine injury has been excluded in trauma."
+  ],
+  "inout": [
+   "يدخل الشعاع من الوجه عند الأكانثيون ويخرج من خلف الرأس نحو الكاسيت (من الأمام إلى الخلف).",
+   "The beam enters the face at the acanthion and exits the back of the head onto the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "استبعد إصابة العمود الرقبي قبل رفع الذقن.",
+    "Exclude cervical spine injury before raising the chin."
+   ],
+   [
+    "ضع المريض على ظهره وارفع الذقن حتى يصير الـMML عمودياً.",
+    "Lie the patient supine and raise the chin until the MML is perpendicular."
+   ],
+   [
+    "مركّز عند الأكانثيون وضيّق المجال.",
+    "Centre at the acanthion and collimate."
+   ],
+   [
+    "اضبط kVp وmAs واعرّض.",
+    "Set kVp and mAs and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "face-smv",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الوجه تحت الذقن إلى القمة (القوسان الوجنيان)",
+   "Facial submentovertex (zygomatic arches)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "IS",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Maxilla|Zygomatic bone|Nasal bone|Lacrimal bone|Palatine bone|Vomer|Inferior nasal concha bone|Mandible)$"
+  ],
+  "ind": [
+   "تقييم القوسين الوجنيين (كسور وانخفاسات) وقاعدة الجمجمة والجيب الوتدي.",
+   "Evaluate the zygomatic arches (fractures and depression), skull base and sphenoid sinus."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ والرقبة ممدودة، الـIOML موازٍ للكاسيت والناصف عمودي عليه، والرأس مائل قليلاً للأخلف لإظهار القوسين دون تراكب الفك.",
+   "Patient erect or supine with the neck extended, IOML parallel to the detector and the midsagittal plane perpendicular, head tilted slightly to show the arches without mandibular overlap."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الـIOML، يدخل على الخط الناصف بين زاويتي الفك ويخرج عند القمة.",
+   "Central ray perpendicular to the IOML, entering on the midline between the mandibular angles and exiting at the vertex."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "القوسان الوجنيان متناظران وظاهران بلا تراكب مع الجمجمة.",
+    "Zygomatic arches symmetric and visible without overlap by the skull."
+   ],
+   [
+    "الـIOML موازٍ للكاسيت والناصف عمودي.",
+    "IOML parallel to the detector, midline perpendicular."
+   ],
+   [
+    "الفك السفلي لا يحجب القوسين.",
+    "The mandible does not obscure the arches."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس: عدم تناظر القوسين.",
+    "Head rotation makes the arches asymmetric."
+   ],
+   [
+    "تعريض زائد: تضيع تفاصيل القوسين.",
+    "Overexposure loses arch detail."
+   ]
+  ],
+  "tips": [
+   "لإظهار القوسين قلل التعريض (kVp وmAs أقل) حتى لا تختفي العظام الرقيقة، ولا تجرِ المسقط عند الاشتباه بإصابة العمود الرقبي.",
+   "Reduce exposure to demonstrate the thin arches, and do not perform if a cervical spine injury is suspected."
+  ],
+  "inout": [
+   "يدخل الشعاع من تحت الذقن بين زاويتي الفك ويخرج من القمة نحو الكاسيت (من الأسفل إلى الأعلى).",
+   "The beam enters under the chin between the mandibular angles and exits the vertex onto the detector (inferior to superior)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "استبعد إصابة العمود الرقبي ثم مدّ الرقبة.",
+    "Exclude cervical spine injury, then extend the neck."
+   ],
+   [
+    "ضع الـIOML موازياً للكاسيت.",
+    "Set the IOML parallel to the detector."
+   ],
+   [
+    "مركّز عمودياً على IOML وضيّق المجال.",
+    "Centre perpendicular to the IOML and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "orbit-waters",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الحجاجان واترز",
+   "Orbits Waters"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -53,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Sphenoid|Ethmoid) bone$|^(Zygomatic bone|Maxilla|Lacrimal bone|Palatine bone)$"
+  ],
+  "ind": [
+   "كسور أرضية الحجاج وحافته، والأجسام الغريبة، وأورام الحجاج، ورؤية الجيوب الفكية العلوية معها.",
+   "Orbital floor and rim fractures, foreign bodies and orbital tumours, with the upper maxillary sinuses shown."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الذقن والأنف مرفوعان بحيث يكون الـMML عمودياً على الكاسيت والـOML بزاوية 37° معه، والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, chin and nose raised so the MML is perpendicular to the detector and the OML at 37° to it, midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت ويخرج عند الأكانثيون، مع تضييق المجال على الحجاجين.",
+   "Central ray perpendicular to the detector, exiting at the acanthion, collimated to the orbits."
+  ],
+  "br": [
+   "حبس النفس والثبات التام، وطلب عدم تحريك العينين أثناء التعريض.",
+   "Hold the breath and stay still, and ask the patient not to move the eyes during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان تقعان أسفل الحجاجين والجيوب الفكية.",
+    "Petrous ridges project below the orbits and maxillary sinuses."
+   ],
+   [
+    "تناظر الحجاجين والبعد المتساوي عن حافة الجمجمة.",
+    "Symmetric orbits equidistant from the skull margins."
+   ],
+   [
+    "أرضية الحجاج وحوافها واضحة بلا تراكب.",
+    "Orbital floors and rims clear without overlap."
+   ]
+  ],
+  "err": [
+   [
+    "ذقن غير مرفوع كفاية: تتراكب الصخرتان على أرضية الحجاج.",
+    "Chin not raised enough: petrous ridges overlie the orbital floors."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الحجاجين.",
+    "Head rotation makes the orbits asymmetric."
+   ]
+  ],
+  "tips": [
+   "عند الاشتباه بجسم غريب معدني اسأل عن ذلك قبل أي MRI، ويفضّل CT للحجاج.",
+   "If a metallic foreign body is suspected, clarify this before any MRI; CT is usually preferred for the orbits."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند الأكانثيون نحو الكاسيت (من الخلف إلى الأمام)، ومع رفع الذقن صار مائلاً نحو الأقدام بالنسبة للجمجمة.",
+   "The beam enters the back of the head and exits at the acanthion onto the detector (posterior to anterior); with the chin raised it is angled caudad relative to the skull."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ارفع ذقن المريض حتى يصير الـMML عمودياً على الكاسيت.",
+    "Raise the chin until the MML is perpendicular to the detector."
+   ],
+   [
+    "مركّز عند الأكانثيون وضيّق المجال على الحجاجين.",
+    "Centre at the acanthion and collimate to the orbits."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "orbit-caldwell",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الحجاجان كالدويل (PA محوري 15°)",
+   "Orbits Caldwell (PA axial 15°)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -15,
+  "cr": {
+   "s": "^Nasal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Sphenoid|Ethmoid) bone$|^(Zygomatic bone|Maxilla|Lacrimal bone|Palatine bone)$"
+  ],
+  "ind": [
+   "إظهار أرضية الحجاج وجدرانه وحوافه، والأجسام الغريبة، وأورام الحجاج.",
+   "Show the orbital floors, walls and rims, foreign bodies and orbital tumours."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الجبهة والأنف ملامسان له، الـOML عمودي عليه والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, forehead and nose against it, OML perpendicular and midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15° نحو الأقدام، يخرج عند النازيون، والمجال مضيّق على الحجاجين.",
+   "Central ray angled 15° caudad, exiting at the nasion, collimated to the orbits."
+  ],
+  "br": [
+   "حبس النفس والثبات التام، وطلب عدم تحريك العينين أثناء التعريض.",
+   "Hold the breath and stay still, and ask the patient not to move the eyes during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان تقعان في الثلث السفلي من الحجاجين.",
+    "Petrous ridges lie in the lower third of the orbits."
+   ],
+   [
+    "تناظر الحجاجين وبعد متساوٍ عن حافة الجمجمة.",
+    "Symmetric orbits equidistant from the skull margins."
+   ],
+   [
+    "الجدران والحواف الحجاجية ظاهرة بوضوح.",
+    "Orbital walls and rims clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية خاطئة: تتحرك الصخرتان عن الثلث السفلي للحجاج.",
+    "Wrong angle: petrous ridges move off the lower third of the orbits."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الحجاجين.",
+    "Head rotation makes the orbits asymmetric."
+   ]
+  ],
+  "tips": [
+   "قارن الحجاجين على نفس الصورة لتحديد أي اختلاف بين الجانبين.",
+   "Compare both orbits on the same image to spot side-to-side differences."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند النازيون نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the nasion onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع الجبهة والأنف ملامسين للكاسيت والـOML عمودياً.",
+    "Place forehead and nose against the detector with the OML perpendicular."
+   ],
+   [
+    "مركّز مع ميل 15° نحو الأقدام عند النازيون وضيّق المجال.",
+    "Centre at the nasion with a 15° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "orbit-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الحجاجان جانبي",
+   "Orbits lateral"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Zygomatic bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Sphenoid|Ethmoid) bone$|^(Zygomatic bone|Maxilla|Lacrimal bone|Palatine bone)$"
+  ],
+  "ind": [
+   "كشف الأجسام الغريبة المعدنية قبل الرنين المغناطيسي، وكسور سقف الحجاج وأرضيته من الجانب.",
+   "Detect metallic foreign bodies before MRI, and orbital roof and floor fractures in profile."
+  ],
+  "pos": [
+   "المريض واقف أو جالس والرأس بوضع جانبي حقيقي والجانب المراد قريب من الكاسيت، الخط بين الحدقتين عمودي والـIOML موازٍ لحافة الكاسيت السفلية.",
+   "Patient erect or seated with the head in a true lateral and the side of interest against the detector, interpupillary line vertical and IOML parallel to the lower detector edge."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند الزاوية الخارجية للعين، والمجال مضيّق على الحجاجين.",
+   "Central ray perpendicular to the detector at the outer canthus, collimated to the orbits."
+  ],
+  "br": [
+   "حبس النفس والثبات التام، وطلب عدم تحريك العينين أثناء التعريض.",
+   "Hold the breath and stay still, and ask the patient not to move the eyes during exposure."
+  ],
+  "crit": [
+   [
+    "سقفا الحجاجين متراكبان وبلا دوران.",
+    "Orbital roofs superimposed with no rotation."
+   ],
+   [
+    "الحجاجان متراكبان تقريباً بوضع جانبي حقيقي.",
+    "Orbits approximately superimposed in a true lateral."
+   ],
+   [
+    "الحجاج والجسم الغريب (إن وجد) ظاهران بوضوح.",
+    "Orbit and any foreign body clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس: عدم تراكب الحجاجين.",
+    "Head rotation prevents superimposition of the orbits."
+   ],
+   [
+    "مجال واسع: تقل دقة التفاصيل.",
+    "Wide collimation reduces detail."
+   ]
+  ],
+  "tips": [
+   "قبل أي MRI اسأل عن تاريخ التعرض لشظايا معدنية (لحام وطحن) واطلب التصوير قبل الرنين.",
+   "Before any MRI ask about metal shrapnel exposure (welding, grinding) and image before the scan."
+  ],
+  "inout": [
+   "يدخل الشعاع من أحد جانبي الوجه عند الزاوية الخارجية للعين ويخرج من الجانب الآخر نحو الكاسيت (جانبي).",
+   "The beam enters one side of the face at the outer canthus and exits the other side onto the detector (lateral)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–20",
+    "15–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع الرأس بوضع جانبي حقيقي وراجع الخط بين الحدقتين.",
+    "Place a true lateral head and check the interpupillary line."
+   ],
+   [
+    "مركّز عند الزاوية الخارجية للعين وضيّق المجال.",
+    "Centre at the outer canthus and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "orbit-rhese",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القناة البصرية ريس (جداري-حجاجي مائل)",
+   "Optic canal Rhese (parieto-orbital oblique)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Zygomatic bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Sphenoid|Ethmoid) bone$|^(Zygomatic bone|Maxilla|Lacrimal bone|Palatine bone)$"
+  ],
+  "ind": [
+   "تقييم القناة البصرية (الثقبة البصرية): أورام العصب البصري وكسور القناة وتوسعها.",
+   "Evaluate the optic canal (optic foramen): optic nerve tumours, canal fractures and enlargement."
+  ],
+  "pos": [
+   "المريض منبطح أو واقف، الرأس مدار 53° نحو الجهة المراد تصويرها بحيث يلامس الكاسيت الذقن والوجنة والأنف، والخط AML عمودي على الكاسيت.",
+   "Patient prone or erect, head rotated 53° toward the side of interest so the chin, cheek and nose touch the detector, with the AML perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت ويتمركز عند الحجاج المراد تصويره.",
+   "Central ray perpendicular to the detector, centred on the orbit of interest."
+  ],
+  "br": [
+   "حبس النفس والثبات التام، وطلب عدم تحريك العينين أثناء التعريض.",
+   "Hold the breath and stay still, and ask the patient not to move the eyes during exposure."
+  ],
+  "crit": [
+   [
+    "القناة البصرية ظاهرة بشكل دائري في الربع السفلي الوحشي من الحجاج.",
+    "The optic canal appears as a round shape in the inferolateral quadrant of the orbit."
+   ],
+   [
+    "حدود الحجاج المصوَّر واضحة.",
+    "The outline of the imaged orbit is clear."
+   ],
+   [
+    "لا حركة بالعينين أو الرأس.",
+    "No eye or head movement."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية دوران خاطئة: تتحرك القناة عن الربع السفلي الوحشي.",
+    "Wrong rotation angle: the canal moves out of the inferolateral quadrant."
+   ],
+   [
+    "حركة المريض: تفقد القناة وضوحها.",
+    "Patient motion blurs the canal."
+   ]
+  ],
+  "tips": [
+   "صوّر الجهتين للمقارنة، فالفرق بالقطر بين القناتين علامة تشخيصية.",
+   "Image both sides for comparison; a size difference between the canals is a diagnostic sign."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس مائلاً ويخرج عند الحجاج المراد نحو الكاسيت.",
+   "The beam enters the back of the head obliquely and exits at the orbit of interest onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "25–35",
+    "25–35"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "أدر رأس المريض 53° نحو الجهة المطلوبة وتأكد من التلامس.",
+    "Rotate the head 53° toward the required side and check contact."
+   ],
+   [
+    "مركّز عند الحجاج المصاب وضيّق المجال.",
+    "Centre at the orbit of interest and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 53,
+  "limb": true
+ },
+ {
+  "id": "nose-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "عظام الأنف جانبي (كل جهة)",
+   "Nasal bones lateral (each side)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Nasal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Nasal bone$|^Maxilla$"
+  ],
+  "ind": [
+   "كسور العظام الأنفية وإزاحتها وتقييم النسيج الرخو للأنف.",
+   "Nasal bone fractures and displacement, and the soft tissue of the nose."
+  ],
+  "pos": [
+   "المريض واقف أو جالس، الرأس بوضع جانبي حقيقي والجهة المراد تصويرها قريبة من الكاسيت، الخط بين الحدقتين عمودي والـIOML موازٍ لحافة الكاسيت السفلية. تُصوَّر كل جهة منفصلة.",
+   "Patient erect or seated with the head in a true lateral and the side of interest against the detector, interpupillary line vertical and IOML parallel to the lower detector edge. Each side is imaged separately."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند منتصف العظم الأنفي (حوالي 2 سم أسفل النازيون)، والمجال مضيّق جداً على الأنف.",
+   "Central ray perpendicular to the detector at the mid nasal bones (about 2 cm below the nasion), tightly collimated to the nose."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "العظام الأنفية والشوكة الأنفية الأمامية ظاهرة بالجانب.",
+    "Nasal bones and the anterior nasal spine shown in profile."
+   ],
+   [
+    "النسيج الرخو للأنف ظاهر دون تعريض زائد.",
+    "Soft tissue of the nose visible without overexposure."
+   ],
+   [
+    "لا دوران: حافتا الحجاجين متراكبتان.",
+    "No rotation: the orbital margins are superimposed."
+   ]
+  ],
+  "err": [
+   [
+    "تعريض زائد: يضيع النسيج الرخو والعظم الرقيق.",
+    "Overexposure loses soft tissue and thin bone."
+   ],
+   [
+    "دوران الرأس: العظم الأنفي لا يظهر بالجانب.",
+    "Head rotation prevents a true profile of the nasal bones."
+   ]
+  ],
+  "tips": [
+   "استعمل kVp منخفضاً لإظهار العظم الأنفي الرقيق، وصوّر كل جهة على حدة للمقارنة. لا يغني التصوير عن الفحص السريري.",
+   "Use low kVp to show the thin nasal bones and image each side separately for comparison. Imaging does not replace clinical examination."
+  ],
+  "inout": [
+   "يدخل الشعاع من أحد جانبي الأنف ويخرج من الجانب الآخر نحو الكاسيت (جانبي).",
+   "The beam enters one side of the nose and exits the other side onto the detector (lateral)."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع الرأس بوضع جانبي حقيقي والجهة المصابة نحو الكاسيت.",
+    "Place a true lateral head with the affected side toward the detector."
+   ],
+   [
+    "مركّز عند منتصف العظم الأنفي وضيّق المجال جداً.",
+    "Centre at the mid nasal bones and collimate tightly."
+   ],
+   [
+    "اضبط kVp منخفضاً وmAs ثم اطلب الثبات واعرّض.",
+    "Set a low kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "nose-tangential",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الأنف مماسي (محوري)",
+   "Nasal tangential (axial)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Nasal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Nasal bone$|^Maxilla$"
+  ],
+  "ind": [
+   "إظهار العظام الأنفية والحاجز الأنفي بمنظر مماسي دون تراكب الجبهة، لتقدير الإزاحة الأمامية.",
+   "Show the nasal bones and septum tangentially without frontal overlap, to assess anterior displacement."
+  ],
+  "pos": [
+   "المريض جالس والرأس مثني للأمام حتى يصير خط الجبهة والفك العلوي (glabelloalveolar) عمودياً على الكاسيت، الخط الناصف عمودي على الكاسيت.",
+   "Patient seated with the head flexed so the glabelloalveolar line is perpendicular to the detector and the midsagittal plane perpendicular to it."
+  ],
+  "crt": [
+   "الشعاع المركزي مماسي لظهر الأنف، يدخل عند النازيون ويمر على طول العظام الأنفية من الأعلى للأسفل.",
+   "Central ray tangent to the nasal dorsum, entering at the nasion and passing along the nasal bones from above downward."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "العظام الأنفية والحاجز ظاهران بمنظر مماسي دون تراكب الجبهة.",
+    "Nasal bones and septum seen tangentially without frontal overlap."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ],
+   [
+    "ظل النسيج الرخو للأنف واضح.",
+    "Soft tissue of the nose clear."
+   ]
+  ],
+  "err": [
+   [
+    "ثني غير كافٍ: تتراكب الجبهة على العظم الأنفي.",
+    "Insufficient flexion: the frontal bone overlies the nasal bones."
+   ],
+   [
+    "دوران الرأس: تشوه المنظر المماسي.",
+    "Head rotation distorts the tangential view."
+   ]
+  ],
+  "tips": [
+   "يُستعمل كمسقط مكمل للجانبي لتقدير إزاحة العظم الأنفي للأمام.",
+   "Used as a supplement to the lateral view to assess anterior displacement of the nasal bones."
+  ],
+  "inout": [
+   "يدخل الشعاع عند النازيون ويمر مماسياً على ظهر الأنف من الأعلى للأسفل نحو الكاسيت.",
+   "The beam enters at the nasion and passes tangentially along the nasal dorsum from above downward onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "تعريض يدوي",
+    "Manual exposure"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "اثنِ رأس المريض حتى يصير الخط الجبهي-السنخي عمودياً على الكاسيت.",
+    "Flex the head until the glabelloalveolar line is perpendicular to the detector."
+   ],
+   [
+    "مركّز مماسياً عند النازيون وضيّق المجال جداً.",
+    "Centre tangentially at the nasion and collimate tightly."
+   ],
+   [
+    "اضبط kVp منخفضاً وmAs ثم اطلب الثبات واعرّض.",
+    "Set a low kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "nose-waters",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الأنف واترز",
+   "Nasal Waters"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -53,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Nasal bone$|^Maxilla$"
+  ],
+  "ind": [
+   "إظهار العظام الأنفية والحاجز بمنظر أمامي ورؤية الجيوب الفكية معها.",
+   "Show the nasal bones and septum in an anterior view, with the maxillary sinuses."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الذقن والأنف مرفوعان بحيث يكون الـMML عمودياً على الكاسيت والـOML بزاوية 37° معه، والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, chin and nose raised so the MML is perpendicular to the detector and the OML at 37° to it, midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت ويخرج عند الأكانثيون، والمجال مضيّق على الأنف.",
+   "Central ray perpendicular to the detector, exiting at the acanthion, collimated to the nose."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "العظام الأنفية والحاجز ظاهرة بمنظر أمامي.",
+    "Nasal bones and septum seen in an anterior view."
+   ],
+   [
+    "الصخرتان تقعان أسفل الجيوب الفكية.",
+    "Petrous ridges project below the maxillary sinuses."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ]
+  ],
+  "err": [
+   [
+    "ذقن غير مرفوع كفاية: تتراكب الصخرتان على الجيوب.",
+    "Chin not raised enough: the petrous ridges overlie the sinuses."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجانبين.",
+    "Head rotation makes the two sides asymmetric."
+   ]
+  ],
+  "tips": [
+   "قلّل التعريض عن واترز الوجه لأن العظم الأنفي رقيق.",
+   "Use a lower exposure than facial Waters because the nasal bones are thin."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند الأكانثيون نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the acanthion onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ارفع الذقن حتى يصير الـMML عمودياً على الكاسيت.",
+    "Raise the chin until the MML is perpendicular to the detector."
+   ],
+   [
+    "مركّز عند الأكانثيون وضيّق المجال على الأنف.",
+    "Centre at the acanthion and collimate to the nose."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "arch-smv-jug",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القوسان الوجنيان SMV (مقبض الإبريق)",
+   "Zygomatic arches SMV (jug-handle)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "IS",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Zygomatic bone$|^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار القوسين الوجنيين معاً للمقارنة بينهما: كسور وانخفاسات بالجهتين.",
+   "Show both zygomatic arches together for comparison: fractures and depression on either side."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ والرقبة ممدودة، الـIOML موازٍ للكاسيت، ويُمال الرأس قليلاً نحو الجهة المراد ليبرز القوس منفصلاً عن الجمجمة (مثل مقبض الإبريق).",
+   "Patient erect or supine with the neck extended, IOML parallel to the detector, and the head tilted slightly toward the side of interest so the arch stands clear of the skull (jug-handle appearance)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الـIOML، يدخل على الخط الناصف بين زاويتي الفك ويخرج بين القوسين.",
+   "Central ray perpendicular to the IOML, entering on the midline between the mandibular angles and passing between the arches."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "القوسان ظاهران بشكل مقبض الإبريق بلا تراكب مع الجمجمة.",
+    "Both arches shown as a jug-handle without overlap by the skull."
+   ],
+   [
+    "تناظر القوسين.",
+    "Arches symmetric."
+   ],
+   [
+    "الفك السفلي لا يحجب القوسين.",
+    "The mandible does not obscure the arches."
+   ]
+  ],
+  "err": [
+   [
+    "ميل زائد أو ناقص: يتراكب القوس على الجمجمة.",
+    "Too much or too little tilt makes the arch overlap the skull."
+   ],
+   [
+    "تعريض زائد: تضيع تفاصيل العظم الرقيق.",
+    "Overexposure loses thin bone detail."
+   ]
+  ],
+  "tips": [
+   "قلل التعريض عن SMV القاعدة، ولا تجرِ المسقط عند الاشتباه بإصابة العمود الرقبي.",
+   "Reduce exposure compared with a skull-base SMV, and do not perform if a cervical spine injury is suspected."
+  ],
+  "inout": [
+   "يدخل الشعاع من تحت الذقن بين زاويتي الفك ويخرج من القمة نحو الكاسيت (من الأسفل إلى الأعلى).",
+   "The beam enters under the chin between the mandibular angles and exits the vertex onto the detector (inferior to superior)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "استبعد إصابة العمود الرقبي ثم مدّ الرقبة.",
+    "Exclude cervical spine injury, then extend the neck."
+   ],
+   [
+    "اضبط الـIOML موازياً للكاسيت وأمل الرأس قليلاً.",
+    "Set the IOML parallel to the detector and tilt the head slightly."
+   ],
+   [
+    "مركّز عمودياً على IOML وضيّق المجال.",
+    "Centre perpendicular to the IOML and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "arch-tangential",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القوس الوجني مماسي مائل",
+   "Zygomatic arch tangential oblique"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "IS",
+  "tilt": 0,
+  "cr": {
+   "s": "^Zygomatic bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Zygomatic bone$|^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار قوس وجني واحد بمنظر مماسي حر من الجمجمة، لتقدير الكسر والانخفاس.",
+   "Show a single zygomatic arch tangentially and free of the skull to assess fracture and depression."
+  ],
+  "pos": [
+   "المريض واقف أو جالس، الرأس مدار ومائل قليلاً (حوالي 15° حسب المرجع المحلي) بحيث يبرز القوس المراد خارج الجمجمة.",
+   "Patient erect or seated, head rotated and tilted slightly (about 15°, per local reference) so the arch of interest projects clear of the skull."
+  ],
+  "crt": [
+   "الشعاع المركزي مماسي للقوس الوجني المراد، عمودي على الكاسيت.",
+   "Central ray tangent to the zygomatic arch of interest, perpendicular to the detector."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "القوس الوجني ظاهر بمنظر مماسي حر من الجمجمة.",
+    "The zygomatic arch is shown tangentially and free of the skull."
+   ],
+   [
+    "لا تراكب مع الفك السفلي.",
+    "No mandibular overlap."
+   ],
+   [
+    "حدود القوس واضحة على كامل طوله.",
+    "The arch outline is clear along its whole length."
+   ]
+  ],
+  "err": [
+   [
+    "دوران غير كافٍ: يتراكب القوس على الجمجمة.",
+    "Insufficient rotation: the arch overlaps the skull."
+   ],
+   [
+    "جرعة عالية: تضيع الحدود الدقيقة.",
+    "High exposure loses fine margins."
+   ]
+  ],
+  "tips": [
+   "صوّر الجهتين للمقارنة وحدد الجهة على الطلب قبل بدء التصوير.",
+   "Image both sides for comparison and confirm the side on the request first."
+  ],
+  "inout": [
+   "يدخل الشعاع من جانب الوجه مماساً للقوس ويخرج نحو الكاسيت.",
+   "The beam enters the side of the face tangent to the arch and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "أدر الرأس وأمِله حتى يظهر القوس حراً.",
+    "Rotate and tilt the head until the arch is clear."
+   ],
+   [
+    "مركّز مماساً للقوس وضيّق المجال.",
+    "Centre tangent to the arch and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 15,
+  "limb": true
+ },
+ {
+  "id": "arch-modified-towne",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الأقواس الوجنية AP محوري (تاون المعدّل)",
+   "Zygomatic arches AP axial (modified Towne)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": -30,
+  "cr": {
+   "s": "^Zygomatic bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Zygomatic bone$|^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار القوسين الوجنيين للمقارنة بينهما، خصوصاً في الرضوض على الظهر.",
+   "Show both zygomatic arches for comparison, especially in supine trauma patients."
+  ],
+  "pos": [
+   "المريض على ظهره أو واقف، الخط الناصف في منتصف الكاسيت، والـOML عمودي على الكاسيت.",
+   "Patient supine or erect, midsagittal plane centred and OML perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 30° نحو الأقدام، يدخل على الخط الناصف ويتمركز على مستوى القوسين الوجنيين.",
+   "Central ray angled 30° caudad, entering on the midline and centred at the level of the zygomatic arches."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "القوسان الوجنيان متناظران وظاهران جانبي الجمجمة.",
+    "Both zygomatic arches symmetric and shown lateral to the skull."
+   ],
+   [
+    "لا دوران والخط الناصف في المنتصف.",
+    "No rotation with the midline centred."
+   ],
+   [
+    "القوسان واضحان بلا تراكب مع الجمجمة.",
+    "The arches are clear without overlap by the skull."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: يتراكب القوسان على الجمجمة.",
+    "Insufficient angle: the arches overlap the skull."
+   ],
+   [
+    "دوران الرأس: عدم تناظر القوسين.",
+    "Head rotation makes the arches asymmetric."
+   ]
+  ],
+  "tips": [
+   "يفيد عند تعذر مد الرقبة لمسقط SMV، لكن التفاصيل أقل.",
+   "Useful when the neck cannot be extended for an SMV, though detail is lower."
+  ],
+  "inout": [
+   "يدخل الشعاع من الوجه مائلاً نحو الأقدام ويخرج من خلف الرأس نحو الكاسيت (من الأمام إلى الخلف).",
+   "The beam enters the face angled caudad and exits the back of the head onto the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والمعادن من الرأس.",
+    "Remove clips, glasses, earrings and metal from the head."
+   ],
+   [
+    "ضع المريض والـOML عمودياً على الكاسيت.",
+    "Position the patient with the OML perpendicular to the detector."
+   ],
+   [
+    "مركّز مع ميل 30° نحو الأقدام وضيّق المجال.",
+    "Centre with a 30° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "mand-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفك السفلي PA",
+   "Mandible PA"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Mandible$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$"
+  ],
+  "ind": [
+   "كسور جسم الفك السفلي وفروعه، وأورام وتشوهات الفك.",
+   "Fractures of the mandibular body and rami, tumours and deformities."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الجبهة والأنف ملامسان له، الـOML عمودي عليه والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, forehead and nose against it, OML perpendicular and midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت ويخرج عند مستوى الشفتين (جسم الفك) على الخط الناصف.",
+   "Central ray perpendicular to the detector, exiting at the level of the lips (mandibular body) on the midline."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الفك السفلي كامل من الفرعين إلى الذقن.",
+    "Whole mandible from the rami to the chin."
+   ],
+   [
+    "تناظر الفرعين بلا دوران.",
+    "Rami symmetric with no rotation."
+   ],
+   [
+    "جسم الفك والزاويتان واضحان دون تراكب العمود الرقبي.",
+    "Body and angles clear without cervical spine overlap."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس: عدم تناظر الفرعين.",
+    "Head rotation makes the rami asymmetric."
+   ],
+   [
+    "ذقن مرتفع أو منخفض: يتراكب الفك على الجمجمة.",
+    "Chin too high or low makes the mandible overlap the skull."
+   ]
+  ],
+  "tips": [
+   "عند الاشتباه بكسر قد يوجد كسر ثانٍ بالجهة المقابلة، فراجع الفك كله.",
+   "With one fracture look for a second on the opposite side; review the whole mandible."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند الشفتين نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the lips onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الجبهة والأنف ملامسين للكاسيت والـOML عمودياً.",
+    "Place forehead and nose against the detector with the OML perpendicular."
+   ],
+   [
+    "مركّز عند مستوى الفك وضيّق المجال.",
+    "Centre at the mandible and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "mand-pa-axial",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفك السفلي PA محوري (20–30°)",
+   "Mandible PA axial (20–30°)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 25,
+  "cr": {
+   "s": "^Mandible$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$"
+  ],
+  "ind": [
+   "إظهار أعناق اللقمتين والمفصل الفكي، وكسور اللقمة.",
+   "Show the condylar necks and joint, and condylar fractures."
+  ],
+  "pos": [
+   "المريض واقف أو منبطح وجهه للكاسيت، الجبهة والأنف ملامسان له، الـOML عمودي عليه والخط الناصف في المنتصف.",
+   "Patient erect or prone facing the detector, forehead and nose against it, OML perpendicular and midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 20 إلى 30° نحو الرأس، يتمركز عند الخط الناصف على مستوى المفصلين الفكيين.",
+   "Central ray angled 20 to 30° cephalad, centred on the midline at the level of the temporomandibular joints."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "اللقمتان وأعناقهما ظاهرة بلا تراكب مع الفرعين.",
+    "Condyles and necks shown without overlap by the rami."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ],
+   [
+    "الفرعان والزاويتان واضحان.",
+    "Rami and angles clear."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: تتراكب اللقمتان على الجمجمة.",
+    "Insufficient angle: the condyles overlap the skull."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجانبين.",
+    "Head rotation makes the sides asymmetric."
+   ]
+  ],
+  "tips": [
+   "الزاوية تُختار حسب المرجع المحلي بين 20 و30°.",
+   "The angle is chosen per local reference between 20 and 30°."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس مائلاً نحو الرأس ويخرج عند الفك نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head angled cephalad and exits at the jaw onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع المريض والـOML عمودياً على الكاسيت.",
+    "Position with the OML perpendicular to the detector."
+   ],
+   [
+    "مركّز مع ميل 20–30° نحو الرأس وضيّق المجال.",
+    "Centre with a 20–30° cephalad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "mand-towne",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفك السفلي AP محوري (تاون)",
+   "Mandible AP axial (Towne)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": -35,
+  "cr": {
+   "s": "^Mandible$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$"
+  ],
+  "ind": [
+   "إظهار أعناق اللقمتين معاً للمقارنة، وكسور العنق اللقمي.",
+   "Show both condylar necks for comparison and condylar neck fractures."
+  ],
+  "pos": [
+   "المريض على ظهره أو واقف، الخط الناصف في المنتصف والـOML عمودي على الكاسيت.",
+   "Patient supine or erect, midsagittal plane centred and OML perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 35° نحو الأقدام، يتمركز على الخط الناصف فوق النازيون ويمر عبر المفصلين.",
+   "Central ray angled 35° caudad, centred on the midline above the nasion and passing through the joints."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "اللقمتان وأعناقهما ظاهرة جانبي الثقبة العظمية الكبيرة.",
+    "Condyles and necks shown on either side of the foramen magnum."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ],
+   [
+    "الفرعان واضحان.",
+    "Rami clear."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: تتراكب العظام القذالية على اللقمتين.",
+    "Insufficient angle: occipital bone overlies the condyles."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجانبين.",
+    "Head rotation makes the sides asymmetric."
+   ]
+  ],
+  "tips": [
+   "يفيد عند عدم القدرة على وضع المريض منبطحاً.",
+   "Useful when the patient cannot be positioned prone."
+  ],
+  "inout": [
+   "يدخل الشعاع من الوجه مائلاً نحو الأقدام ويخرج من خلف الرأس نحو الكاسيت (من الأمام إلى الخلف).",
+   "The beam enters the face angled caudad and exits the back of the head onto the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع المريض والـOML عمودياً على الكاسيت.",
+    "Position the patient with the OML perpendicular to the detector."
+   ],
+   [
+    "مركّز مع ميل 35° نحو الأقدام وضيّق المجال.",
+    "Centre with a 35° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "mand-axiolat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفك السفلي محوري جانبي مائل",
+   "Mandible axiolateral oblique"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 25,
+  "cr": {
+   "s": "^Mandible$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$"
+  ],
+  "ind": [
+   "إظهار جسم الفك السفلي وفرعه وزاويته بمنظر جانبي لكل جهة.",
+   "Show the mandibular body, ramus and angle in a lateral view for each side."
+  ],
+  "pos": [
+   "المريض جالس أو واقف، الرأس بوضع جانبي حقيقي والجهة المراد تصويرها قريبة من الكاسيت، مع مد الذقن قليلاً.",
+   "Patient seated or erect, head in a true lateral with the side of interest against the detector and the chin slightly extended."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل حوالي 25° نحو الرأس، يدخل أسفل الجهة البعيدة من جسم الفك ويخرج عند الجهة المراد.",
+   "Central ray angled about 25° cephalad, entering below the far side of the mandible and exiting at the side of interest."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الجسم والفرع والزاوية ظاهرة بلا تراكب مع الفك المقابل.",
+    "Body, ramus and angle shown without overlap by the opposite side."
+   ],
+   [
+    "لا دوران مع جانبي حقيقي.",
+    "No rotation in a true lateral."
+   ],
+   [
+    "تفاصيل العظم الرقيق واضحة.",
+    "Fine bone detail clear."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: يتراكب الفك المقابل.",
+    "Insufficient angle: the opposite mandible overlaps."
+   ],
+   [
+    "دوران الرأس: لا يظهر الفرع.",
+    "Head rotation fails to show the ramus."
+   ]
+  ],
+  "tips": [
+   "صوّر كل جهة منفصلة وقارن بينهما.",
+   "Image each side separately and compare."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة البعيدة مائلاً نحو الرأس ويخرج من الجهة القريبة إلى الكاسيت.",
+   "The beam enters from the far side angled cephalad and exits the near side onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الرأس بوضع جانبي حقيقي والجهة المراد نحو الكاسيت.",
+    "Place a true lateral head with the side of interest toward the detector."
+   ],
+   [
+    "مركّز مع ميل 25° نحو الرأس وضيّق المجال.",
+    "Centre with a 25° cephalad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "mand-smv",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفك السفلي تحت الذقن إلى القمة (SMV)",
+   "Mandible submentovertex (SMV)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "IS",
+  "tilt": 0,
+  "cr": {
+   "s": "^Mandible$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$"
+  ],
+  "ind": [
+   "إظهار قوس الفك السفلي بالكامل: كسور الذقن والجسم وتشوه القوس.",
+   "Show the whole mandibular arch: symphysis and body fractures and arch deformity."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ والرقبة ممدودة، الـIOML موازٍ للكاسيت والخط الناصف عمودي عليه.",
+   "Patient erect or supine with the neck extended, IOML parallel to the detector and midsagittal plane perpendicular to it."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الـIOML، يدخل على الخط الناصف تحت الذقن ويخرج عند القمة.",
+   "Central ray perpendicular to the IOML, entering on the midline below the chin and exiting at the vertex."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "قوس الفك السفلي كامل بشكل U متناظر.",
+    "Whole mandibular arch as a symmetric U."
+   ],
+   [
+    "لا دوران: الفرعان متساويا البعد.",
+    "No rotation: rami equidistant."
+   ],
+   [
+    "الذقن والجسم واضحان دون تراكب العمود الرقبي.",
+    "Symphysis and body clear without cervical spine overlap."
+   ]
+  ],
+  "err": [
+   [
+    "IOML غير موازٍ: تشوه القوس.",
+    "IOML not parallel: the arch is distorted."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الفرعين.",
+    "Head rotation makes the rami asymmetric."
+   ]
+  ],
+  "tips": [
+   "لا تجرِ هذا المسقط عند الاشتباه بإصابة العمود الرقبي.",
+   "Do not perform if a cervical spine injury is suspected."
+  ],
+  "inout": [
+   "يدخل الشعاع من تحت الذقن ويخرج من القمة نحو الكاسيت (من الأسفل إلى الأعلى).",
+   "The beam enters under the chin and exits the vertex onto the detector (inferior to superior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "استبعد إصابة العمود الرقبي ثم مدّ الرقبة.",
+    "Exclude cervical spine injury, then extend the neck."
+   ],
+   [
+    "اضبط الـIOML موازياً للكاسيت.",
+    "Set the IOML parallel to the detector."
+   ],
+   [
+    "مركّز عمودياً على IOML وضيّق المجال.",
+    "Centre perpendicular to the IOML and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "tmj-closed",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المفصل الفكي الصدغي محوري جانبي مائل (لو/شولر)، فم مغلق",
+   "TMJ axiolateral oblique (Law/Schüller), closed mouth"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": -15,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$|^Temporal bone$"
+  ],
+  "ind": [
+   "تقييم المفصل الفكي الصدغي بوضع الإغلاق: الخلل الداخلي، التهاب المفصل، وكسور اللقمة.",
+   "Evaluate the temporomandibular joint in the closed position: internal derangement, arthritis and condylar fractures."
+  ],
+  "pos": [
+   "المريض جالس أو واقف، الرأس جانبي والجهة المراد قريبة من الكاسيت مع دوران الوجه قليلاً (حوالي 15°) نحو الكاسيت، والفم مغلق.",
+   "Patient seated or erect, head lateral with the side of interest against the detector and the face rotated slightly (about 15°) toward it, mouth closed."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل حوالي 15° نحو الأقدام، يدخل فوق الـEAM البعيد بنحو 4 سم ويخرج عند المفصل القريب.",
+   "Central ray angled about 15° caudad, entering about 4 cm above the far EAM and exiting at the near joint."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "لقمة الفك داخل الحفرة الفكية بوضع الإغلاق.",
+    "Condylar head within the mandibular fossa in the closed position."
+   ],
+   [
+    "المفصل القريب ظاهر بلا تراكب من المفصل البعيد.",
+    "The near joint shown without overlap by the far one."
+   ],
+   [
+    "تفاصيل العظم واضحة دون تعريض زائد.",
+    "Bone detail clear without overexposure."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: يتراكب المفصل البعيد.",
+    "Insufficient angle: the far joint overlaps."
+   ],
+   [
+    "فم غير مغلق: لا تظهر وضعية الإغلاق.",
+    "Mouth not closed: the closed position is not shown."
+   ]
+  ],
+  "tips": [
+   "صوّر الجهتين وقارن وضعية الإغلاق بالفتح.",
+   "Image both sides and compare closed with open positions."
+  ],
+  "inout": [
+   "يدخل الشعاع فوق الـEAM البعيد مائلاً نحو الأقدام ويخرج عند المفصل القريب نحو الكاسيت.",
+   "The beam enters above the far EAM angled caudad and exits at the near joint onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الرأس جانبياً وأدر الوجه قليلاً نحو الكاسيت والفم مغلق.",
+    "Place the head lateral, rotate the face slightly toward the detector, mouth closed."
+   ],
+   [
+    "مركّز مع ميل 15° نحو الأقدام وضيّق المجال.",
+    "Centre with a 15° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 15,
+  "limb": true
+ },
+ {
+  "id": "tmj-open",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المفصل الفكي الصدغي محوري جانبي مائل، فم مفتوح",
+   "TMJ axiolateral oblique, open mouth"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": -15,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$|^Temporal bone$"
+  ],
+  "ind": [
+   "تقييم حركة اللقمة عند فتح الفم: انزلاق اللقمة على الحدبة المفصلية والانغلاق والخلع.",
+   "Evaluate condylar movement on mouth opening: translation onto the articular eminence, locking and dislocation."
+  ],
+  "pos": [
+   "نفس وضعية الفم المغلق، لكن يفتح المريض فمه إلى أقصى ما يستطيع ويثبّته.",
+   "Same as the closed position, but the patient opens the mouth as wide as possible and holds it."
+  ],
+  "crt": [
+   "نفس الشعاع: مائل حوالي 15° نحو الأقدام، يدخل فوق الـEAM البعيد بنحو 4 سم ويخرج عند المفصل القريب.",
+   "Same beam: about 15° caudad, entering about 4 cm above the far EAM and exiting at the near joint."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "اللقمة منزلقة أمام الحفرة الفكية عند فتح الفم.",
+    "Condyle translated anterior to the fossa on mouth opening."
+   ],
+   [
+    "المفصل القريب ظاهر بلا تراكب.",
+    "The near joint shown without overlap."
+   ],
+   [
+    "فتح الفم كافٍ ومثبّت.",
+    "The mouth is open widely and held."
+   ]
+  ],
+  "err": [
+   [
+    "فتح غير كافٍ: لا تتحرك اللقمة.",
+    "Insufficient opening: the condyle does not move."
+   ],
+   [
+    "تحريك الرأس: تشوه الصورة.",
+    "Head movement distorts the image."
+   ]
+  ],
+  "tips": [
+   "استعمل دعامة بين الأسنان لتثبيت الفم مفتوحاً.",
+   "Use a bite block to hold the mouth open."
+  ],
+  "inout": [
+   "يدخل الشعاع فوق الـEAM البعيد مائلاً نحو الأقدام ويخرج عند المفصل القريب نحو الكاسيت.",
+   "The beam enters above the far EAM angled caudad and exits at the near joint onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "اطلب فتح الفم إلى أقصى حد وثبّته بدعامة.",
+    "Ask for maximum mouth opening and hold it with a bite block."
+   ],
+   [
+    "مركّز مع ميل 15° نحو الأقدام وضيّق المجال.",
+    "Centre with a 15° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 15,
+  "limb": true
+ },
+ {
+  "id": "tmj-towne",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المفصل الفكي الصدغي AP محوري (تاون)",
+   "TMJ AP axial (Towne)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": -35,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$|^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار اللقمتين معاً للمقارنة: كسور العنق اللقمي والخلع.",
+   "Show both condyles together for comparison: condylar neck fractures and dislocation."
+  ],
+  "pos": [
+   "المريض على ظهره أو واقف، الخط الناصف في المنتصف والـOML عمودي على الكاسيت.",
+   "Patient supine or erect, midsagittal plane centred and OML perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 35° نحو الأقدام، يتمركز على الخط الناصف عند مستوى المفصلين.",
+   "Central ray angled 35° caudad, centred on the midline at the level of the joints."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "اللقمتان ظاهرتان على جانبي الثقبة العظمية الكبيرة.",
+    "Both condyles shown on either side of the foramen magnum."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ],
+   [
+    "العنقان اللقميان واضحان.",
+    "Condylar necks clear."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: تتراكب العظام القذالية.",
+    "Insufficient angle: occipital bone overlaps."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجانبين.",
+    "Head rotation makes the sides asymmetric."
+   ]
+  ],
+  "tips": [
+   "يمكن تصويره بفم مفتوح لإظهار حركة اللقمتين معاً.",
+   "It can be taken with the mouth open to show condylar movement of both sides."
+  ],
+  "inout": [
+   "يدخل الشعاع من الوجه مائلاً نحو الأقدام ويخرج من خلف الرأس نحو الكاسيت (من الأمام إلى الخلف).",
+   "The beam enters the face angled caudad and exits the back of the head onto the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع المريض والـOML عمودياً على الكاسيت.",
+    "Position with the OML perpendicular to the detector."
+   ],
+   [
+    "مركّز مع ميل 35° نحو الأقدام وضيّق المجال.",
+    "Centre with a 35° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "limb": null
+ },
+ {
+  "id": "sinus-caldwell",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجيوب الأنفية PA كالدويل",
+   "Paranasal sinuses PA Caldwell"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -15,
+  "cr": {
+   "s": "^Nasal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Sinus of (frontal|sphenoid) bone$",
+   "^Maxilla$",
+   "cells of ethmoid bone$"
+  ],
+  "ind": [
+   "إظهار الجيوب الجبهية والغربالية: التهاب الجيوب، مستويات السائل، والأورام.",
+   "Show the frontal and ethmoid sinuses: sinusitis, air-fluid levels and tumours."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الجبهة والأنف ملامسان له، الـOML عمودي عليه والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, forehead and nose against it, OML perpendicular and midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي ومائل 15° نحو الأقدام، يخرج عند النازيون.",
+   "Horizontal central ray angled 15° caudad, exiting at the nasion."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الجيوب الجبهية والغربالية ظاهرة بوضوح.",
+    "Frontal and ethmoid sinuses clearly shown."
+   ],
+   [
+    "الصخرتان في الثلث السفلي من الحجاجين.",
+    "Petrous ridges in the lower third of the orbits."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية خاطئة: تتداخل الصخرتان مع الجيوب.",
+    "Wrong angle: petrous ridges overlap the sinuses."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجيوب.",
+    "Head rotation makes the sinuses asymmetric."
+   ]
+  ],
+  "tips": [
+   "صوّر المريض واقفاً (أو جالساً) والشعاع أفقي لإظهار مستويات السائل والهواء بالجيوب.",
+   "Image the patient erect or seated with a horizontal beam to show air-fluid levels in the sinuses."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند النازيون نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the nasion onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الجبهة والأنف ملامسين للكاسيت والـOML عمودياً.",
+    "Place forehead and nose against the detector with the OML perpendicular."
+   ],
+   [
+    "مركّز أفقياً مع ميل 15° نحو الأقدام وضيّق المجال.",
+    "Centre horizontally with a 15° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "sinus-waters",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجيوب الأنفية واترز",
+   "Paranasal sinuses Waters"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -53,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Sinus of (frontal|sphenoid) bone$",
+   "^Maxilla$",
+   "cells of ethmoid bone$"
+  ],
+  "ind": [
+   "إظهار الجيوب الفكية العلوية: التهاب الجيوب، مستوى السائل، وكسور الوجه الوسطى.",
+   "Show the maxillary sinuses: sinusitis, air-fluid levels and mid-face fractures."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت، الفم مغلق، الذقن مرفوع بحيث يكون الـMML عمودياً على الكاسيت والـOML بزاوية 37° معه، والخط الناصف في المنتصف.",
+   "Patient erect facing the detector, mouth closed, chin raised so the MML is perpendicular to the detector and the OML at 37° to it, midsagittal plane centred."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت ويخرج عند الأكانثيون.",
+   "Horizontal central ray perpendicular to the detector, exiting at the acanthion."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان تقعان أسفل الجيوب الفكية.",
+    "Petrous ridges project below the maxillary sinuses."
+   ],
+   [
+    "الجيوب الفكية متناظرة بلا دوران.",
+    "Maxillary sinuses symmetric with no rotation."
+   ],
+   [
+    "مستوى السائل (إن وجد) ظاهر بوضوح.",
+    "Any air-fluid level is clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "ذقن غير مرفوع كفاية: تتراكب الصخرتان على الجيوب.",
+    "Chin not raised enough: petrous ridges overlie the sinuses."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجيوب.",
+    "Head rotation makes the sinuses asymmetric."
+   ]
+  ],
+  "tips": [
+   "صوّر المريض واقفاً (أو جالساً) والشعاع أفقي لإظهار مستويات السائل والهواء بالجيوب.",
+   "Image the patient erect or seated with a horizontal beam to show air-fluid levels in the sinuses."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند الأكانثيون نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the acanthion onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ارفع الذقن حتى يصير الـMML عمودياً على الكاسيت والفم مغلق.",
+    "Raise the chin until the MML is perpendicular to the detector, mouth closed."
+   ],
+   [
+    "مركّز أفقياً عند الأكانثيون وضيّق المجال.",
+    "Centre horizontally at the acanthion and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "sinus-open-waters",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجيوب الأنفية واترز بفم مفتوح",
+   "Paranasal sinuses open-mouth Waters"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -53,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Sinus of (frontal|sphenoid) bone$",
+   "^Maxilla$",
+   "cells of ethmoid bone$"
+  ],
+  "ind": [
+   "إظهار الجيب الوتدي عبر الفم المفتوح، مع الجيوب الفكية.",
+   "Show the sphenoid sinus through the open mouth, with the maxillary sinuses."
+  ],
+  "pos": [
+   "نفس وضعية واترز، لكن يفتح المريض فمه إلى أقصى حد ويثبّته دون تحريك الرأس.",
+   "Same as Waters, but the patient opens the mouth as wide as possible and holds it without moving the head."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت ويخرج عند الأكانثيون، مع بقاء الفم مفتوحاً.",
+   "Horizontal central ray perpendicular to the detector, exiting at the acanthion, with the mouth kept open."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الجيب الوتدي ظاهر عبر الفم المفتوح.",
+    "The sphenoid sinus is visible through the open mouth."
+   ],
+   [
+    "الصخرتان أسفل الجيوب الفكية.",
+    "Petrous ridges below the maxillary sinuses."
+   ],
+   [
+    "تناظر الجانبين بلا دوران.",
+    "Both sides symmetric with no rotation."
+   ]
+  ],
+  "err": [
+   [
+    "فتح غير كافٍ: لا يظهر الجيب الوتدي.",
+    "Insufficient opening: the sphenoid sinus is not shown."
+   ],
+   [
+    "تحريك الرأس عند فتح الفم: تشوه الوضعية.",
+    "Moving the head when opening distorts the position."
+   ]
+  ],
+  "tips": [
+   "علّم المريض الفتح قبل التصوير، وثبّت الفم بدعامة إن لزم.",
+   "Rehearse the mouth opening beforehand and use a bite block if needed."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس ويخرج عند الأكانثيون نحو الكاسيت (من الخلف إلى الأمام).",
+   "The beam enters the back of the head and exits at the acanthion onto the detector (posterior to anterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع المريض كوضعية واترز ثم اطلب فتح الفم.",
+    "Position as for Waters, then ask the patient to open the mouth."
+   ],
+   [
+    "مركّز أفقياً عند الأكانثيون وضيّق المجال.",
+    "Centre horizontally at the acanthion and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "sinus-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجيوب الأنفية جانبي",
+   "Paranasal sinuses lateral"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Sinus of (frontal|sphenoid) bone$",
+   "^Maxilla$",
+   "cells of ethmoid bone$"
+  ],
+  "ind": [
+   "إظهار كل الجيوب بالجانب: الجبهية والوتدية والفكية والغربالية، ومستويات السائل بالجيب الوتدي.",
+   "Show all sinuses in profile: frontal, sphenoid, maxillary and ethmoid, and sphenoid air-fluid levels."
+  ],
+  "pos": [
+   "المريض واقف أو جالس، الرأس بوضع جانبي حقيقي والجهة المراد قريبة من الكاسيت، الخط بين الحدقتين عمودي والـIOML موازٍ لحافة الكاسيت السفلية.",
+   "Patient erect or seated with the head in a true lateral and the side of interest against the detector, interpupillary line vertical and IOML parallel to the lower detector edge."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت، يدخل خلف الزاوية الخارجية للعين بحوالي 2 سم.",
+   "Horizontal central ray perpendicular to the detector, entering about 2 cm behind the outer canthus."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "كل الجيوب ظاهرة بالجانب بلا دوران.",
+    "All sinuses shown in profile with no rotation."
+   ],
+   [
+    "الحجاجان والفكان متراكبان تقريباً.",
+    "Orbits and rami approximately superimposed."
+   ],
+   [
+    "السرج التركي والجيب الوتدي واضحان.",
+    "Sella turcica and sphenoid sinus clear."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس: عدم تراكب الجيوب.",
+    "Head rotation prevents superimposition of the sinuses."
+   ],
+   [
+    "ميل الرأس: تشوه الأبعاد.",
+    "Head tilt distorts the proportions."
+   ]
+  ],
+  "tips": [
+   "صوّر المريض واقفاً (أو جالساً) والشعاع أفقي لإظهار مستويات السائل والهواء بالجيوب.",
+   "Image the patient erect or seated with a horizontal beam to show air-fluid levels in the sinuses."
+  ],
+  "inout": [
+   "يدخل الشعاع من أحد جانبي الرأس خلف الزاوية الخارجية للعين ويخرج من الجانب الآخر نحو الكاسيت (جانبي).",
+   "The beam enters one side of the head behind the outer canthus and exits the other side onto the detector (lateral)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الرأس بوضع جانبي حقيقي وراجع الخط بين الحدقتين.",
+    "Place a true lateral head and check the interpupillary line."
+   ],
+   [
+    "مركّز أفقياً خلف الزاوية الخارجية للعين وضيّق المجال.",
+    "Centre horizontally behind the outer canthus and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "sinus-smv",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجيوب الأنفية تحت الذقن إلى القمة (SMV)",
+   "Paranasal sinuses submentovertex (SMV)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "IS",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Sinus of (frontal|sphenoid) bone$",
+   "^Maxilla$",
+   "cells of ethmoid bone$"
+  ],
+  "ind": [
+   "إظهار الجيبين الوتديين والخلايا الغربالية وجدران الجيوب.",
+   "Show the sphenoid sinuses, ethmoid cells and sinus walls."
+  ],
+  "pos": [
+   "المريض واقف أو جالس والرقبة ممدودة، الـIOML موازٍ للكاسيت والخط الناصف عمودي عليه.",
+   "Patient erect or seated with the neck extended, IOML parallel to the detector and midsagittal plane perpendicular to it."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الـIOML، يدخل على الخط الناصف تحت الذقن بين زاويتي الفك ويخرج عند القمة.",
+   "Central ray perpendicular to the IOML, entering on the midline below the chin between the mandibular angles and exiting at the vertex."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الجيبان الوتديان والخلايا الغربالية ظاهرة بلا تراكب.",
+    "Sphenoid sinuses and ethmoid cells shown without overlap."
+   ],
+   [
+    "تناظر الجانبين والخط الناصف في المنتصف.",
+    "Both sides symmetric with the midline centred."
+   ],
+   [
+    "الفك لا يحجب الجيوب.",
+    "The mandible does not obscure the sinuses."
+   ]
+  ],
+  "err": [
+   [
+    "IOML غير موازٍ: يتشوه شكل الجيوب.",
+    "IOML not parallel: the sinuses are distorted."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجانبين.",
+    "Head rotation makes the sides asymmetric."
+   ]
+  ],
+  "tips": [
+   "لا تجرِ هذا المسقط عند الاشتباه بإصابة العمود الرقبي.",
+   "Do not perform if a cervical spine injury is suspected."
+  ],
+  "inout": [
+   "يدخل الشعاع من تحت الذقن ويخرج من القمة نحو الكاسيت (من الأسفل إلى الأعلى).",
+   "The beam enters under the chin and exits the vertex onto the detector (inferior to superior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "استبعد إصابة العمود الرقبي ثم مدّ الرقبة.",
+    "Exclude cervical spine injury, then extend the neck."
+   ],
+   [
+    "اضبط الـIOML موازياً للكاسيت.",
+    "Set the IOML parallel to the detector."
+   ],
+   [
+    "مركّز عمودياً على IOML وضيّق المجال.",
+    "Centre perpendicular to the IOML and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "temp-law",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "لو (محوري جانبي مائل 15°)",
+   "Law (axiolateral oblique 15°)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": -15,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار الخشاء وخلاياه الهوائية والأذن الوسطى: التهاب الخشاء والتهاب الأذن الوسطى.",
+   "Show the mastoid and its air cells and the middle ear: mastoiditis and otitis media."
+  ],
+  "pos": [
+   "المريض جالس أو منبطح، الرأس جانبي والجهة المراد قريبة من الكاسيت، ثم يُدار الوجه 15° نحو الكاسيت.",
+   "Patient seated or prone, head lateral with the side of interest against the detector, then the face rotated 15° toward the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15° نحو الأقدام، يدخل أعلى الـEAM البعيد ويخرج عند الخشاء القريب.",
+   "Central ray angled 15° caudad, entering above the far EAM and exiting at the near mastoid."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الخلايا الهوائية للخشاء القريب ظاهرة وغير متراكبة مع الجهة البعيدة.",
+    "Near mastoid air cells shown without overlap by the far side."
+   ],
+   [
+    "الـEAM والحدبة الخشائية ظاهران.",
+    "EAM and mastoid process shown."
+   ],
+   [
+    "تناظر النسيج وعدم التعريض الزائد.",
+    "Even tissue density without overexposure."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: تتراكب الجهة البعيدة على الخشاء.",
+    "Insufficient angle: the far side overlaps the mastoid."
+   ],
+   [
+    "دوران الرأس الخاطئ: لا يظهر الخشاء بمنظر حر.",
+    "Wrong head rotation: the mastoid is not shown free."
+   ]
+  ],
+  "tips": [
+   "اليوم تُفضَّل الأشعة المقطعية عالية الدقة (HRCT) لتقييم العظم الصدغي، وهذه المساقط تاريخية أو عند عدم توفر CT.",
+   "HRCT is preferred today for the temporal bone; these views are historical or used when CT is unavailable."
+  ],
+  "inout": [
+   "يدخل الشعاع فوق الـEAM البعيد مائلاً نحو الأقدام ويخرج عند الخشاء القريب نحو الكاسيت.",
+   "The beam enters above the far EAM angled caudad and exits at the near mastoid onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الرأس جانبياً وأدر الوجه 15° نحو الكاسيت.",
+    "Place the head lateral and rotate the face 15° toward the detector."
+   ],
+   [
+    "مركّز مع ميل 15° نحو الأقدام وضيّق المجال.",
+    "Centre with a 15° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 15,
+  "limb": true
+ },
+ {
+  "id": "temp-schuller",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "شولر (محوري جانبي)",
+   "Schüller (axiolateral)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": -25,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Temporal bone$"
+  ],
+  "ind": [
+   "تقييم خلايا الخشاء الهوائية وحجمها وتصلبها، ومستوى الجيب السيني.",
+   "Assess mastoid air cells, their size and sclerosis, and the sigmoid sinus plate."
+  ],
+  "pos": [
+   "المريض جالس أو منبطح، الرأس بوضع جانبي حقيقي والجهة المراد قريبة من الكاسيت، الخط بين الحدقتين عمودي.",
+   "Patient seated or prone, head in a true lateral with the side of interest against the detector and the interpupillary line vertical."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 25 إلى 30° نحو الأقدام، يتمركز عند الـEAM القريب ويمر عبر الخشاء.",
+   "Central ray angled 25 to 30° caudad, centred at the near EAM and passing through the mastoid."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "خلايا الخشاء القريبة ظاهرة بلا تراكب من الجهة البعيدة.",
+    "Near mastoid cells shown without far-side overlap."
+   ],
+   [
+    "الـEAM وحدبة الخشاء واضحان.",
+    "EAM and mastoid tip clear."
+   ],
+   [
+    "لا دوران وبوضع جانبي حقيقي.",
+    "No rotation in a true lateral."
+   ]
+  ],
+  "err": [
+   [
+    "ميل غير كافٍ: يتراكب الخشاء البعيد.",
+    "Insufficient tilt: the far mastoid overlaps."
+   ],
+   [
+    "دوران الرأس: لا يظهر الخشاء بوضوح.",
+    "Head rotation obscures the mastoid."
+   ]
+  ],
+  "tips": [
+   "اليوم تُفضَّل الأشعة المقطعية عالية الدقة (HRCT) لتقييم العظم الصدغي، وهذه المساقط تاريخية أو عند عدم توفر CT.",
+   "HRCT is preferred today for the temporal bone; these views are historical or used when CT is unavailable."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة البعيدة فوق الرأس مائلاً نحو الأقدام ويخرج عند الخشاء القريب.",
+   "The beam enters from above on the far side angled caudad and exits at the near mastoid."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع الرأس جانبياً والجهة المراد نحو الكاسيت.",
+    "Place the head lateral with the side of interest toward the detector."
+   ],
+   [
+    "مركّز مع ميل 25–30° نحو الأقدام وضيّق المجال.",
+    "Centre with a 25–30° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "temp-stenvers",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "ستنفرز (المقطع الخلفي)",
+   "Stenvers (posterior profile)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 12,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار الصخرة بالمقطع الخلفي والقناة السمعية الداخلية والأذن الداخلية والخشاء.",
+   "Show the petrous bone in posterior profile, the internal auditory canal, inner ear and mastoid."
+  ],
+  "pos": [
+   "المريض منبطح أو جالس وجهه للكاسيت، الرأس مدار 45° نحو الجهة المراد (الجبهة والأنف والوجنة ملامسة للكاسيت).",
+   "Patient prone or seated facing the detector, head rotated 45° toward the side of interest (forehead, nose and cheek in contact with the detector)."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 12° نحو الرأس، يتمركز عند الخشاء المراد.",
+   "Central ray angled 12° cephalad, centred at the mastoid of interest."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرة بالمقطع الخلفي بكامل طولها.",
+    "The petrous ridge shown in posterior profile along its length."
+   ],
+   [
+    "القناة السمعية الداخلية والمتاهة ظاهرتان.",
+    "The internal auditory canal and labyrinth shown."
+   ],
+   [
+    "الخشاء ظاهر بلا تراكب الجهة المقابلة.",
+    "The mastoid shown without opposite-side overlap."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية دوران خاطئة: لا تظهر القناة بوضوح.",
+    "Wrong rotation angle: the canal is not clearly shown."
+   ],
+   [
+    "ميل غير كافٍ: تتراكب البنى.",
+    "Insufficient tilt: structures overlap."
+   ]
+  ],
+  "tips": [
+   "اليوم تُفضَّل الأشعة المقطعية عالية الدقة (HRCT) لتقييم العظم الصدغي، وهذه المساقط تاريخية أو عند عدم توفر CT.",
+   "HRCT is preferred today for the temporal bone; these views are historical or used when CT is unavailable."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الرأس مائلاً ويخرج عند الأذن المراد نحو الكاسيت.",
+   "The beam enters the back of the head obliquely and exits at the ear of interest onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "أدر الرأس 45° نحو الجهة المراد وتأكد من التلامس.",
+    "Rotate the head 45° toward the side of interest and check contact."
+   ],
+   [
+    "مركّز مع ميل 12° نحو الرأس وضيّق المجال.",
+    "Centre with a 12° cephalad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 45,
+  "limb": true
+ },
+ {
+  "id": "temp-arcelin",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "أرسلان (المقطع الأمامي)",
+   "Arcelin (anterior profile)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 10,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار الصخرة بالمقطع الأمامي، والقوقعة والقناة السمعية الداخلية.",
+   "Show the petrous bone in anterior profile, with the cochlea and internal auditory canal."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره، الرأس مدار 45° بعيداً عن الجهة المراد، والخط الناصف مائل بالنسبة للكاسيت.",
+   "Patient supine, head rotated 45° away from the side of interest, midsagittal plane oblique to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل حوالي 10° نحو الرأس، يتمركز عند الـEAM القريب من الجهة المراد.",
+   "Central ray angled about 10° cephalad, centred at the EAM near the side of interest."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرة بالمقطع الأمامي بكامل طولها.",
+    "The petrous ridge shown in anterior profile along its length."
+   ],
+   [
+    "القوقعة والقناة السمعية الداخلية ظاهرتان.",
+    "The cochlea and internal auditory canal shown."
+   ],
+   [
+    "لا تراكب مع الجهة المقابلة.",
+    "No overlap by the opposite side."
+   ]
+  ],
+  "err": [
+   [
+    "دوران غير كافٍ: تتراكب الصخرة على قاعدة الجمجمة.",
+    "Insufficient rotation: the petrous bone overlaps the skull base."
+   ],
+   [
+    "ميل خاطئ: لا يظهر الجزء المراد.",
+    "Wrong tilt: the target area is not shown."
+   ]
+  ],
+  "tips": [
+   "اليوم تُفضَّل الأشعة المقطعية عالية الدقة (HRCT) لتقييم العظم الصدغي، وهذه المساقط تاريخية أو عند عدم توفر CT.",
+   "HRCT is preferred today for the temporal bone; these views are historical or used when CT is unavailable."
+  ],
+  "inout": [
+   "يدخل الشعاع من الوجه مائلاً ويخرج من خلف الرأس عند الجهة المراد نحو الكاسيت.",
+   "The beam enters the face obliquely and exits the back of the head at the side of interest onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع المريض على ظهره وأدر الرأس 45° بعيداً عن الجهة المراد.",
+    "Lie the patient supine and rotate the head 45° away from the side of interest."
+   ],
+   [
+    "مركّز مع ميل 10° نحو الرأس وضيّق المجال.",
+    "Centre with a 10° cephalad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 45,
+  "limb": true,
+  "hideArms": true
+ },
+ {
+  "id": "temp-mayer",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "ماير",
+   "Mayer"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": -45,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Temporal bone$"
+  ],
+  "ind": [
+   "إظهار الخشاء والغرفة الطبلية والتجويف الصدغي (epitympanic recess): التهاب الأذن الوسطى وكوليستياتوما.",
+   "Show the mastoid, tympanic cavity and epitympanic recess: middle ear disease and cholesteatoma."
+  ],
+  "pos": [
+   "المريض جالس أو منبطح، الرأس جانبي والجهة المراد قريبة من الكاسيت، يُدار الوجه 45° نحو الكاسيت.",
+   "Patient seated or prone, head lateral with the side of interest against the detector, face rotated 45° toward the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 45° نحو الأقدام، يدخل أعلى الـEAM البعيد ويخرج عند الخشاء القريب.",
+   "Central ray angled 45° caudad, entering above the far EAM and exiting at the near mastoid."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الغرفة الطبلية والتجويف الصدغي والخشاء ظاهرة بوضوح.",
+    "Tympanic cavity, epitympanic recess and mastoid clearly shown."
+   ],
+   [
+    "الـEAM والسقف الصدغي واضحان.",
+    "EAM and tegmen clear."
+   ],
+   [
+    "لا تراكب من الجهة البعيدة.",
+    "No overlap by the far side."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية خاطئة: لا تظهر الغرفة الطبلية.",
+    "Wrong angle: the tympanic cavity is not shown."
+   ],
+   [
+    "دوران غير كافٍ: يتراكب الفك على المفصل.",
+    "Insufficient rotation: the mandible overlaps the joint."
+   ]
+  ],
+  "tips": [
+   "اليوم تُفضَّل الأشعة المقطعية عالية الدقة (HRCT) لتقييم العظم الصدغي، وهذه المساقط تاريخية أو عند عدم توفر CT.",
+   "HRCT is preferred today for the temporal bone; these views are historical or used when CT is unavailable."
+  ],
+  "inout": [
+   "يدخل الشعاع فوق الـEAM البعيد مائلاً ويخرج عند الخشاء القريب نحو الكاسيت.",
+   "The beam enters above the far EAM obliquely and exits at the near mastoid onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "أدر الرأس 45° نحو الكاسيت وتأكد من الجهة.",
+    "Rotate the head 45° toward the detector and check the side."
+   ],
+   [
+    "مركّز مع ميل 45° نحو الأقدام وضيّق المجال.",
+    "Centre with a 45° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ],
+  "rot": 45,
+  "limb": true
+ },
+ {
+  "id": "temp-towne-petrous",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "AP محوري للصخرة",
+   "AP axial (Towne) petrous"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": -30,
+  "cr": {
+   "s": "^Temporal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Temporal bone$"
+  ],
+  "ind": [
+   "مقارنة الصخرتين معاً: القناتان السمعيتان الداخليتان وكسور الصخرة.",
+   "Compare both petrous bones: internal auditory canals and petrous fractures."
+  ],
+  "pos": [
+   "المريض على ظهره أو واقف، الخط الناصف في المنتصف والـOML عمودي على الكاسيت.",
+   "Patient supine or erect, midsagittal plane centred and OML perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 30° نحو الأقدام، يتمركز على الخط الناصف فوق النازيون.",
+   "Central ray angled 30° caudad, centred on the midline above the nasion."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الصخرتان متناظرتان ومتباعدتان بلا تراكب.",
+    "Both petrous bones symmetric and clear of overlap."
+   ],
+   [
+    "القناتان السمعيتان الداخليتان ظاهرتان.",
+    "Both internal auditory canals shown."
+   ],
+   [
+    "لا دوران والخط الناصف في المنتصف.",
+    "No rotation with the midline centred."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: تتراكب الصخرتان.",
+    "Insufficient angle: the petrous bones overlap."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الجانبين.",
+    "Head rotation makes the sides asymmetric."
+   ]
+  ],
+  "tips": [
+   "اليوم تُفضَّل الأشعة المقطعية عالية الدقة (HRCT) لتقييم العظم الصدغي، وهذه المساقط تاريخية أو عند عدم توفر CT.",
+   "HRCT is preferred today for the temporal bone; these views are historical or used when CT is unavailable."
+  ],
+  "inout": [
+   "يدخل الشعاع من الوجه مائلاً نحو الأقدام ويخرج من خلف الرأس نحو الكاسيت (من الأمام إلى الخلف).",
+   "The beam enters the face angled caudad and exits the back of the head onto the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض والجهة (يمين/يسار) واسأل عن الحمل.",
+    "Check the request, patient ID and side (right/left); ask about pregnancy."
+   ],
+   [
+    "أزل المشابك والنظارات والأقراط والأسنان الاصطناعية والمعادن من الرأس.",
+    "Remove clips, glasses, earrings, dentures and metal from the head."
+   ],
+   [
+    "ضع المريض والـOML عمودياً على الكاسيت.",
+    "Position the patient with the OML perpendicular to the detector."
+   ],
+   [
+    "مركّز مع ميل 30° نحو الأقدام وضيّق المجال.",
+    "Centre with a 30° caudad tilt and collimate."
+   ],
+   [
+    "اضبط kVp وmAs ثم اطلب الثبات واعرّض.",
+    "Set kVp and mAs, ask for stillness and expose."
+   ],
+   [
+    "راجع الصورة وفق المعايير وتأكد من علامة الجهة.",
+    "Review against the criteria and check the side marker."
+   ]
+  ]
  }
 ]
