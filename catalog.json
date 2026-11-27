@@ -459,7 +459,8 @@
           "انظر قسم الأسنان",
           "See the Dental section"
          ],
-         "id": "panoramic-opg"
+         "id": "panoramic-opg",
+         "ex": "dental-opg"
         }
        ],
        "id": "mandible"
@@ -4082,7 +4083,8 @@
         "بيري أبيكال",
         "Periapical"
        ],
-       "id": "periapical"
+       "id": "periapical",
+       "ex": "dental-periapical"
       },
       {
        "p": 1,
@@ -4090,7 +4092,8 @@
         "بايتوينغ",
         "Bitewing"
        ],
-       "id": "bitewing"
+       "id": "bitewing",
+       "ex": "dental-bitewing"
       },
       {
        "p": 1,
@@ -4098,7 +4101,8 @@
         "إطباقي",
         "Occlusal"
        ],
-       "id": "occlusal"
+       "id": "occlusal",
+       "ex": "dental-occlusal"
       }
      ],
      "id": "intraoral"
@@ -4115,7 +4119,8 @@
         "بانوراما (OPG)",
         "Panoramic (OPG)"
        ],
-       "id": "panoramic-opg"
+       "id": "panoramic-opg",
+       "ex": "dental-opg"
       },
       {
        "p": 1,
@@ -4123,7 +4128,8 @@
         "سيفالومتري جانبي",
         "Lateral cephalometric"
        ],
-       "id": "lateral-cephalometric"
+       "id": "lateral-cephalometric",
+       "ex": "dental-ceph"
       },
       {
        "p": 1,
@@ -4131,13 +4137,13 @@
         "CBCT",
         "CBCT"
        ],
-       "id": "cbct"
+       "id": "cbct",
+       "ex": "dental-cbct"
       }
      ],
      "id": "extraoral"
     }
    ],
-   "coming": true,
    "plan": [
     [
      "بيري أبيكال",
@@ -4282,7 +4288,8 @@
         "سلسلة جمجمة الرضوض",
         "Trauma skull series"
        ],
-       "id": "trauma-skull-series"
+       "id": "trauma-skull-series",
+       "ex": "sp-trauma-skull"
       },
       {
        "p": 1,
@@ -4290,7 +4297,8 @@
         "جانبي أفقي للركبة",
         "Horizontal-beam lateral knee"
        ],
-       "id": "horizontal-beam-lateral-knee"
+       "id": "horizontal-beam-lateral-knee",
+       "ex": "knee-cross-table"
       },
       {
        "p": 1,
@@ -4298,7 +4306,8 @@
         "جانبي أفقي للورك",
         "Cross-table lateral hip"
        ],
-       "id": "cross-table-lateral-hip"
+       "id": "cross-table-lateral-hip",
+       "ex": "hip-cross-table"
       },
       {
        "p": 1,
@@ -4306,7 +4315,8 @@
         "جانبي عبر الصدر للكتف والعضد",
         "Transthoracic lateral shoulder/humerus"
        ],
-       "id": "transthoracic-lateral-shoulder-humerus"
+       "id": "transthoracic-lateral-shoulder-humerus",
+       "ex": "humerus-transthoracic"
       },
       {
        "p": 1,
@@ -4314,7 +4324,8 @@
         "سلسلة الرضوض (عنقي وصدر وحوض)",
         "Trauma series (C-spine, chest, pelvis)"
        ],
-       "id": "trauma-series-c-spine-chest-pelvis"
+       "id": "trauma-series-c-spine-chest-pelvis",
+       "ex": "sp-trauma-series"
       }
      ],
      "id": "trauma"
@@ -4331,7 +4342,8 @@
         "التثبيت (بابوز، بيغ-أو-ستات)",
         "Immobilisation (papoose, Pigg-O-Stat)"
        ],
-       "id": "immobilisation-papoose-pigg-o-stat"
+       "id": "immobilisation-papoose-pigg-o-stat",
+       "ex": "sp-paed-immobilisation"
       },
       {
        "p": 1,
@@ -4339,7 +4351,8 @@
         "المسح الهيكلي (إصابة غير عرضية)",
         "Skeletal survey (non-accidental injury)"
        ],
-       "id": "skeletal-survey-non-accidental-injury"
+       "id": "skeletal-survey-non-accidental-injury",
+       "ex": "sp-paed-skeletal-survey"
       },
       {
        "p": 1,
@@ -4347,7 +4360,8 @@
         "عمر العظام",
         "Bone age"
        ],
-       "id": "bone-age"
+       "id": "bone-age",
+       "ex": "scoliosis-bone-age"
       },
       {
        "p": 1,
@@ -4355,7 +4369,8 @@
         "سلسلة ابتلاع جسم غريب",
         "Foreign body ingestion series"
        ],
-       "id": "foreign-body-ingestion-series"
+       "id": "foreign-body-ingestion-series",
+       "ex": "sp-paed-fb-ingestion"
       },
       {
        "p": 1,
@@ -4363,7 +4378,8 @@
         "استنشاق جسم غريب",
         "Foreign body inhalation (insp/exp)"
        ],
-       "id": "foreign-body-inhalation-insp-exp"
+       "id": "foreign-body-inhalation-insp-exp",
+       "ex": "sp-paed-fb-inhalation"
       },
       {
        "p": 1,
@@ -4371,7 +4387,8 @@
         "سلسلة المجازات",
         "Shunt series"
        ],
-       "id": "shunt-series"
+       "id": "shunt-series",
+       "ex": "sp-paed-shunt"
       },
       {
        "p": 1,
@@ -4379,7 +4396,8 @@
         "فون روزن للورك",
         "Von Rosen hips"
        ],
-       "id": "von-rosen-hips"
+       "id": "von-rosen-hips",
+       "ex": "hip-von-rosen"
       }
      ],
      "id": "paediatric"
@@ -4396,7 +4414,8 @@
         "ركبة/كاحل/قدم بحمل وزن",
         "Weight-bearing knee/ankle/foot"
        ],
-       "id": "weight-bearing-knee-ankle-foot"
+       "id": "weight-bearing-knee-ankle-foot",
+       "ex": "knee-ap-wb"
       },
       {
        "p": 1,
@@ -4404,7 +4423,8 @@
         "محاذاة الساقين واقفاً",
         "Long-leg standing alignment"
        ],
-       "id": "long-leg-standing-alignment"
+       "id": "long-leg-standing-alignment",
+       "ex": "leg-alignment"
       },
       {
        "p": 1,
@@ -4412,7 +4432,8 @@
         "إجهاد الكاحل",
         "Ankle stress views"
        ],
-       "id": "ankle-stress-views"
+       "id": "ankle-stress-views",
+       "ex": "ankle-stress"
       },
       {
        "p": 1,
@@ -4420,7 +4441,8 @@
         "إجهاد الركبة",
         "Knee varus/valgus stress"
        ],
-       "id": "knee-varus-valgus-stress"
+       "id": "knee-varus-valgus-stress",
+       "ex": "knee-stress"
       },
       {
        "p": 1,
@@ -4428,7 +4450,8 @@
         "إجهاد الإبهام",
         "Gamekeeper's thumb stress"
        ],
-       "id": "gamekeeper-s-thumb-stress"
+       "id": "gamekeeper-s-thumb-stress",
+       "ex": "thumb-gamekeeper"
       },
       {
        "p": 1,
@@ -4436,7 +4459,8 @@
         "إجهاد المفصل الأخرمي الترقوي",
         "AC joint stress"
        ],
-       "id": "ac-joint-stress"
+       "id": "ac-joint-stress",
+       "ex": "ac-stress"
       }
      ],
      "id": "weight-bearing-stress"
@@ -4453,7 +4477,8 @@
         "صدر متنقل",
         "Portable chest"
        ],
-       "id": "portable-chest"
+       "id": "portable-chest",
+       "ex": "chest-ap-supine"
       },
       {
        "p": 1,
@@ -4461,7 +4486,8 @@
         "بطن متنقل",
         "Portable abdomen"
        ],
-       "id": "portable-abdomen"
+       "id": "portable-abdomen",
+       "ex": "kub"
       },
       {
        "p": 1,
@@ -4469,7 +4495,8 @@
         "طرف متنقل",
         "Portable extremity"
        ],
-       "id": "portable-extremity"
+       "id": "portable-extremity",
+       "ex": "sp-portable-extremity"
       },
       {
        "p": 1,
@@ -4477,7 +4504,8 @@
         "أساسيات C-arm",
         "C-arm fluoroscopy basics"
        ],
-       "id": "c-arm-fluoroscopy-basics"
+       "id": "c-arm-fluoroscopy-basics",
+       "ex": "sp-c-arm"
       }
      ],
      "id": "portable-theatre"
@@ -4494,7 +4522,8 @@
         "الحجاج (واترز + جانبي)",
         "Orbit (Waters + lateral)"
        ],
-       "id": "orbit-waters-lateral"
+       "id": "orbit-waters-lateral",
+       "ex": "orbit-waters"
       },
       {
        "p": 1,
@@ -4502,7 +4531,8 @@
         "اليد (مسقطان)",
         "Hand (two views)"
        ],
-       "id": "hand-two-views"
+       "id": "hand-two-views",
+       "ex": "hand-pa"
       },
       {
        "p": 1,
@@ -4510,7 +4540,8 @@
         "سلسلة العملة المبلوعة",
         "Swallowed coin series"
        ],
-       "id": "swallowed-coin-series"
+       "id": "swallowed-coin-series",
+       "ex": "sp-fb-coin"
       },
       {
        "p": 1,

@@ -30263,5 +30263,1679 @@
    ]
   ],
   "limb": true
+ },
+ {
+  "id": "dental-periapical",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الأسنان الذروي (Periapical)",
+   "Dental periapical"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 0.4,
+  "det": [
+   0.03,
+   0.04,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Maxilla$",
+   "^Mandible$"
+  ],
+  "ind": [
+   "تقييم كامل السن من التاج حتى ذروة الجذر والعظم السنخي المحيط: الخراج الذروي، التهاب ما حول الذروة، تسوس الجذر، وكسور الجذور.",
+   "Evaluate the entire tooth from crown to root apex and surrounding alveolar bone: periapical abscess, root fracture and periodontal bone loss."
+  ],
+  "pos": [
+   "المريض جالساً والرأس مسنوداً (المستوى الإطباقي أفقياً للفك المصور). يُوضع المستشعر/الفيلم داخل الفم موازياً لمحور السن (تقنية التوازي Paralleling technique باستخدام حامل الفيلم) أو بزاوية منصفة (Bisecting angle).",
+   "Patient seated with occlusal plane horizontal. Sensor/film placed intraorally parallel to the tooth's long axis using a beam-aiming holder (paralleling technique)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على المستشعر والسن في تقنية التوازي (أو عمودي على الخط المنصف لزاوية السن والفيلم في تقنية التنصيف).",
+   "Central ray perpendicular to both tooth and sensor in paralleling technique (or perpendicular to the bisector in bisecting-angle technique)."
+  ],
+  "br": [
+   "الثبات التام مع العضّ اللطيف على حامل المستشعر.",
+   "Stay still biting gently on the sensor holder."
+  ],
+  "crit": [
+   [
+    "ظهور التاج والجذر كاملاً مع 3–4 مم من العظم حول الذروة دون تطاول أو تقصير.",
+    "Entire crown, root apex and 3–4 mm of periapical bone shown without elongation or foreshortening."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية رأسية خاطئة: تطاول أو تقصير الجذر.",
+    "Incorrect vertical angulation causes elongation or foreshortening."
+   ],
+   [
+    "خطأ الزاوية الأفقية: تراكب تيجان الأسنان المجاورة.",
+    "Incorrect horizontal angulation overlaps adjacent crowns."
+   ]
+  ],
+  "tips": [
+   "تقنية التوازي (Paralleling) هي المفضلة لأنها تقلل التشوه الهندسي. اسأل عن الحمل واستخدم طوق الغدة الدرقية عند اللزوم.",
+   "Paralleling technique is preferred for minimal distortion. Ask about pregnancy and use thyroid collar as indicated."
+  ],
+  "inout": [
+   "يدخل الشعاع من الخد أو الشفة عبر السن المصاب نحو المستشعر داخل الفم.",
+   "The beam enters through the cheek/lip across the target tooth onto the intraoral sensor."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "1–3",
+    "1–3"
+   ],
+   "ex": [
+    "جهاز أشعة الأسنان: 65 kVp، ~0.1–0.2 ثانية",
+    "Dental X-ray unit: 65 kVp, ~0.1–0.2 s"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "مؤقت رقمي حسب نوع السن",
+    "Digital timer preset by tooth"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والسن المطلوب واسأل عن الحمل.",
+    "Check request, target tooth and pregnancy."
+   ],
+   [
+    "ضع المستشعر في الحامل المعقم داخل الفم بموازاة السن.",
+    "Place sensor in sterile holder parallel to the tooth."
+   ],
+   [
+    "حاذِ مخروط الأشعة مع حلقة التوجيه ثم اعرّض.",
+    "Align PID cone with aiming ring and expose."
+   ]
+  ]
+ },
+ {
+  "id": "dental-bitewing",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الأسنان المجنّح (Bitewing)",
+   "Dental bitewing"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 0.4,
+  "det": [
+   0.03,
+   0.04,
+   "landscape"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Maxilla$",
+   "^Mandible$"
+  ],
+  "ind": [
+   "كشف التسوس بين الأسنان (interproximal caries)، متابعة الحشوات، وتقييم مستوى قمة العظم السنخي في أمراض اللثة.",
+   "Detect interproximal caries, check restorations and assess alveolar crest bone height in periodontal disease."
+  ],
+  "pos": [
+   "المريض جالساً والمستوى الإطباقي أفقياً، يعضّ على الجناح الورقي/البلاستيكي لحامل المستشعر فتظهر تيجان الأسنان العلوية والسفلية معاً.",
+   "Patient seated with occlusal plane horizontal, biting on the bitewing tab so upper and lower crowns appear together."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل +5° إلى +10° ذيلياً (للأسفل) وموجه بين نقاط التماس للأسنان الخلفية.",
+   "Central ray angled +5° to +10° downward, directed through the interproximal contacts."
+  ],
+  "br": [
+   "الثبات التام مع إطباق الأسنان على اللسان البلاستيكي.",
+   "Stay still biting firmly on the tab."
+  ],
+  "crit": [
+   [
+    "نقاط التماس بين الأسنان مفتوحة دون تراكب، وتيجان الأضراس العلوية والسفلية مع قمم العظم ظاهرة بوضوح.",
+    "Open interproximal contacts with upper/lower crowns and alveolar crests clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية أفقية غير عمودية على القوس السني: تراكب المينا بين الأسنان وإخفاء التسوس!",
+    "Horizontal angulation error overlaps enamel and hides caries!"
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الخد أفقياً عبر نقاط التماس نحو المستشعر داخل الفم.",
+   "The beam enters through the cheek across the contact points onto the intraoral sensor."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "1–3",
+    "1–3"
+   ],
+   "ex": [
+    "جهاز أشعة الأسنان: 65 kVp، ~0.1–0.2 ثانية",
+    "Dental X-ray unit: 65 kVp, ~0.1–0.2 s"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "مؤقت رقمي",
+    "Digital preset"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الجناح على سطح الإطباق واطلب العضّ بلطف.",
+    "Place bitewing tab on occlusal surface and bite gently."
+   ],
+   [
+    "اضبط +5° إلى +10° عمودياً وموازياً لنقاط التماس أفقياً ثم اعرّض.",
+    "Set +5–10° vertical tilt aligned with contacts and expose."
+   ]
+  ]
+ },
+ {
+  "id": "dental-occlusal",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الأسنان الإطباقي (Occlusal)",
+   "Dental occlusal"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 0.4,
+  "det": [
+   0.06,
+   0.08,
+   "landscape"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Maxilla$",
+   "^Mandible$"
+  ],
+  "ind": [
+   "كشف الأسنان المطمورة، حصى القناة اللعابية تحت الفك (Wharton's duct)، الكسور الفكية، والأكياس أو الأورام الكبيرة في الفك.",
+   "Localise impacted teeth, submandibular duct sialoliths, jaw fractures and large cysts/lesions."
+  ],
+  "pos": [
+   "يُوضع الفيلم/المستشعر الإطباقي الكبير مسطحاً بين الأسنان العلوية والسفلية ويمسكه المريض بإطباق لطيف. للفك السفلي يُمال الرأس للخلف؛ وللعلوي يبقى أفقياً.",
+   "Large occlusal receptor placed flat between upper and lower teeth held gently by biting."
+  ],
+  "crt": [
+   "للفك العلوي: +60° إلى +65° عبر جسر الأنف؛ وللفك السفلي: عمودي من تحت الذقن على أرضية الفم.",
+   "Maxillary: +60° to +65° through nasal bridge; Mandibular: perpendicular from beneath the chin through floor of mouth."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "مقطع عريض لقوس الفك يظهر الأسنان المطمورة أو الحصى اللعابية بوضوح.",
+    "Wide cross-sectional view of the dental arch showing impacted teeth or sialoliths."
+   ]
+  ],
+  "err": [
+   [
+    "وضع سطح الفيلم الحساس بالاتجاه المعاكس.",
+    "Reversing the receptor orientation."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من جسر الأنف (للعلوي) أو من تحت الذقن (للسفلي) نحو المستشعر.",
+   "The beam enters through nasal bridge (upper) or submental region (lower) onto the receptor."
+  ],
+  "exp": {
+   "kv": [
+    "65–70",
+    "65–70"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "جهاز أشعة الأسنان: 65–70 kVp",
+    "Dental X-ray unit: 65–70 kVp"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "مؤقت رقمي",
+    "Digital preset"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المستشعر الإطباقي بين الأسنان وأطبق بلطف.",
+    "Place occlusal receptor flat between teeth."
+   ],
+   [
+    "وجّه المخروط بالزاوية المناسبة للفك العلوي أو السفلي ثم اعرّض.",
+    "Aim PID for maxillary or mandibular arch and expose."
+   ]
+  ]
+ },
+ {
+  "id": "dental-opg",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "بانوراما الأسنان (OPG)",
+   "Panoramic dental (OPG)"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Mandible$",
+   "at": "center"
+  },
+  "sid": 0.5,
+  "det": [
+   0.15,
+   0.3,
+   "landscape"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$",
+   "^Maxilla$"
+  ],
+  "ind": [
+   "مسح شامل للفكين العلوي والسفلي، ضرس العقل المطمور، كسور الفك السفلي، الأكياس، المفصل الفكي الصدغي، وقاع الجيوب الفكية.",
+   "Comprehensive survey of mandible/maxilla, impacted third molars, jaw fractures, cysts, TMJs and maxillary sinus floors."
+  ],
+  "pos": [
+   "المريض واقف أو جالس في جهاز البانوراما، يعضّ على قطعة العضّ البلاستيكية بالأسنان الأمامية، اللسان ملتصق بسقف الحنك، والرقبة ممدودة باستقامة مع محاذاة خط فرانكفورت أفقياً والخط الناصف عمودياً.",
+   "Patient standing/seated in OPG unit biting the notched bite-block, tongue pressed against hard palate, neck straight, Frankfort plane horizontal and midsagittal plane vertical."
+  ],
+  "crt": [
+   "يدور أنبوب الأشعة والمستشعر 180–270° حول الرأس لتصوير طبقة القوس السني (focal trough).",
+   "Tube and detector rotate smoothly around the head to image the curved dental focal trough."
+  ],
+  "br": [
+   "الثبات التام وعدم البلع مع بقاء اللسان ملتصقاً بسقف الحنك (~12–18 ثانية).",
+   "Stay completely still without swallowing, tongue against palate (~12–18 s)."
+  ],
+  "crit": [
+   [
+    "القوسان السنيان، اللقمتان الفكيتان، والجيوب الفكية متناظرة وواضحة دون شبح العمود الفقري.",
+    "Both arches, condyles and maxillary sinuses symmetric without spine ghosting."
+   ]
+  ],
+  "err": [
+   [
+    "اللسان غير ملتصق بسقف الحنك: ظل هوائي أسود يغطي جذور الأسنان العلوية!",
+    "Tongue not on palate creates a black air shadow over upper roots!"
+   ],
+   [
+    "انحناء الرقبة للأمام: ظل أبيض عريض في المنتصف.",
+    "Slumped neck creates a wide white spine shadow centrally."
+   ]
+  ],
+  "tips": [
+   "اطلب نزع الأقراط والنظارات وأطقم الأسنان وسلسلة الرقبة لتفادي الأشباح المعدنية المضاعفة. اسأل عن الحمل.",
+   "Remove earrings, glasses, dentures and necklaces to avoid ghost artifacts. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدور الشعاع من خلف الرقبة/الفك حول الرأس أثناء المسح البانورامي.",
+   "The beam rotates around the head from behind during the panoramic sweep."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "8–14 mA × 12–16 ث",
+    "8–14 mA × 12–16 s"
+   ],
+   "ex": [
+    "برنامج البانوراما القياسي حسب حجم المريض",
+    "Standard OPG preset by patient size"
+   ],
+   "grid": [
+    "لا شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "تعديل تلقائي حسب الجهاز",
+    "Unit-controlled"
+   ]
+  },
+  "steps": [
+   [
+    "أزل الأقراط والنظارات والأطقم والمعادن واسأل عن الحمل.",
+    "Remove earrings, glasses, dentures and metal; ask about pregnancy."
+   ],
+   [
+    "ثبّت المريض بالعضّ على القطعة، استقامة الرقبة، وضبط الليزر.",
+    "Position on bite-block, straighten neck and align lasers."
+   ],
+   [
+    "اطلب لصق اللسان بسقف الحنك والثبات ثم شغّل الدوران.",
+    "Ask patient to press tongue to palate, stay still and expose."
+   ]
+  ]
+ },
+ {
+  "id": "dental-ceph",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "سيفالومتري جانبي (Cephalometric)",
+   "Lateral cephalometric"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.5,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$",
+   "^Maxilla$",
+   "^Frontal bone$",
+   "^Sphenoid bone$"
+  ],
+  "ind": [
+   "التخطيط لتقويم الأسنان وجراحة الفكين (orthognathic surgery): قياس الزوايا القحفية الوجهية (SNA, SNB, ANB) وعلاقة الفكين والأسنان والأنسجة الرخوة الوجهية.",
+   "Orthodontic and orthognathic planning: cephalometric landmarks (SNA, SNB, ANB), jaw relationships and soft-tissue profile."
+  ],
+  "pos": [
+   "المريض واقف في مثبت الرأس السيفالومتري (cephalostat) مع وضع سدادتي الأذن في القناتين السمعيتين، خط فرانكفورت أفقياً، الأسنان مطبقة بلطف (centric occlusion) والشفاه مسترخية.",
+   "Patient erect in cephalostat with ear rods in external auditory meatuses, Frankfort plane horizontal, teeth in centric occlusion and lips relaxed."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند القناة السمعية الخارجية بمسافة قياسية ثابتة (150–180 سم) لتوحيد القياسات.",
+   "Horizontal central ray perpendicular at the EAM with fixed 150–180 cm SID for standardised measurements."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "تراكب الفكين والقنوات السمعية، وظهور الأنسجة الرخوة للأنف والشفاه والذقن بوضوح.",
+    "Superimposed rami/ear rods with soft-tissue profile of nose, lips and chin clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "عدم إطباق الأسنان الخلفية أو تحرك الرأس.",
+    "Teeth not in centric occlusion or head movement."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وأزل الأقراط والنظارات.",
+   "Ask about pregnancy and remove earrings/glasses."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من أحد جانبي الرأس ويخرج نحو الكاسيت.",
+   "The beam enters horizontally from one side onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "10–15",
+    "10–15"
+   ],
+   "ex": [
+    "إعداد السيفالومتري الرقمي القياسي",
+    "Standard digital cephalometric preset"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "أزل المعادن واسأل عن الحمل.",
+    "Remove metal; ask about pregnancy."
+   ],
+   [
+    "ثبّت الرأس في السيفالوستات مع إطباق الأسنان وإرخاء الشفاه.",
+    "Align in cephalostat with teeth occluded and lips relaxed."
+   ],
+   [
+    "اعرض وتحقق من وضوح النقاط التشريحية والأنسجة الرخوة.",
+    "Expose and verify landmarks and soft-tissue profile."
+   ]
+  ]
+ },
+ {
+  "id": "dental-cbct",
+  "mod": "ct",
+  "type": "ct",
+  "name": [
+   "الأشعة المقطعية المخروطية للأسنان (CBCT)",
+   "Dental CBCT"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Maxilla$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Mandible$",
+   "^Maxilla$"
+  ],
+  "ind": [
+   "تقييم ثلاثي الأبعاد قبل زراعة الأسنان (ارتفاع وعرض العظم)، علاقة ضرس العقل بالعصب السنخي السفلي، تشخيص قنوات الجذور المعقدة، وأورام الفكين.",
+   "3D pre-implant bone assessment, third-molar relationship to inferior alveolar nerve, endodontic anatomy and jaw pathology."
+  ],
+  "pos": [
+   "المريض جالس أو واقف في جهاز CBCT مع تثبيت الذقن والجبهة ومحاذاة الليزر على المنطقة المراد مسحها فقط (Small/Medium/Large FOV).",
+   "Patient seated/standing in CBCT scanner with chin/head rest, laser-aligned to the smallest appropriate field of view (FOV)."
+  ],
+  "crt": [
+   "يدور الأنبوب والمستشعر 180–360° حول الفكين لتوليد مقاطع ثلاثية الأبعاد عالية الدقة.",
+   "Cone-beam tube and detector rotate 180–360° around the jaws for 3D multiplanar reconstruction."
+  ],
+  "br": [
+   "الثبات التام وعدم البلع طوال مدة الدوران.",
+   "Stay completely still without swallowing during rotation."
+  ],
+  "crit": [
+   [
+    "تغطية كاملة للمنطقة المستهدفة بدقة عالية وخلو من تشوه الحركة.",
+    "Target region fully covered with sharp bone detail and no motion artifacts."
+   ]
+  ],
+  "err": [
+   [
+    "استخدام مجال مسح (FOV) كبير جداً دون مبرر طبي (يرفع الجرعة الإشعاعية).",
+    "Using an unnecessarily large FOV increases radiation dose."
+   ]
+  ],
+  "tips": [
+   "اختر أصغر مجال مسح (FOV) يغطي الهدف السريري التزاماً بمبدأ ALARA. اسأل عن الحمل.",
+   "Select the smallest FOV covering the clinical area (ALARA). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدور الشعاع المخروطي 360° حول الفكين أثناء المسح.",
+   "The cone beam rotates 360° around the jaws during acquisition."
+  ],
+  "exp": {
+   "kv": [
+    "85–95",
+    "85–95"
+   ],
+   "mas": [
+    "4–10 mA نبضي",
+    "4–10 mA pulsed"
+   ],
+   "ex": [
+    "بروتوكول CBCT حسب حجم المجال المطلوب",
+    "CBCT protocol matched to target FOV"
+   ],
+   "grid": [
+    "لا شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "تلقائي حسب الجهاز",
+    "Scanner-controlled"
+   ]
+  },
+  "steps": [
+   [
+    "أزل المعادن والأقراط والأطقم القابلة للإزالة واسأل عن الحمل.",
+    "Remove metal, earrings and removable dentures; ask about pregnancy."
+   ],
+   [
+    "اختر حجم FOV المناسب وثبّت الرأس والذقن بالليزر.",
+    "Select target FOV and align head/chin with lasers."
+   ],
+   [
+    "اطلب الثبات التام ثم ابدأ المسح وراجع المقاطع.",
+    "Ask for total stillness, scan and review reconstructions."
+   ]
+  ]
+ },
+ {
+  "id": "sp-trauma-skull",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "سلسلة جمجمة الرضوض",
+   "Trauma skull series"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "supine",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital|Temporal|Sphenoid) bone$"
+  ],
+  "ind": [
+   "تقييم كسور الجمجمة والهواء داخل القحف ومستويات السائل الجيبي لدى مصاب الرضوض المستلقي عند عدم توفر الأشعة المقطعية (CT)، وتشمل: جانبي بشعاع أفقي، AP محوري تاون، وAP كالدويل المعكوس.",
+   "Supine trauma skull assessment when CT is unavailable: cross-table lateral, AP axial Towne and AP axial reverse Caldwell."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره مع تثبيت الرقبة بالطوق دون أي تحريك أو دوران للرأس.",
+   "Patient supine with cervical collar on; zero head movement or rotation."
+  ],
+  "crt": [
+   "تؤخذ الصور بشعاع أفقي (للجانبي) وبإمالة الأنبوب (لتاون وكالدويل المعكوس) مع بقاء المريض على ظهره.",
+   "Cross-table horizontal beam for lateral, and angled AP beams for Towne and reverse Caldwell while supine."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "شمول كامل قبو الجمجمة وقاعدتها والجيب الوتدي دون تحريك المريض.",
+    "Entire skull vault, base and sphenoid sinus shown without moving the patient."
+   ]
+  ],
+  "err": [
+   [
+    "تحريك الرأس قبل استبعاد إصابة العمود العنقي.",
+    "Moving the head before C-spine clearance."
+   ]
+  ],
+  "tips": [
+   "الأشعة المقطعية (CT) للرأس هي المعيار الذهبي في رضوض الرأس اليوم؛ تُستخدم هذه السلسلة فقط عند تعذر توفر CT. اسأل عن الحمل.",
+   "Head CT is the gold standard in head trauma today; this series is only used where CT is unavailable. Ask about pregnancy."
+  ],
+  "inout": [
+   "تُوجَّه الأشعة أفقياً (جانبي) وأمامياً-خلفياً (تاون/كالدويل المعكوس) والمريض مستلقٍ.",
+   "Beams are directed cross-table lateral and AP axial while the patient stays supine."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي أو الغرفة الوسطى",
+    "Manual or centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ الرأس والعنق مثبتين تماماً واسأل عن الحمل.",
+    "Keep head/neck immobilised; ask about pregnancy."
+   ],
+   [
+    "ابدأ بالجانبي بشعاع أفقي، ثم AP كالدويل المعكوس وتاون.",
+    "Acquire cross-table lateral first, then reverse Caldwell and Towne."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "sp-trauma-series",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "سلسلة الرضوض الأساسية (عنقي، صدر، حوض)",
+   "Trauma series (C-spine, chest, pelvis)"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Hip bone$",
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "التقييم الإشعاعي السريع في غرفة الإنعاش (ATLS) لمصاب الحوادث الكبرى دون تحريكه: (1) صدر AP، (2) حوض AP، (3) عنقي جانبي أفقي (إذا لم يتوفر CT فوري).",
+   "Rapid ATLS resuscitation-room trauma screen without moving the patient: (1) AP supine chest, (2) AP pelvis, (3) cross-table lateral C-spine (if immediate CT unavailable)."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره في غرفة الطوارئ مع تثبيت العمود الفقري؛ تُؤخذ الصور بجهاز الأشعة المتنقل.",
+   "Patient supine in trauma bay with full spinal precautions; imaged using mobile X-ray unit."
+  ],
+  "crt": [
+   "صدر AP عند منتصف القص، حوض AP فوق الارتفاق بـ 5 سم، وعنقي جانبي أفقي عند C4.",
+   "AP chest at mid-sternum, AP pelvis 5 cm above symphysis, cross-table lateral C-spine at C4."
+  ],
+  "br": [
+   "التعريض الفوري دون تأخير الإنعاش.",
+   "Immediate exposure coordinated with resuscitation team."
+  ],
+  "crit": [
+   [
+    "وضوح الرئتين والمنصف، حلقة الحوض كاملة، والعمود العنقي حتى C7–T1 دون تعطيل فريق الطوارئ.",
+    "Lungs/mediastinum, full pelvic ring and C1–T1 clearly captured rapidly."
+   ]
+  ],
+  "err": [
+   [
+    "تحريك المريض أو إزالة طوق الرقبة أو عدم ارتداء الطاقم مآزر الرصاص.",
+    "Moving patient, removing collar or neglecting staff lead protection."
+   ]
+  ],
+  "tips": [
+   "في مراكز الإصابات الحديثة، يُنتقل مباشرة للـPan-CT إذا كان المريض مستقراً. ارتدِ مئزر الرصاص ونبّه الفريق قبل كل تعريض.",
+   "In modern trauma centres, stable patients proceed directly to trauma Pan-CT. Wear lead and announce exposures."
+  ],
+  "inout": [
+   "أشعة AP للصدر والحوض وأفقية للعمود العنقي.",
+   "AP beams for chest/pelvis and horizontal cross-table beam for C-spine."
+  ],
+  "exp": {
+   "kv": [
+    "80–95",
+    "80–95"
+   ],
+   "mas": [
+    "4–25",
+    "4–25"
+   ],
+   "ex": [
+    "الصدر ~5 mAs، العنقي ~16 mAs، الحوض ~24 mAs",
+    "Chest ~5 mAs, C-spine ~16 mAs, pelvis ~24 mAs"
+   ],
+   "grid": [
+    "حسب الجهاز المتنقل",
+    "Per mobile unit"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "نسّق مع قائد فريق الإنعاش وتأكد من ارتداء الجميع مآزر الرصاص.",
+    "Coordinate with trauma team leader and ensure lead protection."
+   ],
+   [
+    "صوّر الصدر AP ثم الحوض AP ثم العنقي جانبياً أفقياً بسرعة وأمان.",
+    "Acquire AP chest, AP pelvis and cross-table C-spine rapidly."
+   ]
+  ]
+ },
+ {
+  "id": "sp-paed-immobilisation",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تثبيت الأطفال (Pigg-O-Stat / Papoose)",
+   "Paediatric immobilisation (Pigg-O-Stat / Papoose)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T6$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "بروتوكول تثبيت الرضّع والأطفال الصغار بأمان لمنع الحركة وتفادي إعادة التصوير وتقليل جرعة الإشعاع على الطفل والمرافقين.",
+   "Safe immobilisation of infants/toddlers to prevent motion blur, avoid repeat exposures and minimise dose to child and carers."
+  ],
+  "pos": [
+   "للأطفال من ~6 أشهر إلى 3 سنوات في الصدر الواقف: يُجلس الطفل في جهاز Pigg-O-Stat مع رفع الذراعين وتثبيت الجوانب الشفافة؛ وللرضّع المستلقين: تُستخدم أكياس الرمل أو لوح Papoose.",
+   "6 months–3 years erect chest: seated in Pigg-O-Stat with arms raised and side paddles secured; supine infants: sandbags or Papoose board."
+  ],
+  "crt": [
+   "تضييق المجال بدقة على المنطقة المصورة واستخدام أسرع زمن تعريض ممكن.",
+   "Tight collimation to area of interest and shortest possible exposure time."
+  ],
+  "br": [
+   "التعريض عند ذروة الشهيق أو السكون.",
+   "Expose at peak inspiration or stillness."
+  ],
+  "crit": [
+   [
+    "صورة مستقيمة خالية من الدوران والحركة ومن أول محاولة.",
+    "Straight, motion-free diagnostic image on the first attempt."
+   ]
+  ],
+  "err": [
+   [
+    "طلب إمساك الطفل من موظفي الأشعة بدل الوسائل الميكانيكية أو المرافقين المحميين.",
+    "Staff holding the child instead of mechanical immobilisers or shielded parents."
+   ]
+  ],
+  "tips": [
+   "اشرح للوالدين أن الأداة غير مؤلمة ومخصصة لسلامة الطفل ومنع تكرار الأشعة. اسأل الأم المرافقة عن احتمال الحمل قبل بقائها في الغرفة.",
+   "Reassure parents the device is painless and avoids repeat X-rays. Ask accompanying mother about pregnancy before she stays in the room."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر الصدر أو الجزء المثبت نحو الكاسيت.",
+   "The beam passes through the immobilised region onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–75",
+    "60–75"
+   ],
+   "mas": [
+    "1–4",
+    "1–4"
+   ],
+   "ex": [
+    "زمن تعريض قصير جداً (< 0.01 ث)",
+    "Very short exposure time (< 0.01 s)"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "اشرح للأهل طريقة التثبيت واسأل الأم عن الحمل إذا ستبقى في الغرفة.",
+    "Explain immobilisation to parents and screen accompanying mother for pregnancy."
+   ],
+   [
+    "ثبّت الطفل بلطف دون دوران وضيّق المجال بدقة.",
+    "Immobilise gently without rotation and collimate tightly."
+   ],
+   [
+    "اعرض بأسرع زمن عند ذروة الشهيق.",
+    "Expose quickly at peak inspiration."
+   ]
+  ]
+ },
+ {
+  "id": "sp-paed-skeletal-survey",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المسح الهيكلي للأطفال (NAI)",
+   "Paediatric skeletal survey (NAI)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Rib",
+   "^Humerus$",
+   "^Femur$",
+   "^Tibia$"
+  ],
+  "ind": [
+   "التقييم الشرعي والطبي للاشتباه بإساءة معاملة الأطفال / الإصابة غير العرضية (Non-accidental injury): البحث عن كسور الأضلاع الخلفية، كسور الزاوية الكردوسية (CML)، وكسور الجمجمة والأطراف في مراحل التئام مختلفة.",
+   "Forensic/medical evaluation of suspected non-accidental injury (NAI): posterior rib fractures, classic metaphyseal lesions (CML) and fractures of varying ages."
+  ],
+  "pos": [
+   "سلسلة صور منفصلة وعالية الدقة لكل منطقة تشريحية على حدة (وليس صورة جسم كامل واحدة 'babygram'!): جمجمة AP/جانبي، صدر AP + مائلين للأضلاع، عمود فقري جانبي، حوض AP، وكل طرف علوي وسفلي ويد وقدم منفردة.",
+   "Dedicated coned high-resolution radiographs of each anatomical region separately (never a single 'babygram'!): skull AP/lat, chest AP + bilateral obliques, spine lat, pelvis AP, individual long bones, hands and feet."
+  ],
+  "crt": [
+   "تضييق دقيق لكل عظمة على حدة بإشراف أخصائيين مدربين.",
+   "Tightly collimated individual exposures per standard RCR/ACR NAI protocol."
+  ],
+  "br": [
+   "سكون الطفل في كل لقطة.",
+   "Stillness for each exposure."
+  ],
+  "crit": [
+   [
+    "وضوح فائق لكراديس العظام الطويلة (metaphyses) والأضلاع الخلفية في جميع الصور.",
+    "Crisp metaphyseal and posterior rib detail across all dedicated views."
+   ]
+  ],
+  "err": [
+   [
+    "تصوير «صورة جسم كامل» (Babygram) واحدة: مرفوض طبياً وقانونياً لأن الدقة غير كافية!",
+    "Taking a single 'babygram': medically and forensically unacceptable!"
+   ]
+  ],
+  "tips": [
+   "تُعاد صورة الصدر والأضلاع المائلة بعد 11–14 يوماً للكشف عن الكسور الخفية بعد بدء تشكل الدشبذ (callus). التوثيق الدقيق للشهود والوقت إلزامي.",
+   "Repeat chest/oblique rib views in 11–14 days to detect healing callus. Strict forensic documentation required."
+  ],
+  "inout": [
+   "صور منفصلة لكل منطقة تشريحية حسب البروتوكول القياسي.",
+   "Separate dedicated projections for each anatomical region per protocol."
+  ],
+  "exp": {
+   "kv": [
+    "52–70",
+    "52–70"
+   ],
+   "mas": [
+    "1.5–5",
+    "1.5–5"
+   ],
+   "ex": [
+    "تقنية تفصيلية عالية الدقة دون شبكة للرضع",
+    "High-detail gridless paediatric exposures"
+   ],
+   "grid": [
+    "بدون شبكة للرضع",
+    "No grid for infants"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "نفّذ قائمة المسح الهيكلي كاملة (الجمجمة، الصدر + المائلين، العمود، الحوض، الأطراف، اليدين، والقدمين).",
+    "Complete full RCR/ACR checklist: skull, chest + obliques, spine, pelvis, individual limbs, hands, feet."
+   ],
+   [
+    "وثّق كل صورة بوضوح وتأكد من الجودة قبل إنهاء الفحص.",
+    "Verify diagnostic metaphyseal/rib detail on every film."
+   ]
+  ]
+ },
+ {
+  "id": "sp-paed-fb-ingestion",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "سلسلة ابتلاع جسم غريب (أطفال)",
+   "Foreign body ingestion series"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T10$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Stomach$"
+  ],
+  "ind": [
+   "تحديد موقع جسم غريب مبتلع (عملة معدنية، بطارية زر Button battery، مغناطيس) من البلعوم حتى المستقيم، والتفريق بين وجوده في المريء أو المعدة أو القصبة الهوائية.",
+   "Localise swallowed foreign body (coin, button battery, magnet) from pharynx to rectum and distinguish oesophageal vs gastric/tracheal location."
+  ],
+  "pos": [
+   "الأطفال الصغار: يمكن تغطية العنق والصدر والبطن العلوي بصورة AP (أو صورتين منفصلتين: عنق/صدر AP + بطن AP)، مع إضافة صورة جانبية للصدر/العنق إذا كان الجسم في الصدر.",
+   "Infants/small children: AP covering neck, chest and upper abdomen (plus lateral chest/neck if object is thoracic)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي يشمل من قاعدة الجمجمة/البلعوم إلى قاع الحوض، مع الانتباه لعلامة الهالة المزدوجة (double-ring/halo sign) في بطاريات الأزرار!",
+   "Central ray vertical covering pharynx to pelvis; inspect carefully for the double-ring sign of a button battery!"
+  ],
+  "br": [
+   "التعريض السريع عند السكون.",
+   "Fast exposure during stillness."
+  ],
+  "crit": [
+   [
+    "رؤية كاملة للمسار الهضمي من البلعوم إلى المستقيم، وتحديد وضع الجسم الغريب بدقة.",
+    "Full tract from pharynx to rectum visualised to localise the foreign body."
+   ]
+  ],
+  "err": [
+   [
+    "عدم شمول الرقبة العلوية: تفويت جسم عالق في مدخل المريء.",
+    "Omitting upper neck misses cricopharyngeus impaction."
+   ],
+   [
+    "التأخر في الإبلاغ عن بطارية زر في المريء: حالة طارئة تستدعي الإزالة الفورية بالمنظار خلال ساعتين!",
+    "Delaying report of an oesophageal button battery: extreme emergency!"
+   ]
+  ],
+  "tips": [
+   "إذا رأيت حلقة مزدوجة (Double halo) في AP أو حافة مدرجة في الجانبي فهذه **بطارية زر** وليست عملة معدنية؛ أبلغ الطبيب فوراً!",
+   "A double-rim/halo sign on AP indicates a **button battery** (not a coin); alert the physician immediately!"
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام عبر العنق والصدر والبطن نحو الكاسيت.",
+   "The beam enters anteriorly across neck, chest and abdomen onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–75",
+    "60–75"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 65 kVp و3 mAs",
+    "Example: 65 kVp, 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة للأطفال الصغار",
+    "No grid for small children"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "صوّر AP يشمل من البلعوم إلى البطن/الحوض.",
+    "Acquire AP covering pharynx to pelvis."
+   ],
+   [
+    "إذا ظهر الجسم في الصدر أو الرقبة، أضف صورة جانبية فوراً.",
+    "If object is in neck/chest, add a lateral view."
+   ],
+   [
+    "تحقق من علامة البطارية (Double halo) وأبلغ الطبيب فوراً.",
+    "Check for button-battery double halo and alert clinician immediately."
+   ]
+  ]
+ },
+ {
+  "id": "sp-paed-fb-inhalation",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "استنشاق جسم غريب (شهيق وزفير)",
+   "Foreign body inhalation (insp/exp chest)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "كشف جسم غريب شفاف للأشعة مستنشق في القصبات الهوائية (مثل الفستق أو البذور) عبر إظهار احتباس الهواء (air trapping) وانزياح المنصف في صورة الزفير.",
+   "Detect radiolucent aspirated bronchial foreign bodies (e.g. peanuts/seeds) by demonstrating unilateral air trapping and mediastinal shift on expiration."
+  ],
+  "pos": [
+   "للأطفال المتعاونين: صورتا صدر PA/AP واحدة في الشهيق الكامل والأخرى في الزفير الكامل. وللرضع غير المتعاونين: صورتا استلقاء جانبي (Right & Left lateral decubitus) حيث تفشل الرئة المسدودة في الانكماش عندما تكون للأسفل.",
+   "Cooperative children: inspiratory and expiratory chest PA/AP. Uncooperative toddlers: bilateral lateral decubitus views (obstructed lung stays hyperinflated when dependent)."
+  ],
+  "crt": [
+   "الشعاع المركزي عند T6–T7 على الصدر مع وضع علامة (Inspiration / Expiration) أو (Right/Left Decubitus).",
+   "Central ray at T6–T7 with clear Inspiration/Expiration or Decubitus labels."
+  ],
+  "br": [
+   "شهيق كامل للأولى، وزفير كامل للثانية.",
+   "Full inspiration for first view; full expiration for second."
+  ],
+  "crit": [
+   [
+    "مقارنة واضحة لحجم الرئتين: في الزفير تفرغ الرئة السليمة ويرتفع حجابها بينما تبقى الرئة المصابة منتفخة ومفرطة الشفافية.",
+    "Clear comparison showing normal lung deflating on expiration while obstructed lung stays hyperinflated."
+   ]
+  ],
+  "err": [
+   [
+    "الاعتماد على صورة الشهيق وحدها: قد تبدو طبيعية تماماً في 30% من الحالات!",
+    "Relying on inspiration film alone: can be completely normal in ~30% of cases!"
+   ]
+  ],
+  "tips": [
+   "للأطفال الصغار جداً، صوّر الاستلقاء الجانبي الأيمن والأيسر بدلاً من محاولة طلب الزفير.",
+   "For toddlers unable to cooperate, bilateral lateral decubitus views replace expiration."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر الصدر نحو الكاسيت.",
+   "The beam passes through the chest onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "1.5–4",
+    "1.5–4"
+   ],
+   "ex": [
+    "زمن تعريض قصير جداً",
+    "Very short exposure time"
+   ],
+   "grid": [
+    "بدون شبكة للأطفال الصغار",
+    "No grid for small children"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "التقط صورة صدر في الشهيق وأخرى في الزفير (أو استلقاء جانبي يمين/يسار).",
+    "Acquire inspiration and expiration chest views (or bilateral decubitus)."
+   ],
+   [
+    "ضع علامات واضحة وقارن حجم الرئتين وموضع المنصف.",
+    "Label clearly and compare lung volume and mediastinal shift."
+   ]
+  ]
+ },
+ {
+  "id": "sp-paed-shunt",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "سلسلة المجازات الدماغية (Shunt series)",
+   "VP shunt series"
+  ],
+  "region": [
+   "الرأس",
+   "Head"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sphenoid bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^(Frontal|Parietal|Occipital) bone$",
+   "^Trachea$",
+   "^Stomach$"
+  ],
+  "ind": [
+   "تقييم مسار وسلامة أنبوب التحويلة البطينية الصفاقية (VP shunt) أو الأذينية (VA shunt) في حالات الاشتباه بانسدادها، انقطاعها، التوائها، أو انفصال الصمام.",
+   "Assess continuity, kinking, disconnection or migration of a ventriculoperitoneal (VP) or VA shunt."
+  ],
+  "pos": [
+   "سلسلة صور تغطي كامل مسار الأنبوب دون فجوات: (1) جمجمة AP وجانبي (مع إظهار الصمام)، (2) عنق وصدر AP (تظهر الترقوة والأنبوب)، (3) بطن AP مستلقٍ (يظهر الطرف البعيد في البطن).",
+   "Overlapping views covering the entire shunt path: (1) skull AP & lateral (including valve), (2) neck/chest AP, (3) supine abdomen AP."
+  ],
+  "crt": [
+   "تغطية متداخلة لكل قطعة من مسار الصمام حتى الطرف الصفاقي، مع إبقاء المريض مستلقياً.",
+   "Overlapping exposures along the entire tubing course down to the distal peritoneal tip."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "رؤية مستمرة للأنبوب كاملاً من البطين الدماغي والصمام خلف الأذن حتى نهايته الحرة في البطن.",
+    "Uninterrupted visualisation of entire shunt from intracranial tip and valve to distal abdominal tip."
+   ]
+  ],
+  "err": [
+   [
+    "ترك فجوة بين صورة الصدر والبطن أو الجمجمة والعنق: قد يقع الانفصال في تلك الفجوة!",
+    "Leaving a gap between chest and abdomen or skull and neck can miss a disconnection!"
+   ]
+  ],
+  "tips": [
+   "تأكد من تداخل حواف الصور (Overlap) عند العنق والحجاب الحاجز، وراعِ تقليل الجرعة لأن هؤلاء المرضى يتعرضون لتصوير متكرر. اسأل عن الحمل.",
+   "Ensure overlap at neck and diaphragm, and use ALARA low-dose technique as these patients have frequent imaging. Ask about pregnancy."
+  ],
+  "inout": [
+   "صور متتابعة من الرأس والعنق والصدر حتى البطن.",
+   "Sequential exposures covering head, neck, chest and abdomen."
+  ],
+  "exp": {
+   "kv": [
+    "60–75",
+    "60–75"
+   ],
+   "mas": [
+    "2–10",
+    "2–10"
+   ],
+   "ex": [
+    "جرعة منخفضة متدرجة حسب العمر والمنطقة",
+    "Low-dose paediatric settings by region"
+   ],
+   "grid": [
+    "حسب الحجم",
+    "Per size"
+   ],
+   "aec": [
+    "يدوي أو AEC",
+    "Manual or AEC"
+   ]
+  },
+  "steps": [
+   [
+    "صوّر الجمجمة AP وجانبياً مع شمول الصمام وأعلى العنق.",
+    "Acquire skull AP and lateral including valve and upper neck."
+   ],
+   [
+    "صوّر الصدر والعنق AP ثم البطن AP مع ضمان التداخل بينها.",
+    "Acquire neck/chest AP and abdomen AP ensuring overlap."
+   ],
+   [
+    "تتبع الأنبوب كاملاً للتأكد من عدم انقطاعه أو التوائه.",
+    "Trace entire tubing to confirm continuity."
+   ]
+  ]
+ },
+ {
+  "id": "sp-portable-extremity",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الأطراف بالجهاز المتنقل",
+   "Portable extremity radiography"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Femur$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Humerus|Radius)$"
+  ],
+  "ind": [
+   "تصوير كسور الأطراف أو مراجعة الجبائر والشد العظمي لمرضى العناية المركزة أو الطوارئ الذين يتعذر نقلهم لقسم الأشعة.",
+   "Bedside extremity imaging for ICU/ED patients in traction, external fixation or unstable condition."
+  ],
+  "pos": [
+   "يُوضع الكاسيت برفق تحت الطرف المصاب (أو عمودياً بجانبه للمسقط الجانبي بشعاع أفقي) دون سحب الطرف أو إزالة الشد.",
+   "Gently slide detector beneath the limb (or upright beside it for cross-table lateral) without disturbing traction or splints."
+  ],
+  "crt": [
+   "مسقطان متعامدان (AP وجانبي أفقي) مع محاذاة الأنبوب المتنقل عمودياً على الكاسيت.",
+   "Two orthogonal views (AP and cross-table lateral) with mobile tube perpendicular to detector."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "رؤية العظم والمفصل المجاور في مستويين متعامدين بوضوح كافٍ رغم الجبيرة.",
+    "Target bone and adjacent joint clearly seen in two orthogonal planes despite splinting."
+   ]
+  ],
+  "err": [
+   [
+    "تحريك طرف مكسور أو عدم ارتداء مئزر الرصاص والحفاظ على مسافة آمنة.",
+    "Moving an unstable limb or neglecting staff radiation distance/shielding."
+   ]
+  ],
+  "tips": [
+   "زد التعريض قليلاً إذا كان الطرف داخل جبيرة جبسية (Plaster cast) مقارنة بجبيرة الألياف الزجاجية (Fiberglass). اسأل عن الحمل.",
+   "Slightly increase kVp/mAs through wet/thick plaster casts (less needed for fibreglass). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً (AP) ثم أفقياً (جانبي) نحو الكاسيت.",
+   "Vertical AP and horizontal cross-table beams onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–75",
+    "55–75"
+   ],
+   "mas": [
+    "3–15",
+    "3–15"
+   ],
+   "ex": [
+    "يدوي حسب الجزء والجبيرة",
+    "Manual based on part and cast thickness"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often gridless"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "نبّه المحيطين بالسرير وارتدِ مئزر الرصاص واسأل عن الحمل.",
+    "Warn nearby staff, wear lead apron and ask about pregnancy."
+   ],
+   [
+    "أدخل الكاسيت بلطف تحت الطرف وصوّر AP ثم جانبياً بشعاع أفقي.",
+    "Slide detector gently, take AP then cross-table lateral."
+   ],
+   [
+    "ضع علامة الجهة وراجع الصورة على شاشة الجهاز المتنقل.",
+    "Check side marker and image quality on mobile unit."
+   ]
+  ]
+ },
+ {
+  "id": "sp-c-arm",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "أساسيات التنظير الجراحي (C-arm)",
+   "C-arm fluoroscopy basics"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Humerus|Vertebra L\\d)$"
+  ],
+  "ind": [
+   "التوجيه الفلوري أثناء عمليات العظام (رد الكسور، المسامير النخاعية، تثبيت الورك والعمود الفقري)، الجراحة البولية، أو الأوعية داخل غرفة العمليات.",
+   "Intra-operative fluoroscopic guidance for fracture reduction, intramedullary nailing, hip pinning, spine, urology or vascular procedures."
+  ],
+  "pos": [
+   "يُوضع المريض على طاولة عمليات شفافة للأشعة، مع تغليف مستقبل الصورة والأنبوب بأغطية معقمة عند الاقتراب من الحقل الجراحي.",
+   "Patient on radiolucent OR table; image intensifier/flat-panel and C-arm draped sterilely."
+  ],
+  "crt": [
+   "الأفضلية دائماً لوضع **الأنبوب للأسفل** (تحت الطاولة) ومستقبل الصورة للأعلى وقريباً من المريض لتقليل الإشعاع المبعثر على عيون وأيدي الجراحين، مع أخذ لقطات AP وجانبية حسب أوامر الجراح.",
+   "Keep X-ray tube **under the table** and detector above close to the patient to minimise scatter to staff eyes/hands; alternate AP and lateral as directed."
+  ],
+  "br": [
+   "تحت التخدير.",
+   "Under anaesthesia."
+  ],
+  "crit": [
+   [
+    "موضع الكسر والبراغي والمسامير واضح في مستويين متعامدين بأقل زمن فلورسكوبي.",
+    "Fracture alignment and hardware clearly seen in two orthogonal planes with minimal fluoro time."
+   ]
+  ],
+  "err": [
+   [
+    "وضع الأنبوب للأعلى: يضاعف الإشعاع المبعثر على رؤوس وأيدي الطاقم الجراحي!",
+    "Positioning tube above table dramatically increases scatter to staff heads and hands!"
+   ]
+  ],
+  "tips": [
+   "قواعد السلامة الثلاث في C-arm: (1) المسافة، (2) الزمن (نبضي + Last Image Hold)، (3) الحماية (مآزر الرصاص وطوق الدرقية + الأنبوب تحت الطاولة).",
+   "C-arm safety triad: Distance, Time (pulsed + Last Image Hold), Shielding (lead aprons/thyroid collars + under-table tube)."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأنبوب تحت الطاولة صعوداً نحو المستقبل المعقم فوق المريض.",
+   "The beam travels upward from the under-table tube to the detector above."
+  ],
+  "exp": {
+   "kv": [
+    "60–90",
+    "60–90"
+   ],
+   "mas": [
+    "1–5 mA نبضي",
+    "1–5 mA pulsed"
+   ],
+   "ex": [
+    "الوضع النبضي ومنخفض الجرعة (Low-dose pulsed)",
+    "Low-dose pulsed fluoroscopy mode"
+   ],
+   "grid": [
+    "تلقائي",
+    "Automatic"
+   ],
+   "aec": [
+    "تلقائي (ABS)",
+    "Automatic brightness control"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من ارتداء الجميع لمآزر الرصاص وطوق الدرقية.",
+    "Ensure all OR staff wear lead aprons and thyroid shields."
+   ],
+   [
+    "ضع الأنبوب تحت الطاولة والمستقبل قريباً من المريض.",
+    "Keep tube under table and detector close to patient."
+   ],
+   [
+    "استخدم النمط النبضي وميزة تثبيت آخر صورة (LIH) وضيّق المجال.",
+    "Use pulsed fluoro, Last Image Hold and tight collimation."
+   ]
+  ]
+ },
+ {
+  "id": "sp-fb-coin",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "سلسلة العملة المعدنية المبلوعة",
+   "Swallowed coin series"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T5$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Stomach$"
+  ],
+  "ind": [
+   "التفريق السريع بين عملة معدنية عالقة في **المريء** (تظهر كقرص دائري كامل en face في صورة الصدر AP) مقابل **القصبة الهوائية** (تظهر كحافة رفيعة جانبية في AP لأن الحبال الصوتية موجهة أمامياً-خلفياً).",
+   "Localise a swallowed coin and distinguish **oesophageal** (seen en face as a flat disc on AP) vs **tracheal** (seen edge-on on AP due to sagittal vocal cords)."
+  ],
+  "pos": [
+   "صورة AP تشمل العنق والصدر والبطن العلوي، وصورة جانبية للصدر/العنق إذا كانت العملة فوق الحجاب الحاجز.",
+   "AP view covering neck, chest and upper abdomen, plus lateral neck/chest if coin is above the diaphragm."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف الصدر/البطن العلوي.",
+   "Central ray perpendicular at chest/upper abdomen."
+  ],
+  "br": [
+   "التعريض السريع عند السكون.",
+   "Fast exposure during stillness."
+  ],
+  "crit": [
+   [
+    "تحديد موضع العملة (المريء أم المعدة أم القصبة) وتفريقها عن بطاريات الأزرار.",
+    "Clear localisation (oesophagus vs stomach vs trachea) and exclusion of button battery."
+   ]
+  ],
+  "err": [
+   [
+    "الخلط بين بطارية زر وعملة معدنية: تفحّص الحواف بدقة للبحث عن الحلقة المزدوجة!",
+    "Confusing a button battery with a coin: inspect rim closely for double-halo sign!"
+   ]
+  ],
+  "tips": [
+   "إذا عبرت العملة المعدنية إلى المعدة فغالباً ما تخرج تلقائياً، أما العالقة في المريء فتحتاج إزالة بالمنظار. تفحص دائماً علامة بطارية الزر!",
+   "Coins in the stomach usually pass spontaneously; oesophageal coins require endoscopic retrieval. Always rule out button battery!"
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام عبر العنق والصدر نحو الكاسيت.",
+   "The beam enters anteriorly across neck/chest onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–75",
+    "60–75"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 65 kVp و3 mAs",
+    "Example: 65 kVp, 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة للأطفال الصغار",
+    "No grid for small children"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "صوّر AP من البلعوم حتى البطن العلوي.",
+    "Acquire AP from pharynx to upper abdomen."
+   ],
+   [
+    "أضف صورة جانبية إذا كانت في العنق أو الصدر، وتأكد من عدم كونها بطارية زر.",
+    "Add lateral if thoracic/cervical and rule out button battery."
+   ]
+  ]
  }
 ]
