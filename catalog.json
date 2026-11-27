@@ -771,17 +771,110 @@
       },
       {
        "name": [
-        "العمود العنقي (انظر العمود الفقري)",
-        "Cervical spine (see Spine)"
+        "العمود العنقي",
+        "Cervical spine"
        ],
        "kids": [
         {
          "p": 1,
          "name": [
-          "انظر العمود الفقري › العنقي",
-          "See Spine › Cervical"
+          "جانبي واقف",
+          "Lateral (erect)"
          ],
-         "id": "see-spine-cervical"
+         "d": [
+          "الانحناء والأقراص",
+          "Curvature and discs"
+         ],
+         "ex": "cervical-lat",
+         "id": "lateral-erect"
+        },
+        {
+         "p": 1,
+         "name": [
+          "AP محوري 15° رأسياً",
+          "AP axial 15° cephalad"
+         ],
+         "id": "ap-axial-15-cephalad",
+         "ex": "cervical-ap-axial"
+        },
+        {
+         "p": 1,
+         "name": [
+          "فم مفتوح (السن)",
+          "Open mouth (odontoid)"
+         ],
+         "d": [
+          "C1 وC2",
+          "C1 and C2"
+         ],
+         "id": "open-mouth-odontoid",
+         "ex": "cervical-open-mouth"
+        },
+        {
+         "p": 1,
+         "name": [
+          "فوكس (AP للسن)",
+          "Fuchs (AP dens)"
+         ],
+         "d": [
+          "ليس بالرضوض",
+          "Not for trauma"
+         ],
+         "id": "fuchs-ap-dens",
+         "ex": "cervical-fuchs"
+        },
+        {
+         "p": 1,
+         "name": [
+          "مائل RAO/LAO (الثقوب)",
+          "Oblique RAO/LAO (foramina)"
+         ],
+         "id": "oblique-rao-lao-foramina",
+         "ex": "cervical-oblique"
+        },
+        {
+         "p": 1,
+         "name": [
+          "جانبي بثني وبسط",
+          "Flexion & extension lateral"
+         ],
+         "d": [
+          "الاستقرار",
+          "Stability"
+         ],
+         "id": "flexion-extension-lateral",
+         "ex": "cervical-flex-ext"
+        },
+        {
+         "p": 1,
+         "name": [
+          "السباح (الرقبة والصدر)",
+          "Swimmer’s (cervicothoracic)"
+         ],
+         "d": [
+          "C7-T1",
+          "C7–T1"
+         ],
+         "id": "swimmer-s-cervicothoracic",
+         "ex": "cervical-swimmers"
+        },
+        {
+         "p": 1,
+         "name": [
+          "مقطع الأعمدة (المفاصل الوجهية)",
+          "Pillar view"
+         ],
+         "id": "pillar-view",
+         "ex": "cervical-pillar"
+        },
+        {
+         "p": 1,
+         "name": [
+          "جانبي أفقي (رضوض)",
+          "Cross-table lateral (trauma)"
+         ],
+         "id": "cross-table-lateral-trauma",
+         "ex": "cervical-cross-table"
         }
        ],
        "id": "cervical-spine-see-spine"
@@ -928,7 +1021,8 @@
           "مع التثبيت المناسب",
           "With suitable immobilisation"
          ],
-         "id": "paediatric-chest-ap-lateral"
+         "id": "paediatric-chest-ap-lateral",
+         "ex": "chest-paed"
         }
        ],
        "id": "chest-lungs-heart"
@@ -949,7 +1043,8 @@
           "فوق الحجاب، بالشهيق",
           "Above the diaphragm, on inspiration"
          ],
-         "id": "ap-pa-upper-ribs"
+         "id": "ap-pa-upper-ribs",
+         "ex": "ribs-upper"
         },
         {
          "p": 1,
@@ -961,7 +1056,8 @@
           "تحت الحجاب، بالزفير",
           "Below the diaphragm, on expiration"
          ],
-         "id": "ap-lower-ribs"
+         "id": "ap-lower-ribs",
+         "ex": "ribs-lower"
         },
         {
          "p": 1,
@@ -973,7 +1069,8 @@
           "الجانب المصاب",
           "Affected side"
          ],
-         "id": "oblique-ribs-rpo-lpo"
+         "id": "oblique-ribs-rpo-lpo",
+         "ex": "ribs-oblique"
         },
         {
          "p": 1,
@@ -985,7 +1082,8 @@
           "رفيق للكسور",
           "Companion view for fractures"
          ],
-         "id": "pa-chest-for-ribs"
+         "id": "pa-chest-for-ribs",
+         "ex": "ribs-chest-pa"
         }
        ],
        "id": "ribs"
@@ -1006,7 +1104,8 @@
           "القص فوق ظل القلب",
           "Sternum over the heart shadow"
          ],
-         "id": "pa-oblique-rao-sternum"
+         "id": "pa-oblique-rao-sternum",
+         "ex": "sternum-rao"
         },
         {
          "p": 1,
@@ -1018,7 +1117,8 @@
           "الكسور والانزياح",
           "Fractures and displacement"
          ],
-         "id": "lateral-sternum"
+         "id": "lateral-sternum",
+         "ex": "sternum-lat"
         }
        ],
        "id": "sternum"
@@ -1039,7 +1139,8 @@
           "المقارنة بين الجانبين",
           "Bilateral comparison"
          ],
-         "id": "pa-sc-joints"
+         "id": "pa-sc-joints",
+         "ex": "sc-pa"
         },
         {
          "p": 1,
@@ -1051,7 +1152,8 @@
           "المفصل بالجانب المائل",
           "Joint in oblique profile"
          ],
-         "id": "pa-oblique-sc-joints"
+         "id": "pa-oblique-sc-joints",
+         "ex": "sc-oblique"
         },
         {
          "p": 1,
@@ -1063,7 +1165,8 @@
           "الخلع القصي الترقوي",
           "SC dislocation"
          ],
-         "id": "serendipity-40-cephalad"
+         "id": "serendipity-40-cephalad",
+         "ex": "sc-serendipity"
         }
        ],
        "id": "sternoclavicular-joints"

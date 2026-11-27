@@ -12963,5 +12963,1279 @@
     "Confirm C1 to C7–T1 coverage, alignment and the side marker."
    ]
   ]
+ },
+ {
+  "id": "chest-paed",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر الأطفال (AP/جانبي)",
+   "Paediatric chest (AP/lateral)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T6$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Trachea$"
+  ],
+  "ind": [
+   "تقييم التهابات الصدر، متلازمة الضائقة التنفسية عند الوليد، استرواح الصدر، مواضع الأنابيب والقساطر، واشتباه استنشاق جسم غريب.",
+   "Evaluate chest infection, neonatal respiratory distress, pneumothorax, tube/line positions and suspected foreign-body aspiration."
+  ],
+  "pos": [
+   "للرضّع والأطفال الصغار: مستلقٍ على الظهر (AP) على الكاسيت أو مثبت في جهاز التثبيت (Pigg-O-Stat) واقفاً للأطفال الأكبر قليلاً، الذراعان مرفوعتان أو مثبتتان جانباً دون دوران، والذقن مرفوع قليلاً لئلا يغطي القمم. للجانبي: الجانب الأيسر على الكاسيت والذراعان فوق الرأس.",
+   "Infants/toddlers: supine AP on the detector (or upright in a Pigg-O-Stat immobiliser if older), arms raised or secured without rotation, chin slightly raised off the apices. Lateral: left side against the detector with arms above the head."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على منتصف الصدر (مستوى T6، منتصف المسافة بين الشق الوداجي والرهابة) على الخط الناصف، مع تضييق شديد للمجال على القفص الصدري فقط.",
+   "Central ray perpendicular to mid-chest (about T6, midway between jugular notch and xiphoid) on the midline, tightly collimated to the chest only."
+  ],
+  "br": [
+   "التعريض عند ذروة الشهيق (راقب حركة الصدر أو لحظة الشهيق بين البكاء).",
+   "Expose at peak inspiration (watch chest rise or the deep breath between cries)."
+  ],
+  "crit": [
+   [
+    "الرئتان كاملتان من القمم إلى الزوايا الضلعية الحجابية مع تضييق واضح على الصدر.",
+    "Both lungs included from apices to costophrenic angles with tight collimation."
+   ],
+   [
+    "بلا دوران: نهايتا الترقوتين والأضلاع الأمامية متناظرة.",
+    "No rotation: medial clavicles and anterior ribs symmetric."
+   ],
+   [
+    "حوالي 8–9 أضلاع خلفية ظاهرة فوق الحجاب (شهيق جيد) وبلا حركة.",
+    "About 8–9 posterior ribs visible above the diaphragm (good inspiration) with no motion."
+   ]
+  ],
+  "err": [
+   [
+    "التعريض في الزفير: تبدو الرئتان معتمتين والقلب كبيراً بشكل كاذب.",
+    "Expiratory exposure makes the lungs look hazy and the heart artificially large."
+   ],
+   [
+    "عدم تضييق المجال: تعرض البطن والأعضاء التناسلية لإشعاع غير مبرر.",
+    "Poor collimation exposes the abdomen and gonads unnecessarily."
+   ],
+   [
+    "دوران الصدر: ظل التوتة (Thymus) قد يحاكي آفة.",
+    "Rotation distorts the thymic shadow and may mimic a lesion."
+   ]
+  ],
+  "tips": [
+   "الحماية الإشعاعية أولوية قصوى عند الأطفال: ضيّق المجال بدقة، استخدم وقت تعريض قصيراً جداً لتجميد الحركة، واستخدم حماية الغدد التناسلية عند اللزوم دون تغطية الصدر.",
+   "Paediatric radiation protection is paramount: collimate tightly, use the shortest exposure time to freeze motion, and shield appropriately without obscuring the chest."
+  ],
+  "inout": [
+   "في AP يدخل الشعاع من الصدر الأمامي عند T6 ويخرج من الظهر نحو الكاسيت.",
+   "In AP the beam enters the anterior chest at T6 and exits the back onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–75",
+    "60–75"
+   ],
+   "mas": [
+    "1–3",
+    "1–3"
+   ],
+   "ex": [
+    "مثال للرضيع: 65 kVp و1–2 mAs بزمن قصير جداً (< 0.01 ث)",
+    "Infant example: 65 kVp, 1–2 mAs with very short time (< 0.01 s)"
+   ],
+   "grid": [
+    "بدون شبكة للأطفال الصغار",
+    "No grid for infants and small children"
+   ],
+   "aec": [
+    "يدوي حسب العمر والوزن",
+    "Manual by age and weight"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية الطفل ورتّب أدوات التثبيت المناسبة.",
+    "Check the request and child's ID; prepare appropriate immobilisation."
+   ],
+   [
+    "أزل الأزرار المعدنية وأبعد أنابيب الأكسجين أو الأسلاك عن الحقل دون سحبها.",
+    "Remove metal snaps and move leads/tubing off the lung fields without pulling."
+   ],
+   [
+    "ثبّت الطفل مستلقياً (أو واقفاً في Pigg-O-Stat) دون دوران وبذقن مرفوع قليلاً.",
+    "Immobilise supine (or upright in Pigg-O-Stat) without rotation, chin slightly up."
+   ],
+   [
+    "مركّز عند T6 على الخط الناصف وضيّق المجال على الصدر فقط.",
+    "Centre at T6 on the midline and collimate tightly to the chest."
+   ],
+   [
+    "اضبط kVp وmAs منخفضين وزمن تعريض قصير جداً.",
+    "Set low kVp/mAs and the shortest possible exposure time."
+   ],
+   [
+    "راقب حركة الصدر واعرض عند ذروة الشهيق.",
+    "Watch chest excursion and expose at peak inspiration."
+   ],
+   [
+    "راجع التناظر والشهيق وعلامة الجهة.",
+    "Review symmetry, inspiration and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "ribs-upper",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الأضلاع العلوية AP/PA (فوق الحجاب)",
+   "Upper ribs AP/PA (above diaphragm)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Rib",
+   "^Sternum$"
+  ],
+  "ind": [
+   "كسور الأضلاع العلوية (الأول إلى العاشر تقريباً) فوق الحجاب الحاجز، وآفات الأضلاع في الصدر العلوي.",
+   "Fractures of the upper ribs (roughly 1st–10th) above the diaphragm, and upper rib lesions."
+  ],
+  "pos": [
+   "المريض واقف (أو مستلقٍ إذا تعذر الوقوف). إذا كان الألم أمامياً يُفضَّل PA لتقريب الأضلاع الأمامية من الكاسيت، وإذا كان خلفياً يُفضَّل AP. الكتفان للأمام والخط الناصف بالمنتصف دون دوران.",
+   "Patient erect (or supine if unable to stand). Use PA for anterior rib pain and AP for posterior rib pain. Shoulders rolled forward, midline centred, no rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى T7 (الحافة العليا للكاسيت 4 سم فوق الكتفين لتضمين الضلع الأول).",
+   "Central ray perpendicular to the detector at T7 (top edge of detector 4 cm above shoulders to include the 1st rib)."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس لخفض الحجاب الحاجز وإظهار أكبر عدد من الأضلاع فوقه.",
+   "Full inspiration and breath-hold to depress the diaphragm and show as many ribs above it as possible."
+  ],
+  "crit": [
+   [
+    "الأضلاع من الأول إلى التاسع أو العاشر ظاهرة بالكامل فوق الحجاب.",
+    "Ribs 1 to 9–10 fully visible above the diaphragm."
+   ],
+   [
+    "تباين عظمي واضح يظهر تفاصيل القشرة والتربيق العظمي للأضلاع.",
+    "Clear bony detail showing rib cortex and trabeculae."
+   ],
+   [
+    "لا دوران والجانب المصاب مضمّن بالكامل.",
+    "No rotation and the affected side fully included."
+   ]
+  ],
+  "err": [
+   [
+    "التعريض في الزفير: يرتفع الحجاب فيغطي الأضلاع السفلية.",
+    "Expiratory exposure raises the diaphragm over the lower ribs."
+   ],
+   [
+    "kVp مرتفع جداً مثل صورة الصدر الروتينية: تقل رؤية كسور الأضلاع الدقيقة.",
+    "High chest-style kVp reduces bony contrast for subtle rib fractures."
+   ]
+  ],
+  "tips": [
+   "ضع علامة معدنية صغيرة عند موضع الألم إن أمكن حسب بروتوكول القسم، وابدأ بصورة صدر PA لاستبعاد استرواح الصدر أو الانصباب. اسأل عن الحمل.",
+   "Place a small skin marker at the point of tenderness per protocol, and ensure a PA chest is done to exclude pneumothorax/effusion. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الصدر الأمامي (في AP) عند T7 ويخرج من الظهر نحو الكاسيت.",
+   "In AP the beam enters the anterior chest at T7 and exits the back onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى أو يدوي",
+    "AEC: centre chamber or manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة المصابة وموضع الألم واسأل عن الحمل.",
+    "Check the request, affected side and site of pain; ask about pregnancy."
+   ],
+   [
+    "أزل المعادن وألبس المريض ثوباً.",
+    "Remove metal and provide a gown."
+   ],
+   [
+    "أوقف المريض بوضعية AP (للمؤلمة خلفياً) أو PA (للمؤلمة أمامياً) دون دوران.",
+    "Stand the patient AP (posterior pain) or PA (anterior pain) without rotation."
+   ],
+   [
+    "اجعل أعلى الكاسيت 4 سم فوق الكتفين ومركّز عند T7 على 100 سم.",
+    "Set the detector top 4 cm above the shoulders and centre at T7 at 100 cm."
+   ],
+   [
+    "اضبط kVp متوسطاً (65–75) لإظهار العظم، اطلب شهيقاً عميقاً وحبس النفس ثم اعرّض.",
+    "Set bone-detail kVp (65–75), ask for full inspiration and hold, then expose."
+   ],
+   [
+    "راجع ظهور الضلع الأول حتى العاشر وعلامة الجهة.",
+    "Verify ribs 1–10 visibility and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "ribs-lower",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الأضلاع السفلية AP (تحت الحجاب)",
+   "Lower ribs AP (below diaphragm)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T11$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Rib"
+  ],
+  "ind": [
+   "تقييم كسور الأضلاع السفلية (التاسع إلى الثاني عشر) التي تقع خلف الكبد والطحال وتحت الحجاب الحاجز.",
+   "Evaluate lower rib fractures (9th–12th ribs) lying behind the liver/spleen and below the diaphragm."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر (AP) على الطاولة، الخط الناصف في المنتصف دون دوران، والذراعان بعيدتان عن القفص الصدري.",
+   "Patient supine (AP) on the table, midline centred without rotation, arms away from the rib cage."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند منتصف المسافة بين الرهابة (Xiphoid) وحافة الأضلاع السفلية (حوالي T10–T11) لتضمين الأضلاع السفلية كاملة.",
+   "Central ray perpendicular to the detector midway between the xiphoid and lower costal margin (about T10–T11) to include the lower ribs."
+  ],
+  "br": [
+   "زفير كامل وحبس النفس لرفع الحجاب الحاجز فوق الأضلاع السفلية وجعل كثافة البطن متجانسة حولها.",
+   "Full expiration and breath-hold to elevate the diaphragm above the lower ribs and provide uniform abdominal density."
+  ],
+  "crit": [
+   [
+    "الأضلاع من الثامن أو التاسع حتى الثاني عشر ظاهرة بوضوح عبر أنسجة البطن العلوية.",
+    "Ribs 8/9 through 12 clearly visible through the upper abdominal shadow."
+   ],
+   [
+    "اختراق مناسب للأضلاع تحت الحجاب دون تبييض أو سواد مفرط.",
+    "Adequate penetration of the subdiaphragmatic ribs."
+   ],
+   [
+    "لا دوران ولا حركة.",
+    "No rotation or motion."
+   ]
+  ],
+  "err": [
+   [
+    "التعريض في الشهيق: ينزل الحجاب فيفصل الأضلاع بتباين هواء/أنسجة صعب القراءة.",
+    "Inspiratory exposure lowers the diaphragm and creates uneven lung/abdomen contrast."
+   ],
+   [
+    "التعريض بتقنية الصدر الخفيفة: لا تخترق البطن فتبدو الأضلاع السفلية بيضاء.",
+    "Using chest exposure fails to penetrate the abdomen, leaving the lower ribs underexposed."
+   ]
+  ],
+  "tips": [
+   "تحتاج الأضلاع السفلية تعريضاً أعلى (مشابهاً للبطن) لاختراق الكبد والأحشاء. اسأل عن الحمل.",
+   "Lower ribs require higher exposure (similar to an abdomen film) to penetrate the liver and viscera. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى البطن الأمامي عند T11 ويخرج من الظهر نحو الكاسيت.",
+   "The beam enters the upper anterior abdomen at T11 and exits the back onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة المصابة واسأل عن الحمل.",
+    "Check the request and affected side; ask about pregnancy."
+   ],
+   [
+    "أزل المعادن والأزرار فوق البطن والصدر.",
+    "Remove metal and buttons over the abdomen and chest."
+   ],
+   [
+    "استلقِ المريض على الظهر دون دوران وأبعد الذراعين.",
+    "Lay the patient supine without rotation with arms clear."
+   ],
+   [
+    "مركّز عند منتصف المسافة بين الرهابة وحافة الأضلاع (T10–T11) على 100 سم.",
+    "Centre midway between the xiphoid and lower costal margin (T10–T11) at 100 cm."
+   ],
+   [
+    "اضبط تقنية البطن (75–85 kVp)، اطلب زفيراً كاملاً وحبس النفس ثم اعرّض.",
+    "Set abdominal-type exposure (75–85 kVp), ask for full expiration and hold, then expose."
+   ],
+   [
+    "راجع ظهور الأضلاع 9–12 وعلامة الجهة.",
+    "Review ribs 9–12 visibility and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "ribs-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الأضلاع مائلة (RPO/LPO أو RAO/LAO)",
+   "Oblique ribs (RPO/LPO or RAO/LAO)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Rib"
+  ],
+  "ind": [
+   "فك تراكب الأضلاع الجانبية (الإبطية) وإظهار الكسور الخفية في القوس الجانبي للأضلاع التي لا تظهر بوضوح في AP أو PA.",
+   "Unwind the axillary (lateral) rib margins to show subtle fractures along the lateral rib curve obscured on AP/PA views."
+  ],
+  "pos": [
+   "يُدار الجسم 45° بحيث يكون الجانب المصاب قريباً من الكاسيت في RPO/LPO (للألم الخلفي/الجانبي) أو بعيداً عن الكاسيت في RAO/LAO (للألم الأمامي/الجانبي)، مع رفع الذراع المصابة فوق الرأس لإبعادها عن الأضلاع.",
+   "Rotate the body 45° with the affected side toward the detector in RPO/LPO (for posterior/lateral pain) or away from the detector in RAO/LAO (for anterior/lateral pain), raising the affected arm above the head."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند T7 (للأضلاع العلوية) أو T10 (للسفلية) على منتصف الجانب المصاب.",
+   "Central ray perpendicular to the detector at T7 (upper ribs) or T10 (lower ribs), centred to the affected hemithorax."
+  ],
+  "br": [
+   "شهيق عميق للأضلاع العلوية، أو زفير كامل للأضلاع السفلية.",
+   "Full inspiration for upper ribs, or full expiration for lower ribs."
+  ],
+  "crit": [
+   [
+    "الجانب الإبطي للأضلاع المصابة مفرد بالكامل ومفتوح دون تراكب العمود الفقري.",
+    "Axillary portion of the affected ribs projected free of the spine."
+   ],
+   [
+    "الأضلاع مصورة من المفصل الفقري الضلعي إلى الغضاريف الأمامية.",
+    "Ribs shown from costovertebral joints to anterior ends."
+   ],
+   [
+    "لا وجود للذراع فوق القفص الصدري.",
+    "Arm clear of the rib cage."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير الجسم للجهة الخطأ: يتراكب العمود الفقري على منطقة الألم.",
+    "Rotating the wrong way projects the spine over the painful ribs."
+   ],
+   [
+    "ترك الذراع بجانب الجسم: يحجب الأضلاع الجانبية.",
+    "Leaving the arm down obscures the lateral ribs."
+   ]
+  ],
+  "tips": [
+   "القاعدة: أدر الجهة المصابة نحو الكاسيت في الوضع الخلفي المائل (RPO/LPO)، وأبعدها عن الكاسيت في الوضع الأمامي المائل (RAO/LAO). اسأل عن الحمل.",
+   "Rule: turn the affected side toward the detector in posterior obliques (RPO/LPO), and away from it in anterior obliques (RAO/LAO). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً بزاوية 45° عبر الجانب المصاب ويخرج نحو الكاسيت.",
+   "The beam enters obliquely at 45° across the affected side and exits toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "68–78",
+    "68–78"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة المصابة (يمين/يسار) وموضع الألم واسأل عن الحمل.",
+    "Check the request, affected side and pain location; ask about pregnancy."
+   ],
+   [
+    "أدر المريض 45° في الوضعية المائلة المناسبة وارفع الذراع المصابة فوق الرأس.",
+    "Rotate the patient 45° into the proper oblique and raise the affected arm."
+   ],
+   [
+    "مركّز عند T7 (علوية) أو T10 (سفلية) على منتصف الجانب المصاب بمسافة 100 سم.",
+    "Centre at T7 (upper) or T10 (lower) over the affected hemithorax at 100 cm."
+   ],
+   [
+    "اضبط التعريض، اطلب التنفس المناسب (شهيق للعلوية/زفير للسفلية) ثم اعرّض.",
+    "Set exposure, give breath instruction (inspiration upper / expiration lower), then expose."
+   ],
+   [
+    "راجع وضوح القوس الإبطي للأضلاع وعلامة الجهة.",
+    "Verify axillary rib detail and the side marker."
+   ]
+  ],
+  "rot": 45
+ },
+ {
+  "id": "ribs-chest-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "صدر PA للأضلاع (استبعاد المضاعفات)",
+   "PA chest for ribs (complication check)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T7$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "lung$",
+   "^Rib"
+  ],
+  "ind": [
+   "الصورة المرافقة الأساسية لرضوض الأضلاع: استبعاد استرواح الصدر، الانصباب الدموي (haemothorax)، كدمة الرئة، أو تمزق الحجاب، وهي أهم سريرياً من عدّ كسور الأضلاع البسيطة.",
+   "Essential companion view in rib trauma: exclude pneumothorax, haemothorax, pulmonary contusion or diaphragmatic injury, which are clinically more critical than simple rib fractures."
+  ],
+  "pos": [
+   "نفس وضعية الصدر PA القياسية: المريض واقف وجهه للكاسيت، الذقن مرفوع، اليدان على الوركين والكوعان للأمام، دون دوران.",
+   "Same as standard erect PA chest: facing the detector, chin raised, hands on hips with elbows forward, no rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مستوى T7 على الخط الناصف على بعد 180 سم.",
+   "Horizontal central ray perpendicular to the detector at T7 on the midline at 180 cm SID."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس.",
+   "Full inspiration, hold the breath."
+  ],
+  "crit": [
+   [
+    "الرئتان كاملتان من القمم إلى الزوايا الضلعية الحجابية.",
+    "Both lungs fully included, apices to costophrenic angles."
+   ],
+   [
+    "تباين رئوي ممتاز لكشف استرواح الصدر أو التجمعات السائلة.",
+    "Optimal lung contrast to detect pneumothorax or pleural fluid."
+   ],
+   [
+    "لا دوران (المفصلان القصيان الترقويان متناظران).",
+    "No rotation (sternoclavicular joints symmetric)."
+   ]
+  ],
+  "err": [
+   [
+    "استخدام kVp منخفض للأضلاع فقط: يفقد وضوح الرئة والمنصف.",
+    "Using low rib-kVp alone loses lung and mediastinal detail."
+   ],
+   [
+    "دوران المريض: يشوه المنصف والزوايا.",
+    "Rotation distorts the mediastinum and angles."
+   ]
+  ],
+  "tips": [
+   "كثير من الأقسام تكتفي بصورة صدر PA في رضوض الصدر البسيطة ما لم تغيّر تفاصيل الكسر خطة العلاج. اسأل عن الحمل.",
+   "Many departments rely on a PA chest alone in minor chest trauma unless finding a specific rib fracture changes management. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر المريض عند T7 ويخرج من الصدر الأمامي نحو الكاسيت.",
+   "The beam enters the back at T7 and exits the anterior chest onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "110–125",
+    "110–125"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 400 mA × 0.01 ث = 4 mAs",
+    "Example: 400 mA × 0.01 s = 4 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) للبالغين",
+    "Grid for adults"
+   ],
+   "aec": [
+    "AEC: الغرفتان الجانبيتان",
+    "AEC: both outer chambers"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check the request and ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن وأوقف المريض بوضعية PA قياسية دون دوران.",
+    "Remove necklaces and metal; stand the patient in standard PA without rotation."
+   ],
+   [
+    "مركّز عند T7 على 180 سم وضيّق المجال على الرئتين.",
+    "Centre at T7 at 180 cm and collimate to the lungs."
+   ],
+   [
+    "اطلب شهيقاً عميقاً وحبس النفس ثم اعرّض بتقنية الصدر (110–125 kVp).",
+    "Ask for full inspiration and hold, then expose with chest technique (110–125 kVp)."
+   ],
+   [
+    "راجع القمم والزوايا لاستبعاد الاسترواح أو الانصباب وعلامة الجهة.",
+    "Review apices and angles for pneumothorax/effusion and check the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "sternum-rao",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القص PA مائل (RAO)",
+   "Sternum PA oblique (RAO)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Body of sternum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Manubrium of sternum$",
+   "^Body of sternum$",
+   "^Xiphoid process$"
+  ],
+  "ind": [
+   "تقييم كسور القص، الآفات العظمية أو التهابات عظم القص، والمفاصل القصية الترقوية بوضعية أمامية مائلة.",
+   "Evaluate sternal fractures, bone lesions or osteomyelitis, and the sternoclavicular region in an oblique PA view."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت (أو منبطح)، يُدار الجسم بزاوية طفيفة 15–20° فقط في وضعية RAO (الكتف الأيمن ملامس للكاسيت والأيسر مرفوع قليلاً) لإسقاط القص على ظل القلب المتجانس وإبعاده عن العمود الفقري.",
+   "Patient erect facing the detector (or prone), rotated slightly 15–20° into RAO (right shoulder against the detector, left raised slightly) to project the sternum over the homogeneous heart shadow and off the spine."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند منتصف القص (T7 تقريباً، حوالي 2.5 سم وحشي الخط الناصف على الجهة المرفوعة) وعلى مسافة 75–100 سم (أو 100 سم).",
+   "Central ray perpendicular to the detector at mid-sternum (about T7, ~2.5 cm lateral to the midline toward the elevated side) at ~75–100 cm SID."
+  ],
+  "br": [
+   "تنفس لطيف بطيء أثناء التعريض (مع زمن تعريض أطول قليلاً وmA منخفض) لطمس تفاصيل الأضلاع والرئة وإظهار القص وحده، أو حبس النفس بعد الشهيق إذا تعذر ذلك.",
+   "Gentle shallow breathing during exposure (using low mA and longer time) to blur out overlapping lung markings and ribs, or suspended respiration if breathing blur is not used."
+  ],
+  "crit": [
+   [
+    "القص كاملاً (القبضة، الجسم، والرهابة) واقعاً على ظل القلب دون تراكب العمود الفقري.",
+    "Entire sternum (manubrium, body, xiphoid) projected over the heart shadow clear of the spine."
+   ],
+   [
+    "ضبابية خفيفة في الأضلاع والرئة تجعل حدود القص واضحة.",
+    "Subtle blurring of ribs/lung markings making the sternum stand out clearly."
+   ]
+  ],
+  "err": [
+   [
+    "دوران زائد (> 25°): ينزاح القص خارج ظل القلب وتتشوه أبعاده.",
+    "Excess rotation (> 25°) projects the sternum off the heart shadow and distorts it."
+   ],
+   [
+    "دوران قليل (< 15°): يتراكب العمود الفقري على القص.",
+    "Insufficient rotation (< 15°) leaves the spine over the sternum."
+   ]
+  ],
+  "tips": [
+   "تُستخدم وضعية RAO (وليس LAO) لأن القلب يقع يساراً، مما يوفر خلفية متجانسة للقص. في الرضوض الحادة استعمل الـLPO على الظهر إذا تعذر الوقوف، أو CT مباشرة. اسأل عن الحمل.",
+   "RAO is preferred over LAO because the heart lies to the left, giving a uniform background. In severe trauma use LPO supine or proceed directly to CT. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الظهر الأيسر قرب الخط الناصف مائلاً 15–20° ويخرج عبر القص نحو الكاسيت.",
+   "The beam enters the left posterior thorax near the midline and exits through the sternum onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "لتقنية التنفس: 25–50 mA × 1–2 ثانية (أو 200 mA × 0.12 ث لحبس النفس)",
+    "Breathing technique: 25–50 mA × 1–2 s (or 200 mA × 0.12 s breath-hold)"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً عند استخدام تقنية التنفس",
+    "Usually manual when using breathing technique"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check the request and ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والأزرار والمعادن وألبس المريض ثوباً.",
+    "Remove necklaces, buttons and metal; provide a gown."
+   ],
+   [
+    "أوقف المريض بوضعية RAO بزاوية 15–20° فقط (الكتف الأيمن للكاسيت).",
+    "Stand the patient in a shallow 15–20° RAO (right shoulder against detector)."
+   ],
+   [
+    "مركّز عند منتصف القص (مستوى T7) وضيّق المجال طولياً على القص.",
+    "Centre at mid-sternum (T7) and collimate tightly along the sternum."
+   ],
+   [
+    "درّب المريض على تنفس لطيف دون تحريك الكتفين (أو حبس النفس) ثم اعرّض.",
+    "Coach gentle breathing without moving the shoulders (or breath-hold), then expose."
+   ],
+   [
+    "راجع وقوع القص فوق ظل القلب وعلامة الجهة.",
+    "Verify the sternum lies over the heart shadow and check the side marker."
+   ]
+  ],
+  "rot": 18
+ },
+ {
+  "id": "sternum-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القص جانبي",
+   "Lateral sternum"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Body of sternum$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Manubrium of sternum$",
+   "^Body of sternum$",
+   "^Xiphoid process$"
+  ],
+  "ind": [
+   "تقييم كسور القص وانزياح القطع العظمية للأمام أو الخلف، خلع المفصل القصي الترقوي، والصدر المقعر أو الجؤجؤي.",
+   "Assess sternal fractures and anterior/posterior displacement, sternoclavicular dislocation, and pectus excavatum/carinatum."
+  ],
+  "pos": [
+   "المريض واقف وجانبه الأيسر (أو الأيمن) ملاصق للكاسيت، اليدان متشابكتان خلف الظهر مع سحب الكتفين للخلف قدر الإمكان لإبراز القص للأمام وإبعاد الذراعين عنه. الصدر بوضعية جانبية حقيقية دون دوران.",
+   "Patient erect with the left (or right) side against the detector, hands clasped behind the back pulling the shoulders far back so the sternum projects forward clear of the arms. True lateral without rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند منتصف جسم القص (T7 تقريباً). SID 180 سم لتقليل التكبير بسبب بعد القص عن الكاسيت.",
+   "Horizontal central ray perpendicular to the detector at mid-body of sternum (about T7). 180 cm SID to reduce magnification."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس لإبراز القص للأمام وإبعاد الأنسجة الرخوة.",
+   "Full inspiration and breath-hold to project the sternum forward."
+  ],
+  "crit": [
+   [
+    "القص كاملاً (من الشق الوداجي والقبضة إلى الرهابة) بوضعية جانبية حقيقية.",
+    "Entire sternum (manubrium to xiphoid) in true lateral profile."
+   ],
+   [
+    "لا يتراكب الذراعان أو الكتفان على القبضة القصية.",
+    "Arms and shoulders do not overlap the manubrium."
+   ],
+   [
+    "تباين عظمي واضح في الجدار الأمامي للصدر.",
+    "Clear bony cortical detail along the anterior chest wall."
+   ]
+  ],
+  "err": [
+   [
+    "بقاء الكتفين للأمام: تحجب القبضة القصية.",
+    "Shoulders left forward obscure the manubrium."
+   ],
+   [
+    "دوران الصدر: يبدو القص مائلاً وغير نقي.",
+    "Chest rotation gives an oblique, double-edged sternum."
+   ]
+  ],
+  "tips": [
+   "استعمل SID 180 سم دائماً لأن القص في منتصف الصدر وبعيد عن الكاسيت الجانبي. للمريض المستلقي بالرضوض استخدم شعاعاً أفقياً (cross-table). اسأل عن الحمل.",
+   "Always use 180 cm SID because the sternum sits mid-plane far from the lateral detector. For supine trauma use a cross-table horizontal beam. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للصدر الأمامي عند منتصف القص ويخرج من الجانب الأيسر نحو الكاسيت.",
+   "The beam enters the right side of the anterior chest at mid-sternum and exits the left side onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً (لأن القص عند حافة الغرفة)",
+    "Usually manual (sternum is near field edge)"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check the request and ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن وألبس المريض ثوباً.",
+    "Remove necklaces and metal; provide a gown."
+   ],
+   [
+    "أوقف المريض بوضعية جانبية حقيقية وشبّك يديه خلف ظهره مع شد الكتفين للخلف.",
+    "Stand the patient in true lateral with hands clasped behind the back and shoulders pulled back."
+   ],
+   [
+    "مركّز عند منتصف القص على 180 سم وضيّق المجال على الجدار الأمامي للصدر.",
+    "Centre at mid-sternum at 180 cm and collimate to the anterior chest wall."
+   ],
+   [
+    "اضبط kVp وmAs، اطلب شهيقاً عميقاً وحبس النفس ثم اعرّض.",
+    "Set kVp and mAs, ask for full inspiration and hold, then expose."
+   ],
+   [
+    "راجع ظهور القبضة والجسم والرهابة وعلامة الجهة.",
+    "Verify manubrium, body and xiphoid visibility and the side marker."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "sc-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المفاصل القصية الترقوية PA",
+   "Sternoclavicular joints PA"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Manubrium of sternum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Manubrium of sternum$",
+   "^Clavicle$"
+  ],
+  "ind": [
+   "تقييم المفصلين القصيين الترقويين للمقارنة بين الجانبين: التهاب المفصل، تحت الخلع، الكسور القريبة للترقوة.",
+   "Evaluate both sternoclavicular joints bilaterally for comparison: arthritis, subluxation and medial clavicle fractures."
+  ],
+  "pos": [
+   "المريض منبطح أو واقف وجهه للكاسيت، الرأس مستند على الذقن وموجه للأمام (أو للجانب قليلاً مع بقاء الكتفين متساويين تماماً دون أي دوران).",
+   "Patient prone or erect facing the detector, chin resting on table/stand without any rotation of the shoulders or thorax."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى T2–T3 (مقابل الشق الوداجي والقبضة القصية) على الخط الناصف، مع تضييق المجال على المفصلين والترقوتين الإنسيتين.",
+   "Central ray perpendicular to the detector at T2–T3 (level of the jugular notch/manubrium) on the midline, tightly collimated to both SC joints."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend respiration after expiration."
+  ],
+  "crit": [
+   [
+    "المفصلان القصيان الترقويان متناظران تماماً على جانبي العمود الصدري.",
+    "Both SC joints completely symmetric on either side of the thoracic spine."
+   ],
+   [
+    "النهايتان الإنسيتان للترقوتين وقبضة القص ظاهرتان بوضوح.",
+    "Medial ends of both clavicles and the manubrium clearly visible."
+   ]
+  ],
+  "err": [
+   [
+    "دوران طفيف في الكتفين: يوحي بخلع أو عدم تناظر كاذب.",
+    "Slight shoulder rotation mimics subluxation or asymmetry."
+   ],
+   [
+    "تعريض غير كافٍ: تراكب العمود الفقري يخفي المفصلين.",
+    "Underexposure leaves the spine obscuring the joints."
+   ]
+  ],
+  "tips": [
+   "أي دوران بسيط يفسد المقارنة بين الجانبين، فتأكد من تساوي الكتفين تماماً. في الرضوض الحادة يُفضَّل CT لتقييم الخلع الخلفي بدقة. اسأل عن الحمل.",
+   "Even slight rotation ruins side-to-side comparison; ensure level shoulders. In acute trauma, CT is preferred to exclude posterior dislocation. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الظهر عند T2–T3 ويخرج من القبضة القصية نحو الكاسيت.",
+   "The beam enters the upper back at T2–T3 and exits the manubrium onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check the request and ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن من أعلى الصدر.",
+    "Remove necklaces and metal from the upper chest."
+   ],
+   [
+    "ضع المريض بوضعية PA وتأكد من تساوي الكتفين وعدم الدوران إطلاقاً.",
+    "Position in PA and verify shoulders are level with zero rotation."
+   ],
+   [
+    "مركّز عند T2–T3 على الخط الناصف بمسافة 100 سم وضيّق المجال.",
+    "Centre at T2–T3 on the midline at 100 cm and collimate tightly."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration and breath-hold, then expose."
+   ],
+   [
+    "راجع تناظر المفصلين وعلامة الجهة.",
+    "Verify bilateral joint symmetry and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "sc-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المفاصل القصية الترقوية PA مائل (RAO/LAO)",
+   "Sternoclavicular joints PA oblique (RAO/LAO)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Manubrium of sternum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Manubrium of sternum$",
+   "^Clavicle$"
+  ],
+  "ind": [
+   "فصل المفصل القصي الترقوي المصاب عن ظل العمود الفقري لإظهاره بوضوح أكبر من مسقط PA المباشر.",
+   "Separate the affected sternoclavicular joint from the thoracic spine shadow for clearer visualisation than the straight PA view."
+  ],
+  "pos": [
+   "المريض واقف أو منبطح بوضعية PA، ثم يُدار الجسم 10–15° فقط بحيث يكون المفصل المراد فحصه أقرب إلى الكاسيت (RAO للمفصل الأيمن، LAO للمفصل الأيسر).",
+   "Patient erect or prone in PA, rotated only 10–15° so the joint of interest is closer to the detector (RAO for the right SC joint, LAO for the left)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى T2–T3 (أو الشق الوداجي) متمركزاً على المفصل القصي الترقوي القريب من الكاسيت.",
+   "Central ray perpendicular to the detector at T2–T3 (jugular notch level), centred over the downside SC joint."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend respiration after expiration."
+  ],
+  "crit": [
+   [
+    "المفصل القصي الترقوي القريب من الكاسيت واقع أمام العمود الفقري دون تراكب.",
+    "The downside SC joint is projected clear of the spine."
+   ],
+   [
+    "المسافة المفصلية بين الترقوة والقبضة القصية مفتوحة وواضحة.",
+    "The joint space between the clavicle and manubrium is open and clear."
+   ]
+  ],
+  "err": [
+   [
+    "دوران زائد (> 20°): يقصر المفصل ويتشوه شكله.",
+    "Excess rotation (> 20°) foreshortens and distorts the joint."
+   ],
+   [
+    "دوران قليل (< 10°): يبقى المفصل متراكباً مع العمود الفقري.",
+    "Insufficient rotation (< 10°) leaves the joint over the spine."
+   ]
+  ],
+  "tips": [
+   "يُفضَّل تصوير RAO وLAO معاً للمقارنة. تذكّر أن زاوية الدوران طفيفة جداً (10–15° فقط). اسأل عن الحمل.",
+   "Both RAO and LAO are often taken for comparison. Remember the rotation is very shallow (only 10–15°). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الظهر مائلاً 10–15° ويخرج عند المفصل القصي الترقوي القريب من الكاسيت.",
+   "The beam enters the upper back at 10–15° and exits at the downside SC joint onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة المراد تصويرها واسأل عن الحمل.",
+    "Check the request and side of interest; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن من أعلى الصدر.",
+    "Remove necklaces and metal from the upper chest."
+   ],
+   [
+    "أدر المريض 10–15° نحو الجهة المصابة (RAO لليمين، LAO لليسار).",
+    "Rotate the patient 10–15° toward the affected side (RAO for right, LAO for left)."
+   ],
+   [
+    "مركّز عند مستوى T2–T3 على المفصل القريب بمسافة 100 سم وضيّق المجال.",
+    "Centre at T2–T3 over the downside joint at 100 cm and collimate tightly."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration and breath-hold, then expose."
+   ],
+   [
+    "راجع انفراد المفصل عن العمود الفقري وعلامة الجهة.",
+    "Verify the joint clears the spine and check the side marker."
+   ]
+  ],
+  "rot": 15
+ },
+ {
+  "id": "sc-serendipity",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المفصل القصي الترقوي سيرنديبيتي (40° رأسياً)",
+   "Sternoclavicular serendipity (40° cephalad)"
+  ],
+  "region": [
+   "الصدر",
+   "Chest"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 40,
+  "cr": {
+   "s": "^Manubrium of sternum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Manubrium of sternum$",
+   "^Clavicle$"
+  ],
+  "ind": [
+   "تشخيص الخلع القصي الترقوي (الأمامي مقابل الخلفي) وكسور النهاية الإنسية للترقوة في الرضوض.",
+   "Diagnose sternoclavicular dislocation (anterior vs posterior) and medial clavicle fractures in trauma."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر (AP) على الطاولة دون دوران، والذراعان بجانب الجسم، مع وضع الكاسيت تحت أعلى الصدر والرقبة السفلية (لأن الميلان 40° رأسياً سيسقط المفصلين للأعلى على الكاسيت).",
+   "Patient supine (AP) on the table without rotation, arms by the sides, with the detector positioned high under the upper chest and lower neck (to catch the 40° cephalad projection)."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 40° نحو الرأس (cephalad)، متمركزاً عند القبضة القصية (أسفل الشق الوداجي مباشرة) على الخط الناصف.",
+   "Central ray angled 40° cephalad, centred at the manubrium (just below the jugular notch) on the midline."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay still during exposure."
+  ],
+  "crit": [
+   [
+    "الترقوتان والنهايتان الإنسيتان والقبضة القصية ظاهرة للمقارنة.",
+    "Both medial clavicles and the manubrium clearly shown for comparison."
+   ],
+   [
+    "في الخلع الأمامي ترتفع النهاية الإنسية للترقوة المصابة للأعلى مقارنة بالجهة السليمة؛ وفي الخلفي تنخفض للأسفل.",
+    "In anterior dislocation the medial clavicle projects superiorly compared with the normal side; in posterior dislocation it projects inferiorly."
+   ],
+   [
+    "لا دوران في الكتفين.",
+    "No shoulder rotation."
+   ]
+  ],
+  "err": [
+   [
+    "وضع الكاسيت منخفضاً: يخرج المفصلان خارج أعلى الصورة بسبب زاوية 40°.",
+    "Detector placed too low: the 40° cephalad angle projects the joints off the top."
+   ],
+   [
+    "زاوية أقل من 40°: لا يتضح الفرق بين الخلع الأمامي والخلفي.",
+    "Angle under 40° reduces the vertical separation needed to distinguish anterior vs posterior dislocation."
+   ]
+  ],
+  "tips": [
+   "احرص على رفع الكاسيت للأعلى نحو الرقبة لكي لا ينقطع المفصلان. عند الاشتباه بخلع خلفي (خطر على الأوعية الكبرى والقصبة)، الـCT العاجل هو المعيار الذهبي. اسأل عن الحمل.",
+   "Place the detector high toward the neck so the joints are not cut off. If posterior dislocation is suspected (risk to great vessels/trachea), urgent CT is the gold standard. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من القبضة القصية مائلاً 40° نحو الرأس ويخرج من أعلى الظهر/الرقبة نحو الكاسيت.",
+   "The beam enters the manubrium angled 40° cephalad and exits the upper back/neck onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً بسبب الميلان الحاد",
+    "Usually manual due to steep angulation"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check the request and ID; ask about pregnancy."
+   ],
+   [
+    "أزل المعادن من الصدر والرقبة.",
+    "Remove metal from the chest and neck."
+   ],
+   [
+    "استلقِ المريض على الظهر دون دوران، وضع الكاسيت عالياً تحت أعلى الصدر والرقبة السفلية.",
+    "Lay the patient supine without rotation and place the detector high under the upper chest/lower neck."
+   ],
+   [
+    "أمل الأنبوب 40° رأسياً ومركّز على القبضة القصية على 100 سم.",
+    "Angle the tube 40° cephalad and centre at the manubrium at 100 cm."
+   ],
+   [
+    "اطلب حبس النفس ثم اعرّض.",
+    "Ask for breath-hold, then expose."
+   ],
+   [
+    "قارن ارتفاع النهايتين الإنسيتين للترقوتين وعلامة الجهة.",
+    "Compare the vertical height of both medial clavicles and check the side marker."
+   ]
+  ]
  }
 ]
