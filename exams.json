@@ -25739,5 +25739,4529 @@
     "Run stitching exposure while still, then verify full joint inclusion."
    ]
   ]
+ },
+ {
+  "id": "finger-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "إصبع اليد PA",
+   "Finger PA"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "كسور السلاميات، الخلع، إصابات الأربطة، الأجسام الغريبة، والتهاب مفاصل الأصابع.",
+   "Phalangeal fractures, dislocations, ligamentous avulsions, foreign bodies and arthritis."
+  ],
+  "pos": [
+   "المريض جالس، الإصبع المصاب مبسوط وراحته للأسفل (PA) على الكاسيت مع إبعاد الأصابع المجاورة قليلاً.",
+   "Patient seated, affected finger extended palm-down (PA) on detector with adjacent digits separated."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند المفصل بين السلامي القريب (PIP) للإصبع المصاب.",
+   "Central ray perpendicular at the PIP joint of the affected finger."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإصبع كاملاً من الطرف إلى الثلث البعيد من المشطية مع فتح المفاصل.",
+    "Entire digit to distal metacarpal with open joint spaces."
+   ]
+  ],
+  "err": [
+   [
+    "ثني الإصبع: يغلق مسافات المفاصل.",
+    "Flexed finger closes joint spaces."
+   ]
+  ],
+  "tips": [
+   "أزل الخواتم قبل التصوير وضيّق المجال على الإصبع المصاب فقط. اسأل عن الحمل.",
+   "Remove rings and collimate tightly to the affected digit. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الإصبع ويخرج من باطنه نحو الكاسيت.",
+   "The beam enters dorsally and exits palmarly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–56",
+    "50–56"
+   ],
+   "mas": [
+    "1.5–3",
+    "1.5–3"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.02 ث = 2 mAs",
+    "Example: 100 mA × 0.02 s = 2 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أزل الخواتم واسأل عن الحمل.",
+    "Remove rings; ask about pregnancy."
+   ],
+   [
+    "ضع الإصبع مبسوطاً للأسفل ومركّز على المفصل PIP.",
+    "Place finger flat PA and centre at PIP joint."
+   ],
+   [
+    "ضيّق المجال ثم اعرّض.",
+    "Collimate tightly and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "finger-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "إصبع اليد مائل 45°",
+   "Finger PA oblique 45°"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "كشف الكسور الشعرية والقلعية (avulsion) في سلاميات الأصابع التي لا تظهر في PA.",
+   "Detect subtle oblique or avulsion fractures of the phalanges."
+  ],
+  "pos": [
+   "اليد والإصبع مداران 45° للخارج (أو للداخل للسبابة) مع سند الأصابع على إسفنجة 45°.",
+   "Hand and finger rotated 45° laterally (or medially for index) supported on a 45° wedge."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند المفصل PIP للإصبع المصاب.",
+   "Central ray perpendicular at the PIP joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإصبع بوضعية مائلة 45° ومفصولاً عن الأصابع المجاورة.",
+    "Digit in 45° oblique clear of adjacent fingers."
+   ]
+  ],
+  "err": [
+   [
+    "أصابع غير مسنودة: تتمايل وتنغلق المفاصل.",
+    "Unsupported fingers flex and close joints."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وأزل الخواتم.",
+   "Ask about pregnancy and remove rings."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 45° عبر الإصبع نحو الكاسيت.",
+   "The beam enters at 45° obliquity onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–56",
+    "50–56"
+   ],
+   "mas": [
+    "1.5–3",
+    "1.5–3"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.02 ث = 2 mAs",
+    "Example: 100 mA × 0.02 s = 2 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر اليد 45° واسند الإصبع على إسفنجة.",
+    "Rotate hand 45° and support digit on sponge."
+   ],
+   [
+    "مركّز على PIP وضيّق المجال ثم اعرّض.",
+    "Centre at PIP, collimate and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "finger-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "إصبع اليد جانبي",
+   "Finger lateral"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "تقييم إزاحة الكسور الظهرية/الراحية، إصابة إصبع المطرقة (mallet finger)، وانخلاع المفاصل.",
+   "Assess dorsal/volar fracture displacement, mallet finger and joint dislocations."
+  ],
+  "pos": [
+   "الإصبع المصاب ممدوداً بوضعية جانبية حقيقية (على الجانب الكعبري للسبابة والوسطى، أو الزندي للبنصر والخنصر) مع ثني الأصابع السليمة وإبعادها.",
+   "Affected finger extended in true lateral (radial side down for 2nd/3rd, ulnar side down for 4th/5th) with other fingers flexed clear."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند المفصل PIP للإصبع المصاب.",
+   "Central ray perpendicular at the PIP joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإصبع جانبي نقي دون تراكب الأصابع الأخرى.",
+    "Digit in true lateral free of other fingers."
+   ]
+  ],
+  "err": [
+   [
+    "تراكب الأصابع السليمة.",
+    "Overlap by adjacent fingers."
+   ]
+  ],
+  "tips": [
+   "استخدم إسفنجة أو قلماً بلاستيكياً لسند الإصبع أفقياً. اسأل عن الحمل.",
+   "Support finger parallel to detector using a radiolucent sponge. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع جانبياً عبر الإصبع نحو الكاسيت.",
+   "The beam passes laterally through the finger onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–56",
+    "50–56"
+   ],
+   "mas": [
+    "1.5–3",
+    "1.5–3"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.02 ث = 2 mAs",
+    "Example: 100 mA × 0.02 s = 2 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "اثنِ الأصابع السليمة وضع المصاب جانبياً موازياً للكاسيت.",
+    "Flex other digits and place injured finger true lateral."
+   ],
+   [
+    "مركّز على PIP وضيّق المجال ثم اعرّض.",
+    "Centre at PIP, collimate and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "thumb-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الإبهام AP",
+   "Thumb AP"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^First metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "كسور قاعدة المشطية الأولى (كسر بينيت Bennett ورولاندو Rolando)، السلاميات، والمفصل الرسغي المشطي الأول (CMC).",
+   "Evaluate 1st metacarpal base fractures (Bennett/Rolando), phalanges and 1st CMC joint."
+  ],
+  "pos": [
+   "المريض جالس، تُدار الذراع واليد داخلياً (كب أقصى) حتى يلامس ظهر الإبهام الكاسيت (سطح الظفر للأسفل)، مع إبعاد بقية الأصابع.",
+   "Patient seated, arm and hand internally rotated maximally until the dorsal surface of the thumb rests flat on the detector (AP), other fingers held back."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند المفصل المشطي السلامي الأول (1st MCP).",
+   "Central ray perpendicular at the 1st MCP joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإبهام كاملاً من الطرف حتى المفصل الرسغي المشطي الأول وعظم شبه المنحرف الكبير.",
+    "Entire thumb from tip to 1st CMC joint and trapezium."
+   ]
+  ],
+  "err": [
+   [
+    "عدم كفاية الدوران الداخلي: يظهر الإبهام مائلاً لا AP.",
+    "Insufficient internal rotation produces an oblique instead of AP."
+   ]
+  ],
+  "tips": [
+   "إذا تعذر الدوران الداخلي بسبب الألم، استعمل مسقط PA أو روبرت كبديل. اسأل عن الحمل.",
+   "If painful internal rotation is limited, use PA or Robert's view. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من السطح الراحي للإبهام ويخرج من الظهر نحو الكاسيت.",
+   "The beam enters the palmar thumb and exits dorsally onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "52–58",
+    "52–58"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر اليد داخلياً وضع ظهر الإبهام مسطحاً على الكاسيت.",
+    "Internally rotate hand so dorsal thumb lies flat on detector."
+   ],
+   [
+    "مركّز عند 1st MCP وضيّق المجال لتشمل المفصل CMC.",
+    "Centre at 1st MCP and collimate including 1st CMC."
+   ],
+   [
+    "اعرض وضع علامة الجهة.",
+    "Expose and label side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "thumb-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الإبهام جانبي",
+   "Thumb lateral"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^First metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "إزاحة الكسور في الإبهام والأجسام الغريبة ومحاذاة المفصلين IP وMCP.",
+   "Fracture displacement, foreign bodies and alignment of 1st IP/MCP joints."
+  ],
+  "pos": [
+   "الراحة للأسفل على الكاسيت مع تقويس الأصابع الأربعة للأعلى قليلاً حتى يستريح الإبهام على جانبه الوحشي بوضع جانبي حقيقي.",
+   "Palm down on detector with fingers slightly arched so the thumb rests naturally on its lateral aspect in true profile."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند المفصل MCP الأول.",
+   "Central ray perpendicular at the 1st MCP joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإبهام بوضع جانبي نقي دون تراكب مع المشطية الثانية.",
+    "Thumb in true lateral free of the 2nd metacarpal."
+   ]
+  ],
+  "err": [
+   [
+    "تراكب راحة اليد على الإبهام.",
+    "Palm overlapping the thumb."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع جانبياً عبر الإبهام نحو الكاسيت.",
+   "The beam enters laterally through the thumb onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "52–58",
+    "52–58"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الكف للأسفل مع تقويس الأصابع ليبقى الإبهام جانبياً.",
+    "Place palm down, arch fingers so thumb lies in true lateral."
+   ],
+   [
+    "مركّز عند 1st MCP وضيّق المجال ثم اعرّض.",
+    "Centre at 1st MCP, collimate and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "thumb-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الإبهام PA مائل",
+   "Thumb PA oblique"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^First metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "إظهار الإبهام والمشطية الأولى بزاوية مائلة 45° وهو الوضع المريح الذي تأخذه اليد عند وضع الراحة مسطحة على الكاسيت.",
+   "Demonstrate the thumb and 1st metacarpal at 45° obliquity (achieved naturally with the palm flat on the detector)."
+  ],
+  "pos": [
+   "الراحة مسطحة تماماً على الكاسيت (كما في مسقط اليد PA)؛ بهذا الوضع الطبيعي يميل الإبهام تلقائياً 45° عن مستوى الكاسيت.",
+   "Palm flat on detector (as for PA hand); the thumb naturally lies in a 45° oblique plane."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند المفصل MCP الأول.",
+   "Central ray perpendicular at the 1st MCP joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإبهام والمفصل الرسغي المشطي الأول بوضع مائل 45° مع فتح المفاصل.",
+    "Thumb and 1st CMC joint in 45° oblique with open joint spaces."
+   ]
+  ],
+  "err": [
+   [
+    "رفع الإبهام عن الكاسيت.",
+    "Thumb lifted off detector."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الإبهام مائلاً 45° ويخرج نحو الكاسيت.",
+   "The beam enters dorsally at 45° onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "52–58",
+    "52–58"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الكف مسطحة على الكاسيت.",
+    "Place palm flat on detector."
+   ],
+   [
+    "مركّز عند 1st MCP وضيّق المجال ثم اعرّض.",
+    "Centre at 1st MCP, collimate and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "thumb-robert",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "روبرت للمفصل الرسغي المشطي الأول (Robert's view)",
+   "Robert's view (1st CMC AP)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 15,
+  "cr": {
+   "s": "^Trapezium bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "أفضل مسقط لإظهار المفصل الرسغي المشطي الأول (1st CMC)، عظم شبه المنحرف الكبير، وكسور قاعدة المشطية الأولى (بينيت) وخشونة قاعدة الإبهام.",
+   "Best view of the 1st CMC joint, trapezium, Bennett fractures and trapeziometacarpal osteoarthritis."
+  ],
+  "pos": [
+   "الذراع ممدودة وظهر الإبهام وظهر اليد ملامسان للكاسيت بأقصى دوران داخلي (AP) مع إبعاد الإبهام عن اليد.",
+   "Arm extended, thumb and hand maximally internally rotated (AP) with the dorsal thumb flat on the detector and abducted."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15° رأسياً (باتجاه المرفق/الساعد) عند المفصل الرسغي المشطي الأول.",
+   "Central ray angled 15° proximally (toward the forearm) centred at the 1st CMC joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "المفصل الرسغي المشطي الأول مفتوحاً تماماً مع شبه المنحرف الكبير وقاعدة المشطية الأولى.",
+    "1st CMC joint cleanly open with entire trapezium and 1st metacarpal base."
+   ]
+  ],
+  "err": [
+   [
+    "نسيان زاوية الـ 15° نحو الساعد.",
+    "Omitting the 15° proximal angulation."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من باطن قاعدة الإبهام مائلاً 15° نحو المرفق ويخرج نحو الكاسيت.",
+   "The beam enters palmarly at the 1st CMC angled 15° proximally onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر اليد داخلياً وضع ظهر الإبهام على الكاسيت.",
+    "Internally rotate hand with dorsal thumb on detector."
+   ],
+   [
+    "أمل الأنبوب 15° نحو الساعد عند المفصل CMC الأول ثم اعرّض.",
+    "Angle tube 15° proximally at 1st CMC joint and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "thumb-gamekeeper",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "إبهام حارس اللعبة (إجهاد الرباط الزندي)",
+   "Gamekeeper's thumb stress (UCL)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^First metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "landscape"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "تقييم تمزق الرباط الجانبي الزندي للمفصل المشطي السلامي الأول (إصابة حارس اللعبة / المتزلج Skier's thumb) بعد استبعاد الكسور القلعية الكبيرة.",
+   "Assess ulnar collateral ligament (UCL) tear at the 1st MCP joint (gamekeeper's/skier's thumb) after excluding displaced avulsion fracture."
+  ],
+  "pos": [
+   "توضع اليدان معاً بوضعية PA على الكاسيت بحيث تتجه أطراف الإبهامين للخارج أو تُشد بشريط مطاطي بين الإبهامين (أو يطبّق الفاحص إبعاداً لطيفاً) لإظهار اتساع المفصل الزندي بالمقارنة.",
+   "Both hands placed PA on detector with a gentle rubber band/stress pulling both thumbs radially (or clinician-applied abduction stress) for bilateral comparison."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي بين الإبهامين عند مستوى المفصلين MCP الأولين.",
+   "Central ray perpendicular between both 1st MCP joints."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "مفصلا MCP الأولان للجهتين ظاهران للمقارنة وقياس زاوية الفتح الزندي.",
+    "Both 1st MCP joints shown side-by-side to measure radial deviation angle."
+   ]
+  ],
+  "err": [
+   [
+    "تطبيق الإجهاد قبل استبعاد كسر قلعي كبير (آفة ستينر قد تتفاقم).",
+    "Stressing before excluding an avulsion fracture."
+   ]
+  ],
+  "tips": [
+   "اليوم يُفضَّل السونار أو الرنين المغناطيسي لتقييم آفة ستينر (Stener lesion). اسأل عن الحمل.",
+   "Ultrasound or MRI is preferred where available to check for a Stener lesion. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الإبهامين ويخرج نحو الكاسيت.",
+   "The beam enters dorsally over both thumbs onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "52–58",
+    "52–58"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "استبعد الكسر على الصور العادية أولاً واسأل عن الحمل.",
+    "Exclude fracture on routine views first; ask about pregnancy."
+   ],
+   [
+    "طبّق إجهاداً لطيفاً بالإبعاد للخارج على الإبهامين معاً ثم اعرّض.",
+    "Apply gentle bilateral abduction stress and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "hand-norgaard",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "اليدين نورغارد (ماسك الكرة)",
+   "Ball-catcher's view (Nørgaard)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metacarpal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metacarpal bone$|phalanx of .* of hand$|^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$"
+  ],
+  "ind": [
+   "كشف التآكلات العظمية المبكرة في التهاب المفاصل الروماتويدي (RA) والتهابات المفاصل الأخرى عند قواعد السلاميات القريبة ورؤوس المشطيات.",
+   "Detect early erosive changes in rheumatoid arthritis at the radial aspects of the proximal phalanges and metacarpal heads."
+  ],
+  "pos": [
+   "تُوضع كلتا اليدين معاً على الكاسيت بوضعية AP نصف مستلقية (مائلة 45° للخارج مع تقويس الأصابع قليلاً كأن المريض يلتقط كرة، الحواف الزندية ملامسة للكاسيت).",
+   "Both hands placed together in a 45° supinated oblique (AP oblique, ulnar borders down on detector, fingers slightly cupped as if catching a ball)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على منتصف الكاسيت بين اليدين بمستوى المفاصل المشطية السلامية (MCP).",
+   "Central ray perpendicular between both hands at the MCP joint level."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "رؤوس المشطيات وقواعد السلاميات للجهتين ظاهرة دون تراكب وبانفتاح ممتاز للحافة الكعبرية.",
+    "Both hands symmetrically shown with open MCP joints and clear radial aspects of metacarpal heads."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير زائد حتى تصبح اليدان جانبيتين تماماً.",
+    "Over-rotation into true lateral."
+   ]
+  ],
+  "tips": [
+   "استعمل إسفنجة 45° تحت ظهر اليدين لتثبيت الزاوية بدقة. اسأل عن الحمل.",
+   "Use 45° wedges beneath the hands for consistent angulation. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من راحة اليدين المائلتين ويخرج من ظهرهما نحو الكاسيت.",
+   "The beam enters the palms at 45° obliquity onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "3–5",
+    "3–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أزل الخواتم واسأل عن الحمل.",
+    "Remove rings; ask about pregnancy."
+   ],
+   [
+    "ضع اليدين بوضعية ماسك الكرة (45° استلقاء مائل) على الكاسيت.",
+    "Place both hands in 45° supinated oblique (ball-catcher's)."
+   ],
+   [
+    "مركّز بين المفاصل MCP واعرّض.",
+    "Centre between MCP joints and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "wrist-radial",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ PA بانحراف كعبري",
+   "Wrist PA radial deviation"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Triquetrum bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "فتح المفاصل الرسغية على الجانب الزندي (الهرمي، الحمصي، الكلابي، والهلالي) والكشف عن كسورها.",
+   "Open the ulnar-sided carpal spaces (triquetrum, pisiform, hamate, lunate)."
+  ],
+  "pos": [
+   "الراحة للأسفل (PA) ثم تُحرك اليد نحو الإبهام (انحراف كعبري) مع بقاء الساعد ثابتاً.",
+   "Palm down (PA) with hand deviated toward the thumb (radial deviation) while keeping forearm fixed."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف الرسغ.",
+   "Central ray perpendicular at mid-carpus."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "فتح المسافات المفصلية حول الهرمي والكلابي والحمصي.",
+    "Open joint spaces around triquetrum, hamate and pisiform."
+   ]
+  ],
+  "err": [
+   [
+    "تحريك الساعد مع اليد مما يلغي الانحراف.",
+    "Moving forearm with hand."
+   ]
+  ],
+  "tips": [
+   "عكس الانحراف الزندي المخصص للزورقي. اسأل عن الحمل.",
+   "Opposite of ulnar deviation used for scaphoid. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الرسغ ويخرج نحو الكاسيت.",
+   "The beam enters the dorsal wrist onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع اليد PA وحرّكها نحو الإبهام (انحراف كعبري).",
+    "Place palm down and deviate toward thumb."
+   ],
+   [
+    "مركّز على منتصف الرسغ ثم اعرّض.",
+    "Centre at mid-carpus and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-clenched-fist",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ بقبضة مشدودة AP (انفصال الزورقي-الهلالي)",
+   "Wrist clenched fist AP (scapholunate)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Lunate bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "landscape"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "تشخيص تمزق الرباط الزورقي الهلالي (scapholunate dissociation - علامة تيري توماس Terry Thomas sign: اتساع المسافة > 3 مم) بالمقارنة بين الرسغين.",
+   "Diagnose scapholunate ligament tear (Terry Thomas sign: gap > 3 mm) with bilateral comparison."
+  ],
+  "pos": [
+   "يُوضع الرسغان معاً بوضعية AP (أو PA) ويُطلب من المريض شدّ قبضتيه بقوة أثناء التصوير (أو الإمساك بأسطوانة).",
+   "Both wrists placed AP (or PA) while the patient tightly clenches both fists during exposure."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي بين الرسغين (أو عند منتصف الرسغ بين الزورقي والهلالي).",
+   "Central ray perpendicular between both wrists (or centred at scapholunate interval)."
+  ],
+  "br": [
+   "الثبات مع استمرار شد القبضة.",
+   "Stay still while maintaining clenched fist."
+  ],
+  "crit": [
+   [
+    "المسافة الزورقية الهلالية واضحة للمقارنة بين اليد المصابة والسليمة.",
+    "Scapholunate intervals clearly shown bilaterally for comparison."
+   ]
+  ],
+  "err": [
+   [
+    "عدم شد القبضة بقوة أثناء التعريض: قد يبدو المفصل طبيعياً كاذباً.",
+    "Weak grip fails to stress the scapholunate joint."
+   ]
+  ],
+  "tips": [
+   "صور دائماً كلتا اليدين للمقارنة. اسأل عن الحمل.",
+   "Always image both wrists for comparison. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الرسغ ويخرج نحو الكاسيت.",
+   "The beam passes through the wrists onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الرسغين للمقارنة واطلب شد القبضتين بقوة.",
+    "Position both wrists and instruct tight fist clenching."
+   ],
+   [
+    "مركّز عند منتصف الرسغين ثم اعرّض.",
+    "Centre at wrist level and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-cross-table-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ جانبي بشعاع أفقي (رضوض)",
+   "Wrist horizontal-beam lateral (trauma)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^Capitate bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "تصوير الرسغ جانبياً في الكسور الشديدة أو الجبيرة دون قلب الساعد أو تحريك الرسغ المصاب.",
+   "Lateral wrist view in severe fractures or splints without rotating the forearm."
+  ],
+  "pos": [
+   "تبقى اليد والرسغ بوضعية PA على الطاولة (أو على وسادة مسطحة)، ويُوضع الكاسيت عمودياً ملاصقاً للجانب الزندي للرسغ.",
+   "Hand/wrist remain flat PA on a pad while the detector is placed upright against the ulnar border of the wrist."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند منتصف الرسغ.",
+   "Horizontal central ray perpendicular to the detector at mid-carpus."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الكعبرة والزند متراكبان في وضع جانبي نقي دون تحريك الرسغ.",
+    "Radius and ulna superimposed in true lateral without moving the wrist."
+   ]
+  ],
+  "err": [
+   [
+    "ميلان الكاسيت العمودي.",
+    "Tilted upright detector."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل، وثبّت الكاسيت بدعامة دون إمساكه باليد.",
+   "Ask about pregnancy and use a detector holder rather than hand-holding."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الجهة الكعبرية ويخرج من الزندية نحو الكاسيت العمودي.",
+   "The horizontal beam enters radially and exits ulnarly onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ الرسغ مسطحاً وضع الكاسيت عمودياً بجانب الحافة الزندية.",
+    "Keep wrist flat and place detector upright against ulnar side."
+   ],
+   [
+    "مركّز أفقياً عند الرسغ ثم اعرّض.",
+    "Centre horizontally at carpus and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-carpal-tunnel",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "النفق الرسغي (غاينور-هارت)",
+   "Carpal tunnel (Gaynor–Hart)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 25,
+  "cr": {
+   "s": "^Pisiform bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "إظهار النفق الرسغي (carpal tunnel)، خُطّاف العظم الكلابي (hook of hamate)، الحمصي (pisiform)، وحافة شبه المنحرف الكبير للبحث عن الكسور أو التكلسات.",
+   "Demonstrate the carpal tunnel, hook of the hamate, pisiform and trapezium ridge for fractures or calcifications."
+  ],
+  "pos": [
+   "الرسغ في أقصى بسط ظهري (dorsiflexion) والراحة ملامسة للكاسيت مع سحب الأصابع للأعلى وللخلف بشريط شاش أو باليد الأخرى.",
+   "Wrist in maximal dorsiflexion with palm on detector, fingers gently pulled back toward the forearm using a strap or opposite hand."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 25–30° على محور راحة اليد، يدخل في قاعدة الراحة بمستوى الحمصي والكلابي.",
+   "Central ray angled 25–30° to the long axis of the palm, entering the base of the palm."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "قوس النفق الرسغي مفتوحاً بوضوح مع بروز خطاف الكلابي والحمصي جانبياً وشبه المنحرف في الجهة الأخرى.",
+    "Open carpal tunnel arch clearly showing hook of hamate, pisiform and trapezium."
+   ]
+  ],
+  "err": [
+   [
+    "بسط ظهري غير كافٍ: تتراكب المشطيات على النفق.",
+    "Insufficient dorsiflexion overlaps metacarpals onto the tunnel."
+   ]
+  ],
+  "tips": [
+   "مؤلم في الإصابات الحادة؛ لا تجبر الرسغ إذا كان هناك اشتباه كسر حديث في الكعبرة. اسأل عن الحمل.",
+   "Avoid forcing dorsiflexion in acute distal radius fractures. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مماسياً في راحة اليد المبسوطة للخلف ويخرج نحو الكاسيت.",
+   "The beam enters tangentially across the dorsiflexed palm onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–66",
+    "58–66"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ابسط الرسغ للخلف بلطف وأمسك الأصابع بشريط.",
+    "Dorsiflex wrist gently and hold fingers back with strap."
+   ],
+   [
+    "وجّه الشعاع 25–30° على محور الراحة عند قاعدة الكف ثم اعرّض.",
+    "Angle beam 25–30° to palm axis at palm base and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-carpal-bridge",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "جسر الرسغ (مماسي ظهري)",
+   "Carpal bridge (dorsal tangential)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 45,
+  "cr": {
+   "s": "^Lunate bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "كشف كسور الوجه الظهري لعظام الرسغ (الهرمي triquetrum، الهلالي، الزورقي) وشظايا الخلع الظهري والتكلسات الظهرية.",
+   "Detect dorsal carpal chip fractures (especially triquetrum), dorsal dislocations and foreign bodies."
+  ],
+  "pos": [
+   "الرسغ مثني للأسفل (palmar flexion 90°) مع استناد ظهر اليد تماماً على الكاسيت والساعد مرفوع عمودياً تقريباً.",
+   "Wrist palmar-flexed ~90° with the dorsal surface of the hand resting flat on the detector and forearm vertical."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 45° باتجاه الساعد/الكاسيت، يدخل على ظهر الساعد البعيد ~4 سم فوق الرسغ.",
+   "Central ray angled 45° toward the forearm/detector, entering the dorsal distal forearm ~4 cm proximal to wrist."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "السطح الظهري لعظام الرسغ (جسر الرسغ) مرسوم بمنظر مماسي حر فوق المشطيات.",
+    "Dorsal aspect of the carpal bones profiled tangentially above the metacarpals."
+   ]
+  ],
+  "err": [
+   [
+    "ثني راحي غير كافٍ: تتراكب المشطيات على الجسر الظهري.",
+    "Insufficient palmar flexion obscures the dorsal carpals."
+   ]
+  ],
+  "tips": [
+   "مفيد جداً لكسر الوجه الظهري للعظم الهرمي. اسأل عن الحمل.",
+   "Classic view for dorsal triquetral avulsion fractures. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 45° عبر السطح الظهري للرسغ المثني نحو الكاسيت.",
+   "The beam enters at 45° across the dorsal wrist onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–66",
+    "58–66"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "اثنِ الرسغ للأسفل وضع ظهر اليد على الكاسيت.",
+    "Palmar-flex wrist with dorsal hand on detector."
+   ],
+   [
+    "أمل الأنبوب 45° نحو الرسغ على الساعد البعيد ثم اعرّض.",
+    "Angle tube 45° toward wrist on distal forearm and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "wrist-supinated-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرسغ AP/PA مائل بالاستلقاء (للحمصي والهرمي والكلابي)",
+   "Wrist supinated oblique (pisiform/triquetrum/hamate)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Pisiform bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "فصل العظم الحمصي (pisiform) والهرمي وخُطّاف الكلابي (الجانب الزندي للرسغ) عن بقية عظام الرسغ.",
+   "Project the pisiform, triquetrum and hook of hamate (ulnar carpus) free of superimposition."
+  ],
+  "pos": [
+   "الرسغ بوضعية استلقاء (راحة اليد للأعلى AP) ثم تُدار اليد 45° للخارج/الكعبري (رفع الجانب الكعبري وبقاء الجانب الزندي على الكاسيت).",
+   "Wrist supine (AP) then rotated 45° laterally (radial side raised, ulnar side down on detector)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند الجانب الزندي للرسغ (الحمصي).",
+   "Central ray perpendicular at the ulnar aspect of the wrist (pisiform)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الحمصي مفصولاً تماماً عن الهرمي والمفصل الحمصي الهرمي مفتوح.",
+    "Pisiform projected free of triquetrum with open pisotriquetral joint."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير بالاتجاه المعاكس (الـPA مائل يظهر الزورقي لا الحمصي).",
+    "Using PA pronated oblique shows the scaphoid instead of pisiform."
+   ]
+  ],
+  "tips": [
+   "تذكّر: المائل بالاستلقاء (الراحة للأعلى) للجانب الزندي (الحمصي/الهرمي/الكلابي)، والمائل بالكب (الراحة للأسفل) للجانب الكعبري (الزورقي). اسأل عن الحمل.",
+   "Supinated oblique = ulnar carpus (pisiform/triquetrum/hamate); pronated oblique = radial carpus (scaphoid). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من السطح الراحي المائل ويخرج نحو الكاسيت.",
+   "The beam enters the palmar wrist obliquely onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع اليد بالاستلقاء ثم ارفع الجانب الكعبري 45°.",
+    "Start palm-up and raise radial side 45°."
+   ],
+   [
+    "مركّز على الجانب الزندي للرسغ ثم اعرّض.",
+    "Centre on ulnar wrist and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": -45
+ },
+ {
+  "id": "wrist-clements",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "كليمنتس-ناكاياما لشبه المنحرف الكبير (Clements–Nakayama)",
+   "Clements–Nakayama (trapezium)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 45,
+  "cr": {
+   "s": "^Trapezium bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Capitate|Hamate|Lunate|Pisiform|Scaphoid|Trapezium|Trapezoid|Triquetrum) bone$|^(Radius|Ulna)$"
+  ],
+  "ind": [
+   "إظهار عظم شبه المنحرف الكبير (trapezium) ومفصله مع المشطية الأولى دون تراكب عند تعذر بسط الإبهام لعمل مسقط روبرت.",
+   "Demonstrate the trapezium and 1st CMC joint when the patient cannot position for Robert's view."
+  ],
+  "pos": [
+   "الرسغ على جانبه الزندي (كما في الجانبي) مع إمالة اليد 15° للخلف على إسفنجة.",
+   "Wrist on its ulnar border (lateral) with the hand tilted 15° posteriorly on a sponge."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 45° نحو الإبط/المرفق (باتجاه الساعد)، يدخل عند شبه المنحرف الكبير.",
+   "Central ray angled 45° distally-to-proximally (toward forearm) centred at the trapezium."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "شبه المنحرف الكبير ومفصل CMC الأول مفصولان بوضوح.",
+    "Trapezium and 1st CMC joint cleanly projected."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية ميل غير كافية.",
+    "Insufficient tube angulation."
+   ]
+  ],
+  "tips": [
+   "بديل مريح لمسقط روبرت في الإصابات المؤلمة. اسأل عن الحمل.",
+   "Comfortable alternative to Robert's view in trauma. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 45° عبر شبه المنحرف نحو الكاسيت.",
+   "The beam enters at 45° across the trapezium onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.04 ث = 4 mAs",
+    "Example: 100 mA × 0.04 s = 4 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الرسغ جانبياً على الحافة الزندية.",
+    "Place wrist lateral on ulnar border."
+   ],
+   [
+    "أمل الأنبوب 45° نحو الساعد عند شبه المنحرف ثم اعرّض.",
+    "Angle tube 45° toward forearm at trapezium and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "elbow-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكوع مائل (إنسي / وحشي)",
+   "Elbow oblique (medial/lateral)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Ulna$",
+   "at": "top",
+   "dy": -0.04
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "فصل رأس الكعبرة وعنقها (بالمائل الوحشي) والناتئ الإكليلي للزند والبكرة (بالمائل الإنسي) للكشف عن الكسور الخفية.",
+   "Separate the radial head/neck (lateral oblique) and coronoid process/trochlea (medial oblique) for subtle fractures."
+  ],
+  "pos": [
+   "الذراع ممدودة على الطاولة: تُدار 45° للخارج (دوران وحشي لإظهار رأس الكعبرة)، أو 45° للداخل (دوران إنسي لإظهار الناتئ الإكليلي).",
+   "Arm extended on table: rotated 45° laterally (shows radial head) or 45° medially (shows coronoid process)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف مفصل الكوع.",
+   "Central ray perpendicular at mid-elbow joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "في الوحشي: رأس الكعبرة وعنقها مفصولان تماماً عن الزند؛ في الإنسي: الناتئ الإكليلي في مظهر جانبي.",
+    "Lateral oblique frees radial head from ulna; medial oblique profiles coronoid process."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير اليد فقط دون تدوير الكتف والعضد.",
+    "Rotating hand without rotating the entire arm."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 45° أمام الكوع ويخرج نحو الكاسيت.",
+   "The beam enters obliquely at 45° onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ابسط الذراع وأدرها 45° للخارج ثم للداخل.",
+    "Extend arm and rotate 45° laterally then medially."
+   ],
+   [
+    "مركّز على الكوع ثم اعرّض وضع علامة الاتجاه.",
+    "Centre at elbow, expose and label oblique."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "elbow-ap-partial",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكوع AP بثني جزئي (للرضوض)",
+   "Elbow AP partial flexion (trauma)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Ulna$",
+   "at": "top",
+   "dy": -0.04
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "تصوير الكوع بوضعية AP عندما لا يستطيع المريض بسط الكوع بسبب الألم أو الكسر أو الجبيرة، وذلك بأخذ صورتين: واحدة بموازاة العضد والأخرى بموازاة الساعد.",
+   "AP elbow when full extension is impossible due to pain/splint: two exposures, one parallel to distal humerus and one parallel to proximal forearm."
+  ],
+  "pos": [
+   "تُسند الذراع كما هي على الطاولة: الصورة (1) الجزء البعيد للعضد موازٍ للكاسيت والساعد مرفوع؛ الصورة (2) الساعد موازٍ للكاسيت والعضد مرفوع.",
+   "Arm supported as it lies: (1) distal humerus parallel to detector; (2) proximal forearm parallel to detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مفصل الكوع في كلتا الصورتين.",
+   "Central ray perpendicular to detector at elbow joint for both views."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "في الصورة (1): العضد البعيد واضح دون تقصير؛ في الصورة (2): الكعبرة والزند القريبان واضحان.",
+    "(1) Unforeshortened distal humerus; (2) unforeshortened proximal radius and ulna."
+   ]
+  ],
+  "err": [
+   [
+    "إجبار الكوع على البسط في الرضوض الحادة!",
+    "Forcing extension in acute trauma!"
+   ]
+  ],
+  "tips": [
+   "لا تحاول أبداً بسط كوع مصاب بالقوة. اسأل عن الحمل.",
+   "Never force an injured elbow straight. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام عبر الكوع المثني نحو الكاسيت.",
+   "The beam enters anteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "صوّر العضد موازياً للكاسيت أولاً دون بسط الكوع.",
+    "Image distal humerus parallel to detector first."
+   ],
+   [
+    "صوّر الساعد موازياً للكاسيت ثانياً ثم راجع الصورتين.",
+    "Image proximal forearm parallel second and review."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "elbow-jones",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "جونز للكوع (ثني حاد)",
+   "Jones view (elbow acute flexion)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "bottom",
+   "dy": 0.04
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "تقييم الكسور فوق اللقمتين (supracondylar fractures) والزج (olecranon) عند تثبيت الكوع بالثني الحاد في الجبيرة.",
+   "Evaluate supracondylar distal humerus and olecranon fractures when the elbow is immobilised in acute flexion."
+  ],
+  "pos": [
+   "العضد الخلفي مستند على الكاسيت والكوع مثني بأقصى زاوية حادة (الساعد فوق العضد والأصابع نحو الكتف).",
+   "Posterior humerus resting on detector with elbow in acute flexion (forearm over humerus)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على العضد البعيد (أو عبر الساعد والعضد) عند الزج.",
+   "Central ray perpendicular to the humerus at the olecranon/distal humerus."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "العضد البعيد واللقمتان والزج ظاهرة بوضوح عبر الساعد.",
+    "Distal humerus, epicondyles and olecranon clearly demonstrated."
+   ]
+  ],
+  "err": [
+   [
+    "قطع النتوء الزجي.",
+    "Clipping the olecranon."
+   ]
+  ],
+  "tips": [
+   "زد التعريض قليلاً عن AP العادي لأن الشعاع يمر عبر سماكة الساعد والعضد معاً. اسأل عن الحمل.",
+   "Slightly increase exposure since the beam traverses both forearm and humerus. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الساعد المثني عبر العضد البعيد نحو الكاسيت.",
+   "The beam enters through the flexed forearm and distal humerus onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع العضد الخلفي على الكاسيت والكوع بثني حاد.",
+    "Place posterior humerus on detector with elbow acutely flexed."
+   ],
+   [
+    "مركّز عند الزج واضبط التعريض ثم اعرّض.",
+    "Centre at olecranon, adjust exposure and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "elbow-coyle",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "كويل للكوع (رأس الكعبرة والناتئ الإكليلي)",
+   "Coyle view (radial head / coronoid)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 45,
+  "cr": {
+   "s": "^Radius$",
+   "at": "top",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "إظهار رأس الكعبرة (بزاوية 45° نحو الكتف) أو الناتئ الإكليلي للزند (بزاوية 45° بعيداً عن الكتف) في الرضوض دون الحاجة لبسط الكوع.",
+   "Demonstrate radial head (45° toward shoulder) or coronoid process (45° away from shoulder) in trauma without extending the elbow."
+  ],
+  "pos": [
+   "الكوع مثني 90° (لرأس الكعبرة) أو 80° (للناتئ الإكليلي) بوضعية جانبية على الكاسيت مع كب اليد (الراحة للأسفل).",
+   "Elbow flexed 90° (radial head) or 80° (coronoid) in lateral position on detector with hand pronated."
+  ],
+  "crt": [
+   "لرأس الكعبرة: 45° نحو الكتف؛ وللناتئ الإكليلي: 45° بعيداً عن الكتف، متمركزاً عند منتصف الكوع.",
+   "Radial head: 45° toward shoulder; coronoid: 45° away from shoulder, centred at mid-elbow."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "رأس الكعبرة وعنقها (أو الناتئ الإكليلي) مفصولان بوضوح دون تراكب.",
+    "Radial head/neck (or coronoid) clearly separated without overlap."
+   ]
+  ],
+  "err": [
+   [
+    "خلط اتجاه الزاوية 45° بين رأس الكعبرة والناتئ الإكليلي.",
+    "Reversing the 45° tube tilt direction."
+   ]
+  ],
+  "tips": [
+   "ممتاز في الرضوض لأن الكوع يبقى بزاوية 90° مريحة. اسأل عن الحمل.",
+   "Great trauma view because the elbow remains comfortably flexed at 90°. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 45° عبر الكوع نحو الكاسيت.",
+   "The beam enters at 45° across the elbow onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–68",
+    "58–68"
+   ],
+   "mas": [
+    "4–7",
+    "4–7"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الكوع جانبياً بزاوية 90° (أو 80°) والراحة للأسفل.",
+    "Place elbow lateral at 90° (or 80°) with palm down."
+   ],
+   [
+    "أمل الأنبوب 45° نحو الكتف لرأس الكعبرة (أو بعيداً عنه للإكليلي) ثم اعرّض.",
+    "Angle 45° toward shoulder (radial head) or away (coronoid) and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "elbow-greenspan",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "غرينسبان (رأس الكعبرة والمقيَّم)",
+   "Greenspan (radial head–capitellum)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 45,
+  "cr": {
+   "s": "^Radius$",
+   "at": "top",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "إظهار رأس الكعبرة والمفصل العضدي الكعبري (radiocapitellar joint) مفصولين تماماً عن الناتئ الإكليلي لكشف الكسور الشعرية في رأس الكعبرة.",
+   "Clear profile of the radial head and radiocapitellar joint free of the coronoid process for subtle radial head fractures."
+  ],
+  "pos": [
+   "الكوع مثني 90° بوضع جانبي على الكاسيت والإبهام للأعلى (بوضعية جانبية حقيقية).",
+   "Elbow flexed 90° in true lateral on detector with thumb up."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 45° رأسياً نحو الكتف عند رأس الكعبرة.",
+   "Central ray angled 45° cephalad toward the shoulder at the radial head."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "رأس الكعبرة والمقيَّم والمفصل بينهما مفصولان تماماً عن الزند.",
+    "Radial head, capitellum and radiocapitellar joint completely clear of the ulna."
+   ]
+  ],
+  "err": [
+   [
+    "كب اليد للأسفل بدل الإبهام للأعلى.",
+    "Pronating the hand instead of thumb-up."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 45° نحو الكتف عبر رأس الكعبرة نحو الكاسيت.",
+   "The beam enters at 45° toward shoulder across radial head onto detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–68",
+    "58–68"
+   ],
+   "mas": [
+    "4–7",
+    "4–7"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الكوع جانبياً بزاوية 90° والإبهام للأعلى.",
+    "Place elbow lateral at 90° with thumb up."
+   ],
+   [
+    "أمل الأنبوب 45° نحو الكتف عند رأس الكعبرة ثم اعرّض.",
+    "Angle tube 45° toward shoulder at radial head and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "elbow-cubital-tunnel",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "النفق المرفقي (الأخدود الزندي)",
+   "Cubital tunnel (ulnar groove)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Ulna$",
+   "at": "top",
+   "dy": -0.04
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Radius|Ulna)$"
+  ],
+  "ind": [
+   "تقييم الأخدود الزندي (ulnar sulcus) في حالات انضغاط العصب الزندي أو النتوءات العظمية والأجسام الحرة.",
+   "Evaluate the ulnar groove for osteophytes, loose bodies or ulnar nerve entrapment."
+  ],
+  "pos": [
+   "الكوع مثني بشكل حاد والذراع مائلة 20° نحو الكاسيت مع استناد الساعد على الكاسيت.",
+   "Elbow acutely flexed with humerus angled ~20° from vertical, forearm resting flat on detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند الأخدود الزندي (اللقمة الإنسية للعضد).",
+   "Central ray perpendicular to detector at the ulnar groove (medial epicondyle)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الأخدود الزندي بين الزج واللقمة الإنسية مرسوماً بمنظر مماسي مفتوح.",
+    "Ulnar groove between olecranon and medial epicondyle clearly profiled."
+   ]
+  ],
+  "err": [
+   [
+    "ثني غير كافٍ: يتراكب الساعد على الأخدود.",
+    "Insufficient flexion overlaps forearm on groove."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مماسياً عبر الأخدود الزندي نحو الكاسيت.",
+   "The beam passes tangentially through the ulnar groove onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–68",
+    "58–68"
+   ],
+   "mas": [
+    "4–7",
+    "4–7"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الساعد على الكاسيت مع ثني الكوع بشكل حاد.",
+    "Rest forearm on detector with acute elbow flexion."
+   ],
+   [
+    "مركّز على الأخدود الزندي (اللقمة الإنسية) ثم اعرّض.",
+    "Centre at ulnar groove and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "humerus-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العضد AP",
+   "Humerus AP"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "كسور جسم العضد، الأورام، التهاب العظم، وتقييم التثبيت الجراحي.",
+   "Humeral shaft fractures, bone lesions, osteomyelitis and fixation hardware."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ، الذراع ممدودة ومبعدة قليلاً عن الجسم مع توجيه راحة اليد للأمام (تدوير خارجي للحدبة الكبيرة).",
+   "Patient erect or supine, arm extended and slightly abducted with palm facing forward (external rotation)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف العضد ليشمل مفصلي الكتف والكوع معاً.",
+   "Central ray perpendicular at mid-humerus covering both shoulder and elbow joints."
+  ],
+  "br": [
+   "حبس النفس أثناء التعريض.",
+   "Hold breath during exposure."
+  ],
+  "crit": [
+   [
+    "مفصلا الكتف والكوع ضمن الصورة، والرأس العضدي واللقمتان في وضع AP.",
+    "Both shoulder and elbow joints included in AP projection."
+   ]
+  ],
+  "err": [
+   [
+    "قطع مفصل الكتف أو الكوع.",
+    "Omitting shoulder or elbow joint."
+   ]
+  ],
+  "tips": [
+   "لا تدوّر الذراع عند اشتباه كسر بالعضد؛ صوّرها كما هي، وإذا كان الكتف مؤلماً جداً صوّر مستلقياً. اسأل عن الحمل.",
+   "Do not force rotation in suspected fracture; image as it lies. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من مقدمة العضد ويخرج نحو الكاسيت.",
+   "The beam enters the anterior humerus onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "8–15",
+    "8–15"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.06 ث = 12 mAs",
+    "Example: 200 mA × 0.06 s = 12 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "يدوي أو AEC",
+    "Manual or AEC"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة واسأل عن الحمل.",
+    "Check request, side and pregnancy."
+   ],
+   [
+    "ابسط الذراع مع شمول الكتف والكوع، ومركّز على منتصف العضد ثم اعرّض.",
+    "Cover shoulder and elbow, centre at mid-humerus and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "humerus-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العضد جانبي",
+   "Humerus lateral"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "LM",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم الإزاحة الجانبية والأمامية/الخلفية لكسور العضد ومراجعة المفصلين.",
+   "Assess AP/lateral displacement of humeral fractures and check both joints."
+  ],
+  "pos": [
+   "المريض واقف، تُدار الذراع للداخل وتُثنى الكوع 90° مع وضع ظهر اليد على الورك بحيث تكون اللقمتان العضديتان عموديتين على الكاسيت.",
+   "Patient erect, arm internally rotated, elbow flexed 90° with dorsum of hand against hip so epicondyles are perpendicular to detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف العضد ليشمل الكتف والكوع.",
+   "Central ray perpendicular at mid-humerus covering shoulder and elbow."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "مفصلا الكتف والكوع ضمن الصورة واللقمتان متراكبتان.",
+    "Shoulder and elbow included with superimposed epicondyles."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير ذراع مكسورة: ممنوع، استعمل الجانبي عبر الصدر بدلاً منه!",
+    "Rotating an acute humeral fracture: contraindicated, use transthoracic lateral!"
+   ]
+  ],
+  "tips": [
+   "في الكسور الحادة استعمل مسقط الجانبي عبر الصدر دون تحريك الذراع. اسأل عن الحمل.",
+   "In acute fracture use transthoracic lateral without moving the arm. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أحد جانبي العضد ويخرج نحو الكاسيت.",
+   "The beam passes laterally across the humerus onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "8–15",
+    "8–15"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.06 ث = 12 mAs",
+    "Example: 200 mA × 0.06 s = 12 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "يدوي أو AEC",
+    "Manual or AEC"
+   ]
+  },
+  "steps": [
+   [
+    "استبعد الكسر الحاد غير المستقر واسأل عن الحمل.",
+    "Exclude acute unstable fracture; ask about pregnancy."
+   ],
+   [
+    "ضع ظهر اليد على الورك ومركّز على منتصف العضد ثم اعرّض.",
+    "Place back of hand on hip, centre at mid-humerus and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "humerus-transthoracic",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العضد جانبي عبر الصدر (رضوض)",
+   "Transthoracic lateral humerus (trauma)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم كسور العضد القريب وعنقه الجراحي في الرضوض دون تحريك الذراع المصابة الملتصقة بالجسم.",
+   "Evaluate proximal humeral/surgical neck fractures in trauma without moving the injured arm."
+  ],
+  "pos": [
+   "المريض واقف (أو مستلقٍ) والجانب المصاب ملاصق للكاسيت مع بقاء الذراع المصابة ثابتة بجانب الجسم. تُرفع الذراع السليمة فوق الرأس لإبعادها عن مسار الشعاع.",
+   "Patient erect (or supine) with affected arm against detector undisturbed; unaffected arm raised above head clear of beam."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عبر الصدر متمركزاً عند العنق الجراحي للعضد المصاب.",
+   "Horizontal central ray perpendicular through the thorax to the surgical neck of the injured humerus."
+  ],
+  "br": [
+   "تنفس لطيف بطيء (mA منخفض وزمن 1–2 ثانية) لطمس الأضلاع والرئة، أو شهيق عميق وحبس النفس.",
+   "Gentle breathing (low mA, 1–2 s) to blur ribs/lungs, or full inspiration hold."
+  ],
+  "crit": [
+   [
+    "العضد القريب ومفصل الكتف ظاهران بوضوح عبر حقل الرئة المملوء بالهواء.",
+    "Proximal humerus and shoulder joint clearly shown through the aerated thorax."
+   ]
+  ],
+  "err": [
+   [
+    "تعريض منخفض: لا يخترق الصدر.",
+    "Underexposure fails to penetrate thorax."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل، وإذا لم تظهر تفاصيل الكسر جيداً فالـCT أسرع وأدق.",
+   "Ask about pregnancy; CT is definitive if bone detail remains obscured."
+  ],
+  "inout": [
+   "يدخل الشعاع من الإبط السليم ويعبر الصدر ليخرج من العضد المصاب نحو الكاسيت.",
+   "The beam enters the normal axilla, crosses the thorax and exits through the injured humerus onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "40–70",
+    "40–70"
+   ],
+   "ex": [
+    "مثال للتنفس: 40 mA × 1.5 ث = 60 mAs",
+    "Breathing example: 40 mA × 1.5 s = 60 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ الذراع المصابة ثابتة ملاصقة للكاسيت وارفع السليمة فوق الرأس.",
+    "Keep injured arm against detector and raise normal arm above head."
+   ],
+   [
+    "مركّز عبر الصدر على العنق الجراحي للعضد المصاب ثم اعرّض.",
+    "Centre across thorax to injured surgical neck and expose."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "shoulder-ap-int",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكتف AP دوران داخلي",
+   "Shoulder AP internal rotation"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "إظهار الحدبة الصغيرة (lesser tubercle) بمظهر جانبي وتقييم تكلسات أوتار الكفة المدورة وآفة هيل-ساكس (Hill-Sachs).",
+   "Profile the lesser tubercle, evaluate rotator cuff calcifications and Hill-Sachs defects."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ وظهره للكاسيت، وتُدار الذراع للداخل (راحة اليد للخلف/نحو الفخذ) حتى تتوازى اللقمتان العضديتان عمودياً على الكاسيت.",
+   "Patient erect or supine, arm internally rotated (palm facing backward) until humeral epicondyles are perpendicular to detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند الناتئ الغرابي (~2.5 سم أسفله).",
+   "Central ray perpendicular at the coracoid process (~2.5 cm below)."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "الحدبة الصغيرة ظاهرة بوضوح في الجانب الإنسي لرأس العضد.",
+    "Lesser tubercle profiled medially; humeral head in lateral orientation."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير الذراع في كسر حاد بالكتف!",
+    "Rotating an acute shoulder fracture!"
+   ]
+  ],
+  "tips": [
+   "ممنوع التدوير في الرضوض الحادة؛ استعمل المسقط المحايد وY الكتف. اسأل عن الحمل.",
+   "Never force rotation in acute trauma; use neutral AP and Scapular Y. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الكتف الأمامي ويخرج نحو الكاسيت.",
+   "The beam enters the anterior shoulder onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "استبعد الكسر الحاد واسأل عن الحمل.",
+    "Exclude acute fracture; ask about pregnancy."
+   ],
+   [
+    "أدر الذراع داخلياً ومركّز عند الناتئ الغرابي ثم اعرّض.",
+    "Internally rotate arm, centre at coracoid and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-ap-ext",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكتف AP دوران خارجي",
+   "Shoulder AP external rotation"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "إظهار الحدبة الكبيرة (greater tubercle) بمظهر جانبي، وتقييم تكلسات وتر فوق الشوكة (supraspinatus).",
+   "Profile the greater tubercle laterally and evaluate supraspinatus tendon calcifications."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ، وتُدار الذراع للخارج (راحة اليد للأمام/أقصى استلقاء) حتى تتوازى اللقمتان العضديتان مع الكاسيت.",
+   "Patient erect or supine, arm externally rotated (palm facing forward) until epicondyles are parallel to detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند الناتئ الغرابي (~2.5 سم أسفله).",
+   "Central ray perpendicular at the coracoid process (~2.5 cm below)."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "الحدبة الكبيرة ظاهرة بوضوح في الجانب الوحشي لرأس العضد.",
+    "Greater tubercle clearly profiled laterally."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير الذراع في كسر حاد.",
+    "Rotating an acute fracture."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الكتف الأمامي ويخرج نحو الكاسيت.",
+   "The beam enters the anterior shoulder onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "استبعد الكسر الحاد واسأل عن الحمل.",
+    "Exclude acute fracture; ask about pregnancy."
+   ],
+   [
+    "أدر الذراع خارجياً (راحة للأمام) ومركّز عند الناتئ الغرابي ثم اعرّض.",
+    "Externally rotate arm, centre at coracoid and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-grashey",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "غراشي (AP حقيقي لمفصل الكتف)",
+   "Grashey (true AP glenoid)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Scapula$",
+   "at": "top"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "أفضل مسقط لفتح المفصل الحُقّي العضدي (glenohumeral joint) دون تراكب: كشف الخلع الخلفي للكتف (علامة المصباح)، تضيق المفصل في الخشونة، وكسور حافة الحُق.",
+   "Best view to open the glenohumeral joint space without overlap: posterior dislocation, osteoarthritis joint narrowing and glenoid rim fractures."
+  ],
+  "pos": [
+   "يُدار الجسم 35–45° نحو الجانب المصاب (RPO للكتف الأيمن، LPO للأيسر) ليتوازى لوح الكتف تماماً مع الكاسيت.",
+   "Rotate body 35–45° toward the affected side (RPO right, LPO left) so the scapular blade is parallel to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على المفصل الحُقّي العضدي (~5 سم أسفل وإنسياً عن الحافة الوحشية للأخرم).",
+   "Central ray perpendicular to the glenohumeral joint (~5 cm inferior and medial to superolateral acromion)."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "المفصل الحُقّي العضدي مفتوح تماماً دون تراكب رأس العضد على الحُق (الحافة الأمامية والخلفية للحُق متراكبتان).",
+    "Glenohumeral joint space cleanly open with no overlap between humeral head and glenoid."
+   ]
+  ],
+  "err": [
+   [
+    "دوران أقل من 35°: يبقى رأس العضد متراكباً على الحُق.",
+    "Rotation < 35° leaves the humeral head overlapping the glenoid."
+   ]
+  ],
+  "tips": [
+   "غراشي هو المعيار الذهبي لفتح مفصل الكتف في الأشعة العادية. اسأل عن الحمل.",
+   "Grashey is the standard true AP view of the glenohumeral joint. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الكتف الأمامي مائلاً 35–45° ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly at 35–45° onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر المريض 35–45° نحو الكتف المصاب.",
+    "Rotate patient 35–45° toward affected shoulder."
+   ],
+   [
+    "مركّز على المفصل الحُقّي العضدي ثم اعرّض.",
+    "Centre at glenohumeral joint and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 40
+ },
+ {
+  "id": "shoulder-y",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "Y الكتف (جانبي لوح الكتف)",
+   "Scapular Y (lateral shoulder)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Scapula$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تحديد اتجاه خلع الكتف (أمامي: رأس العضد أمام/تحت مركز Y؛ خلفي: رأس العضد خلف مركز Y)، وتقييم كسور لوح الكتف في الرضوض دون تحريك الذراع.",
+   "Determine direction of shoulder dislocation (anterior vs posterior relative to the Y centre) and scapular fractures in trauma without moving the arm."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت (RAO/LAO) مع ملامسة الكتف المصاب للكاسيت، ويُدار الجسم 45–60° بعيداً عن الكتف المصاب بحيث يصبح جسم لوح الكتف عمودياً على الكاسيت.",
+   "Patient erect facing detector (RAO/LAO) with affected shoulder against detector, body rotated 45–60° away so the scapular blade is perpendicular to detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت متمركزاً عند المفصل الحُقّي العضدي (أعلى لوح الكتف).",
+   "Central ray perpendicular to detector at the glenohumeral joint (superior scapula)."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "ظهور حرف Y واضحاً: الشوكة والأخرم خلفاً، الناتئ الغرابي أماماً، وجسم لوح الكتف أسفلاً، ورأس العضد متمركزاً في تقاطع الـ Y (في الوضع الطبيعي).",
+    "True Y-shape formed by acromion, coracoid and scapular body, with normal humeral head centred over the Y intersection."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية دوران خاطئة: يظهر لوح الكتف عريضاً بدل حرف Y رفيع.",
+    "Wrong rotation leaves the scapular blade wide instead of a crisp Y."
+   ]
+  ],
+  "tips": [
+   "آمن تماماً في الرضوض لأن الذراع تبقى معلقة بجانب الجسم. اسأل عن الحمل.",
+   "Completely safe in trauma as the arm stays in a sling. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الكتف المصاب على طول لوح الكتف ويخرج من الأمام نحو الكاسيت.",
+   "The beam enters posteriorly along the scapular plane onto the anterior detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–25",
+    "12–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الكتف المصاب أمام الكاسيت وأدر الجسم 45–60° بوضعية RAO/LAO.",
+    "Place affected shoulder to detector and rotate 45–60° (RAO/LAO)."
+   ],
+   [
+    "مركّز عند المفصل الحُقّي العضدي ثم اعرّض.",
+    "Centre at glenohumeral joint and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 55
+ },
+ {
+  "id": "shoulder-axillary",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكتف إبطي (من الأسفل للأعلى)",
+   "Axillary shoulder (inferosuperior)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "supine",
+  "beam": "IS",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تأكيد خلع الكتف الأمامي أو الخلفي، كسور حافة الحُق (Bankart)، وآفات هيل-ساكس بعلاقة تشريحية فائقة.",
+   "Confirm anterior/posterior shoulder dislocation, Bankart glenoid rim fractures and Hill-Sachs lesions."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر (أو جالس بجانب الطاولة)، تُبعد الذراع المصابة ~90° قدر الإمكان مع وضع الكاسيت عمودياً فوق الكتف.",
+   "Patient supine (or seated), affected arm abducted ~90° as tolerated with detector positioned vertically superior to the shoulder."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقياً من الإبط للأعلى نحو الكاسيت بزاوية ~25–30° إنسيّة نحو المفصل الحُقّي العضدي.",
+   "Central ray directed horizontally through the axilla ~25–30° medially toward the glenohumeral joint and superior detector."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "رأس العضد، الحُق، الناتئ الغرابي، والأخرم ظاهرة بعلاقة أمامية-خلفية واضحة.",
+    "Humeral head, glenoid, coracoid and acromion in clear AP relationship."
+   ]
+  ],
+  "err": [
+   [
+    "إجبار ذراع مخلوعة على الإبعاد 90°: استعمل مسقط فيلبو (Velpeau) إذا تعذر الإبعاد!",
+    "Forcing 90° abduction in painful dislocation: use Velpeau view instead!"
+   ]
+  ],
+  "tips": [
+   "إذا لم يستطع المريض إبعاد الذراع، انتقل لمسقط فيلبو فوراً. اسأل عن الحمل.",
+   "If abduction is too painful, switch to Velpeau view. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الإبط للأسفل ويخرج من أعلى الكتف نحو الكاسيت.",
+   "The beam enters the axilla inferiorly and exits superiorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبعد الذراع بلطف وضع الكاسيت فوق الكتف.",
+    "Gently abduct arm and place detector superior to shoulder."
+   ],
+   [
+    "وجّه الشعاع عبر الإبط نحو المفصل ثم اعرّض.",
+    "Aim beam through axilla to joint and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-superoinferior",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكتف محوري (من الأعلى للأسفل)",
+   "Shoulder superoinferior axial"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم مفصل الكتف المحوري (أمامي/خلفي) بجلوس المريض بجانب الطاولة عندما لا يستطيع الاستلقاء.",
+   "Axial assessment of the glenohumeral joint in a seated patient unable to lie supine."
+  ],
+  "pos": [
+   "المريض جالساً بجانب الطاولة، يُميل جذعه فوق الطاولة مع سند الإبط فوق الكاسيت الموضوع على الطاولة والكوع مثني 90°.",
+   "Patient seated beside table, leaning over the table with the axilla resting over the detector and elbow flexed 90°."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي (أو مائل 5–15° وحشياً) من أعلى الكتف للأسفل نحو المفصل الحُقّي العضدي.",
+   "Central ray directed from superior to inferior (5–15° laterally) through the glenohumeral joint."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "رأس العضد، الحُق، والأخرم ظاهرة بعلاقة محورية واضحة.",
+    "Humeral head, glenoid and acromion clearly shown axially."
+   ]
+  ],
+  "err": [
+   [
+    "سقوط الأنبوب قريباً جداً من الرأس/العينين: راعِ مسافة SID 100 سم.",
+    "Maintain adequate SID (100 cm) from the head."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل واحمِ الغدة الدرقية والعدسة عند اللزوم.",
+   "Ask about pregnancy and shield appropriately."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الكتف ويخرج من الإبط نحو الكاسيت على الطاولة.",
+   "The beam enters superiorly and exits the axilla onto the table detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أجلس المريض بجانب الطاولة وضع الإبط فوق الكاسيت.",
+    "Seat patient beside table with axilla over detector."
+   ],
+   [
+    "مركّز من أعلى الكتف للأسفل نحو المفصل ثم اعرّض.",
+    "Centre superiorly over joint and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-west-point",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "ويست بوينت للكتف (إبطي منبطح)",
+   "West Point (prone axillary)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "supine",
+  "beam": "IS",
+  "tilt": 25,
+  "cr": {
+   "s": "^Scapula$",
+   "at": "top"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "إظهار الحافة الأمامية السفلية للحُق (anteroinferior glenoid rim) بدقة فائقة للكشف عن كسر بانكارت العظمي (bony Bankart) في حالات خلع الكتف المتكرر.",
+   "Specifically profiles the anteroinferior glenoid rim to detect bony Bankart lesions in recurrent anterior shoulder instability."
+  ],
+  "pos": [
+   "المريض منبطح على بطنه مع وسادة تحت الكتف المصاب، الذراع مبعدة 90° والساعد متدلٍّ للأسفل عن حافة الطاولة، والكاسيت عمودياً فوق الكتف.",
+   "Patient prone with pad under affected shoulder, arm abducted 90° with forearm hanging off table edge, detector upright superior to shoulder."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 25° للأمام (نحو الطاولة) و25° إنسياً نحو الإبط والمفصل الحُقّي العضدي.",
+   "Central ray angled 25° downward (toward table) and 25° medially through the axilla to the glenohumeral joint."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "الحافة الأمامية السفلية للحُق مفردة تماماً خالية من تراكب الناتئ الغرابي.",
+    "Anteroinferior glenoid rim cleanly profiled free of coracoid overlap."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية ميل واحدة فقط بدل الزاويتين (25° + 25°).",
+    "Using single angulation instead of compound 25°/25° tilt."
+   ]
+  ],
+  "tips": [
+   "مسقط مخصص لحالات عدم ثبات الكتف المزمن؛ لا يُجرى في الخلع الحاد المؤلم. اسأل عن الحمل.",
+   "Dedicated view for chronic instability; avoid in acute painful dislocation. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الإبط مائلاً 25° ويخرج من أعلى الكتف نحو الكاسيت.",
+   "The beam enters the axilla at compound 25° angle onto the superior detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض منبطحاً والذراع مبعدة 90° متدلية من الطاولة.",
+    "Lay prone with arm abducted 90° hanging off table."
+   ],
+   [
+    "أمل الأنبوب 25° للأسفل و25° إنسياً عبر الإبط ثم اعرّض.",
+    "Angle tube 25° down and 25° medially through axilla and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-velpeau",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "فيلبو للكتف (بديل الإبطي بالرضوض)",
+   "Velpeau axillary view"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "الحصول على منظر محوري للكتف لتأكيد الخلع الأمامي أو الخلفي عندما لا يستطيع المريض إبعاد ذراعه أو نزع الحمّالة (Sling) بسبب الألم الحاد.",
+   "Obtain an axial shoulder view to confirm anterior/posterior dislocation when the patient cannot abduct the arm out of a sling."
+  ],
+  "pos": [
+   "المريض واقف أو جالس والذراع تبقى في حمّالة فيلبو بجانب الجسم، يُميل المريض جذعه للخلف بزاوية 20–30° فوق الكاسيت الموضوع على الطاولة خلفه.",
+   "Patient erect or seated with arm remaining in its sling, leaning backward 20–30° over the detector resting on the table behind."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي (من الأعلى للأسفل) فوق رأس العضد والمفصل الحُقّي العضدي.",
+   "Central ray vertical (superoinferior) directly over the humeral head and glenohumeral joint."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "علاقة رأس العضد بالحُق واضحة بالمنظر المحوري لتأكيد وجود الخلع أو رده.",
+    "Axial relationship of humeral head to glenoid clearly seen without moving the arm."
+   ]
+  ],
+  "err": [
+   [
+    "عدم إمالة الجذع للخلف كفاية: يتراكب القفص الصدري.",
+    "Insufficient backward lean overlaps the rib cage."
+   ]
+  ],
+  "tips": [
+   "ممتاز لمرضى الرضوض الحادة أو بعد ردّ الخلع والذراع في الحمّالة! اسأل عن الحمل.",
+   "Ideal in acute trauma or post-reduction with arm still in sling! Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الكتف للأسفل ويخرج نحو الكاسيت على الطاولة.",
+   "The beam enters superiorly over the shoulder onto the table detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–22",
+    "12–22"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ الذراع في الحمّالة وأمِل الجذع للخلف 20–30° فوق الكاسيت.",
+    "Keep arm in sling and lean patient back 20–30° over detector."
+   ],
+   [
+    "مركّز عمودياً فوق الكتف ثم اعرّض.",
+    "Centre vertically over shoulder and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-stryker",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "ثلمة ستريكر للكتف (Stryker notch)",
+   "Stryker notch view (Hill–Sachs)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 10,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "كشف وتقييم انخماس آفة هيل-ساكس (Hill–Sachs lesion) في الجانب الخلفي الوحشي من رأس العضد الناتجة عن خلع الكتف الأمامي المتكرر.",
+   "Detect and evaluate posterolateral humeral head impaction (Hill–Sachs lesion) from recurrent anterior shoulder dislocation."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر، تُرفع الذراع المصابة وتُوضع راحة اليد فوق قمة الرأس مع توجيه الكوع للأمام مباشرةً.",
+   "Patient supine, affected arm raised with palm placed on top of the head and elbow pointing straight upward."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 10° رأسياً (نحو الرأس) عند الناتئ الغرابي.",
+   "Central ray angled 10° cephalad centred at the coracoid process."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "الجزء الخلفي الوحشي من رأس العضد مرسوم بمظهر جانبي نقي لإظهار أي ثلمة أو انخماس.",
+    "Posterolateral humeral head clearly profiled to reveal any Hill–Sachs defect."
+   ]
+  ],
+  "err": [
+   [
+    "سقوط الكوع للجانب بدل توجيهه للأمام.",
+    "Elbow falling laterally instead of pointing straight up."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الإبط/الكتف الأمامي مائلاً 10° رأسياً ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly angled 10° cephalad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع راحة اليد المصابة على قمة الرأس والكوع للأمام.",
+    "Place affected palm on crown of head with elbow pointing up."
+   ],
+   [
+    "أمل الأنبوب 10° رأسياً عند الناتئ الغرابي ثم اعرّض.",
+    "Angle tube 10° cephalad at coracoid and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "shoulder-garth",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "غارث للكتف (مائل قمي 45°)",
+   "Garth view (apical oblique)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": -45,
+  "cr": {
+   "s": "^Scapula$",
+   "at": "top"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "مسقط ممتاز لرضوض الكتف الحادة دون تحريك الذراع: يكشف الخلع الأمامي/الخلفي، كسر الحافة الأمامية السفلية للحُق (Bankart)، وآفة هيل-ساكس معاً.",
+   "Excellent acute trauma view without moving the arm: detects anterior/posterior dislocation, bony Bankart and Hill–Sachs lesions."
+  ],
+  "pos": [
+   "المريض واقف أو جالس بوضعية غراشي (تدوير 45° نحو الكتف المصاب) مع بقاء الذراع في الحمّالة.",
+   "Patient erect or seated rotated 45° toward affected shoulder (Grashey obliquity) with arm remaining in sling."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 45° ذيلياً (للأسفل) عند المفصل الحُقّي العضدي.",
+   "Central ray angled 45° caudad centred at the glenohumeral joint."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "المفصل الحُقّي العضدي والحافة السفلية للحُق ورأس العضد في مظهر مائل قمي واضح.",
+    "Glenohumeral joint, inferior glenoid rim and humeral head clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير للجهة المعاكسة أو عدم إمالة 45° ذيلياً.",
+    "Wrong rotation or omitting 45° caudad tilt."
+   ]
+  ],
+  "tips": [
+   "آمن جداً في الرضوض الحادة لأن الذراع لا تتحرك. اسأل عن الحمل.",
+   "Very safe in acute trauma as the arm stays in sling. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الكتف الأمامي مائلاً 45° للأسفل ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly angled 45° caudad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–22",
+    "12–22"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر المريض 45° نحو الكتف المصاب والذراع في الحمّالة.",
+    "Rotate 45° toward affected shoulder with arm in sling."
+   ],
+   [
+    "أمل الأنبوب 45° ذيلياً عند المفصل ثم اعرّض.",
+    "Angle tube 45° caudad at joint and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "shoulder-outlet",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "مخرج الكتف (Y المعدّل / Neer outlet)",
+   "Shoulder outlet view (Neer)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -15,
+  "cr": {
+   "s": "^Scapula$",
+   "at": "top"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم متلازمة الانحشار تحت الأخرم (subacromial impingement): شكل الأخرم (الأنواع I–III)، النتوءات العظمية تحت الأخرم، وتكلس الوتر فوق الشوكة.",
+   "Evaluate subacromial impingement syndrome: acromial morphology (Bigliani types I–III), subacromial spurs and supraspinatus outlet."
+  ],
+  "pos": [
+   "نفس وضعية Y الكتف (الجسم مدار 45–60° بعيداً عن الكتف المصاب بوضعية RAO/LAO).",
+   "Same as Scapular Y (body rotated 45–60° away from affected shoulder in RAO/LAO)."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 10–15° ذيلياً (للأسفل) موازياً للنتوء الأخرمي عبر قمة رأس العضد.",
+   "Central ray angled 10–15° caudad tangent to the undersurface of the acromion at the humeral head."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "مخرج العضلة فوق الشوكة (قوس الأخرم–الغرابي) مفتوحاً بوضوح لتقييم شكل الأخرم والمسافة تحت الأخرم.",
+    "Supraspinatus outlet cleanly open showing acromial arch morphology and subacromial space."
+   ]
+  ],
+  "err": [
+   [
+    "شعاع أفقي 0°: يغلق الحيز تحت الأخرم.",
+    "0° beam closes the subacromial space."
+   ]
+  ],
+  "tips": [
+   "الفرق بين Y الكتف والمخرج هو ميلان 10–15° ذيلياً في المخرج لإبراز الحيز تحت الأخرم. اسأل عن الحمل.",
+   "Outlet view adds a 10–15° caudad tilt to Scapular Y to open the subacromial outlet. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الكتف مائلاً 10–15° ذيلياً ويخرج نحو الكاسيت.",
+   "The beam enters posteriorly angled 10–15° caudad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–22",
+    "12–22"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض بوضعية Y الكتف (45–60° RAO/LAO).",
+    "Position as for Scapular Y (45–60° RAO/LAO)."
+   ],
+   [
+    "أمل الأنبوب 10–15° ذيلياً عند الحيز تحت الأخرم ثم اعرّض.",
+    "Angle tube 10–15° caudad at subacromial space and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 55
+ },
+ {
+  "id": "shoulder-transthoracic-supine",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكتف عبر الصدر مستلقياً (رضوض)",
+   "Transthoracic lateral shoulder (supine)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "supine",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Humerus$",
+   "at": "top",
+   "dy": -0.03
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم رأس وعنق العضد القريب جانبياً في مريض الرضوض المستلقي الذي لا يستطيع الوقوف أو تحريك ذراعه.",
+   "Lateral evaluation of proximal humerus/shoulder in supine trauma patients unable to stand or move the arm."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر، الكاسيت عمودياً ملاصقاً للكتف المصاب، وتُرفع الذراع السليمة فوق الرأس.",
+   "Patient supine, detector upright against the affected shoulder, unaffected arm raised above head."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عبر الصدر نحو العنق الجراحي للكتف المصاب (أو 10–15° رأسياً لتفادي تراكب الكتف السليم إذا لم يرتفع كفاية).",
+   "Horizontal beam across thorax to injured surgical neck (or 10–15° cephalad if opposite shoulder cannot elevate fully)."
+  ],
+  "br": [
+   "تنفس لطيف أو شهيق عميق وحبس النفس.",
+   "Gentle breathing or full inspiration hold."
+  ],
+  "crit": [
+   [
+    "رأس وعنق العضد القريب ظاهران عبر الصدر.",
+    "Proximal humerus and surgical neck visible through thorax."
+   ]
+  ],
+  "err": [
+   [
+    "تعريض غير كافٍ عبر الصدر.",
+    "Underexposure through thorax."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل، والـCT هو الخيار الأدق عند تعذر وضوح الكسر.",
+   "Ask about pregnancy; CT is definitive if detail is limited."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الإبط السليم عبر الصدر نحو الكاسيت العمودي.",
+   "The horizontal beam enters the normal axilla across the thorax onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "40–70",
+    "40–70"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.25 ث = 50 mAs",
+    "Example: 200 mA × 0.25 s = 50 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الكاسيت عمودياً بجانب الكتف المصاب وارفع السليمة.",
+    "Place detector upright beside affected shoulder and raise normal arm."
+   ],
+   [
+    "مركّز أفقياً عبر الصدر نحو الكتف المصاب ثم اعرّض.",
+    "Centre horizontally across thorax to injured shoulder and expose."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "scapula-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "لوح الكتف AP",
+   "Scapula AP"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Scapula$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم كسور جسم لوح الكتف وعنقه، والأورام العظمية في لوح الكتف.",
+   "Evaluate scapular body/neck fractures and bone lesions."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ وظهره للكاسيت، وتُبعد الذراع المصابة 90° للخارج مع ثني الكوع ووضع اليد للخلف/الجبين لسحب لوح الكتف وحشياً بعيداً عن الأضلاع.",
+   "Patient erect or supine, arm abducted 90° and elbow flexed (supinated hand) to draw the scapula laterally clear of the rib cage."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف لوح الكتف (~5 سم أسفل الناتئ الغرابي).",
+   "Central ray perpendicular at mid-scapula (~5 cm inferior to the coracoid process)."
+  ],
+  "br": [
+   "تنفس لطيف بطيء (لطمس الأضلاع والرئة) أو شهيق وحبس النفس.",
+   "Gentle breathing (to blur ribs/lungs) or suspended inspiration."
+  ],
+  "crit": [
+   [
+    "جسم لوح الكتف كاملاً من الزاوية السفلية إلى الحافة العلوية والحافة الوحشية مفصولاً عن الأضلاع.",
+    "Entire scapula from inferior angle to superior border, lateral border clear of ribs."
+   ]
+  ],
+  "err": [
+   [
+    "بقاء الذراع بجانب الجسم: يتراكب القفص الصدري على معظم لوح الكتف.",
+    "Arm kept at side leaves rib cage superimposed over most of the scapula."
+   ]
+  ],
+  "tips": [
+   "في الرضوض إذا تعذر إبعاد الذراع 90°، صوّر كما هي دون إجبار. اسأل عن الحمل.",
+   "In trauma do not force 90° abduction if painful. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الكتف الأمامي ويخرج من لوح الكتف نحو الكاسيت.",
+   "The beam enters anteriorly and exits the scapula onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs (أو تقنية تنفس)",
+    "Example: 200 mA × 0.1 s = 20 mAs (or breathing blur)"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبعد الذراع 90° للخارج (إن أمكن) لسحب لوح الكتف وحشياً.",
+    "Abduct arm 90° (if tolerated) to draw scapula laterally."
+   ],
+   [
+    "مركّز 5 سم أسفل الناتئ الغرابي ثم اعرّض.",
+    "Centre 5 cm below coracoid and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "scapula-y",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "لوح الكتف جانبي (Y)",
+   "Scapula lateral (Y)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Scapula$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "إظهار جسم لوح الكتف والشوكة والأخرم والناتئ الغرابي بوضعية جانبية صافية لتقييم الإزاحة في كسور لوح الكتف.",
+   "True lateral profile of the scapular body, spine, acromion and coracoid to assess fracture displacement."
+  ],
+  "pos": [
+   "المريض واقف بوضعية PA مائلة (RAO/LAO) بزاوية 45–60° بعيداً عن الكتف المصاب مع تمرير الذراع المصابة عبر الصدر نحو الكتف المقابل (أو خلف الظهر لإظهار الجسم، حسب موضع الكسر).",
+   "Patient erect in 45–60° RAO/LAO away from affected side, affected arm draped across chest (or behind back) to separate scapula from ribs."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف الحافة الإنسية للوح الكتف.",
+   "Central ray perpendicular at mid-medial border of the scapula."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "لوح الكتف بوضع جانبي رفيع (حرف Y) مفصول تماماً عن القفص الصدري.",
+    "Scapular blade in thin lateral Y-profile completely clear of rib cage."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية دوران غير مناسبة: تتراكب الأضلاع على جسم لوح الكتف.",
+    "Improper obliquity superimposes ribs on scapular body."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف لوح الكتف ويخرج نحو الكاسيت.",
+   "The beam enters posteriorly along the scapular plane onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر المريض 45–60° RAO/LAO مع تقريب الكتف المصاب للكاسيت.",
+    "Rotate 45–60° RAO/LAO with affected shoulder against detector."
+   ],
+   [
+    "مركّز عند منتصف لوح الكتف ثم اعرّض.",
+    "Centre at mid-scapula and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 55
+ },
+ {
+  "id": "clavicle-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الترقوة AP",
+   "Clavicle AP"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Clavicle$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم كسور الترقوة وإزاحتها، والتئام الكسور، وآفات المفصلين القصي الترقوي والأخرمي الترقوي.",
+   "Evaluate clavicular fractures, displacement, healing and SC/AC joints."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ وظهره للكاسيت دون دوران، والذراعان بجانب الجسم.",
+   "Patient erect or supine with back to detector without rotation, arms by sides."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف جسم الترقوة.",
+   "Central ray perpendicular at the mid-shaft of the clavicle."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الترقوة كاملة من المفصل القصي الترقوي إنسيّاً إلى المفصل الأخرمي الترقوي وحشياً.",
+    "Entire clavicle from SC joint medially to AC joint laterally."
+   ]
+  ],
+  "err": [
+   [
+    "قطع أحد طرفي الترقوة.",
+    "Clipping SC or AC end of clavicle."
+   ]
+  ],
+  "tips": [
+   "يُؤخذ دائماً مع مسقط AP محوري رأسياً لتفريق التراكب مع الأضلاع. اسأل عن الحمل.",
+   "Usually paired with an AP axial cephalad view to clear rib overlap. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام عند منتصف الترقوة ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly over mid-clavicle onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "8–16",
+    "8–16"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.06 ث = 12 mAs",
+    "Example: 200 mA × 0.06 s = 12 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض AP دون دوران.",
+    "Position AP without rotation."
+   ],
+   [
+    "مركّز على منتصف الترقوة بالوضع العرضي ثم اعرّض.",
+    "Centre at mid-clavicle landscape and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "clavicle-ap-axial",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الترقوة AP محوري (15–30° رأسياً)",
+   "Clavicle AP axial (15–30° cephalad)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 20,
+  "cr": {
+   "s": "^Clavicle$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "إسقاط الترقوة للأعلى بعيداً عن الأضلاع ولوح الكتف لإظهار الكسور الخفية وتقييم الإزاحة في مستوى ثانٍ.",
+   "Project the clavicle superiorly free of ribs and scapula to reveal subtle fractures and displacement in a second plane."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ وظهره للكاسيت دون دوران، والذراعان بجانب الجسم.",
+   "Patient erect or supine without rotation, arms by sides."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15–30° رأسياً (للأعلى) عند منتصف الترقوة.",
+   "Central ray angled 15–30° cephalad at the mid-clavicle."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس (يساعد على خفض الأضلاع بعيداً عن الترقوة).",
+   "Full inspiration and breath-hold (lowers ribs away from clavicle)."
+  ],
+  "crit": [
+   [
+    "معظم الترقوة مفصولة فوق الأضلاع ولوح الكتف مع شمول المفصلين SC وAC.",
+    "Most of clavicle projected above ribs/scapula including SC and AC joints."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية أقل من 15°: تبقى الأضلاع متراكبة.",
+    "Angle < 15° leaves ribs overlapping."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عند منتصف الترقوة مائلاً 15–30° رأسياً نحو الكاسيت.",
+   "The beam enters mid-clavicle angled 15–30° cephalad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "8–16",
+    "8–16"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.06 ث = 12 mAs",
+    "Example: 200 mA × 0.06 s = 12 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "أمل الأنبوب 15–30° رأسياً عند منتصف الترقوة.",
+    "Angle tube 15–30° cephalad at mid-clavicle."
+   ],
+   [
+    "اطلب شهيقاً وحبس النفس ثم اعرّض.",
+    "Ask for inspiration hold and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "clavicle-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الترقوة PA (جرعة أقل)",
+   "Clavicle PA"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Clavicle$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تصوير الترقوة بوضعية PA لتقليل التكبير الهندسي (الترقوة ملاصقة للكاسيت) وخفض جرعة الإشعاع على الثدي والدرقية في الحالات غير الرضّية أو المتابعة.",
+   "PA clavicle reduces magnification (clavicle closer to detector) and lowers breast/thyroid dose for follow-up."
+  ],
+  "pos": [
+   "المريض واقف أو منبطح وجهه للكاسيت دون دوران.",
+   "Patient erect or prone facing detector without rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي (أو 15–20° ذيلياً للانفراد عن الأضلاع) عند منتصف الترقوة.",
+   "Central ray perpendicular (or 15–20° caudad to clear ribs) at mid-clavicle."
+  ],
+  "br": [
+   "شهيق وحبس النفس.",
+   "Suspend on inspiration."
+  ],
+  "crit": [
+   [
+    "الترقوة كاملة بدقة حادة من المفصل SC إلى AC.",
+    "Entire clavicle sharply detailed from SC to AC joint."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الكتفين.",
+    "Shoulder rotation."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل.",
+   "Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الظهر ويخرج من الترقوة نحو الكاسيت.",
+   "The beam enters posteriorly and exits the clavicle onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "8–16",
+    "8–16"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.06 ث = 12 mAs",
+    "Example: 200 mA × 0.06 s = 12 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "AEC أو يدوي",
+    "AEC or manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض بوضعية PA دون دوران.",
+    "Position PA without rotation."
+   ],
+   [
+    "مركّز عند منتصف الترقوة ثم اعرّض.",
+    "Centre at mid-clavicle and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "ac-zanca",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "زانكا للمفصل الأخرمي الترقوي (Zanca 10–15°)",
+   "Zanca view (AC joint 10–15° cephalad)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 15,
+  "cr": {
+   "s": "^Clavicle$",
+   "at": "top"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "landscape"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "أفضل مسقط للمفصل الأخرمي الترقوي (AC joint): خشونة المفصل، انحلال الترقوة البعيدة، خلع المفصل AC، وكسور الترقوة الوحشية.",
+   "Best view of the AC joint: AC osteoarthritis, distal clavicle osteolysis, AC separation and distal clavicle fractures."
+  ],
+  "pos": [
+   "المريض واقف بوضعية AP دون دوران.",
+   "Patient erect in AP without rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 10–15° رأسياً عند المفصل الأخرمي الترقوي (مع خفض التعريض بنسبة 50% عن الكتف العادي!).",
+   "Central ray angled 10–15° cephalad at the AC joint (using ~50% less exposure than a routine shoulder!)."
+  ],
+  "br": [
+   "حبس النفس.",
+   "Hold breath."
+  ],
+  "crit": [
+   [
+    "المفصل الأخرمي الترقوي والنهاية الوحشية للترقوة والأخرم مرسومة بوضوح دون احتراق ودون تراكب شوكة لوح الكتف.",
+    "AC joint cleanly profiled above the scapular spine without overexposure."
+   ]
+  ],
+  "err": [
+   [
+    "استخدام جرعة الكتف العادية: تحرق المفصل الأخرمي الترقوي الرقيق!",
+    "Using routine shoulder exposure burns out the thin AC joint!"
+   ]
+  ],
+  "tips": [
+   "مفتاح نجاح زانكا: ميلان 10–15° رأسياً + تقليل mAs للنصف تقريباً. اسأل عن الحمل.",
+   "Key to Zanca: 10–15° cephalad tilt + ~50% reduced mAs. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام عند المفصل AC مائلاً 10–15° رأسياً نحو الكاسيت.",
+   "The beam enters anteriorly at AC joint angled 10–15° cephalad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–68",
+    "60–68"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "نصف جرعة الكتف الروتيني (~5 mAs)",
+    "Half routine shoulder exposure (~5 mAs)"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أمل الأنبوب 10–15° رأسياً عند المفصل AC.",
+    "Angle tube 10–15° cephalad at AC joint."
+   ],
+   [
+    "خفض التعريض للنصف واعرّض.",
+    "Halve exposure and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "ac-stress",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المفصل الأخرمي الترقوي بالإجهاد (حمل وزن)",
+   "Weight-bearing AC joints (stress)"
+  ],
+  "region": [
+   "الأطراف العلوية",
+   "Upper limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Manubrium of sternum$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.35,
+   0.43,
+   "landscape"
+  ],
+  "dist": 1.9,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Humerus|Scapula|Clavicle)$"
+  ],
+  "ind": [
+   "تقييم الانفصال الأخرمي الترقوي (AC separation) وتمزق الأربطة الغرابية الترقوية بمقارنة المفصلين معاً قبل وبعد حمل الأوزان.",
+   "Evaluate AC joint separation and coracoclavicular ligament injury bilaterally with and without weights."
+  ],
+  "pos": [
+   "المريض واقف بظهره للكاسيت العريض (أو صورتين منفصلتين) لتضمين المفصلين معاً: صورة أولى والذراعان مسترخيتان، وصورة ثانية مع حمل وزن 4–5 كجم مربوطاً على كل معصم (وليس ممسوكاً باليد لئلا تنقبض عضلات الكتف).",
+   "Patient erect with back to wide detector (both AC joints included): one view without weights and one with 4–5 kg weights strapped to wrists (not gripped, to prevent muscle guarding)."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عند مستوى المفصلين AC على الخط الناصف على مسافة 180 سم.",
+   "Horizontal central ray at AC joint level on midline at 180 cm SID."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "المفصلان الأخرميان الترقويان في صورة واحدة للمقارنة وقياس المسافة الغرابية الترقوية (CC distance).",
+    "Both AC joints shown simultaneously to measure bilateral CC distance."
+   ]
+  ],
+  "err": [
+   [
+    "حمل المريض للوزن بقبضة اليد: شد عضلات الكتف يرفع الترقوة ويخفي الانفصال!",
+    "Gripping weights activates shoulder muscles and masks AC separation!"
+   ]
+  ],
+  "tips": [
+   "اربط الوزن حول المعصمين بشريط حتى ترتخي عضلات الكتف تماماً. اسأل عن الحمل.",
+   "Strap weights to the wrists so shoulder muscles stay relaxed. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من أعلى الصدر الأمامي ويخرج نحو الكاسيت.",
+   "The horizontal beam enters anteriorly across both AC joints onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "8–15",
+    "8–15"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.06 ث = 12 mAs على 180 سم",
+    "Example: 200 mA × 0.06 s = 12 mAs at 180 cm"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "صوّر المفصلين معاً بدون وزن ثم بأوزان مربوطة حول المعصمين.",
+    "Image both AC joints without weights, then with wrist-strapped weights."
+   ],
+   [
+    "ضع علامتي Without Weights / With Weights.",
+    "Label Without Weights / With Weights."
+   ]
+  ],
+  "limb": true
  }
 ]

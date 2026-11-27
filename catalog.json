@@ -1192,7 +1192,8 @@
           "إصبع PA",
           "PA finger"
          ],
-         "id": "pa-finger"
+         "id": "pa-finger",
+         "ex": "finger-pa"
         },
         {
          "p": 1,
@@ -1200,7 +1201,8 @@
           "إصبع مائل",
           "Oblique finger"
          ],
-         "id": "oblique-finger"
+         "id": "oblique-finger",
+         "ex": "finger-oblique"
         },
         {
          "p": 1,
@@ -1208,7 +1210,8 @@
           "إصبع جانبي",
           "Lateral finger"
          ],
-         "id": "lateral-finger"
+         "id": "lateral-finger",
+         "ex": "finger-lat"
         }
        ],
        "id": "fingers"
@@ -1225,7 +1228,8 @@
           "إبهام AP",
           "AP thumb"
          ],
-         "id": "ap-thumb"
+         "id": "ap-thumb",
+         "ex": "thumb-ap"
         },
         {
          "p": 1,
@@ -1233,7 +1237,8 @@
           "إبهام جانبي",
           "Lateral thumb"
          ],
-         "id": "lateral-thumb"
+         "id": "lateral-thumb",
+         "ex": "thumb-lat"
         },
         {
          "p": 1,
@@ -1241,7 +1246,8 @@
           "إبهام PA مائل",
           "PA oblique thumb"
          ],
-         "id": "pa-oblique-thumb"
+         "id": "pa-oblique-thumb",
+         "ex": "thumb-oblique"
         },
         {
          "p": 1,
@@ -1253,7 +1259,8 @@
           "المفصل الرسغي المشطي الأول",
           "First CMC joint"
          ],
-         "id": "robert-s-view"
+         "id": "robert-s-view",
+         "ex": "thumb-robert"
         },
         {
          "p": 1,
@@ -1265,7 +1272,8 @@
           "الرباط الجانبي الزندي",
           "Ulnar collateral ligament"
          ],
-         "id": "gamekeeper-s-stress"
+         "id": "gamekeeper-s-stress",
+         "ex": "thumb-gamekeeper"
         }
        ],
        "id": "thumb"
@@ -1317,7 +1325,8 @@
           "التهاب المفاصل",
           "Inflammatory arthritis"
          ],
-         "id": "ball-catcher-s-n-rgaard"
+         "id": "ball-catcher-s-n-rgaard",
+         "ex": "hand-norgaard"
         },
         {
          "p": 1,
@@ -1329,7 +1338,8 @@
           "للأطفال",
           "For children"
          ],
-         "id": "bone-age-left-hand-wrist"
+         "id": "bone-age-left-hand-wrist",
+         "ex": "scoliosis-bone-age"
         }
        ],
        "id": "hand"
@@ -1383,7 +1393,8 @@
             "الجانب الزندي للرسغ",
             "Ulnar side of the wrist"
            ],
-           "id": "pa-radial-deviation"
+           "id": "pa-radial-deviation",
+           "ex": "wrist-radial"
           },
           {
            "p": 1,
@@ -1395,7 +1406,8 @@
             "انفصال الزورقي-الهلالي",
             "Scapholunate dissociation"
            ],
-           "id": "clenched-fist-ap"
+           "id": "clenched-fist-ap",
+           "ex": "wrist-clenched-fist"
           },
           {
            "p": 1,
@@ -1407,7 +1419,8 @@
             "المصاب دون تحريك",
             "Without moving the injured wrist"
            ],
-           "id": "horizontal-beam-lateral"
+           "id": "horizontal-beam-lateral",
+           "ex": "wrist-cross-table-lat"
           },
           {
            "p": 1,
@@ -1419,7 +1432,8 @@
             "25–30° على محور اليد",
             "25–30° to the long axis of the hand"
            ],
-           "id": "carpal-tunnel-gaynor-hart"
+           "id": "carpal-tunnel-gaynor-hart",
+           "ex": "wrist-carpal-tunnel"
           },
           {
            "p": 1,
@@ -1431,7 +1445,8 @@
             "الوجه الظهري",
             "Dorsal aspect"
            ],
-           "id": "carpal-bridge"
+           "id": "carpal-bridge",
+           "ex": "wrist-carpal-bridge"
           }
          ],
          "id": "wrist-views"
@@ -1484,7 +1499,8 @@
               "سطح الزورقي الجانبي",
               "Lateral aspect of the scaphoid"
              ],
-             "id": "pa-oblique-scaphoid"
+             "id": "pa-oblique-scaphoid",
+             "ex": "wrist-oblique"
             },
             {
              "p": 1,
@@ -1544,7 +1560,8 @@
               "الوجه الظهري",
               "Dorsal surface"
              ],
-             "id": "carpal-bridge-dorsal-tangential"
+             "id": "carpal-bridge-dorsal-tangential",
+             "ex": "wrist-carpal-bridge"
             }
            ],
            "id": "lunate"
@@ -1565,7 +1582,8 @@
               "الجانب الزندي",
               "Ulnar side"
              ],
-             "id": "pa-oblique-external-rotation"
+             "id": "pa-oblique-external-rotation",
+             "ex": "wrist-supinated-oblique"
             },
             {
              "p": 1,
@@ -1590,7 +1608,8 @@
               "كسور الوجه الظهري",
               "Dorsal surface fractures"
              ],
-             "id": "carpal-bridge"
+             "id": "carpal-bridge",
+             "ex": "wrist-carpal-bridge"
             }
            ],
            "id": "triquetrum"
@@ -1611,7 +1630,8 @@
               "الحمصي والكلابي بالمقطع",
               "Pisiform and hamate in profile"
              ],
-             "id": "carpal-tunnel-gaynor-hart"
+             "id": "carpal-tunnel-gaynor-hart",
+             "ex": "wrist-carpal-tunnel"
             },
             {
              "p": 1,
@@ -1623,7 +1643,8 @@
               "الحمصي بلا تراكب",
               "Pisiform without overlap"
              ],
-             "id": "lateral-pisiform-supinated-oblique"
+             "id": "lateral-pisiform-supinated-oblique",
+             "ex": "wrist-supinated-oblique"
             }
            ],
            "id": "pisiform"
@@ -1644,7 +1665,8 @@
               "عظم شبه المنحرف",
               "Trapezium"
              ],
-             "id": "clements-nakayama"
+             "id": "clements-nakayama",
+             "ex": "wrist-clements"
             },
             {
              "p": 1,
@@ -1656,7 +1678,8 @@
               "قاعدة الإبهام",
               "Thumb base"
              ],
-             "id": "robert-s-1st-cmc-ap"
+             "id": "robert-s-1st-cmc-ap",
+             "ex": "thumb-robert"
             },
             {
              "p": 1,
@@ -1668,7 +1691,8 @@
               "سطح راحي",
               "Palmar surface"
              ],
-             "id": "carpal-tunnel-gaynor-hart"
+             "id": "carpal-tunnel-gaynor-hart",
+             "ex": "wrist-carpal-tunnel"
             }
            ],
            "id": "trapezium"
@@ -1694,7 +1718,8 @@
               "PA مائل",
               "PA oblique"
              ],
-             "id": "pa-oblique"
+             "id": "pa-oblique",
+             "ex": "wrist-oblique"
             }
            ],
            "id": "trapezoid"
@@ -1746,7 +1771,8 @@
               "خُطّاف الكلابي",
               "Hook of the hamate"
              ],
-             "id": "carpal-tunnel-gaynor-hart"
+             "id": "carpal-tunnel-gaynor-hart",
+             "ex": "wrist-carpal-tunnel"
             },
             {
              "p": 1,
@@ -1758,7 +1784,8 @@
               "الخُطّاف",
               "Hook of the hamate"
              ],
-             "id": "pa-oblique-supinated"
+             "id": "pa-oblique-supinated",
+             "ex": "wrist-supinated-oblique"
             }
            ],
            "id": "hamate"
@@ -1826,7 +1853,8 @@
           "كوع مائل (إنسي/وحشي)",
           "Oblique elbow (medial/lateral)"
          ],
-         "id": "oblique-elbow-medial-lateral"
+         "id": "oblique-elbow-medial-lateral",
+         "ex": "elbow-oblique"
         },
         {
          "p": 1,
@@ -1838,7 +1866,8 @@
           "عند عدم التمكن من البسط",
           "When full extension is impossible"
          ],
-         "id": "ap-partial-flexion"
+         "id": "ap-partial-flexion",
+         "ex": "elbow-ap-partial"
         },
         {
          "p": 1,
@@ -1850,7 +1879,8 @@
           "العضد القريب",
           "Distal humerus"
          ],
-         "id": "jones-acute-flexion"
+         "id": "jones-acute-flexion",
+         "ex": "elbow-jones"
         },
         {
          "p": 1,
@@ -1858,7 +1888,8 @@
           "كويل (رأس الكعبرة/الناتئ الإكليلي)",
           "Coyle (radial head/coronoid)"
          ],
-         "id": "coyle-radial-head-coronoid"
+         "id": "coyle-radial-head-coronoid",
+         "ex": "elbow-coyle"
         },
         {
          "p": 1,
@@ -1866,7 +1897,8 @@
           "غرينسبان (رأس الكعبرة والمقيَّم)",
           "Greenspan (radial head-capitellum)"
          ],
-         "id": "greenspan-radial-head-capitellum"
+         "id": "greenspan-radial-head-capitellum",
+         "ex": "elbow-greenspan"
         },
         {
          "p": 1,
@@ -1878,7 +1910,8 @@
           "العصب الزندي",
           "Ulnar nerve groove"
          ],
-         "id": "cubital-tunnel-ulnar-groove"
+         "id": "cubital-tunnel-ulnar-groove",
+         "ex": "elbow-cubital-tunnel"
         }
        ],
        "id": "elbow"
@@ -1895,7 +1928,8 @@
           "عضد AP",
           "AP humerus"
          ],
-         "id": "ap-humerus"
+         "id": "ap-humerus",
+         "ex": "humerus-ap"
         },
         {
          "p": 1,
@@ -1903,7 +1937,8 @@
           "عضد جانبي",
           "Lateral humerus"
          ],
-         "id": "lateral-humerus"
+         "id": "lateral-humerus",
+         "ex": "humerus-lat"
         },
         {
          "p": 1,
@@ -1915,7 +1950,8 @@
           "الكسور القريبة",
           "Proximal fractures"
          ],
-         "id": "transthoracic-lateral"
+         "id": "transthoracic-lateral",
+         "ex": "humerus-transthoracic"
         }
        ],
        "id": "humerus"
@@ -1932,7 +1968,8 @@
           "AP دوران داخلي",
           "AP internal rotation"
          ],
-         "id": "ap-internal-rotation"
+         "id": "ap-internal-rotation",
+         "ex": "shoulder-ap-int"
         },
         {
          "p": 1,
@@ -1940,7 +1977,8 @@
           "AP دوران خارجي",
           "AP external rotation"
          ],
-         "id": "ap-external-rotation"
+         "id": "ap-external-rotation",
+         "ex": "shoulder-ap-ext"
         },
         {
          "p": 1,
@@ -1961,7 +1999,8 @@
           "مفصل الكتف المفتوح",
           "Open glenohumeral joint"
          ],
-         "id": "grashey-true-ap-glenoid"
+         "id": "grashey-true-ap-glenoid",
+         "ex": "shoulder-grashey"
         },
         {
          "p": 1,
@@ -1973,7 +2012,8 @@
           "تحديد خلع الكتف",
           "Direction of dislocation"
          ],
-         "id": "scapular-y-lateral-scapula"
+         "id": "scapular-y-lateral-scapula",
+         "ex": "shoulder-y"
         },
         {
          "p": 1,
@@ -1981,7 +2021,8 @@
           "إبطي (من الأسفل للأعلى)",
           "Axillary (inferosuperior)"
          ],
-         "id": "axillary-inferosuperior"
+         "id": "axillary-inferosuperior",
+         "ex": "shoulder-axillary"
         },
         {
          "p": 1,
@@ -1989,7 +2030,8 @@
           "محوري (من الأعلى للأسفل)",
           "Superoinferior axial"
          ],
-         "id": "superoinferior-axial"
+         "id": "superoinferior-axial",
+         "ex": "shoulder-superoinferior"
         },
         {
          "p": 1,
@@ -2001,7 +2043,8 @@
           "الحافة الأمامية السفلية للحُق",
           "Anteroinferior glenoid rim"
          ],
-         "id": "west-point-prone-axillary"
+         "id": "west-point-prone-axillary",
+         "ex": "shoulder-west-point"
         },
         {
          "p": 1,
@@ -2013,7 +2056,8 @@
           "عند عدم القدرة على إبعاد الذراع",
           "When the arm cannot be abducted"
          ],
-         "id": "velpeau"
+         "id": "velpeau",
+         "ex": "shoulder-velpeau"
         },
         {
          "p": 1,
@@ -2025,7 +2069,8 @@
           "آفة هيل-ساكس",
           "Hill-Sachs lesion"
          ],
-         "id": "stryker-notch"
+         "id": "stryker-notch",
+         "ex": "shoulder-stryker"
         },
         {
          "p": 1,
@@ -2033,7 +2078,8 @@
           "غارث (مائل قمي)",
           "Garth (apical oblique)"
          ],
-         "id": "garth-apical-oblique"
+         "id": "garth-apical-oblique",
+         "ex": "shoulder-garth"
         },
         {
          "p": 1,
@@ -2045,7 +2091,8 @@
           "التصادم تحت الأخرم",
           "Subacromial impingement"
          ],
-         "id": "outlet-view"
+         "id": "outlet-view",
+         "ex": "shoulder-outlet"
         },
         {
          "p": 1,
@@ -2053,7 +2100,8 @@
           "عبر الصدر (مستلقٍ)",
           "Transthoracic (supine)"
          ],
-         "id": "transthoracic-supine"
+         "id": "transthoracic-supine",
+         "ex": "shoulder-transthoracic-supine"
         }
        ],
        "id": "shoulder"
@@ -2070,7 +2118,8 @@
           "لوح الكتف AP",
           "AP scapula"
          ],
-         "id": "ap-scapula"
+         "id": "ap-scapula",
+         "ex": "scapula-ap"
         },
         {
          "p": 1,
@@ -2078,7 +2127,8 @@
           "لوح الكتف جانبي (Y)",
           "Lateral scapula (Y)"
          ],
-         "id": "lateral-scapula-y"
+         "id": "lateral-scapula-y",
+         "ex": "scapula-y"
         }
        ],
        "id": "scapula"
@@ -2095,7 +2145,8 @@
           "ترقوة AP",
           "AP clavicle"
          ],
-         "id": "ap-clavicle"
+         "id": "ap-clavicle",
+         "ex": "clavicle-ap"
         },
         {
          "p": 1,
@@ -2107,7 +2158,8 @@
           "تفريق التراكب",
           "Separates overlap"
          ],
-         "id": "ap-axial-cephalic-clavicle"
+         "id": "ap-axial-cephalic-clavicle",
+         "ex": "clavicle-ap-axial"
         },
         {
          "p": 1,
@@ -2115,7 +2167,8 @@
           "ترقوة PA",
           "PA clavicle"
          ],
-         "id": "pa-clavicle"
+         "id": "pa-clavicle",
+         "ex": "clavicle-pa"
         },
         {
          "p": 1,
@@ -2127,7 +2180,8 @@
           "10–15° رأسياً",
           "10–15° cephalad"
          ],
-         "id": "zanca-ac-joints"
+         "id": "zanca-ac-joints",
+         "ex": "ac-zanca"
         },
         {
          "p": 1,
@@ -2139,7 +2193,8 @@
           "الانفصال الأخرمي الترقوي",
           "AC separation"
          ],
-         "id": "weight-bearing-ac-stress"
+         "id": "weight-bearing-ac-stress",
+         "ex": "ac-stress"
         }
        ],
        "id": "clavicle-ac-joint"
