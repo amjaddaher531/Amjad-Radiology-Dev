@@ -21678,5 +21678,4066 @@
     "Verify bilateral tubal spill and side marker."
    ]
   ]
+ },
+ {
+  "id": "toe-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "إصبع القدم AP",
+   "Toe AP"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 15,
+  "cr": {
+   "s": "^Third metatarsal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "كسور سلاميات أصابع القدم، الخلع، التهاب المفاصل، والأجسام الغريبة.",
+   "Toe phalangeal fractures, dislocation, arthritis and foreign bodies."
+  ],
+  "pos": [
+   "المريض جالس أو مستلقٍ، الركبة مثنية والأخمص مسطح على الكاسيت (أو على إسفنجة 15°).",
+   "Patient seated or supine with knee flexed and plantar surface flat on the detector (or on a 15° wedge)."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 10–15° نحو العقب (خلفي) عند المفصل المشطي السلامي (MTP) للإصبع المصاب (أو عمودي إذا استُعملت إسفنجة 15°).",
+   "Central ray angled 10–15° toward the heel at the affected MTP joint (or perpendicular if using a 15° wedge)."
+  ],
+  "br": [
+   "الثبات التام دون حركة.",
+   "Stay completely still."
+  ],
+  "crit": [
+   [
+    "الإصبع المصاب كاملاً مع الجزء البعيد من المشطية ومفاصل السلاميات مفتوحة.",
+    "Affected toe and distal metatarsal with open IP/MTP joint spaces."
+   ]
+  ],
+  "err": [
+   [
+    "عدم إمالة الشعاع 15°: تبدو المفاصل مغلقة.",
+    "0° angle foreshortens the phalanges and closes joints."
+   ]
+  ],
+  "tips": [
+   "استعمل تضييقاً شديداً على الإصبع المصاب والإصبعين المجاورين فقط. اسأل عن الحمل.",
+   "Collimate tightly to the affected toe and adjacent digits. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الإصبع ويخرج من الأخمص نحو الكاسيت.",
+   "The beam enters the dorsum of the toe and exits the plantar aspect onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–58",
+    "50–58"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة والإصبع المصاب واسأل عن الحمل.",
+    "Check request, side, affected toe and pregnancy."
+   ],
+   [
+    "أزل الحذاء والجورب وضع الأخمص مسطحاً على الكاسيت.",
+    "Remove shoe/sock and place sole flat on detector."
+   ],
+   [
+    "مركّز عند المفصل MTP بميل 10–15° نحو العقب وضيّق المجال جداً.",
+    "Centre at MTP joint with 10–15° calcaneal tilt and collimate tightly."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and place side marker."
+   ]
+  ],
+  "limb": true,
+  "tiltF": -15
+ },
+ {
+  "id": "toe-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "إصبع القدم مائل",
+   "Toe oblique"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metatarsal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "فصل السلاميات عن بعضها وإظهار الكسور المائلة والخلع في أصابع القدم.",
+   "Separate phalanges and demonstrate oblique fractures or dislocations of the toes."
+  ],
+  "pos": [
+   "تُدار القدم والركبة بزاوية 30–45° للداخل (لأصابع 1–3) أو للخارج (لأصابع 4–5) وتُسند بإسفنجة.",
+   "Rotate foot and leg 30–45° medially (toes 1–3) or laterally (toes 4–5) on a sponge."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند المفصل MTP للإصبع المصاب.",
+   "Central ray perpendicular at the affected MTP joint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإصبع المصاب مفصول عن الأصابع المجاورة بوضوح مع فتح المفاصل.",
+    "Affected toe clearly separated from neighbours with open joints."
+   ]
+  ],
+  "err": [
+   [
+    "دوران قليل: تتراكب الأصابع.",
+    "Insufficient rotation overlaps adjacent toes."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وأزل أي خواتم أو معادن.",
+   "Ask about pregnancy and remove any toe rings."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الإصبع مائلاً 30–45° ويخرج نحو الكاسيت.",
+   "The beam enters obliquely at 30–45° onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–58",
+    "50–58"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر القدم 30–45° حسب الإصبع المطلوب.",
+    "Rotate foot 30–45° for target toe."
+   ],
+   [
+    "مركّز عند المفصل MTP وضيّق المجال.",
+    "Centre at MTP joint and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and label side."
+   ]
+  ],
+  "limb": true,
+  "rot": 35
+ },
+ {
+  "id": "toe-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "إصبع القدم جانبي",
+   "Toe lateral"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metatarsal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "إظهار انزياح الكسور الظهري/الأخمصي والأجسام الغريبة في إصبع واحد دون تراكب الأصابع الأخرى.",
+   "Show dorsal/plantar fracture displacement and foreign bodies of a single toe without overlap."
+  ],
+  "pos": [
+   "توضع القدم على جانبها الإنسي (للإبهام والإصبع الثاني) أو الوحشي (للأصابع 3–5)، وتُبعد الأصابع السليمة برفق بشريط لاصق أو شاش.",
+   "Rest foot on medial side (toes 1–2) or lateral side (toes 3–5), gently taping/retracting adjacent toes clear."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند المفصل بين السلامي (IP) للإصبع المصاب.",
+   "Central ray perpendicular at the IP joint of the affected toe."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الإصبع المصاب بوضعية جانبية حقيقية خالياً تماماً من تراكب الأصابع المجاورة.",
+    "Affected toe in true lateral completely free of adjacent toes."
+   ]
+  ],
+  "err": [
+   [
+    "تراكب الأصابع المجاورة على الإصبع المصاب.",
+    "Adjacent toes overlapping the injured digit."
+   ]
+  ],
+  "tips": [
+   "عزل الإصبع بشريط شاش لطيف يضمن صورة جانبية صافية. اسأل عن الحمل.",
+   "Gently retracting adjacent toes with gauze/tape ensures a clear lateral view. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع جانبياً عبر الإصبع نحو الكاسيت.",
+   "The beam enters laterally through the toe onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "50–58",
+    "50–58"
+   ],
+   "mas": [
+    "2–4",
+    "2–4"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.03 ث = 3 mAs",
+    "Example: 100 mA × 0.03 s = 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع القدم على الجانب المناسب واعزل الإصبع المصاب بلطف.",
+    "Position foot on proper side and gently isolate target toe."
+   ],
+   [
+    "مركّز على المفصل IP وضيّق المجال جداً.",
+    "Centre at IP joint and collimate tightly."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "toe-sesamoids",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العظام السمسمانية للقدم مماسي",
+   "Sesamoids tangential"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sesamoid bones of foot$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.6,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "تقييم كسور العظمين السمسمانيين (sesamoid bones) تحت رأس المشطية الأولى، أو انقسامها الخلقي، أو التهاب السمسمانيات.",
+   "Evaluate fractures of the medial/lateral sesamoid bones beneath the 1st metatarsal head, bipartite sesamoids or sesamoiditis."
+  ],
+  "pos": [
+   "المريض منبطح (أو جالس بشد الأصابع للأعلى): يُبسط إصبع القدم الكبير بالانثناء الظهري (dorsiflexion) بأقصى ما يتحمل وتُثبت الأصابع بشريط شاش ليمر الشعاع مماسياً تحت رأس المشطية الأولى.",
+   "Patient prone (or seated pulling toes up): 1st toe is dorsiflexed as far as tolerated so the beam passes tangentially beneath the 1st metatarsal head."
+  ],
+  "crt": [
+   "الشعاع المركزي مماسي لأسفل رأس المشطية الأولى، عمودي على الكاسيت.",
+   "Central ray tangential to the plantar 1st metatarsal head, perpendicular to the detector."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "العظمان السمسمانيان الإنسي والوحشي مفصولان وبمنظر مماسي حر أسفل رأس المشطية الأولى.",
+    "Medial and lateral sesamoids projected tangentially free of the 1st metatarsal head."
+   ]
+  ],
+  "err": [
+   [
+    "ثني ظهري غير كافٍ: تتراكب السمسمانيات على المشطية.",
+    "Insufficient dorsiflexion superimposes sesamoids on the metatarsal."
+   ]
+  ],
+  "tips": [
+   "لا تجبر الإصبع على الثني الظهري في الإصابات المؤلمة جداً؛ يمكن أخذ مسقط جانبي كبديل. اسأل عن الحمل.",
+   "Do not force dorsiflexion in severe pain; a lateral view can substitute. Ask about pregnancy."
+  ],
+  "inout": [
+   "يمر الشعاع مماسياً أسفل رأس المشطية الأولى نحو الكاسيت.",
+   "The beam passes tangentially beneath the 1st metatarsal head onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–62",
+    "55–62"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ثبّت إصبع القدم الكبير بالانثناء الظهري بشريط شاش.",
+    "Dorsiflex the great toe gently using a gauze strap."
+   ],
+   [
+    "مركّز مماسياً عند رأس المشطية الأولى وضيّق المجال.",
+    "Centre tangentially at 1st metatarsal head and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and label side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "foot-lat-wb",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القدم جانبي (بحمل الوزن)",
+   "Foot lateral (weight-bearing)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Cuboid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "تقييم قوس القدم الطولاني (القدم المسطحة pes planus أو المقوسة pes cavus) وقياس زوايا تالوس-المشطية وزاوية ميلان العقب تحت الحمل الطبيعي للجسم.",
+   "Assess the longitudinal arch (pes planus/cavus), Meary's angle and calcaneal pitch under normal weight-bearing."
+  ],
+  "pos": [
+   "المريض واقف بوزن متساوٍ على القدمين فوق منصة خاصة (weight-bearing block)، والكاسيت عمودياً بين القدمين أو بجانب الحافة الوحشية للقدم.",
+   "Patient standing with equal weight on both feet on a radiolucent step/block, detector upright between or beside the feet."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند منتصف القدم (قاعدة المشطية الثالثة/المكعب).",
+   "Horizontal central ray perpendicular at the midfoot (base of 3rd metatarsal/cuboid)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "القدم كاملة مع الكاحل والعقب، والمشطيات متراكبة، مع إظهار مستوى الأرضية الحامل للوزن.",
+    "Entire foot and ankle with superimposed metatarsals and visible weight-bearing surface."
+   ]
+  ],
+  "err": [
+   [
+    "الوقوف على ساق واحدة أو الجلوس: يفقد قياس القوس قيمته.",
+    "Non-weight-bearing invalidates arch angle measurements."
+   ]
+  ],
+  "tips": [
+   "وفّر حاملاً ليد المريض للاتزان فقط دون تحميل الوزن عليه. اسأل عن الحمل.",
+   "Provide a handrail for balance only. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الجانب الإنسي للقدم ويخرج من الوحشي نحو الكاسيت العمودي.",
+   "The horizontal beam enters medially and exits laterally onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–7",
+    "4–7"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أوقف المريض بوزن متساوٍ على القدمين فوق المنصة.",
+    "Stand patient evenly on both feet on the step."
+   ],
+   [
+    "ضع الكاسيت عمودياً ملاصقاً للقدم ومركّز أفقياً عند منتصف القدم.",
+    "Place detector upright beside foot and centre horizontally at midfoot."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة Weight-bearing.",
+    "Ask for stillness, expose and label Weight-bearing."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "foot-ap-wb",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القدم AP بحمل الوزن (ليسفرانك)",
+   "Foot AP weight-bearing (Lisfranc)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Third metatarsal bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "كشف إصابات مفصل ليسفرانك الخفية (توسع المسافة بين قاعدة المشطية الأولى والثانية > 2 مم) وتقييم انحراف الإبهام الأروح (hallux valgus) تحت حمل الوزن.",
+   "Detect subtle Lisfranc ligament injuries (widening > 2 mm between 1st and 2nd metatarsal bases) and hallux valgus angles under weight-bearing."
+  ],
+  "pos": [
+   "المريض واقف بوزن متساوٍ على القدمين فوق الكاسيت المحمي (يفضل تصوير القدمين معاً للمقارنة).",
+   "Patient standing with equal weight on both feet on the protected detector (bilateral comparison preferred)."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 10–15° نحو العقب عند منتصف المسافة بين القدمين بمستوى قواعد المشطيات الثالثة.",
+   "Central ray angled 10–15° toward the heels between both feet at the 3rd metatarsal bases."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "القدمان معاً من أطراف الأصابع إلى منتصف القدم، مع وضوح المفاصل الرسغية المشطية للمقارنة.",
+    "Both feet from toes to midfoot clearly showing tarsometatarsal alignment for comparison."
+   ]
+  ],
+  "err": [
+   [
+    "تصوير قدم واحدة بدون حمل وزن في اشتباه ليسفرانك: قد يبدو المفصل طبيعياً كاذباً!",
+    "Non-weight-bearing film in suspected Lisfranc injury can appear falsely normal!"
+   ]
+  ],
+  "tips": [
+   "ممنوع تحميل الوزن إذا كان هناك كسر واضح ومؤلم بشدة؛ يُلجأ حينها للتصوير المقطعي. اسأل عن الحمل.",
+   "Avoid weight-bearing if an unstable fracture is obvious; use CT instead. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر القدمين مائلاً 10–15° نحو العقب.",
+   "The beam enters dorsally angled 10–15° toward the heels."
+  ],
+  "exp": {
+   "kv": [
+    "58–68",
+    "58–68"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أوقف المريض بوزن متوازن على القدمين فوق الكاسيت المحمي.",
+    "Stand patient evenly on both feet on protected detector."
+   ],
+   [
+    "مركّز بين القدمين بمستوى قاعدة المشطية الثالثة بميل 10–15° نحو العقب.",
+    "Centre between feet at 3rd MT base with 10–15° heel tilt."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة Weight-bearing.",
+    "Ask for stillness, expose and label Weight-bearing."
+   ]
+  ],
+  "limb": true,
+  "tiltF": -12
+ },
+ {
+  "id": "foot-broden",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "برودن للمفصل تحت الكاحل (Broden)",
+   "Broden (subtalar joint)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 10,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "تقييم الوجه الخلفي للمفصل تحت الكاحل (posterior facet of subtalar joint) بعد كسور العقب والحُق.",
+   "Evaluate the posterior facet of the subtalar joint after calcaneal or talar fractures."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر، الكاحل بزاوية 90°، وتُدار الساق والقدم 45° للداخل (دوران إنسي).",
+   "Patient supine, ankle at 90°, leg and foot internally rotated 45°."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل رأسياً (نحو الركبة) بزوايا متدرجة (10°، 20°، 30°، 40°) عند نقطة ~2–3 سم أسفل وأمام الكعب الوحشي.",
+   "Central ray angled cephalad at 10°, 20°, 30° and 40° centred ~2–3 cm inferior-anterior to the lateral malleolus."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "فتح المفصل تحت الكاحل الخلفي بوضوح من الأمام للخلف عبر سلسلة الزوايا.",
+    "Posterior subtalar facet clearly profiled across the angled series."
+   ]
+  ],
+  "err": [
+   [
+    "نسيان الدوران الإنسي 45°.",
+    "Omitting the 45° internal rotation."
+   ]
+  ],
+  "tips": [
+   "اليوم يُفضَّل التصوير المقطعي (CT) لتقييم كسور العقب والمفصل تحت الكاحل بدقة ثلاثية الأبعاد. اسأل عن الحمل.",
+   "CT is preferred today for detailed 3D subtalar assessment. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أمام-وحشي الكاحل مائلاً رأسياً نحو الكاسيت.",
+   "The beam enters anterolaterally angled cephalad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ثبّت الكاحل 90° وأدر الساق 45° للداخل.",
+    "Hold ankle at 90° and internally rotate leg 45°."
+   ],
+   [
+    "مركّز أسفل وأمام الكعب الوحشي وأمل الأنبوب 10°–40° رأسياً.",
+    "Centre inferior-anterior to lateral malleolus with 10°–40° cephalad tilt."
+   ],
+   [
+    "اعرض مع وضع علامة الزاوية والجهة.",
+    "Expose and label angle and side."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "foot-saltzman",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "محاذاة القدم الخلفية (سالتزمان)",
+   "Hindfoot alignment (Saltzman)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -20,
+  "cr": {
+   "s": "^Calcaneus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "قياس محاذاة العقب بالنسبة لمحور القصبة (تشوهات الفحج varus أو الروح valgus في القدم الخلفية) تحت حمل الوزن.",
+   "Quantify calcaneal alignment relative to the tibial shaft (hindfoot varus/valgus) under weight-bearing."
+  ],
+  "pos": [
+   "المريض واقف بوزن متساوٍ على منصة مرتفعة والكاسيت مائل 20° أمام القدمين (أو خلف الكعبين حسب الجهاز).",
+   "Patient standing evenly on an elevated platform with detector angled 20° anterior to the feet."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 20° ذيلياً (من الخلف للأمام) موجّهاً نحو العقبين ليتعامد مع الكاسيت المائل.",
+   "Central ray angled 20° caudad (posterior-to-anterior) aimed at the heels perpendicular to the tilted detector."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "محور القصبة البعيدة وعظم العقب متصلان في صورة واحدة لقياس الإزاحة الإنسيّة/الوحشية.",
+    "Distal tibial shaft and calcaneal tuberosity both visible to measure hindfoot offset."
+   ]
+  ],
+  "err": [
+   [
+    "وقوف غير متوازن بين القدمين.",
+    "Uneven weight distribution."
+   ]
+  ],
+  "tips": [
+   "من الضروري شمول الثلث السفلي للقصبة لقياس المحور. اسأل عن الحمل.",
+   "Must include distal tibial shaft to establish the tibial axis. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الكعبين مائلاً 20° للأسفل ويخرج نحو الكاسيت أمام القدمين.",
+   "The beam enters behind the heels angled 20° caudad toward the anterior detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أوقف المريض بوزن متساوٍ على المنصة.",
+    "Stand patient evenly on the platform."
+   ],
+   [
+    "اضبط الكاسيت والشعاع بزاوية 20° ذيلياً من خلف الكعبين.",
+    "Set detector and 20° caudad beam from behind the heels."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "foot-lat-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "القدم مائل وحشي (للمكعب)",
+   "Foot lateral oblique"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "SI",
+  "tilt": 0,
+  "cr": {
+   "s": "^Cuboid bone$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "metatarsal bone$|phalanx of .* of foot$|^(Talus|Calcaneus|Navicular bone|Cuboid bone)$|cuneiform bone$|^Sesamoid bones of foot$"
+  ],
+  "ind": [
+   "تقييم عظم المكعب (cuboid) والمفصل الكاحلي الزورقي والمفاصل الإنسية للقدم عند الحاجة لإبرازها بشكل مختلف عن المائل الإنسي.",
+   "Evaluate the cuboid, talonavicular and medial tarsal articulations."
+  ],
+  "pos": [
+   "من وضعية AP تُدار الساق والقدم 30° للخارج (دوران وحشي: الجانب الإنسي مرفوع) وتُسند بإسفنجة.",
+   "From AP rotate leg and foot 30° laterally (medial side raised) on a wedge."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند قاعدة المشطية الثالثة.",
+   "Central ray perpendicular at the 3rd metatarsal base."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "ظهور عظم المكعب والزورقي والإسفينيات والمفصلين الأول والثاني بوضوح.",
+    "Cuboid, navicular, cuneiforms and 1st–2nd TMT joints clearly visible."
+   ]
+  ],
+  "err": [
+   [
+    "دوران زائد عن 30°.",
+    "Rotation exceeding 30°."
+   ]
+  ],
+  "tips": [
+   "تذكّر أن المائل الإنسي هو الروتيني، بينما المائل الوحشي يضاف لحالات المكعب والإنسيتين. اسأل عن الحمل.",
+   "Medial oblique is routine; lateral oblique is supplemental for medial tarsals/cuboid. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر القدم مائلاً 30° وحشياً ويخرج نحو الكاسيت.",
+   "The beam enters dorsally at 30° lateral obliquity onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "3–6",
+    "3–6"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر القدم 30° للخارج واسندها بإسفنجة.",
+    "Rotate foot 30° laterally on a sponge."
+   ],
+   [
+    "مركّز عند قاعدة المشطية الثالثة وضيّق المجال.",
+    "Centre at 3rd MT base and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and label side."
+   ]
+  ],
+  "limb": true,
+  "rot": -30
+ },
+ {
+  "id": "talus-canale",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "كاناليه (عنق الحُق/الكاحل)",
+   "Canale view (talar neck)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "SI",
+  "tilt": 15,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "تقييم إزاحة وتزوي كسور عنق عظم الحُق/الكاحل (talar neck fractures) بالانحراف الإنسي أو الوحشي.",
+   "Assess medial/lateral angulation and comminution in talar neck fractures."
+  ],
+  "pos": [
+   "المريض جالس أو مستلقٍ، القدم في أقصى ثني أخمصي (plantarflexion) على الكاسيت ثم تُدار القدم للداخل 15° (كب/pronation).",
+   "Patient seated or supine, foot maximally plantarflexed on the detector and pronated (internally rotated) 15°."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15° رأسياً (نحو الساق/الأعلى) عند عنق الحُق (منتصف المسافة بين الكعبين وأمامهما).",
+   "Central ray angled 15° cephalad at the talar neck."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "عنق عظم الحُق ممدوداً ومفصولاً بالكامل عن العقب والمشطيات.",
+    "Talar neck elongated and projected free of the calcaneus and metatarsals."
+   ]
+  ],
+  "err": [
+   [
+    "نسيان الكب 15° أو الميلان 15° رأسياً: يتراكب الحُق على العقب.",
+    "Omitting 15° pronation or 15° cephalad angle overlaps the talar neck."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل، ولا تجبر القدم إذا كان الألم حاداً.",
+   "Ask about pregnancy and avoid forcing painful plantarflexion."
+  ],
+  "inout": [
+   "يدخل الشعاع من ظهر الكاحل مائلاً 15° رأسياً ويخرج نحو الكاسيت.",
+   "The beam enters dorsally angled 15° cephalad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–68",
+    "58–68"
+   ],
+   "mas": [
+    "4–7",
+    "4–7"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الأخمص على الكاسيت وأدر القدم 15° للداخل.",
+    "Place foot plantarflexed and pronated 15°."
+   ],
+   [
+    "أمل الأنبوب 15° رأسياً عند عنق الحُق وضيّق المجال.",
+    "Angle tube 15° cephalad at talar neck and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 15
+ },
+ {
+  "id": "calcaneus-axial",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العقب محوري (هاريس-بيث)",
+   "Axial calcaneus (Harris–Beath)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "IS",
+  "tilt": 40,
+  "cr": {
+   "s": "^Calcaneus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "تقييم كسور العقب، توسيع جسم العقب، الائتلاف الكاحلي العقبي (tarsal coalition)، والمهميز العقبي.",
+   "Evaluate calcaneal fractures, widening, subtalar tarsal coalition and plantar spurs."
+  ],
+  "pos": [
+   "المريض جالس أو مستلقٍ والساق ممدودة، الكاحل في انثناء ظهري (dorsiflexion 90°) بمساعدة شريط شاش يمسكه المريض لإبقاء الأخمص عمودياً على الكاسيت.",
+   "Patient seated or supine with leg extended, ankle dorsiflexed 90° using a gauze strap held by the patient so the sole is vertical."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 40° رأسياً (نحو الساق)، يدخل من الأخمص عند قاعدة المشطية الثالثة ويخرج من العقب.",
+   "Central ray angled 40° cephalad, entering the plantar surface at the base of the 3rd metatarsal."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "حدبة العقب والمفصل تحت الكاحل والمعلاق الكاحلي (sustentaculum tali) ظاهرة بوضوح دون تقصير مفرط.",
+    "Calcaneal tuberosity, subtalar joint and sustentaculum tali clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية أقل من 35° إذا لم يكن الانثناء الظهري 90°: يقصر العقب.",
+    "Insufficient cephalad angle if dorsiflexion < 90° foreshortens the calcaneus."
+   ]
+  ],
+  "tips": [
+   "إذا لم يستطع المريض ثني الكاحل لـ 90°، زد زاوية الأنبوب إلى 45° أو 50°. اسأل عن الحمل.",
+   "Increase tube angle to 45–50° if the patient cannot reach 90° dorsiflexion. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أخمص القدم مائلاً 40° نحو الأعلى ويخرج من العقب نحو الكاسيت.",
+   "The beam enters the sole angled 40° cephalad and exits the heel onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "6–12",
+    "6–12"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ابسط الساق واجعل الكاحل بانثناء ظهري 90° بشريط شاش.",
+    "Extend leg and dorsiflex ankle 90° with gauze strap."
+   ],
+   [
+    "أمل الأنبوب 40° رأسياً عند قاعدة المشطية الثالثة على الأخمص.",
+    "Angle tube 40° cephalad at 3rd MT base on the sole."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and label side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "calcaneus-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العقب جانبي",
+   "Lateral calcaneus"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Calcaneus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "تقييم كسور العقب وقياس زاوية بولر (Böhler's angle) والمفصل تحت الكاحل والنتوء العقبي (الشوكة العظمية).",
+   "Assess calcaneal fractures, Böhler's angle, subtalar joint and plantar/Achilles calcaneal spurs."
+  ],
+  "pos": [
+   "الجانب الوحشي للقدم والكاحل ملاصق للكاسيت، والكاحل بزاوية 90° دون دوران.",
+   "Lateral side of foot/ankle flat on the detector, ankle at 90° without rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند نقطة ~2.5 سم أسفل الكعب الإنسي.",
+   "Central ray perpendicular ~2.5 cm inferior to the medial malleolus."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "العقب كاملاً، المفصل تحت الكاحل، وجزء من الكاحل والقبة الحُقّية بوضع جانبي نقي.",
+    "Entire calcaneus, subtalar joint and talar dome in true lateral profile."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الكاحل: يشوه قياس زاوية بولر (الطبيعية 20–40°).",
+    "Ankle rotation distorts Böhler's angle (normal 20–40°)."
+   ]
+  ],
+  "tips": [
+   "انخفاض زاوية بولر (< 20°) يشير بقوة لكسر انضغاطي في العقب. اسأل عن الحمل.",
+   "A flattened Böhler's angle (< 20°) strongly indicates a depressed calcaneal fracture. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الإنسية للعقب ويخرج من الجهة الوحشية نحو الكاسيت.",
+   "The beam enters medially and exits laterally onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–68",
+    "60–68"
+   ],
+   "mas": [
+    "4–7",
+    "4–7"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.05 ث = 5 mAs",
+    "Example: 100 mA × 0.05 s = 5 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الجانب الوحشي للكاحل والعقب على الكاسيت بزاوية 90°.",
+    "Place lateral ankle/heel flat on detector at 90°."
+   ],
+   [
+    "مركّز 2.5 سم أسفل الكعب الإنسي وضيّق المجال.",
+    "Centre 2.5 cm below medial malleolus and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and label side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "ankle-med-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكاحل مائل إنسي 45°",
+   "Ankle medial oblique 45°"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "إظهار الكعب الوحشي والشظية البعيدة والمرتبط الظنبوبي الشظوي السفلي (distal tibiofibular syndesmosis) بوضوح.",
+   "Demonstrate the lateral malleolus, distal fibula and distal tibiofibular syndesmosis clearly."
+  ],
+  "pos": [
+   "الساق والقدم مدارتان 45° للداخل (دوران إنسي) والكاحل بوضع 90°.",
+   "Leg and foot internally rotated 45° with ankle at 90°."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند منتصف الكاحل بين الكعبين.",
+   "Central ray perpendicular midway between the malleoli."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الشظية البعيدة والكعب الوحشي مفصولان جزئياً عن القصبة.",
+    "Distal fibula and lateral malleolus cleanly profiled."
+   ]
+  ],
+  "err": [
+   [
+    "خلطه مع مسقط موتيس الذي يحتاج 15–20° فقط.",
+    "Confusing 45° oblique with the 15–20° mortise view."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وثبّت الساق بإسفنجة 45°.",
+   "Ask about pregnancy and support leg on a 45° wedge."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام-الوحشي بزاوية 45° ويخرج نحو الكاسيت.",
+   "The beam enters anterolaterally at 45° onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر الساق والقدم 45° للداخل واسندهما بإسفنجة.",
+    "Rotate leg and foot 45° medially on a wedge."
+   ],
+   [
+    "مركّز بين الكعبين على 100 سم وضيّق المجال.",
+    "Centre between malleoli at 100 cm and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "ankle-stress",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكاحل بالإجهاد (ميلان الحُق/السحب الأمامي)",
+   "Ankle stress views (talar tilt / anterior drawer)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "تقييم تمزق الأربطة الجانبية للكاحل وعدم الاستقرار المزمن بعد استبعاد الكسور: اختبار ميلان الحُق (Talar tilt - انقلاب للداخل) واختبار السحب الأمامي (Anterior drawer).",
+   "Assess lateral ankle ligament tears and chronic instability after fractures are excluded: inversion talar tilt and anterior drawer stress views."
+  ],
+  "pos": [
+   "يُجرى بواسطة الطبيب أو بجهاز إجهاد خاص (Telos): إما صورة موتيس مع ثني/انقلاب القدم للداخل (Talar tilt)، أو صورة جانبية مع دفع الكعب للأمام (Anterior drawer).",
+   "Performed by the physician or stress device: mortise view during inversion stress (talar tilt) or lateral view during anterior drawer stress."
+  ],
+  "crt": [
+   "عمودي على مفصل الكاحل مع ارتداء الفاحص لقفازات ومئزر رصاص.",
+   "Perpendicular to ankle joint; examiner wears lead apron and gloves."
+  ],
+  "br": [
+   "الثبات أثناء اللقطة.",
+   "Stay still during exposure."
+  ],
+  "crit": [
+   [
+    "مفصل الكاحل مفتوح بوضوح لقياس زاوية ميلان القبة الحُقّية أو الإزاحة الأمامية بالمليمتر.",
+    "Tibiotalar joint clearly shown to measure talar tilt angle or anterior translation."
+   ]
+  ],
+  "err": [
+   [
+    "إجراء الإجهاد قبل استبعاد الكسر بالصور الروتينية!",
+    "Performing stress views before excluding fracture!"
+   ]
+  ],
+  "tips": [
+   "لا تُجرَ أبداً قبل مراجعة صور الكاحل العادية لاستبعاد الكسور. يُفضَّل مقارنة الكاحل السليم. اسأل عن الحمل.",
+   "Never perform before routine views exclude a fracture; compare with normal side. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر مفصل الكاحل نحو الكاسيت.",
+   "The beam passes through the ankle joint onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "راجع الصور الروتينية وتأكد من خلوها من الكسور واسأل عن الحمل.",
+    "Confirm fractures are excluded on routine views; ask about pregnancy."
+   ],
+   [
+    "يطبّق الطبيب الإجهاد (Inversion أو Anterior drawer) مع الوقاية الإشعاعية.",
+    "Physician applies stress with lead protection."
+   ],
+   [
+    "التقط الصورة فوراً وضع علامة نوع الإجهاد والجهة.",
+    "Expose promptly and label stress type and side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "ankle-wb",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الكاحل بحمل الوزن (AP/Mortise/جانبي)",
+   "Weight-bearing ankle"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Talus$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula|Talus|Calcaneus)$"
+  ],
+  "ind": [
+   "تقييم خشونة مفصل الكاحل وفقدان الغضروف، أو الكشف عن عدم ثبات الكسر الكاحلي تحت حمل وزن الجسم (gravity/weight-bearing stability).",
+   "Assess ankle osteoarthritis/cartilage loss and check ankle fracture stability under physiological weight-bearing."
+  ],
+  "pos": [
+   "المريض واقف بوزن متساوٍ على القدمين فوق منصة مرتفعة والكاسيت عمودي خلف الكاحلين (لـAP/Mortise) أو بجانب الكاحل (للجانبي).",
+   "Patient standing evenly on both feet on a raised platform with detector upright behind the ankles (AP/Mortise) or beside the ankle (lateral)."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند منتصف الكاحل (بين الكعبين).",
+   "Horizontal central ray perpendicular at the ankle joint midpoint."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "مفصل الكاحل والقصبة البعيدة في وضع حمل وزن حقيقي وعلامة Weight-bearing مسجلة.",
+    "Ankle joint and distal tibia in true weight-bearing with Weight-bearing label."
+   ]
+  ],
+  "err": [
+   [
+    "الوقوف على قدم واحدة فقط أو الجلوس.",
+    "Sitting or non-weight-bearing."
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وتأكد من قدرة المريض على الوقوف بأمان.",
+   "Ask about pregnancy and ensure safe standing balance."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من أمام الكاحل ويخرج نحو الكاسيت العمودي.",
+   "The horizontal beam enters anteriorly and exits posteriorly onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–68",
+    "58–68"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أوقف المريض بوزن متساوٍ على المنصة أمام/خلف الكاسيت العمودي.",
+    "Stand patient evenly on platform against upright detector."
+   ],
+   [
+    "مركّز أفقياً عند مفصل الكاحل وضيّق المجال.",
+    "Centre horizontally at ankle joint and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة Weight-bearing.",
+    "Ask for stillness, expose and label Weight-bearing."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "tibfib-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الساق AP (القصبة والشظية)",
+   "Tibia & fibula AP"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Tibia$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula)$"
+  ],
+  "ind": [
+   "تقييم كسور القصبة والشظية (بما فيها كسر مايزونوف Maisonneuve في الشظية القريبة مع إصابة الكاحل)، التهاب العظم، والأورام.",
+   "Evaluate tibial/fibular fractures (including proximal fibular Maisonneuve fracture), osteomyelitis and bone lesions."
+  ],
+  "pos": [
+   "المريض مستلقٍ أو جالس والساق ممدودة على الكاسيت الطويل (قطرياً إذا لزم لتضمين الركبة والكاحل معاً)، والرضفة موجهة للأعلى مباشرة دون دوران.",
+   "Patient supine or seated with leg extended on a long detector (diagonally if needed to include both knee and ankle), patella pointing straight up without rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على منتصف الساق (منتصف عظم القصبة).",
+   "Central ray perpendicular at mid-shaft of the tibia."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "مفصلا الركبة والكاحل معاً ضمن الصورة (أو صورة منفصلة للمفصل الناقص).",
+    "Both knee and ankle joints included (or separate exposure for missed joint)."
+   ],
+   [
+    "لا دوران في الركبة أو الكاحل.",
+    "No rotation of knee or ankle."
+   ]
+  ],
+  "err": [
+   [
+    "قطع أحد المفصلين (الركبة أو الكاحل): خطأ شائع يفوّت كسور الشظية القريبة!",
+    "Omitting either joint can miss a proximal fibular Maisonneuve fracture!"
+   ]
+  ],
+  "tips": [
+   "قاعدة العظام الطويلة: يجب دائماً إظهار المفصلين أعلى وأسفل العظم. اسأل عن الحمل.",
+   "Long-bone rule: always include both proximal and distal joints. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من السطح الأمامي للساق ويخرج من الخلف نحو الكاسيت.",
+   "The beam enters the anterior leg and exits posteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "62–72",
+    "62–72"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة واسأل عن الحمل.",
+    "Check request, side and pregnancy."
+   ],
+   [
+    "ابسط الساق على الكاسيت بحيث يشمل الركبة والكاحل معاً.",
+    "Extend leg on detector covering both knee and ankle."
+   ],
+   [
+    "مركّز على منتصف القصبة على 100 سم.",
+    "Centre at mid-tibia at 100 cm."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and label side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "tibfib-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الساق جانبي (القصبة والشظية)",
+   "Tibia & fibula lateral"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Tibia$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Tibia|Fibula)$"
+  ],
+  "ind": [
+   "تحديد إزاحة الكسور في المستوى الجانبي وتقييم التئام الكسور ومواضع المسامير والصفائح.",
+   "Assess fracture displacement in the lateral plane, fracture union and orthopaedic hardware."
+  ],
+  "pos": [
+   "الساق على جانبها الوحشي، الركبة مثنية قليلاً والكاحل 90°، مع شمول مفصلي الركبة والكاحل.",
+   "Leg on its lateral side, knee slightly flexed, ankle 90°, including both knee and ankle joints."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على منتصف القصبة.",
+   "Central ray perpendicular at mid-tibia."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "مفصلا الركبة والكاحل ضمن الصورة، والشظية متراكبة جزئياً خلف القصبة.",
+    "Both knee and ankle included with fibula projected posteriorly."
+   ]
+  ],
+  "err": [
+   [
+    "تحريك ساق مكسورة بقوة: استخدم شعاعاً أفقياً (cross-table) في الكسور غير المستقرة.",
+    "Forcing rotation of an unstable fracture: use cross-table lateral instead."
+   ]
+  ],
+  "tips": [
+   "إذا كان الكسر مؤلماً جداً أو غير مستقر، صوّر جانبياً بشعاع أفقي دون قلب الساق. اسأل عن الحمل.",
+   "In unstable/painful fractures, take a cross-table lateral without rolling the leg. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الإنسية للساق ويخرج من الوحشية نحو الكاسيت.",
+   "The beam enters medially and exits laterally onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "62–72",
+    "62–72"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الجانب الوحشي للساق على الكاسيت مع شمول المفصلين.",
+    "Place lateral leg on detector including both joints."
+   ],
+   [
+    "مركّز عند منتصف الساق على 100 سم.",
+    "Centre at mid-leg at 100 cm."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة.",
+    "Ask for stillness, expose and label side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الركبة مائل (إنسي / وحشي)",
+   "Knee oblique (medial/lateral)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "فحص الهضبة الظنبوبية (tibial plateau)، رأس الشظية، واللقمتين الفخذيتين لكشف الكسور الخفية والأجسام الحرة.",
+   "Evaluate the tibial plateau, fibular head and femoral condyles for subtle fractures and loose bodies."
+  ],
+  "pos": [
+   "الساق ممدودة ثم تُدار 45° للداخل (المائل الإنسي: يظهر رأس الشظية والمفصل الظنبوبي الشظوي القريب واللقمة الوحشية) أو 45° للخارج (المائل الوحشي: يظهر اللقمة الإنسية).",
+   "Leg extended and rotated 45° medially (shows fibular head/proximal tibiofibular joint) or 45° laterally (shows medial femoral condyle)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند ~1.5 سم أسفل قمة الرضفة.",
+   "Central ray perpendicular ~1.5 cm below the patellar apex."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "في المائل الإنسي: رأس الشظية مفصولاً عن الظنبوب؛ وفي الوحشي: اللقمة الإنسية واضحة.",
+    "Medial oblique separates fibular head; lateral oblique profiles medial condyle."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير القدم فقط دون تدوير الورك والركبة: لا يدور مفصل الركبة 45° فعلياً!",
+    "Rotating only the foot without the whole leg fails to rotate the knee 45°!"
+   ]
+  ],
+  "tips": [
+   "أدر الساق بأكملها من الورك وليس القدم وحدها. اسأل عن الحمل.",
+   "Rotate the entire leg from the hip, not just the foot. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 45° أمام الركبة ويخرج نحو الكاسيت.",
+   "The beam enters obliquely at 45° onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "62–72",
+    "62–72"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أدر الساق بأكملها 45° للداخل ثم للخارج.",
+    "Rotate entire leg 45° medially, then laterally."
+   ],
+   [
+    "مركّز تحت قمة الرضفة بـ 1.5 سم على 100 سم.",
+    "Centre 1.5 cm below patellar apex at 100 cm."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة الجهة والاتجاه.",
+    "Ask for stillness, expose and label side/oblique."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "knee-ap-wb",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الركبة AP بحمل الوزن (واقف)",
+   "Knee AP weight-bearing"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "landscape"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "تقييم خشونة الركبة (osteoarthritis)، تضيق الفراغ المفصلي الفعلي تحت وزن الجسم، وتقوس الساقين (varus/valgus).",
+   "Assess knee osteoarthritis, true cartilage/joint-space narrowing under body weight, and varus/valgus alignment."
+  ],
+  "pos": [
+   "المريض واقف بوزن متساوٍ على الركبتين ممدودتين، والظهر/خلف الركبتين ملاصق للكاسيت العمودي، وأصابع القدم للأمام مباشرة دون دوران.",
+   "Patient standing evenly with both knees fully extended, back of knees against the upright detector, toes pointing straight ahead."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عند مستوى 1.5 سم أسفل قمتي الرضفتين (يشمل الركبتين معاً للمقارنة).",
+   "Horizontal central ray ~1.5 cm below the patellar apices (both knees included for comparison)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الركبتان معاً متناظرتان، الرضفة في المنتصف، والفراغ المفصلي الفخذي الظنبوبي واضح.",
+    "Both knees symmetric with patellae centred and femorotibial joint spaces clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "تصوير الركبة مستلقياً لتقييم الخشونة: يبدو الفراغ المفصلي أوسع من حقيقته!",
+    "Supine knee film for arthritis overestimates joint space!"
+   ]
+  ],
+  "tips": [
+   "اسأل عن الحمل وتأكد من ثبات المريض قبل التعريض.",
+   "Ask about pregnancy and ensure steady standing posture."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من أمام الركبتين ويخرج نحو الكاسيت العمودي.",
+   "The horizontal beam enters anteriorly and exits posteriorly onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "يدوي أو AEC",
+    "Manual or AEC"
+   ]
+  },
+  "steps": [
+   [
+    "أوقف المريض بوزن متساوٍ على القدمين وركبتيه ممدودتان.",
+    "Stand patient evenly with knees fully extended."
+   ],
+   [
+    "مركّز أفقياً أسفل قمتي الرضفتين على 100 سم.",
+    "Centre horizontally below patellar apices at 100 cm."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض وضع علامة Weight-bearing.",
+    "Ask for stillness, expose and label Weight-bearing."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-rosenberg",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الركبة PA بثني 45° وحمل الوزن (روزنبرغ)",
+   "Rosenberg (PA 45° flexion weight-bearing)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -10,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "landscape"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "أكثر مسقط حساسية لكشف تضيق الغضروف المبكر في الخشونة الخلفية للركبة (حيث يتآكل الغضروف في الثني قبل البسط) والحُزّ بين اللقمتين.",
+   "Most sensitive view for early osteoarthritis and posterior femoral condylar cartilage loss, plus intercondylar notch."
+  ],
+  "pos": [
+   "المريض واقف وجهه للكاسيت مع ملامسة الرضفتين للكاسيت وثني الركبتين بزاوية 45° (التمسك بمسند أمامي للاتزان).",
+   "Patient standing facing the detector with patellae touching it and knees flexed 45° (holding a front support for balance)."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 10° ذيلياً (للأسفل) عند مستوى منتصف الحفرة المأبضية.",
+   "Central ray angled 10° caudad centred at the mid-popliteal crease."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الفراغ المفصلي الفخذي الظنبوبي والحُزّ بين اللقمتين مفتوحان بوضوح في الركبتين.",
+    "Femorotibial joint spaces and intercondylar notch widely open bilaterally."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية ثني أقل أو أكثر من 45° أو نسيان الـ 10° ذيلياً.",
+    "Flexion not at 45° or omitting 10° caudad tilt."
+   ]
+  ],
+  "tips": [
+   "يكشف روزنبرغ تضيق المفصل الذي لا يظهر في الـAP العادي. اسأل عن الحمل.",
+   "Rosenberg detects joint-space narrowing missed on extended AP views. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من خلف الركبتين (الحفرة المأبضية) مائلاً 10° للأسفل ويخرج نحو الكاسيت.",
+   "The beam enters the popliteal fossae angled 10° caudad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها",
+    "Grid or non-grid"
+   ],
+   "aec": [
+    "يدوي أو AEC",
+    "Manual or AEC"
+   ]
+  },
+  "steps": [
+   [
+    "أوقف المريض أمام الكاسيت واثنِ الركبتين 45° مع ملامسة الرضفتين للكاسيت.",
+    "Stand patient facing detector, knees flexed 45°, patellae touching."
+   ],
+   [
+    "أمل الأنبوب 10° ذيلياً عند الحفرة المأبضية على 100 سم.",
+    "Angle tube 10° caudad at popliteal crease at 100 cm."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-tunnel-camp",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "النفق للركبة (كامب-كوفنتري)",
+   "Intercondylar tunnel (Camp–Coventry)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": -40,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "إظهار الحُزّ بين اللقمتين (intercondylar fossa/notch) والأشواك الظنبوبية لكشف التهاب العظم والغضروف السالخ (OCD) والأجسام الحرة.",
+   "Demonstrate the intercondylar notch and tibial spines for osteochondritis dissecans (OCD) and loose bodies."
+  ],
+  "pos": [
+   "المريض منبطح على بطنه والركبة مثنية بزاوية 40–50° مع سند الساق والقدم على وسادة عالية.",
+   "Patient prone with knee flexed 40–50° and lower leg supported on a bolster."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 40–50° ذيلياً (موازياً لمحور الساق المائلة) يدخل في الحفرة المأبضية.",
+   "Central ray angled 40–50° caudad (perpendicular to the lower leg) entering the popliteal crease."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الحُزّ بين اللقمتين مفتوح بشكل قوس واسع خالٍ من تراكب الرضفة.",
+    "Intercondylar fossa wide open and free of patellar overlap."
+   ]
+  ],
+  "err": [
+   [
+    "عدم موازاة زاوية الشعاع مع زاوية ثني الساق.",
+    "Beam angle not matching leg flexion angle."
+   ]
+  ],
+  "tips": [
+   "إذا لم يستطع المريض الانبطاح، استعمل طريقة هولمبلاد أو صورة AP بمحوري. اسأل عن الحمل.",
+   "If patient cannot lie prone, use Holmblad or supine axial tunnel view. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الحفرة المأبضية مائلاً 40–50° للأسفل ويخرج نحو الكاسيت.",
+   "The beam enters the popliteal fossa angled 40–50° caudad onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض منبطحاً واثنِ الركبة 40–50° على دعامة.",
+    "Lay prone and flex knee 40–50° on a support."
+   ],
+   [
+    "أمل الأنبوب 40–50° ذيلياً عند الحفرة المأبضية.",
+    "Angle tube 40–50° caudad at popliteal crease."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-tunnel-holmblad",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "النفق للركبة (هولمبلاد)",
+   "Intercondylar tunnel (Holmblad)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "إظهار الحُزّ بين اللقمتين (intercondylar notch) والأشواك الظنبوبية باستخدام وضعية الركوع بشعاع عمودي.",
+   "Demonstrate the intercondylar notch and tibial spines using a kneeling PA position with perpendicular beam."
+  ],
+  "pos": [
+   "المريض راكعاً على الطاولة (وضعية الأربع) مع إمالة الفخذ للأمام 20° لتكون الزاوية بين الساق والفخذ ~70°، والكاسيت تحت الركبة المصابة.",
+   "Patient kneeling on the table (all fours) leaning forward 20° so knee flexion is ~70°, with detector under the affected knee."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي تماماً على الكاسيت (عند الحفرة المأبضية) بفضل ميلان الجسم.",
+   "Central ray strictly perpendicular to the detector at the popliteal fossa."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الحُزّ بين اللقمتين مفتوح دون تراكب الرضفة والأشواك الظنبوبية واضحة.",
+    "Intercondylar notch open without patellar overlap; tibial spines clear."
+   ]
+  ],
+  "err": [
+   [
+    "عدم تحمل المريض للركوع: انتقل لكامب-كوفنتري أو روزنبرغ.",
+    "Patient unable to kneel: switch to Camp–Coventry or Rosenberg."
+   ]
+  ],
+  "tips": [
+   "وضعية هولمبلاد أسهل في ضبط الزاوية لأن الشعاع يبقى عمودياً، لكنها تتطلب قدرة المريض على الركوع. اسأل عن الحمل.",
+   "Holmblad keeps the beam vertical but requires the patient to kneel comfortably. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً في الحفرة المأبضية ويخرج نحو الكاسيت.",
+   "The beam enters vertically into the popliteal fossa onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–75",
+    "65–75"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.08 ث = 8 mAs",
+    "Example: 100 mA × 0.08 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "اطلب من المريض الركوع على الطاولة مع إمالة الجذع للأمام 20°.",
+    "Have patient kneel on table leaning forward 20°."
+   ],
+   [
+    "مركّز عمودياً في الحفرة المأبضية على 100 سم.",
+    "Centre vertically at popliteal crease at 100 cm."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "patella-merchant",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرضفة مماسي (ميرشانت / Skyline)",
+   "Patella skyline (Merchant)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "SI",
+  "tilt": -30,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center"
+  },
+  "sid": 1.2,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "تقييم المفصل الرضفي الفخذي (patellofemoral joint)، تحت الخلع الجانبي للرضفة، الكسور الطولانية، وتآكل غضروف الرضفة في الركبتين معاً.",
+   "Evaluate the patellofemoral joint, lateral patellar tilt/subluxation, vertical patellar fractures and chondromalacia bilaterally."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر مع ثني الركبتين 45° فوق حافة الطاولة على مسند ميرشانت، والكاسيت موضوع عمودياً على الساقين أسفل الركبتين.",
+   "Patient supine with knees flexed 45° over the table end on a Merchant support, detector resting across the shins below the knees."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 30° للأسفل من الأفق (30° على محور الفخذ) متمركزاً بين الرضفتين.",
+   "Central ray angled 30° downward from horizontal (perpendicular to detector) centred between both patellae."
+  ],
+  "br": [
+   "الثبات التام مع استرخاء عضلات الفخذ.",
+   "Stay still with quadriceps relaxed."
+  ],
+  "crit": [
+   [
+    "الرضفتان في وضع سماوي (Skyline) والمفصلان الرضفيان الفخذيان مفتوحان تماماً للمقارنة.",
+    "Both patellae in skyline profile with open patellofemoral spaces."
+   ]
+  ],
+  "err": [
+   [
+    "شد عضلات الفخذ: يرفع الرضفة ويشوه تقييم التتبع.",
+    "Quadriceps contraction alters patellar tracking."
+   ]
+  ],
+  "tips": [
+   "يفضّل مقارنة الركبتين معاً واسترخاء العضلات تماماً. اسأل عن الحمل.",
+   "Bilateral comparison with relaxed quadriceps is key. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الرضفتين مائلاً 30° للأسفل نحو الكاسيت على الساقين.",
+   "The beam enters above the patellae angled 30° downward onto the shin detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ثبّت الركبتين مثنيتين 45° على مسند ميرشانت.",
+    "Rest knees flexed 45° on Merchant support."
+   ],
+   [
+    "ضع الكاسيت على الساقين وأمل الأنبوب 30° للأسفل بين الرضفتين.",
+    "Place detector on shins and angle tube 30° down between patellae."
+   ],
+   [
+    "اطلب إرخاء العضلات والثبات ثم اعرّض.",
+    "Ask patient to relax quads and stay still, then expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "patella-settegast",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرضفة مماسي (ستيغاست)",
+   "Patella tangential (Settegast)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "IS",
+  "tilt": 15,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "إظهار الرضفة والمفصل الرضفي الفخذي بمنظر مماسي عند عدم توفر مسند ميرشانت (في غياب كسر مستعرض حاد في الرضفة).",
+   "Tangential view of the patella and patellofemoral joint without a Merchant jig (only when acute transverse fracture is excluded)."
+  ],
+  "pos": [
+   "المريض منبطحاً على بطنه، تُثنى الركبة المصابة بزاوية حادة (90–120°) بحيث تكون الساق عمودية أو مائلة للأمام، ويمسك المريض بشريط شاش حول الكاحل.",
+   "Patient prone with the affected knee flexed ~90–120° using a gauze strap held by the patient."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15–20° عبر المفصل الرضفي الفخذي باتجاه الكاسيت الموضوع تحت الركبة.",
+   "Central ray angled 15–20° through the patellofemoral joint space onto the detector under the knee."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الرضفة منفصلة عن اللقمتين الفخذيتين والمفصل الرضفي الفخذي مفتوح.",
+    "Patella projected clear of femoral condyles with open joint space."
+   ]
+  ],
+  "err": [
+   [
+    "تطبيق الثني الحاد في كسر مستعرض بالرضفة: يباعد شظايا الكسر!",
+    "Acute flexion in a transverse patellar fracture separates fragments!"
+   ]
+  ],
+  "tips": [
+   "ممنوع في الرضوض الحادة قبل استبعاد كسر الرضفة بالجانبي! اسأل عن الحمل.",
+   "Contraindicated in acute trauma until patellar fracture is excluded on lateral! Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مماسياً عبر المفصل الرضفي الفخذي نحو الكاسيت تحت الركبة.",
+   "The beam passes tangentially through the patellofemoral joint onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من عدم وجود كسر رضفة حاد على الجانبي، واسأل عن الحمل.",
+    "Exclude acute patellar fracture on lateral first; ask about pregnancy."
+   ],
+   [
+    "ضع المريض منبطحاً واثنِ الركبة بلطف بشريط شاش.",
+    "Lay prone and gently flex knee with strap."
+   ],
+   [
+    "وجّه الشعاع 15–20° عبر المفصل الرضفي الفخذي واعرض.",
+    "Direct beam 15–20° through patellofemoral space and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "patella-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرضفة PA",
+   "Patella PA"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "إظهار الرضفة بوضوح وتفصيل عالٍ (بتقليل التكبير الهندسي لملامستها للكاسيت) لكشف الكسور الشعرية والرضفة ثنائية الجزء (bipartite patella).",
+   "Sharp, low-magnification view of the patella (closest to detector) to evaluate subtle fractures and bipartite patella."
+  ],
+  "pos": [
+   "المريض منبطحاً على بطنه والركبة ممدودة والرضفة ملامسة للكاسيت، مع تدوير الكعب قليلاً (5–10° للداخل) لمحاذاة الرضفة مع منتصف الفخذ.",
+   "Patient prone with knee extended, patella resting on the detector, heel rotated 5–10° medially to align the patella symmetrically."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند منتصف الحفرة المأبضية (مقابل الرضفة).",
+   "Central ray perpendicular at mid-popliteal crease (over the patella)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الرضفة كاملة بوضوح فائق عبر أسفل الفخذ دون تشوه تكبيري.",
+    "Entire patella sharply outlined through the distal femur with minimal magnification."
+   ]
+  ],
+  "err": [
+   [
+    "إجبار مريض رضوض الرضفة الحادة على الانبطاح إذا كان مؤلماً.",
+    "Forcing painful prone positioning in acute trauma."
+   ]
+  ],
+  "tips": [
+   "مسقط PA يعطي دقة أعلى للرضفة من AP لأنها تصبح ملاصقة للكاسيت. اسأل عن الحمل.",
+   "PA gives superior patellar sharpness compared with AP because OID is minimised. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الحفرة المأبضية ويخرج عبر الرضفة نحو الكاسيت.",
+   "The beam enters the popliteal fossa and exits the patella onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "62–72",
+    "62–72"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض منبطحاً والرضفة ملامسة للكاسيت.",
+    "Position prone with patella against detector."
+   ],
+   [
+    "مركّز في منتصف الحفرة المأبضية على 100 سم وضيّق المجال.",
+    "Centre at mid-popliteal crease at 100 cm and collimate."
+   ],
+   [
+    "اطلب الثبات ثم اعرّض.",
+    "Ask for stillness and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-cross-table",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الركبة جانبي بشعاع أفقي (دم ودهن بالمفصل)",
+   "Knee cross-table lateral (lipohaemarthrosis)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "كشف مستوى السائل والدهن (lipohaemarthrosis) في الجراب فوق الرضفة كعلامة أكيدة لكسر داخل المفصل في رضوض الركبة الحادة دون تحريك الساق.",
+   "Detect fat-fluid level (lipohaemarthrosis) in the suprapatellar pouch—pathognomonic of an intra-articular fracture—without turning the injured leg."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر دون تحريك الساق، مع وضع دعامة رفيعة تحت الركبة عند الإمكان والكاسيت عمودياً ملاصقاً للجانب الوحشي (أو الإنسي) للركبة.",
+   "Patient supine without rotating the leg, detector upright beside the lateral (or medial) knee."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مفصل الركبة (~1.5 سم أسفل قمة الرضفة).",
+   "Horizontal central ray perpendicular to the detector at the knee joint (~1.5 cm below patellar apex)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "الجراب فوق الرضفة ظاهر بوضوح لكشف خط أفقي فاصل بين الدهن الطافي والدم (lipohaemarthrosis)، واللقمتان الفخذيتان متراكبتان.",
+    "Suprapatellar pouch clearly seen for fat-fluid level, femoral condyles superimposed."
+   ]
+  ],
+  "err": [
+   [
+    "استخدام شعاع عمودي مع قلب المريض: يختفي خط السائل والدهن الأفقي!",
+    "Turning patient with vertical beam destroys the horizontal fat-fluid level!"
+   ]
+  ],
+  "tips": [
+   "علامة Lipohaemarthrosis تعني وجود كسر متصل بالمفصل حتى لو كان خط الكسر غير مرئي بوضوح! اسأل عن الحمل.",
+   "Lipohaemarthrosis indicates an intra-articular fracture even if the fracture line itself is occult! Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الجانب الإنسي للركبة ويخرج من الوحشي نحو الكاسيت العمودي.",
+   "The horizontal beam enters medially and exits laterally onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ المريض مستلقياً ولا تقلب الساق المصابة.",
+    "Keep supine and do not roll the injured leg."
+   ],
+   [
+    "ضع الكاسيت عمودياً بجانب الركبة ومركّز أفقياً عند المفصل.",
+    "Place detector upright beside knee and centre horizontally at joint."
+   ],
+   [
+    "اعرض وتحقق من الجراب فوق الرضفة.",
+    "Expose and inspect suprapatellar pouch."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "knee-stress",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الركبة بالإجهاد (روحاني / فحجي)",
+   "Knee stress (valgus/varus)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$",
+   "at": "center",
+   "dy": -0.02
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Fibula|Patella)$"
+  ],
+  "ind": [
+   "تقييم تمزق الأربطة الجانبية الإنسي (MCL - بإجهاد Valgus) والوحشي (LCL - بإجهاد Varus) أو إصابات صفيحة النمو عند الأطفال بعد استبعاد الكسور.",
+   "Evaluate MCL (valgus stress) and LCL (varus stress) tears or physeal instability in children after fractures are excluded."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر والركبة ممدودة (أو مثنية 20°)، يطبّق الطبيب إجهاد Valgus أو Varus يدوياً مع ارتداء الوقاية الإشعاعية.",
+   "Patient supine with knee extended (or 20° flexed) while the clinician applies valgus or varus stress wearing lead protection."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند مفصل الركبة.",
+   "Central ray perpendicular at the knee joint."
+  ],
+  "br": [
+   "الثبات أثناء اللقطة.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "مفصل الركبة مفتوح في جهة الإجهاد لقياس اتساع الفراغ المفصلي مقارنة بالجهة السليمة.",
+    "Joint space opening clearly demonstrated for comparison with normal side."
+   ]
+  ],
+  "err": [
+   [
+    "تطبيق الإجهاد قبل استبعاد الكسور.",
+    "Applying stress before excluding fracture."
+   ]
+  ],
+  "tips": [
+   "التصوير بالرنين المغناطيسي (MRI) هو الأدق لتقييم أربطة الركبة عند توفره. اسأل عن الحمل.",
+   "MRI is the gold standard for knee ligaments where available. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أمام الركبة ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "62–72",
+    "62–72"
+   ],
+   "mas": [
+    "4–8",
+    "4–8"
+   ],
+   "ex": [
+    "مثال: 100 mA × 0.06 ث = 6 mAs",
+    "Example: 100 mA × 0.06 s = 6 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من خلو الصور الأولية من الكسور واسأل عن الحمل.",
+    "Exclude fracture on routine views first; ask about pregnancy."
+   ],
+   [
+    "يطبّق الطبيب إجهاد Valgus ثم Varus مع الوقاية.",
+    "Clinician applies valgus then varus stress with lead protection."
+   ],
+   [
+    "اعرض وضع علامة نوع الإجهاد والجهة.",
+    "Expose and label stress direction and side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "femur-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفخذ AP",
+   "Femur AP"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Femur$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "تقييم كسور جسم الفخذ، الأورام، التهاب العظم، ومواضع الصفائح والمسامير النخاعية.",
+   "Evaluate femoral shaft fractures, bone lesions, osteomyelitis and intramedullary nails/plates."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر والساق ممدودة مع دوران داخلي للقدم 10–15° (إلا إذا اشتُبه بكسر) لإظهار عنق الفخذ بالوضع الصحيح. غالباً يتطلب الفخذ كاسيتين (الفخذ القريب مع الورك + الفخذ البعيد مع الركبة).",
+   "Patient supine with leg extended and 10–15° internal rotation (unless fracture suspected). Adult femora usually need two overlapping exposures to include both hip and knee."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف عظم الفخذ (أو لكل نصف على حدة ليشمل الورك والركبة).",
+   "Central ray perpendicular at mid-femur (or upper/lower halves separately to cover both hip and knee)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "مفصل الورك ومفصل الركبة مغطيان بالكامل (في صورة واحدة أو صورتين متداخلتين).",
+    "Both hip and knee joints included (single or two overlapping films)."
+   ]
+  ],
+  "err": [
+   [
+    "نسيان أحد المفصلين أو تدوير ساق مكسورة بقوة.",
+    "Omitting either joint or forcing rotation on a fractured femur."
+   ]
+  ],
+  "tips": [
+   "لا تدوّر الساق عند اشتباه كسر في الفخذ أو الورك. اسأل عن الحمل.",
+   "Never rotate a suspected fractured femur. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من مقدمة الفخذ ويخرج نحو الكاسيت.",
+   "The beam enters the anterior thigh and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "72–82",
+    "72–82"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة واسأل عن الحمل.",
+    "Check request, side and pregnancy."
+   ],
+   [
+    "استلقِ المريض على الظهر، وغطِّ الفخذ مع مفصلي الورك والركبة (بصورتين عند الحاجة).",
+    "Lay supine and cover femur including both hip and knee (two views if needed)."
+   ],
+   [
+    "مركّز على منتصف الفخذ على 100 سم، اطلب الثبات ثم اعرّض.",
+    "Centre at mid-femur at 100 cm, ask for stillness and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "femur-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفخذ جانبي",
+   "Femur lateral"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "lat-L",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Femur$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "تقييم الإزاحة الأمامية/الخلفية لكسور الفخذ ومراجعة التثبيت الجراحي.",
+   "Assess AP displacement of femoral fractures and check orthopaedic hardware."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الجانب المصاب (الجانب الوحشي للفخذ على الطاولة) مع ثني الركبة قليلاً، وتُحرك الساق السليمة للأمام أو الخلف بعيداً عن الفخذ القريب.",
+   "Patient lying on the affected side with knee slightly flexed and opposite leg moved forward/back clear of the proximal femur."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف الفخذ (مع تضمين الركبة والورك بصورتين إن لزم).",
+   "Central ray perpendicular at mid-femur (including knee and hip across two views if needed)."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "عظم الفخذ بوضع جانبي مع تراكب اللقمتين الفخذيتين عند الركبة.",
+    "Femoral shaft in lateral profile with superimposed femoral condyles at the knee."
+   ]
+  ],
+  "err": [
+   [
+    "تراكب الفخذ السليم على الفخذ المصاب القريب.",
+    "Opposite leg overlapping the proximal femur."
+   ]
+  ],
+  "tips": [
+   "للمريض المصاب بكسر حاد في الفخذ لا تقلبه على جانبه، واستعمل المسقط الجانبي الأفقي (Cross-table). اسأل عن الحمل.",
+   "Do not roll a patient with an acute femur fracture; use cross-table lateral instead. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجهة الإنسية للفخذ ويخرج من الوحشية نحو الكاسيت.",
+   "The beam enters medially and exits laterally onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "72–82",
+    "72–82"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "استبعد الكسر الحاد غير المستقر واسأل عن الحمل.",
+    "Exclude acute unstable fracture; ask about pregnancy."
+   ],
+   [
+    "ضع المريض على الجانب المصاب وأبعد الساق السليمة للخلف/الأمام.",
+    "Lay on affected side and move opposite leg clear."
+   ],
+   [
+    "مركّز عند منتصف الفخذ مع شمول الركبة/الورك ثم اعرّض.",
+    "Centre at mid-femur covering joints, then expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "femur-cross-table",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الفخذ جانبي أفقي (رضوض)",
+   "Femur cross-table lateral (trauma)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Femur$",
+   "at": "center"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "تصوير الفخذ جانبياً لمصاب الرضوض الحادة أو الكسر المثبّت بالشد دون تحريك الساق المصابة.",
+   "Lateral femur imaging in acute trauma or traction without moving the injured limb."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر، الكاسيت عمودياً بجانب الفخذ الوحشي، وتُرفع الساق السليمة للأعلى أو على حامل بعيداً عن مسار الشعاع.",
+   "Patient supine, detector upright against the lateral thigh, unaffected leg elevated clear of the beam."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند منتصف الفخذ المصاب.",
+   "Horizontal central ray perpendicular to the detector at mid-femur."
+  ],
+  "br": [
+   "الثبات التام.",
+   "Stay still."
+  ],
+  "crit": [
+   [
+    "جسم الفخذ والركبة (أو الورك) ظاهر بوضوح دون تراكب الساق السليمة.",
+    "Femoral shaft and knee/hip clearly shown without overlap by the opposite leg."
+   ]
+  ],
+  "err": [
+   [
+    "تراكب الساق السليمة على الفخذ المصاب.",
+    "Unaffected leg left in the beam path."
+   ]
+  ],
+  "tips": [
+   "مناسب تماماً للكسور الحادة ومرضى الشد العظمي. اسأل عن الحمل.",
+   "Ideal for acute fractures and patients in traction. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الجانب الإنسي للفخذ ويخرج من الوحشي نحو الكاسيت العمودي.",
+   "The horizontal beam enters medially and exits laterally onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–30",
+    "20–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ المريض مستلقياً دون تحريك الساق المصابة.",
+    "Keep supine without moving injured leg."
+   ],
+   [
+    "ضع الكاسيت عمودياً بجانب الفخذ وارفع الساق السليمة.",
+    "Place detector upright laterally and elevate normal leg."
+   ],
+   [
+    "مركّز أفقياً عند منتصف الفخذ على 100 سم ثم اعرّض.",
+    "Centre horizontally at mid-femur at 100 cm, then expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "hip-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الورك AP (أحادي الجانب)",
+   "Hip AP (unilateral)"
+  ],
+  "region": [
+   "الحوض",
+   "Pelvis"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "تقييم مفصل الورك الأحادي، عنق الفخذ، الكسور، الخلع، تآكل المفصل، ومراجعة مفصل الورك الصناعي.",
+   "Evaluate unilateral hip joint, femoral neck fractures, dislocation, osteoarthritis and hip arthroplasty."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر دون دوران في الحوض، مع تدوير القدم المصابة داخلياً 15–20° (إلا إذا اشتُبه بكسر حاد!) لإظهار عنق الفخذ بطوله الكامل.",
+   "Patient supine without pelvic rotation, affected leg internally rotated 15–20° (unless acute fracture suspected!) to profile the femoral neck."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند منتصف عنق الفخذ (~4–5 سم أسفل وعمودياً على منتصف الخط الواصل بين الـASIS والارتفاق العاني).",
+   "Central ray perpendicular to the femoral neck (~4–5 cm distal and perpendicular to the midpoint of the ASIS–symphysis line)."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "مفصل الورك، رأس الفخذ، العنق، المدور الكبير، والثلث القريب من الفخذ (مع كامل طرف المفصل الصناعي إن وُجد).",
+    "Hip joint, femoral head/neck, greater trochanter and proximal third of femur (including full prosthesis if present)."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير ساق مكسورة داخلياً: قد يزيح الكسر!",
+    "Internally rotating an acute hip fracture risks displacement!"
+   ],
+   [
+    "دوران خارجي: يقصّر عنق الفخذ.",
+    "External rotation foreshortens the femoral neck."
+   ]
+  ],
+  "tips": [
+   "في الكسور المشتبه بها صوّر الورك بوضعيته الحالية دون دوران داخلي، ويفضل أخذ صورة حوض AP كاملة للمقارنة. اسأل عن الحمل.",
+   "In suspected fracture, image as it lies without internal rotation; an AP pelvis is usually included for comparison. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الفخذ الأمامي عند الورك ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly over the hip and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–32",
+    "20–32"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والجهة واسأل عن الحمل.",
+    "Check request, side and pregnancy."
+   ],
+   [
+    "استلقِ المريض على الظهر، ودوّر القدم 15° داخلياً إن لم يكن هناك كسر حاد.",
+    "Lay supine; internally rotate foot 15° only if no acute fracture suspected."
+   ],
+   [
+    "مركّز عند عنق الفخذ على 100 سم وضيّق المجال.",
+    "Centre over femoral neck at 100 cm and collimate."
+   ],
+   [
+    "اطلب حبس النفس ثم اعرّض وضع علامة الجهة.",
+    "Ask for breath-hold, expose and label side."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "hip-frog",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الورك بوضعية الضفدع (لوينشتاين)",
+   "Hip frog-leg lateral (Lauenstein)"
+  ],
+  "region": [
+   "الحوض",
+   "Pelvis"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "تصوير جانبي غير رضّي لرأس وعنق الفخذ والمدورين: تقييم SCFE، النخر اللاوعائي (AVN)، وخشونة الورك.",
+   "Non-trauma lateral view of femoral head, neck and trochanters: SCFE, AVN and hip arthritis."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر، تُثنى الركبة والورك المصاب 90° وتُباعد الفخذ للخارج ~45° نحو الطاولة (مع إسناد الساق بإسفنجة).",
+   "Patient supine, affected hip/knee flexed and thigh abducted ~45° toward the table (supported on a sponge)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند عنق الفخذ المصاب.",
+   "Central ray perpendicular at the affected femoral neck."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "عنق ورأس الفخذ بوضعية جانبية مائلة مع ظهور المدور الصغير بوضوح.",
+    "Femoral head and neck in oblique lateral profile with lesser trochanter shown."
+   ]
+  ],
+  "err": [
+   [
+    "إجراء الوضعية في كسر الورك الحاد: ممنوع تماماً!",
+    "Strictly contraindicated in acute hip fracture!"
+   ]
+  ],
+  "tips": [
+   "ممنوع في الرضوض الحادة؛ استعمل دانيليوس-ميلر بدلاً منه. اسأل عن الحمل.",
+   "Contraindicated in acute trauma; use Danelius–Miller instead. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى الفخذ الأمامي عند الورك المصاب ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly over the abducted hip onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–32",
+    "20–32"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "استبعد كسر الورك الحاد واسأل عن الحمل.",
+    "Exclude acute fracture; ask about pregnancy."
+   ],
+   [
+    "اثنِ الركبة المصابة وباعد الفخذ 45° للخارج.",
+    "Flex affected knee and abduct thigh 45°."
+   ],
+   [
+    "مركّز عند عنق الفخذ على 100 سم ثم اعرّض.",
+    "Centre at femoral neck at 100 cm and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "hip-cross-table",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الورك جانبي أفقي (دانيليوس-ميلر)",
+   "Hip cross-table lateral (Danelius–Miller)"
+  ],
+  "region": [
+   "الحوض",
+   "Pelvis"
+  ],
+  "pose": "supine",
+  "beam": "ML",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "المسقط الجانبي القياسي والآمن لكسور الورك وعنق الفخذ في الرضوض الحادة، وتقييم زاوية وضع الكأس الحُقّي بعد تبديل المفصل.",
+   "Standard safe lateral view for acute hip/femoral neck fractures in trauma and assessing acetabular cup version post-arthroplasty."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر دون تحريك الساق المصابة. تُرفع الساق السليمة بزاوية 90° على حامل (أو مسند) لإبعادها عن مسار الأشعة. يُوضع الكاسيت عمودياً فوق عرف الحرقفة المصاب وبزاوية موازية لعنق الفخذ (~45° مع محور الجسم).",
+   "Patient supine with injured leg undisturbed. Elevate unaffected leg 90° clear of the beam. Place grid detector upright above the iliac crest parallel to the femoral neck (~45° to midline)."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت المائل (موازياً للأرض، داخلاً من بين الفخذين نحو عنق الفخذ المصاب).",
+   "Horizontal central ray perpendicular to the angled detector, directed from the medial groin through the affected femoral neck."
+  ],
+  "br": [
+   "حبس النفس والثبات.",
+   "Hold breath and stay still."
+  ],
+  "crit": [
+   [
+    "رأس وعنق الفخذ والمدوران والحُق ظاهرة بوضع جانبي نقي خالٍ من تراكب الساق السليمة.",
+    "Femoral head, neck, trochanters and acetabulum cleanly shown free of the opposite leg."
+   ]
+  ],
+  "err": [
+   [
+    "وضع الكاسيت غير موازٍ لعنق الفخذ: يؤدي لقطع رأس الفخذ أو العنق.",
+    "Detector not parallel to femoral neck cuts off the head/neck."
+   ],
+   [
+    "عدم رفع الساق السليمة كفاية: تحجب الورك.",
+    "Unaffected leg obscures the hip."
+   ]
+  ],
+  "tips": [
+   "لا تحرّك الساق المصابة إطلاقاً؛ هذا هو المسقط الآمن الوحيد للرضوض. اسأل عن الحمل.",
+   "Never move the injured leg; this is the safe trauma lateral hip view. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من المنطقة الإربية الإنسية ويعبر عنق الفخذ المصاب نحو الكاسيت العمودي.",
+   "The horizontal beam enters the medial groin and passes through the femoral neck to the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "85–95",
+    "85–95"
+   ],
+   "mas": [
+    "40–70",
+    "40–70"
+   ],
+   "ex": [
+    "مثال: 300 mA × 0.2 ث = 60 mAs",
+    "Example: 300 mA × 0.2 s = 60 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) ضرورية",
+    "Grid needed"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ الساق المصابة ثابتة دون أي حركة واسأل عن الحمل.",
+    "Keep injured leg completely still; ask about pregnancy."
+   ],
+   [
+    "ارفع الساق السليمة 90° على حامل بعيداً عن المجال.",
+    "Elevate unaffected leg 90° clear of the field."
+   ],
+   [
+    "ضع الكاسيت المزود بشبكة عمودياً فوق عرف الحرقفة بزاوية 45° موازياً لعنق الفخذ.",
+    "Place upright grid detector above iliac crest parallel to femoral neck."
+   ],
+   [
+    "وجّه الشعاع أفقياً عبر عنق الفخذ نحو الكاسيت ثم اعرّض.",
+    "Direct horizontal beam through femoral neck to detector and expose."
+   ]
+  ],
+  "limb": true,
+  "rot": 45
+ },
+ {
+  "id": "hip-johnson",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "جونسون للورك (محوري جانبي معدّل)",
+   "Johnson (modified axiolateral hip)"
+  ],
+  "region": [
+   "الحوض",
+   "Pelvis"
+  ],
+  "pose": "supine",
+  "beam": "ML",
+  "tilt": 15,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "بديل لمسقط دانيليوس-ميلر عند تعذر رفع الساق السليمة (بسبب كسر مزدوج أو تيبس)، بإمالة الشعاع لتجنب الساق السليمة.",
+   "Alternative to Danelius–Miller when the unaffected leg cannot be raised, angling the beam to clear the opposite thigh."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر مع بقاء كلتا الساقين ممدودتين، والكاسيت عمودياً بجانب الورك المصاب.",
+   "Patient supine with both legs extended, detector upright beside the affected hip."
+  ],
+  "crt": [
+   "الشعاع المركزي يدخل أسفل الساق السليمة مائلاً 15–20° للأمام/الرأس باتجاه عنق الفخذ المصاب.",
+   "Central ray angled 15–20° anteriorly/cephalad passing beneath the unaffected thigh to the affected femoral neck."
+  ],
+  "br": [
+   "حبس النفس والثبات.",
+   "Hold breath and stay still."
+  ],
+  "crit": [
+   [
+    "رأس وعنق الفخذ المصابان ظاهران دون تراكب الفخذ السليم.",
+    "Affected femoral head and neck shown clear of opposite thigh."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية غير كافية: يتراكب عظم الفخذ السليم على الورك.",
+    "Insufficient angle leaves opposite femur overlapping."
+   ]
+  ],
+  "tips": [
+   "مفيد لمرضى الرضوض المتعددة في الساقين. اسأل عن الحمل.",
+   "Useful in bilateral lower-limb trauma. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً من أسفل الفخذ السليم عبر عنق الفخذ المصاب نحو الكاسيت.",
+   "The beam enters obliquely beneath the normal thigh through the affected neck onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "85–95",
+    "85–95"
+   ],
+   "mas": [
+    "40–70",
+    "40–70"
+   ],
+   "ex": [
+    "مثال: 300 mA × 0.2 ث = 60 mAs",
+    "Example: 300 mA × 0.2 s = 60 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "أبقِ المريض مستلقياً بالساقين ممدودتين واسأل عن الحمل.",
+    "Keep supine with legs extended; ask about pregnancy."
+   ],
+   [
+    "ضع الكاسيت عمودياً بجانب الورك المصاب.",
+    "Place detector upright beside affected hip."
+   ],
+   [
+    "وجّه الشعاع مائلاً 15–20° نحو الورك المصاب ثم اعرّض.",
+    "Angle beam 15–20° toward affected hip and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "hip-dunn",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "دَن للورك (Dunn 45°/90°)",
+   "Dunn view (hip impingement / SCFE)"
+  ],
+  "region": [
+   "الحوض",
+   "Pelvis"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "تقييم الاصطدام الفخذي الحُقّي من نوع Cam (FAI) وقياس زاوية ألفا (alpha angle) عند الوصل الأمامي العلوي بين رأس وعنق الفخذ، وكذلك انزلاق المشاش الفخذي (SCFE).",
+   "Evaluate cam-type femoroacetabular impingement (FAI), alpha angle at the anterosuperior head–neck junction, and SCFE."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر، يُثنى الورك بزاوية 45° (أو 90° في دَن القياسي) وتُباعد الفخذ 20° للخارج مع بقاء الساق في دوران محايد (أصابع القدم للأعلى).",
+   "Patient supine, hip flexed 45° (or 90°) and abducted 20° in neutral rotation (toes pointing straight up)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند عنق الفخذ (أو منتصف الحوض للمقارنة الثنائية).",
+   "Central ray perpendicular at the femoral neck (or midline for bilateral comparison)."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "محيط الوصل الأمامي العلوي بين رأس وعنق الفخذ واضح تماماً لقياس زاوية ألفا.",
+    "Anterosuperior femoral head–neck junction clearly profiled for alpha-angle measurement."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير الساق للخارج بشكل مفرط مثل الضفدع: يغيّر شكل الحدبة العظمية.",
+    "Excess external rotation alters cam morphology assessment."
+   ]
+  ],
+  "tips": [
+   "وضع 45° دَن هو الأكثر استخداماً لتقييم الاصطدام الفخذي الحُقّي (FAI). اسأل عن الحمل.",
+   "The 45° Dunn view is standard for cam FAI assessment. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الأمام عند الورك ويخرج نحو الكاسيت.",
+   "The beam enters anteriorly over the hip onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–32",
+    "20–32"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "اثنِ الورك 45° (أو 90°) وباعده 20° بوضع دوران محايد.",
+    "Flex hip 45° (or 90°) and abduct 20° in neutral rotation."
+   ],
+   [
+    "مركّز عند عنق الفخذ على 100 سم.",
+    "Centre at femoral neck at 100 cm."
+   ],
+   [
+    "اطلب حبس النفس ثم اعرّض.",
+    "Ask for breath-hold and expose."
+   ]
+  ],
+  "limb": true
+ },
+ {
+  "id": "hip-von-rosen",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "فون روزن (حديث الولادة - خلع الورك)",
+   "Von Rosen view (newborn DDH)"
+  ],
+  "region": [
+   "الحوض",
+   "Pelvis"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "landscape"
+  ],
+  "dist": 1.8,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Hip bone)$"
+  ],
+  "ind": [
+   "تقييم خلع الورك التطوري (DDH) عند حديثي الولادة والرضّع قبل تعظّم رأس الفخذ.",
+   "Assess developmental dysplasia of the hip (DDH) in newborns before femoral head ossification."
+  ],
+  "pos": [
+   "الرضيع مستلقٍ على الظهر دون دوران، تُباعد كلتا الساقين للخارج بزاوية 45° تماماً مع تدويرهما داخلياً 25°، ويُمسك الفخذان برفق من قِبل شخص محمي بمئزر رصاص.",
+   "Infant supine without rotation, both legs abducted exactly 45° and internally rotated 25°, gently held by a lead-protected assistant."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند الخط الناصف بمستوى الارتفاق العاني.",
+   "Central ray perpendicular on the midline at the pubic symphysis level."
+  ],
+  "br": [
+   "التعريض السريع عند سكون الرضيع.",
+   "Fast exposure during stillness."
+  ],
+  "crit": [
+   [
+    "في الورك الطبيعي، يمر امتداد محور الفخذ عبر الحافة الوحشية للحُق؛ وفي المخلوع يمر فوق الحُق نحو الـASIS.",
+    "In a normal hip the femoral shaft axis bisects the acetabulum; in dislocation it projects superiorly toward the ASIS."
+   ]
+  ],
+  "err": [
+   [
+    "إبعاد غير متماثل للطرفين (< 45°): يعطي نتيجة كاذبة.",
+    "Asymmetric abduction (< 45°) gives false results."
+   ]
+  ],
+  "tips": [
+   "اليوم يُفضَّل السونار (Ultrasound) لفحص ورك حديثي الولادة في الأشهر الستة الأولى لتفادي الإشعاع. لا تستخدم واقياً يغطي مفاصل الورك.",
+   "Ultrasound is preferred today in infants < 6 months to avoid radiation. Never obscure the hip joints with shielding."
+  ],
+  "inout": [
+   "يدخل الشعاع من الحوض الأمامي ويخرج نحو الكاسيت.",
+   "The beam enters the anterior pelvis onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "55–65",
+    "55–65"
+   ],
+   "mas": [
+    "2–5",
+    "2–5"
+   ],
+   "ex": [
+    "مثال للرضيع: 60 kVp و3 mAs",
+    "Infant example: 60 kVp, 3 mAs"
+   ],
+   "grid": [
+    "بدون شبكة",
+    "No grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع الرضيع مستلقياً دون دوران.",
+    "Lay infant supine without rotation."
+   ],
+   [
+    "باعد الساقين 45° للخارج ودوّرهما 25° للداخل.",
+    "Abduct both legs 45° and internally rotate 25°."
+   ],
+   [
+    "مركّز عند الارتفاق العاني واعرض بسرعة.",
+    "Centre at symphysis and expose quickly."
+   ]
+  ]
+ },
+ {
+  "id": "leg-scanogram",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "قياس طول الطرف السفلي (Scanogram)",
+   "Leg length measurement (scanogram)"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Femur$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.9,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Hip bone)$"
+  ],
+  "ind": [
+   "قياس فرق الطول الحقيقي بين الطرفين السفليين (leg length discrepancy) بدقة ملليمترية قبل الجراحة التقويمية.",
+   "Accurate millimetric measurement of leg-length discrepancy (femur and tibia separately) prior to corrective surgery."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر دون حركة مع تثبيت مسطرة معدنية مدرجة (Bell–Thompson ruler) بين الساقين على الطاولة، وتُؤخذ ثلاث لقطات متتابعة عمودية (الوركان، الركبتان، الكاحلان) دون تحريك المريض أو المسطرة (أو بالمسح الرقمي الكامل).",
+   "Patient supine completely still with a radiopaque ruler fixed between the legs; three tightly collimated AP exposures centred directly over hips, knees and ankles without moving patient or ruler."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي تماماً فوق كل مفصل على حدة (لتفادي أي خطأ تكبير هندسي).",
+   "Central ray strictly vertical over each joint pair separately to eliminate parallax/magnification error."
+  ],
+  "br": [
+   "الثبات التام بين اللقطات الثلاث.",
+   "Zero movement between the three exposures."
+  ],
+  "crit": [
+   [
+    "مفصلا الورك والركبة والكاحل والمقياس المعدني واضحة بدقة تامة في صورة واحدة.",
+    "Hips, knees, ankles and graduated ruler clearly visible without movement between exposures."
+   ]
+  ],
+  "err": [
+   [
+    "تحرك المريض بين اللقطات الثلاث: يبطل القياس.",
+    "Patient moving between exposures invalidates measurements."
+   ]
+  ],
+  "tips": [
+   "التمركز العمودي فوق كل مفصل يلغي تشوه المنظور (parallax). اسأل عن الحمل.",
+   "Vertical centring over each joint eliminates parallax magnification error. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً فوق الوركين ثم الركبتين ثم الكاحلين.",
+   "The beam enters vertically over hips, knees and ankles sequentially."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "5–20",
+    "5–20"
+   ],
+   "ex": [
+    "جرعة منخفضة جداً مع تضييق شديد على المفاصل الثلاثة",
+    "Low dose with tight collimation at each joint level"
+   ],
+   "grid": [
+    "حسب اللزوم",
+    "As needed"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "ثبّت المسطرة المعدنية بين الساقين واطلب الثبات التام.",
+    "Secure radiopaque ruler between legs and instruct total stillness."
+   ],
+   [
+    "التقط 3 لقطات عمودية متتالية: الوركان، الركبتان، الكاحلان.",
+    "Take 3 vertical exposures: hips, knees, ankles."
+   ],
+   [
+    "راجع وضوح الأرقام على المسطرة وعلامة الجهة.",
+    "Verify ruler markings and side marker."
+   ]
+  ]
+ },
+ {
+  "id": "leg-alignment",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "محاذاة الطرف السفلي واقفاً (Long-leg alignment)",
+   "Long-leg standing alignment"
+  ],
+  "region": [
+   "الأطراف السفلية",
+   "Lower limb"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Patella$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.35,
+   1.1,
+   "portrait"
+  ],
+  "dist": 2.0,
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^(Femur|Tibia|Hip bone)$"
+  ],
+  "ind": [
+   "التخطيط قبل جراحة تبديل مفصل الركبة أو تقويم العظام (osteotomy): قياس المحور الميكانيكي والتشريحي للطرف السفلي (من مركز رأس الفخذ إلى مركز الكاحل) تحت حمل الوزن.",
+   "Pre-operative planning for knee arthroplasty or osteotomy: measure mechanical/anatomical axes (hip-to-ankle line) under weight-bearing."
+  ],
+  "pos": [
+   "المريض واقف بوزن متساوٍ على القدمين حافياً، والرضفتان موجهتان للأمام مباشرةً (بدون دوران) أمام حامل الدمج الطويل.",
+   "Patient standing barefoot evenly on both feet with both patellae pointing straight ahead against the long-leg stitching stand."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي على مسافة 180 سم (أو عبر الدمج الرقمي التلقائي) ليغطي من قمة رأسي الفخذين حتى مفصلي الكاحل.",
+   "Horizontal central ray at 180 cm SID (auto-stitching) covering from both hip joints down to both ankles."
+  ],
+  "br": [
+   "الثبات التام أثناء المسح.",
+   "Stay still during acquisition."
+  ],
+  "crit": [
+   [
+    "مفصلا الورك والركبتان ومفصلا الكاحل ظاهرة في صورة مدمجة واحدة، والرضفتان في المنتصف.",
+    "Hips, knees and ankles included in one stitched image with patellae centred."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الساقين (الرضفة للخارج أو الداخل): يعطي زاوية تقوس كاذبة!",
+    "Rotated legs (patellae not facing forward) falsely alter varus/valgus angles!"
+   ]
+  ],
+  "tips": [
+   "وجّه الرضفتين للأمام مباشرة وليس القدمين فقط، لأن بعض المرضى لديهم التواء ساقي. اسأل عن الحمل.",
+   "Align the patellae straight ahead (not just the feet). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من أمام الطرفين السفليين نحو المستقبل الطويل.",
+   "The horizontal beam enters anteriorly across both lower limbs onto the long detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "نظام الدمج الرقمي التلقائي على 180 سم",
+    "Digital auto-stitching at 180 cm SID"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "أوقف المريض حافياً بوزن متساوٍ مع توجيه الرضفتين للأمام مباشرة.",
+    "Stand patient barefoot evenly with patellae pointing straight ahead."
+   ],
+   [
+    "اضبط التغطية من الوركين إلى الكاحلين على 180 سم.",
+    "Set coverage from hips to ankles at 180 cm."
+   ],
+   [
+    "شغّل الدمج الرقمي مع بقاء المريض ثابتاً ثم راجع المحاذاة.",
+    "Run stitching exposure while still, then verify full joint inclusion."
+   ]
+  ]
  }
 ]
