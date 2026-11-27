@@ -11111,5 +11111,1857 @@
     "Review against the criteria and check the side marker."
    ]
   ]
+ },
+ {
+  "id": "neck-soft-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرقبة جانبي (أنسجة رخوة)",
+   "Lateral soft tissue neck"
+  ],
+  "region": [
+   "الرقبة",
+   "Neck"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C4$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "تقييم المجرى الهوائي العلوي والنسيج الرخو قبل الفقري: التهاب لسان المزمار، الخناق (Croup)، تضخم اللحمية، الخراج خلف البلعوم، والأجسام الغريبة.",
+   "Evaluate the upper airway and prevertebral soft tissue: epiglottitis, croup, adenoidal hypertrophy, retropharyngeal abscess and foreign bodies."
+  ],
+  "pos": [
+   "المريض جالس أو واقف وجانبه الأيسر ملاصق للكاسيت، الرأس مستقيم والذقن مرفوع قليلاً، والكتفان منخفضان لإظهار المجرى الهوائي حتى مدخل الصدر. الخط الناصف موازٍ للكاسيت.",
+   "Patient seated or standing with the left side against the detector, head straight, chin slightly raised, and shoulders depressed to show the airway down to the thoracic inlet. Midsagittal plane parallel to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند منتصف الرقبة (مستوى C4–C5 أو أسفل الغضروف الدرقي بقليل). SID 180 سم لتقليل التكبير.",
+   "Horizontal central ray perpendicular to the detector at mid-neck (about C4–C5, just below the thyroid cartilage). 180 cm SID to reduce magnification."
+  ],
+  "br": [
+   "شهيق بطيء (أو التعريض عند نهاية الشهيق) لفتح المجرى الهوائي وملء البلعوم والقصبة بالهواء.",
+   "Slow inspiration (or expose at end-inspiration) to distend the airway with air."
+  ],
+  "crit": [
+   [
+    "من البلعوم الأنفي وأعلى الحنك الصلب إلى مدخل الصدر والقصبة الهوائية.",
+    "From the nasopharynx to the thoracic inlet and upper trachea."
+   ],
+   [
+    "النسيج الرخو قبل الفقري والمجرى الهوائي واضحان دون تعريض زائد.",
+    "Prevertebral soft tissue and airway clear without overexposure."
+   ],
+   [
+    "الفكان السفليان متراكبان تقريباً (بلا دوران).",
+    "Mandibular rami approximately superimposed (no rotation)."
+   ]
+  ],
+  "err": [
+   [
+    "تعريض زائد (kVp مرتفع): يختفي تباين الأنسجة الرخوة.",
+    "Overexposure (too high kVp) loses soft-tissue contrast."
+   ],
+   [
+    "ثني الرقبة للأمام: يبدو النسيج قبل الفقري متورماً بشكل كاذب (خاصة عند الأطفال).",
+    "Neck flexion causes false thickening of the prevertebral soft tissue (especially in children)."
+   ],
+   [
+    "كتفان مرتفعان: يغطيان القصبة السفلية.",
+    "Raised shoulders obscure the lower trachea."
+   ]
+  ],
+  "tips": [
+   "استخدم تقنية أنسجة رخوة (kVp أقل من العمود العنقي). عند الاشتباه بالتهاب لسان المزمار عند طفل، لا تستلقِ الطفل ولا تفحص الحلق بالقوة وابقَ جاهزاً للطوارئ. اسأل عن الحمل.",
+   "Use a soft-tissue technique (lower kVp than for cervical spine). In suspected paediatric epiglottitis, never force the child supine or agitate them. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للرقبة ويخرج من الجانب الأيسر نحو الكاسيت (من اليمين إلى اليسار).",
+   "The beam enters the right side of the neck and exits the left side toward the detector (right to left)."
+  ],
+  "exp": {
+   "kv": [
+    "60–70",
+    "60–70"
+   ],
+   "mas": [
+    "5–12",
+    "5–12"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.04 ث = 8 mAs",
+    "Example: 200 mA × 0.04 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً (أو شبكة حسب السماكة)",
+    "Usually no grid (or grid depending on thickness)"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والأقراط وأي معادن من الرقبة.",
+    "Remove necklaces, earrings and any metal from the neck."
+   ],
+   [
+    "أجلس المريض أو أوقفه بجانبه الأيسر ملاصقاً للكاسيت دون دوران.",
+    "Seat or stand the patient with the left side against the detector, no rotation."
+   ],
+   [
+    "ارفع الذقن قليلاً واطلب خفض الكتفين للأسفل.",
+    "Raise the chin slightly and ask the patient to drop the shoulders."
+   ],
+   [
+    "مركّز الشعاع الأفقي عند مستوى C4–C5 على بعد 180 سم وضيّق المجال.",
+    "Centre the horizontal beam at C4–C5 at 180 cm SID and collimate."
+   ],
+   [
+    "اضبط kVp منخفضاً نسبياً لإظهار الأنسجة الرخوة.",
+    "Set a relatively low kVp to show soft tissue."
+   ],
+   [
+    "اطلب شهيقاً لطيفاً ثم اعرّض عند نهاية الشهيق.",
+    "Ask for a gentle inspiration and expose at end-inspiration."
+   ],
+   [
+    "راجع وضوح المجرى الهوائي والنسيج قبل الفقري وعلامة الجهة.",
+    "Review airway and prevertebral soft-tissue detail and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "neck-soft-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرقبة AP (أنسجة رخوة)",
+   "AP soft tissue neck"
+  ],
+  "region": [
+   "الرقبة",
+   "Neck"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C5$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "تقييم القصبة الهوائية العلوية والمنطقة تحت المزمار: تضيق القصبة (علامة القبة/البرج Steeple sign في الخناق)، إزاحة القصبة، وتكلسات الغدة الدرقية أو الأجسام الغريبة.",
+   "Assess the upper trachea and subglottic airway: subglottic narrowing (steeple sign in croup), tracheal deviation, thyroid calcification and foreign bodies."
+  ],
+  "pos": [
+   "المريض واقف أو جالس وظهره للكاسيت (أو مستلقٍ)، الخط الناصف في منتصف الكاسيت دون دوران، والذقن مرفوع قليلاً لئلا يغطي الفك السفلي الحنجرة.",
+   "Patient erect or seated with the back against the detector (or supine), midsagittal plane centred without rotation, chin slightly raised so the mandible does not overlie the larynx."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند الخط الناصف بمستوى C5–C6 (فوق الشق الوداجي بحوالي 2.5 سم).",
+   "Central ray perpendicular to the detector on the midline at C5–C6 (about 2.5 cm above the jugular notch)."
+  ],
+  "br": [
+   "شهيق لطيف أو التعريض عند نهاية الشهيق.",
+   "Gentle inspiration or expose at end-inspiration."
+  ],
+  "crit": [
+   [
+    "المجرى الهوائي والقصبة الهوائية في المنتصف من الحنجرة إلى مدخل الصدر.",
+    "Airway and trachea centred from the larynx to the thoracic inlet."
+   ],
+   [
+    "لا دوران: الترقوتان والمفاصل القصية الترقوية متناظرة.",
+    "No rotation: clavicles and SC joints symmetric."
+   ],
+   [
+    "الفك السفلي لا يغطي الحنجرة العلوية.",
+    "Mandible does not obscure the upper larynx."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرأس أو الكتفين: يوحي بانحراف كاذب للقصبة.",
+    "Head or shoulder rotation mimics tracheal deviation."
+   ],
+   [
+    "ذقن منخفض: يغطي الفك السفلي الحنجرة.",
+    "Chin tucked: mandible overlies the larynx."
+   ]
+  ],
+  "tips": [
+   "استخدم kVp أعلى قليلاً من الجانبي لاختراق الفقرات العنقية مع إبقاء عمود الهواء واضحاً. اسأل عن الحمل.",
+   "Use slightly higher kVp than the lateral to penetrate the cervical spine while keeping the air column visible. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من مقدمة الرقبة فوق الشق الوداجي ويخرج من الخلف نحو الكاسيت (من الأمام إلى الخلف).",
+   "The beam enters the anterior neck above the jugular notch and exits the back toward the detector (anterior to posterior)."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "8–15",
+    "8–15"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.05 ث = 10 mAs",
+    "Example: 200 mA × 0.05 s = 10 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى أو يدوي",
+    "AEC: centre chamber or manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن من الرقبة وأعلى الصدر.",
+    "Remove necklaces and metal from the neck and upper chest."
+   ],
+   [
+    "ضع المريض بظهره للكاسيت، الخط الناصف بالمنتصف ودون دوران.",
+    "Position the patient with the back to the detector, midline centred, no rotation."
+   ],
+   [
+    "ارفع الذقن قليلاً لإبعاد الفك السفلي عن الحنجرة.",
+    "Raise the chin slightly to clear the mandible from the larynx."
+   ],
+   [
+    "مركّز عند مستوى C5–C6 على بعد 100 سم وضيّق المجال.",
+    "Centre at C5–C6 at 100 cm SID and collimate."
+   ],
+   [
+    "اضبط kVp وmAs، اطلب شهيقاً لطيفاً ثم اعرّض.",
+    "Set kVp and mAs, ask for gentle inspiration, then expose."
+   ],
+   [
+    "راجع استقامة القصبة وتناظر الترقوتين وعلامة الجهة.",
+    "Review tracheal alignment, clavicular symmetry and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "larynx-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الحنجرة جانبي (مع التصويت)",
+   "Larynx lateral (phonation)"
+  ],
+  "region": [
+   "الرقبة",
+   "Neck"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C5$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "تقييم الحنجرة، البطين الحنجري، لسان المزمار، والحبال الصوتية أثناء التصويت، واشتباه الأورام أو الشلل الحنجري.",
+   "Assess the larynx, laryngeal ventricle, epiglottis and vocal folds during phonation; suspected masses or vocal fold palsy."
+  ],
+  "pos": [
+   "المريض جالس أو واقف وجانبه الأيسر ملاصق للكاسيت، الرأس مستقيم والذقن مرفوع قليلاً، والكتفان منخفضان قدر الإمكان. الخط الناصف موازٍ للكاسيت.",
+   "Patient seated or standing with the left side against the detector, head straight, chin slightly raised and shoulders depressed as much as possible. Midsagittal plane parallel to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مستوى الغضروف الدرقي (C5)، مع تضييق المجال على الحنجرة.",
+   "Horizontal central ray perpendicular to the detector at the thyroid cartilage (C5), tightly collimated to the larynx."
+  ],
+  "br": [
+   "يُطلب من المريض نطق حرف «إي» (Eeee) بصوت مستمر أثناء التعريض (أو حبس النفس بوضعية فالسالفا حسب البروتوكول).",
+   "Ask the patient to phonate a sustained 'Eeee' during exposure (or perform a Valsalva manoeuvre per protocol)."
+  ],
+  "crit": [
+   [
+    "الحنجرة والبطين الحنجري والحيز تحت المزمار ظاهرة بوضوح.",
+    "Larynx, laryngeal ventricle and subglottic space clearly shown."
+   ],
+   [
+    "تباين أنسجة رخوة ممتاز دون تعريض زائد.",
+    "Good soft-tissue contrast without overexposure."
+   ],
+   [
+    "لا حركة بالرأس ولا دوران.",
+    "No head motion or rotation."
+   ]
+  ],
+  "err": [
+   [
+    "عدم التصويت أثناء التعريض: لا يفتح البطين الحنجري.",
+    "Not phonating during exposure: the laryngeal ventricle does not distend."
+   ],
+   [
+    "تعريض زائد: يطمس تفاصيل الغضاريف والأنسجة الرخوة.",
+    "Overexposure obscures cartilage and soft-tissue detail."
+   ]
+  ],
+  "tips": [
+   "درّب المريض على نطق «إي» بهدوء دون تحريك الرأس قبل التعريض. اليوم يُفضَّل التنظير أو CT/MRI لتقييم الحنجرة التفصيلي.",
+   "Rehearse phonating 'Eeee' without moving the head beforehand. Endoscopy or CT/MRI is preferred today for detailed laryngeal assessment."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للرقبة عند الغضروف الدرقي ويخرج من الجانب الأيسر نحو الكاسيت.",
+   "The beam enters the right side of the neck at the thyroid cartilage and exits the left side onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–68",
+    "60–68"
+   ],
+   "mas": [
+    "5–10",
+    "5–10"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.04 ث = 8 mAs",
+    "Example: 200 mA × 0.04 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Usually no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن من الرقبة.",
+    "Remove necklaces and metal from the neck."
+   ],
+   [
+    "درّب المريض على نطق «إي» (Eeee) مع ثبات الرأس.",
+    "Practise sustaining 'Eeee' while keeping the head still."
+   ],
+   [
+    "ضع المريض بجانبه الأيسر على الكاسيت واخفض الكتفين.",
+    "Position the left side against the detector and drop the shoulders."
+   ],
+   [
+    "مركّز عند الغضروف الدرقي (C5) على 180 سم وضيّق المجال على الحنجرة.",
+    "Centre at the thyroid cartilage (C5) at 180 cm and collimate tightly."
+   ],
+   [
+    "اطلب بدء التصويت «إي» ثم اعرّض فوراً.",
+    "Ask the patient to phonate 'Eeee', then expose."
+   ],
+   [
+    "راجع وضوح الحنجرة والبطين وعلامة الجهة.",
+    "Review laryngeal and ventricle detail and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "larynx-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الحنجرة AP (مع التصويت)",
+   "Larynx AP (phonation)"
+  ],
+  "region": [
+   "الرقبة",
+   "Neck"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C5$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "تقييم تناظر الحبال الصوتية والمزمار والحيز تحت المزمار والكمثريين الجيبيين (pyriform sinuses) أثناء التصويت.",
+   "Assess symmetry of the vocal folds, glottis, subglottic space and pyriform sinuses during phonation."
+  ],
+  "pos": [
+   "المريض واقف أو جالس وظهره للكاسيت، الخط الناصف بالمنتصف دون دوران، والذقن مرفوع قليلاً لفتح مجال الحنجرة.",
+   "Patient erect or seated with the back against the detector, midsagittal plane centred without rotation, chin slightly raised to clear the larynx."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند الغضروف الدرقي (C5) على الخط الناصف، والمجال مضيّق على الحنجرة.",
+   "Central ray perpendicular to the detector at the thyroid cartilage (C5) on the midline, tightly collimated to the larynx."
+  ],
+  "br": [
+   "يُطلب نطق حرف «إي» (Eeee) بصوت مستمر أثناء التعريض لتقريب الحبال الصوتية وإبراز المزمار.",
+   "Sustain 'Eeee' during exposure to adduct the vocal folds and outline the glottis."
+  ],
+  "crit": [
+   [
+    "الحبال الصوتية والمزمار والقصبة العلوية متناظرة في المنتصف.",
+    "Vocal folds, glottis and upper trachea symmetric in the midline."
+   ],
+   [
+    "الفك السفلي لا يحجب الحنجرة.",
+    "Mandible does not obscure the larynx."
+   ],
+   [
+    "لا دوران ولا حركة.",
+    "No rotation or motion."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الرقبة: عدم تناظر الحبال الصوتية.",
+    "Neck rotation gives false asymmetry of the vocal folds."
+   ],
+   [
+    "ذقن منخفض: الفك السفلي يغطي المزمار.",
+    "Chin tucked: mandible overlies the glottis."
+   ]
+  ],
+  "tips": [
+   "مكمّل للمسقط الجانبي. اليوم يُفضَّل التنظير الحنجري أو CT للتقييم الدقيق. اسأل عن الحمل.",
+   "Complements the lateral view. Laryngoscopy or CT is preferred today for detailed evaluation. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من مقدمة الرقبة عند الغضروف الدرقي ويخرج من الخلف نحو الكاسيت.",
+   "The beam enters the anterior neck at the thyroid cartilage and exits posteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "8–15",
+    "8–15"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.05 ث = 10 mAs",
+    "Example: 200 mA × 0.05 s = 10 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن من الرقبة.",
+    "Remove necklaces and metal from the neck."
+   ],
+   [
+    "ضع المريض بظهره للكاسيت دون دوران وارفع الذقن قليلاً.",
+    "Position the back against the detector without rotation and raise the chin slightly."
+   ],
+   [
+    "مركّز عند الغضروف الدرقي (C5) على 100 سم وضيّق المجال.",
+    "Centre at the thyroid cartilage (C5) at 100 cm and collimate."
+   ],
+   [
+    "اطلب نطق «إي» (Eeee) باستمرار ثم اعرّض.",
+    "Ask the patient to sustain 'Eeee', then expose."
+   ],
+   [
+    "راجع تناظر المزمار والحبال الصوتية وعلامة الجهة.",
+    "Review glottic and vocal-fold symmetry and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "thoracic-inlet-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "مدخل الصدر جانبي",
+   "Thoracic inlet lateral"
+  ],
+  "region": [
+   "الرقبة",
+   "Neck"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T1$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra C7$",
+   "^Vertebra T1$"
+  ],
+  "ind": [
+   "تقييم القصبة الهوائية السفلية ومدخل الصدر: تضخم الدرقية الغاطس (retrosternal goitre)، انضغاط القصبة أو إزاحتها، وأجسام غريبة عند مدخل الصدر.",
+   "Assess the lower trachea and thoracic inlet: retrosternal goitre, tracheal compression or displacement, and foreign bodies at the thoracic inlet."
+  ],
+  "pos": [
+   "المريض واقف وجانبه الأيسر ملاصق للكاسيت، اليدان متشابكتان خلف الظهر مع سحب الكتفين للخلف والأسفل (أو وضعية السباح: ذراع مرفوعة والأخرى للأسفل) لإبعاد رأس العضد والكتف عن القصبة.",
+   "Patient erect with the left side against the detector, hands clasped behind the back pulling the shoulders back and down (or swimmer's position) to clear the humeral heads from the trachea."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مستوى الشق الوداجي (C7–T1).",
+   "Horizontal central ray perpendicular to the detector at the level of the jugular notch (C7–T1)."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس لإدخال الهواء للقصبة السفلية.",
+   "Full inspiration and hold the breath to fill the lower trachea with air."
+  ],
+  "crit": [
+   [
+    "القصبة الهوائية ظاهرة بوضوح من الرقبة عبر مدخل الصدر حتى المنصف العلوي.",
+    "Trachea clearly visible from the neck through the thoracic inlet into the upper mediastinum."
+   ],
+   [
+    "الكتفان ورأسا العضد لا يحجبان القصبة.",
+    "Shoulders and humeral heads clear of the trachea."
+   ],
+   [
+    "لا دوران ولا حركة.",
+    "No rotation or motion."
+   ]
+  ],
+  "err": [
+   [
+    "عدم سحب الكتفين للخلف: يحجب رأسا العضد مدخل الصدر.",
+    "Shoulders not pulled back: humeral heads obscure the thoracic inlet."
+   ],
+   [
+    "شهيق غير كافٍ: يقل تباين الهواء في القصبة.",
+    "Poor inspiration reduces tracheal air contrast."
+   ]
+  ],
+  "tips": [
+   "التعريض أعلى قليلاً من الرقبة العلوية لاختراق الكتفين. اليوم يُفضَّل CT الصدر/الرقبة لتقييم الدرقية الغاطسة. اسأل عن الحمل.",
+   "Exposure is slightly higher than for the upper neck to penetrate the shoulders. CT is preferred today for retrosternal goitre. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن عند مستوى الشق الوداجي ويخرج من الجانب الأيسر نحو الكاسيت.",
+   "The beam enters the right side at the jugular notch and exits the left side onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "15–30",
+    "15–30"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى أو يدوي",
+    "AEC: centre chamber or manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والمعادن من الرقبة وأعلى الصدر.",
+    "Remove necklaces and metal from the neck and upper chest."
+   ],
+   [
+    "أوقف المريض بجانبه الأيسر للكاسيت واسحب الكتفين للخلف والأسفل.",
+    "Stand the patient with the left side to the detector and pull the shoulders back and down."
+   ],
+   [
+    "مركّز عند مستوى الشق الوداجي (C7–T1) على 180 سم وضيّق المجال.",
+    "Centre at the jugular notch (C7–T1) at 180 cm and collimate."
+   ],
+   [
+    "اضبط kVp وmAs، اطلب شهيقاً عميقاً وحبس النفس ثم اعرّض.",
+    "Set kVp and mAs, ask for full inspiration and hold, then expose."
+   ],
+   [
+    "راجع وضوح القصبة عند مدخل الصدر وعلامة الجهة.",
+    "Review tracheal visibility at the thoracic inlet and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "neck-fb-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الرقبة جانبي (جسم غريب)",
+   "Foreign body lateral neck"
+  ],
+  "region": [
+   "الرقبة",
+   "Neck"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C5$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "البحث عن جسم غريب مبلوع في البلعوم أو أعلى المريء (مثل شوكة سمك، عظمة دجاج، عملة) وتقييم وجود هواء أو تورم في النسيج قبل الفقري.",
+   "Look for a swallowed foreign body in the pharynx or upper oesophagus (e.g. fish bone, chicken bone, coin) and assess for prevertebral swelling or gas."
+  ],
+  "pos": [
+   "المريض جالس أو واقف وجانبه الأيسر ملاصق للكاسيت، الرأس مستقيم والذقن مرفوع قليلاً، والكتفان منخفضان قدر الإمكان لإظهار مدخل المريء والرقبة كاملة.",
+   "Patient seated or standing with the left side against the detector, head straight, chin slightly raised and shoulders depressed as much as possible to show the upper oesophagus."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مستوى C5 (منتصف الرقبة) لتغطية المنطقة من قاعدة اللسان إلى مدخل الصدر.",
+   "Horizontal central ray perpendicular to the detector at C5 (mid-neck) to cover from the tongue base to the thoracic inlet."
+  ],
+  "br": [
+   "شهيق عميق وحبس النفس (بعض المراجع تطلب التصوير أثناء البلع أو بعده مباشرة حسب الحالة، الأهم الثبات دون حركة).",
+   "Full inspiration and breath-hold (stay completely still)."
+  ],
+  "crit": [
+   [
+    "الرقبة كاملة من البلعوم الفموي إلى مدخل الصدر (C7–T1).",
+    "Whole neck from the oropharynx to the thoracic inlet (C7–T1)."
+   ],
+   [
+    "تباين عالٍ للأنسجة الرخوة يميز شوكات السمك والتكلسات الطبيعية للغضاريف.",
+    "High soft-tissue contrast to distinguish fish bones from normal laryngeal cartilage calcification."
+   ],
+   [
+    "النسيج قبل الفقري واضح وخالٍ من الغاز الشاذ.",
+    "Prevertebral soft tissue clear and free of abnormal gas."
+   ]
+  ],
+  "err": [
+   [
+    "تعريض زائد: يمحو شوكة السمك الدقيقة.",
+    "Overexposure erases a fine fish bone."
+   ],
+   [
+    "حركة البلع أثناء التعريض: طمس الجسم الغريب.",
+    "Swallowing motion during exposure blurs the foreign body."
+   ],
+   [
+    "الخلط بين تكلس الغضروف الدرقي أو الحلقي وشوكة السمك.",
+    "Confusing normal laryngeal cartilage calcification with a fish bone."
+   ]
+  ],
+  "tips": [
+   "معظم شوكات السمك لا تظهر بوضوح في الأشعة العادية؛ الصورة السلبية لا تنفي وجودها عند استمرار الأعراض (يُلجأ للتنظير أو CT). استعمل kVp منخفضاً.",
+   "Many fish bones are radiolucent or faint; a negative film does not exclude one if symptoms persist (endoscopy or CT may be needed). Use low kVp."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للرقبة ويخرج من الجانب الأيسر نحو الكاسيت.",
+   "The beam enters the right side of the neck and exits the left side onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "58–68",
+    "58–68"
+   ],
+   "mas": [
+    "5–12",
+    "5–12"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.04 ث = 8 mAs",
+    "Example: 200 mA × 0.04 s = 8 mAs"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Usually no grid"
+   ],
+   "aec": [
+    "يدوي",
+    "Manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والأزرار والمعادن من الرقبة.",
+    "Remove necklaces, buttons and metal from the neck."
+   ],
+   [
+    "أجلس المريض أو أوقفه بجانبه الأيسر على الكاسيت واخفض الكتفين.",
+    "Seat or stand the patient with the left side against the detector and drop the shoulders."
+   ],
+   [
+    "مركّز عند مستوى C5 على 180 سم وضيّق المجال.",
+    "Centre at C5 at 180 cm and collimate."
+   ],
+   [
+    "اضبط kVp منخفضاً لإبراز الأنسجة الرخوة والأجسام الدقيقة.",
+    "Set a low kVp to highlight soft tissue and fine objects."
+   ],
+   [
+    "اطلب من المريض عدم البلع وحبس النفس ثم اعرّض.",
+    "Ask the patient not to swallow and to hold the breath, then expose."
+   ],
+   [
+    "راجع المنطقة قبل الفقرية ومدخل المريء وعلامة الجهة.",
+    "Review the prevertebral space, upper oesophagus and side marker."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-ap-axial",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي AP محوري 15° رأسياً",
+   "Cervical spine AP axial 15° cephalad"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 15,
+  "cr": {
+   "s": "^Vertebra C5$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra C\\d$",
+   "^Atlas \\(C1\\)$",
+   "^Axis \\(C2\\)$"
+  ],
+  "ind": [
+   "تقييم الفقرات العنقية السفلية (C3–C7) وأقراصها، الزوائد الشوكية والمفاصل الشصية الفقرية (uncovertebral joints)، وكسور الانضغاط أو الخلع.",
+   "Evaluate the lower cervical vertebrae (C3–C7), disc spaces, spinous processes and uncovertebral joints, and compression or dislocation injuries."
+  ],
+  "pos": [
+   "المريض واقف أو مستلقٍ وظهره للكاسيت، الخط الناصف في منتصف الكاسيت دون دوران، والذقن مرفوع بحيث يكون الخط الإطباقي-الخشائي موازياً للشعاع أو الفك فوق C3.",
+   "Patient erect or supine with the back against the detector, midsagittal plane centred without rotation, chin raised so the mandible clears C3."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 15 إلى 20° نحو الرأس (cephalad) ليتوازى مع ميلان الأقراص العنقية، ويدخل عند مستوى C4–C5 (أسفل الغضروف الدرقي).",
+   "Central ray angled 15–20° cephalad to parallel the cervical disc spaces, entering at C4–C5 (lower border of thyroid cartilage)."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض دون بلع.",
+   "Hold the breath and stay still without swallowing during exposure."
+  ],
+  "crit": [
+   [
+    "الفقرات من C3 إلى T1–T2 ظاهرة بمسافات أقراص مفتوحة.",
+    "C3 to T1–T2 visible with open disc spaces."
+   ],
+   [
+    "الزوائد الشوكية في منتصف أجسام الفقرات (بلا دوران).",
+    "Spinous processes centred over the vertebral bodies (no rotation)."
+   ],
+   [
+    "الفك السفلي وقاعدة الجمجمة متراكبان فوق C1–C2 ولا يحجبان C3.",
+    "Mandible and skull base superimposed over C1–C2 without obscuring C3."
+   ]
+  ],
+  "err": [
+   [
+    "عدم إمالة الشعاع 15° رأسياً: الأقراص العنقية تبدو مغلقة.",
+    "No 15° cephalad angle: disc spaces appear closed."
+   ],
+   [
+    "دوران الرأس أو الكتفين: انحراف الزوائد الشوكية.",
+    "Head or shoulder rotation shifts the spinous processes."
+   ],
+   [
+    "ذقن منخفض: الفك السفلي يحجب C3.",
+    "Chin tucked: mandible obscures C3."
+   ]
+  ],
+  "tips": [
+   "في الرضوض، صوّر المريض مستلقياً على الطاولة دون رفع الرأس. تذكّر أن C1 وC2 يظهران في مسقط الفم المفتوح وليس هنا. اسأل عن الحمل.",
+   "In trauma, image supine without lifting the head. Remember C1–C2 are shown on the open-mouth view, not here. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من مقدمة الرقبة عند C4–C5 مائلاً 15° نحو الرأس ويخرج من الخلف نحو الكاسيت.",
+   "The beam enters the anterior neck at C4–C5 angled 15° cephalad and exits posteriorly toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–20",
+    "12–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والأقراط وأي معادن من الرقبة.",
+    "Remove necklaces, earrings and any metal from the neck."
+   ],
+   [
+    "ضع المريض بظهره للكاسيت والخط الناصف بالمنتصف دون دوران.",
+    "Position the patient with the back to the detector, midline centred, no rotation."
+   ],
+   [
+    "ارفع الذقن قليلاً حتى يبتعد الفك عن C3.",
+    "Raise the chin slightly so the mandible clears C3."
+   ],
+   [
+    "أمل الأنبوب 15° رأسياً ومركّز عند C4–C5 على 100 سم.",
+    "Angle the tube 15° cephalad and centre at C4–C5 at 100 cm SID."
+   ],
+   [
+    "اطلب الثبات وعدم البلع وحبس النفس ثم اعرّض.",
+    "Ask the patient to stay still, not swallow and hold the breath, then expose."
+   ],
+   [
+    "راجع ظهور C3–T1 وتناظر الزوائد الشوكية وعلامة الجهة.",
+    "Check C3–T1 coverage, spinous process symmetry and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-open-mouth",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي فم مفتوح (السن C1–C2)",
+   "Cervical spine open mouth (odontoid)"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Axis \\(C2\\)$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Atlas \\(C1\\)$",
+   "^Axis \\(C2\\)$"
+  ],
+  "ind": [
+   "تقييم الفهقة (C1) والمحور (C2) والناتئ السني (Odontoid/Dens): كسور السن، كسر جيفرسون (تباعد الكتلتين الجانبيتين لـC1)، وتحت الخلع الأطلسي المحوري.",
+   "Evaluate C1 (atlas), C2 (axis) and the odontoid process (dens): dens fractures, Jefferson fracture (lateral mass overhang) and atlantoaxial subluxation."
+  ],
+  "pos": [
+   "المريض مستلقٍ أو واقف وظهره للكاسيت، الخط الناصف بالمنتصف دون دوران. يُفتح الفم على أوسع نطاق ممكن وتُحاذى الحافة السفلية للقواطع العلوية مع قاعدة الجمجمة (الخط بين القاطعتين العلوية وقاعدة القذال عمودي على الكاسيت).",
+   "Patient supine or erect with the back to the detector, midline centred, no rotation. Open the mouth as wide as possible and align the lower margin of the upper incisors with the skull base (mastoid tips) perpendicular to the detector."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت ويمر عبر منتصف الفم المفتوح نحو C1–C2.",
+   "Central ray perpendicular to the detector, directed through the centre of the open mouth to C1–C2."
+  ],
+  "br": [
+   "اطلب من المريض نطق «آه» (Ahh) برفق لتثبيت اللسان للأسفل وعدم حجب C2 (أو حبس النفس دون تحريك الفك).",
+   "Ask the patient to phonate a soft 'Ahh' to keep the tongue down off C2 (or hold the breath with the jaw steady)."
+  ],
+  "crit": [
+   [
+    "الناتئ السني (Dens) وجسم C2 والكتلتان الجانبيتان لـC1 والمفصلان الأطلسيان المحوريان ظاهرة بوضوح.",
+    "Odontoid process, C2 body, C1 lateral masses and atlantoaxial joints clearly seen."
+   ],
+   [
+    "لا يتراكب الفك العلوي أو الأسنان ولا قاعدة القذال على قمة السن.",
+    "Upper incisors and skull base do not overlie the dens tip."
+   ],
+   [
+    "لا دوران: المسافات بين السن والكتلتين الجانبيتين متناظرة.",
+    "No rotation: spaces between the dens and C1 lateral masses are symmetric."
+   ]
+  ],
+  "err": [
+   [
+    "الذقن مرتفع جداً: تتراكب قاعدة القذال على السن.",
+    "Chin too high: skull base overlies the dens."
+   ],
+   [
+    "الذقن منخفض جداً: تغطي الأسنان العلوية السن.",
+    "Chin too low: upper incisors obscure the dens."
+   ],
+   [
+    "دوران الرأس: عدم تناظر المسافة حول السن.",
+    "Head rotation creates false asymmetry around the dens."
+   ]
+  ],
+  "tips": [
+   "في الرضوض لا تحرك الرأس، وإذا تعذّر فتح الفم أو بقي التراكب، استعمل مسقط فوكس (إن لم يكن هناك كسر) أو CT العنقي مباشرة. اسأل عن الحمل.",
+   "In trauma do not move the head; if the mouth cannot open or overlap persists, proceed to CT. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر الفم المفتوح إلى C1–C2 ويخرج من خلف الرقبة نحو الكاسيت.",
+   "The beam enters through the open mouth to C1–C2 and exits the back of the neck onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–20",
+    "12–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل أطقم الأسنان القابلة للإزالة والأقراط والمعادن.",
+    "Remove removable dentures, earrings and metal."
+   ],
+   [
+    "ضع المريض وظهره للكاسيت دون دوران الرأس.",
+    "Position the patient with the back to the detector, head not rotated."
+   ],
+   [
+    "اضبط ميلان الرأس بحيث يصبح خط القواطع العلوية–الناتئ الخشائي عمودياً على الكاسيت.",
+    "Align the upper incisors and mastoid tips perpendicular to the detector."
+   ],
+   [
+    "اطلب فتح الفم واسعاً عند لحظة التعريض ومركّز في منتصف الفم على 100 سم.",
+    "Ask for wide mouth opening at exposure and centre through the open mouth at 100 cm."
+   ],
+   [
+    "اضبط التعريض، اطلب نطق «آه» برفق أو الثبات ثم اعرّض.",
+    "Set exposure, ask for a soft 'Ahh' or stillness, then expose."
+   ],
+   [
+    "راجع ظهور السن والكتلتين الجانبيتين لـC1 وعلامة الجهة.",
+    "Check the dens, C1 lateral masses and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-fuchs",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي فوكس (AP للسن)",
+   "Cervical spine Fuchs (AP dens)"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Axis \\(C2\\)$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.18,
+   0.24,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Atlas \\(C1\\)$",
+   "^Axis \\(C2\\)$"
+  ],
+  "ind": [
+   "إظهار الناتئ السني (Dens) داخل الثقبة العظمية الكبيرة عندما يحجبه الفك العلوي أو يتعذر إظهاره بمسقط الفم المفتوح.",
+   "Show the odontoid process (dens) within the foramen magnum when it is obscured on the open-mouth view."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر، الخط الناصف بالمنتصف دون دوران، والذقن مرفوع للأعلى حتى يصبح الخط الذقني الصماخي (MML) عمودياً على الطاولة تقريباً.",
+   "Patient supine, midsagittal plane centred without rotation, chin elevated until the mentomeatal line (MML) is nearly perpendicular to the table."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت، يمر عبر الذقن باتجاه الناتئ السني (أسفل طرف الذقن بقليل)، موازياً للـMML.",
+   "Central ray perpendicular to the detector, directed just below the chin tip parallel to the MML toward the dens."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الناتئ السني كاملاً ظاهر بوضوح داخل الثقبة العظمية الكبيرة.",
+    "The entire dens is clearly projected within the foramen magnum."
+   ],
+   [
+    "تناظر الفك والجمجمة (بلا دوران).",
+    "Mandible and skull symmetric (no rotation)."
+   ]
+  ],
+  "err": [
+   [
+    "مد غير كافٍ للرقبة: يتراكب الفك السفلي على السن.",
+    "Insufficient neck extension: mandible overlies the dens."
+   ],
+   [
+    "دوران الرأس: عدم تناظر الصورة.",
+    "Head rotation produces asymmetry."
+   ]
+  ],
+  "tips": [
+   "ممنوع تماماً في حالات الرضوض أو الاشتباه بكسر عنقي لأن المسقط يتطلب مدّ الرقبة للخلف. اسأل عن الحمل.",
+   "Strictly contraindicated in trauma or suspected cervical fracture because it requires neck extension. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من تحت طرف الذقن ويمر عبر السن ليخرج من القذال نحو الكاسيت.",
+   "The beam enters just under the chin tip, passes through the dens and exits the occiput onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–20",
+    "12–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية، وتأكد من عدم وجود رضوض حادة، واسأل عن الحمل.",
+    "Check the request and ID, confirm there is no acute trauma, and ask about pregnancy."
+   ],
+   [
+    "أزل المعادن والأطقم والأقراط.",
+    "Remove metal, dentures and earrings."
+   ],
+   [
+    "ضع المريض مستلقياً على الظهر وارفع الذقن حتى يصير خط MML عمودياً على الطاولة.",
+    "Lie the patient supine and raise the chin until the MML is perpendicular to the table."
+   ],
+   [
+    "مركّز تحت طرف الذقن مباشرة على 100 سم وضيّق المجال.",
+    "Centre just below the chin tip at 100 cm SID and collimate tightly."
+   ],
+   [
+    "اطلب الثبات وحبس النفس ثم اعرّض.",
+    "Ask for stillness and breath-hold, then expose."
+   ],
+   [
+    "راجع ظهور السن داخل الثقبة العظمية الكبيرة وعلامة الجهة.",
+    "Verify the dens within the foramen magnum and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي مائل RAO/LAO (الثقوب بين الفقرات)",
+   "Cervical spine oblique RAO/LAO (foramina)"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": -15,
+  "cr": {
+   "s": "^Vertebra C4$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra C\\d$",
+   "^Atlas \\(C1\\)$",
+   "^Axis \\(C2\\)$"
+  ],
+  "ind": [
+   "تقييم الثقوب بين الفقرات (intervertebral foramina) والأعناق (pedicles): انضغاط جذور الأعصاب، النتوءات العظمية، وتضيق الثقوب.",
+   "Evaluate the intervertebral foramina and pedicles: nerve root compression, osteophytes and foraminal stenosis."
+  ],
+  "pos": [
+   "المريض واقف أو جالس، يُدار الجسم والرقبة معاً بزاوية 45° (في وضعيات PA المائلة RAO/LAO تظهر الثقوب القريبة من الكاسيت؛ وفي AP المائلة RPO/LPO تظهر الثقوب البعيدة). الرأس بوضع جانبي أو محاذٍ للجسم والذقن مرفوع قليلاً.",
+   "Patient erect or seated, body and neck rotated 45° together (PA obliques RAO/LAO show the foramina closer to the detector; AP obliques RPO/LPO show the foramina farther from it). Chin slightly raised."
+  ],
+  "crt": [
+   "في PA المائل (RAO/LAO) يكون الشعاع مائلاً 15° ذيلياً (نحو الأقدام) عند مستوى C4؛ وفي AP المائل (RPO/LPO) يكون 15° رأسياً عند C4. SID 180 سم.",
+   "For PA oblique (RAO/LAO) angle 15° caudad at C4; for AP oblique (RPO/LPO) angle 15° cephalad at C4. 180 cm SID."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay perfectly still during exposure."
+  ],
+  "crit": [
+   [
+    "الثقوب بين الفقرات من C2–C3 إلى C7–T1 مفتوحة وبيضاوية الشكل ومتساوية.",
+    "Intervertebral foramina from C2–C3 to C7–T1 open, oval and uniform."
+   ],
+   [
+    "الأعناق (Pedicles) ظاهرة بالمقطع الصحيح دون تراكب الفك.",
+    "Pedicles clearly shown without mandibular overlap."
+   ],
+   [
+    "تُصوَّر الجهتان للمقارنة مع وضع علامة الجهة المصورة.",
+    "Both sides imaged for comparison with clear side markers."
+   ]
+  ],
+  "err": [
+   [
+    "دوران أقل أو أكثر من 45°: تضيق الثقوب أو تختفي.",
+    "Rotation other than 45° narrows or closes the foramina."
+   ],
+   [
+    "نسيان الزاوية 15°: تراكب الثقوب.",
+    "Omitting the 15° tube angle overlaps the foramina."
+   ],
+   [
+    "دوران الرأس بشكل مختلف عن الجسم: التواء الفقرات العلوية.",
+    "Head rotated differently from the body twists the upper vertebrae."
+   ]
+  ],
+  "tips": [
+   "تذكّر القاعدة: PA مائل يصور الجهة القريبة من الكاسيت وبزاوية 15° ذيلياً (أقل جرعة للدرقية وعدسة العين). AP مائل يصور الجهة البعيدة وبزاوية 15° رأسياً. اسأل عن الحمل.",
+   "Rule of thumb: PA obliques show the downside foramina with a 15° caudad tilt (lower thyroid/lens dose); AP obliques show the upside foramina with a 15° cephalad tilt. Ask about pregnancy."
+  ],
+  "inout": [
+   "في RAO/LAO يدخل الشعاع من خلف الرقبة مائلاً 15° للأسفل ويخرج من الأمام نحو الكاسيت.",
+   "In RAO/LAO the beam enters the back of the neck angled 15° caudad and exits anteriorly toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–20",
+    "12–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل القلادات والأقراط والمعادن من الرقبة.",
+    "Remove necklaces, earrings and metal from the neck."
+   ],
+   [
+    "أدر جسم المريض ورأسه معاً بزاوية 45° نحو الكاسيت (RAO أو LAO).",
+    "Rotate the patient's body and head together 45° toward the detector (RAO or LAO)."
+   ],
+   [
+    "ارفع الذقن قليلاً لإبعاده عن الفقرات العلوية.",
+    "Raise the chin slightly to clear the upper vertebrae."
+   ],
+   [
+    "أمل الشعاع 15° ذيلياً ومركّز عند C4 على 180 سم.",
+    "Angle the beam 15° caudad and centre at C4 at 180 cm SID."
+   ],
+   [
+    "اطلب الثبات وحبس النفس ثم اعرّض، وكرر للجهة المقابلة.",
+    "Ask for stillness and breath-hold, expose, then repeat for the opposite side."
+   ],
+   [
+    "راجع انفتاح الثقوب من C2–T1 وتأكد من علامات الجهة.",
+    "Check open foramina from C2–T1 and verify side markers."
+   ]
+  ],
+  "rot": 45
+ },
+ {
+  "id": "cervical-flex-ext",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي جانبي بثني وبسط",
+   "Cervical spine flexion & extension lateral"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C4$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra C\\d$",
+   "^Atlas \\(C1\\)$",
+   "^Axis \\(C2\\)$"
+  ],
+  "ind": [
+   "تقييم الاستقرار الحركي للعمود العنقي والأربطة (انزلاق فقري ديناميكي أو عدم ثبات أطلسي محوري) بعد استبعاد الكسور الحادة.",
+   "Evaluate dynamic cervical spine stability and ligamentous integrity (dynamic subluxation or atlantoaxial instability) after acute fractures are excluded."
+  ],
+  "pos": [
+   "المريض واقف أو جالس بوضعية جانبية (مثل الجانبي العادي) دون دوران. تؤخذ صورتان منفصلتان: الأولى بثني الرقبة للأمام (الذقن نحو الصدر) والثانية ببسط الرقبة للخلف (النظر للأعلى) بأقصى ما يتحمله المريض طوعاً دون مساعدة أو دفع.",
+   "Patient erect or seated in true lateral without rotation. Two separate views: (1) active flexion (chin tucked toward chest) and (2) active extension (head tilted back) as far as the patient can voluntarily tolerate without assistance."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند C4 على بعد 180 سم في كلتا الصورتين.",
+   "Horizontal central ray perpendicular to the detector at C4 at 180 cm SID for both views."
+  ],
+  "br": [
+   "زفير وحبس النفس مع إبقاء الكتفين منخفضين.",
+   "Suspend at end-expiration while keeping the shoulders depressed."
+  ],
+  "crit": [
+   [
+    "من C1 إلى C7–T1 ظاهرة في كلتا الصورتين.",
+    "C1 to C7–T1 visible on both views."
+   ],
+   [
+    "حركة واضحة بالثني والبسط مع تراكب الفكين (بلا دوران).",
+    "Clear flexion and extension motion with superimposed rami (no rotation)."
+   ],
+   [
+    "علامة (Flexion) وعلامة (Extension) مسجلتان على كل صورة.",
+    "Flexion and Extension markers clearly labelled on each image."
+   ]
+  ],
+  "err": [
+   [
+    "إجبار المريض على الثني أو البسط في الرضوض: خطر إصابة الحبل الشوكي.",
+    "Forcing flexion/extension in trauma risks spinal cord injury."
+   ],
+   [
+    "دوران الرأس: يشوش تقييم الانزلاق الفقري.",
+    "Head rotation invalidates subluxation assessment."
+   ]
+  ],
+  "tips": [
+   "تحذير حاسم: لا تُجرِ الثني والبسط أبداً لمريض رضوض قبل استبعاد الكسر في الصورة الجانبية والـCT أو بأمر مباشر من الطبيب، ويجب أن تكون الحركة طوعية من المريض فقط (أوقف فوراً عند أي ألم أو تنميل). اسأل عن الحمل.",
+   "Critical warning: never perform flexion/extension in trauma before fractures are excluded, and motion must be strictly active/voluntary (stop immediately if pain or paraesthesia occurs). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للرقبة عند C4 ويخرج من الجانب الأيسر نحو الكاسيت.",
+   "The beam enters the right side of the neck at C4 and exits the left side onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "10–20",
+    "10–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب، وتأكد من خلو الصور الأولية من كسور حادة، واسأل عن الحمل.",
+    "Check the request, confirm acute fractures are excluded, and ask about pregnancy."
+   ],
+   [
+    "أزل المعادن والقلادات، وضع المريض جانبياً دون دوران.",
+    "Remove metal and necklaces, and position the patient in true lateral."
+   ],
+   [
+    "اطلب من المريض ثني الرقبة للأمام طوعياً دون ألم ثم اعرّض مع علامة Flexion.",
+    "Ask for active painless flexion, then expose with a Flexion marker."
+   ],
+   [
+    "اطلب من المريض بسط الرقبة للخلف طوعياً ثم اعرّض مع علامة Extension.",
+    "Ask for active extension, then expose with an Extension marker."
+   ],
+   [
+    "تأكد من ثبات المسافة 180 سم والتركيز عند C4 في المرتين.",
+    "Keep 180 cm SID and C4 centring for both exposures."
+   ],
+   [
+    "راجع ظهور C1–C7 وتراكب الفكين والعلامات.",
+    "Review C1–C7 coverage, rami superimposition and labels."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-swimmers",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي السباح (الوصل الرقبي الصدري C7–T1)",
+   "Cervical spine swimmer’s (cervicothoracic)"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C7$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra C7$",
+   "^Vertebra T1$",
+   "^Vertebra C6$"
+  ],
+  "ind": [
+   "إظهار الملتقى العنقي الصدري (C7–T1 وT1–T2) عندما تحجب الكتفان هذه المنطقة في المسقط الجانبي العادي.",
+   "Show the cervicothoracic junction (C7–T1 and T1–T2) when the shoulders obscure it on the routine lateral view."
+  ],
+  "pos": [
+   "المريض واقف أو جالس (أو مستلقٍ في الرضوض) بوضعية جانبية حقيقية. تُرفع الذراع القريبة من الكاسيت فوق الرأس، وتُسحب الذراع البعيدة للأسفل والأمام قليلاً لإبعاد رأسي العضد عن العمود الفقري.",
+   "Patient erect or seated (or supine in trauma) in true lateral. Raise the arm closer to the detector above the head, and depress the far arm down and slightly forward to separate the humeral heads from the spine."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت (أو مائل 3–5° ذيلياً إذا لم ينخفض الكتف البعيد كفاية) عند مستوى C7–T1 (فوق الشق الوداجي بـ 2.5 سم).",
+   "Central ray perpendicular to the detector (or angled 3–5° caudad if the far shoulder cannot drop enough) at C7–T1 (just above the jugular notch)."
+  ],
+  "br": [
+   "زفير وحبس النفس (أو تنفس لطيف بطيء لطمس أثر الأضلاع إذا أمكن، والأفضل حبس النفس للثبات).",
+   "Suspend after expiration (or gentle breathing if using motion blur, though breath-hold is preferred for sharp bone detail)."
+  ],
+  "crit": [
+   [
+    "الفقرات من C5 إلى T2–T3 ومفصل C7–T1 ظاهرة بوضوح بين رأسي العضد.",
+    "Vertebrae C5 to T2–T3 and the C7–T1 junction clearly shown between the humeral heads."
+   ],
+   [
+    "العمود الفقري بوضعية جانبية حقيقية دون دوران.",
+    "Spine in true lateral without rotation."
+   ],
+   [
+    "اختراق كافٍ لإظهار أجسام الفقرات رغم سماكة الكتفين.",
+    "Adequate penetration to show vertebral bodies through shoulder thickness."
+   ]
+  ],
+  "err": [
+   [
+    "عدم إبعاد الذراعين عن بعضهما: يتراكب رأسا العضد على C7–T1.",
+    "Humeral heads not separated: they overlap C7–T1."
+   ],
+   [
+    "تعريض غير كافٍ: تبقى المنطقة بيضاء غير مخترقة.",
+    "Underexposure: the junction remains underpenetrated."
+   ]
+  ],
+  "tips": [
+   "يتطلب تعريضاً أعلى بكثير من الجانبي العنقي العادي لأن الشعاع يمر عبر الكتفين. في الرضوض إذا لم يظهر C7–T1 بوضوح، فالـCT هو الحل الأسرع والأدق. اسأل عن الحمل.",
+   "Requires higher exposure than a routine cervical lateral because of shoulder thickness. In trauma, if C7–T1 remains unclear, CT is faster and more accurate. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب البعيد (الإبط/الكتف المنخفض) عند مستوى T1 ويخرج من الجانب القريب (ذو الذراع المرفوعة) نحو الكاسيت.",
+   "The beam enters the far side (depressed shoulder) at T1 and exits the near side (raised arm) onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "80–90",
+    "80–90"
+   ],
+   "mas": [
+    "30–60",
+    "30–60"
+   ],
+   "ex": [
+    "مثال: 300 mA × 0.15 ث = 45 mAs",
+    "Example: 300 mA × 0.15 s = 45 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) ضرورية",
+    "Grid needed"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى أو يدوي",
+    "AEC: centre chamber or manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض واسأل عن الحمل.",
+    "Check the request and patient ID; ask about pregnancy."
+   ],
+   [
+    "أزل المعادن من الرقبة والكتفين.",
+    "Remove metal from the neck and shoulders."
+   ],
+   [
+    "ضع المريض جانبياً: ارفع الذراع القريبة فوق الرأس واسحب البعيدة للأسفل.",
+    "Position laterally: raise the near arm above the head and pull the far arm down."
+   ],
+   [
+    "مركّز عند مستوى C7–T1 (فوق الشق الوداجي) بمسافة 180 سم (أو 100 سم إذا لزم).",
+    "Centre at C7–T1 (above the jugular notch) at 180 cm (or 100 cm if needed)."
+   ],
+   [
+    "اضبط kVp وmAs أعلى من الجانبي العادي.",
+    "Set higher kVp and mAs than the routine lateral."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration and breath-hold, then expose."
+   ],
+   [
+    "راجع وضوح C7–T1 وتفريق رأسي العضد وعلامة الجهة.",
+    "Verify C7–T1 visibility, humeral head separation and the side marker."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-pillar",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي مقطع الأعمدة (المفاصل الوجهية)",
+   "Cervical spine pillar view"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "erect",
+  "beam": "AP",
+  "tilt": -25,
+  "cr": {
+   "s": "^Vertebra C5$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "تقييم الأعمدة المفصلية (articular pillars / lateral masses) والمفاصل الوجهية الخلفية في إصابات فرط البسط والكسور الخفية (تُطلب نادراً اليوم مع توفر CT).",
+   "Evaluate the articular pillars (lateral masses) and facet joints in hyperextension injuries and occult fractures (rarely needed today where CT is available)."
+  ],
+  "pos": [
+   "المريض مستلقٍ أو واقف وظهره للكاسيت، الخط الناصف بالمنتصف. يُدار الرأس 45–50° إلى إحدى الجهتين لتصوير الأعمدة المفصلية في الجهة المقابلة (ثم يُكرر للجهة الأخرى) لإبعاد الفك السفلي.",
+   "Patient supine or erect with the back to the detector, midline centred. Rotate the head 45–50° to one side to show the opposite articular pillars (then repeat to the other side) so the mandible clears the pillars."
+  ],
+  "crt": [
+   "الشعاع المركزي مائل 20–30° ذيلياً (نحو الأقدام)، يدخل على بعد ~2.5 سم وحشي الخط الناصف على الجهة المراد تصويرها بمستوى C5.",
+   "Central ray angled 20–30° caudad, entering ~2.5 cm lateral to the midline on the side of interest at C5."
+  ],
+  "br": [
+   "حبس النفس والثبات التام أثناء التعريض.",
+   "Hold the breath and stay still during exposure."
+  ],
+  "crit": [
+   [
+    "الأعمدة المفصلية والمفاصل الوجهية من C4 إلى C7 مفتوحة دون تراكب.",
+    "Articular pillars and facet joints from C4 to C7 open without overlap."
+   ],
+   [
+    "عدم حجب الفك السفلي للأعمدة المصورة.",
+    "Mandible clears the imaged pillars."
+   ]
+  ],
+  "err": [
+   [
+    "إدارة الرأس في مريض رضوض غير مستقر: خطر على الحبل الشوكي.",
+    "Rotating the head in unstable trauma risks spinal cord injury."
+   ],
+   [
+    "زاوية ذيلية غير كافية: تغلق المفاصل الوجهية.",
+    "Insufficient caudad angle closes the facet joints."
+   ]
+  ],
+  "tips": [
+   "لا يُجرى عند الاشتباه بكسر غير مستقر لأنه يتطلب تدوير الرأس؛ الـCT هو البديل الآمن والأدق. اسأل عن الحمل.",
+   "Do not perform if an unstable fracture is suspected because head rotation is required; CT is the safe, accurate alternative. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من مقدمة الرقبة مائلاً 20–30° نحو الأقدام ويخرج من الخلف نحو الكاسيت.",
+   "The beam enters the anterior neck angled 20–30° caudad and exits posteriorly toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–20",
+    "12–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واستبعد عدم الاستقرار الحاد واسأل عن الحمل.",
+    "Check the request and ID, exclude acute instability, and ask about pregnancy."
+   ],
+   [
+    "أزل المعادن من الرأس والرقبة.",
+    "Remove metal from the head and neck."
+   ],
+   [
+    "أدر الرأس 45–50° بعيداً عن الجهة المراد فحصها.",
+    "Rotate the head 45–50° away from the side of interest."
+   ],
+   [
+    "أمل الأنبوب 20–30° ذيلياً ومركّز عند C5 وحشي الخط الناصف على 100 سم.",
+    "Angle the tube 20–30° caudad and centre at C5 lateral to the midline at 100 cm."
+   ],
+   [
+    "اطلب الثبات وحبس النفس ثم اعرّض، وكرر للجهة الأخرى.",
+    "Ask for stillness and breath-hold, expose, then repeat for the opposite side."
+   ],
+   [
+    "راجع وضوح الأعمدة المفصلية وعلامات الجهة.",
+    "Review the articular pillars and side markers."
+   ]
+  ]
+ },
+ {
+  "id": "cervical-cross-table",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "العمود العنقي جانبي أفقي (رضوض)",
+   "Cervical spine cross-table lateral (trauma)"
+  ],
+  "region": [
+   "العمود الفقري",
+   "Spine"
+  ],
+  "pose": "supine",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C4$"
+  },
+  "sid": 1.8,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton"
+  ],
+  "targets": [
+   "^Vertebra C\\d$",
+   "^Atlas \\(C1\\)$",
+   "^Axis \\(C2\\)$"
+  ],
+  "ind": [
+   "التقييم الأولي لرضوض العمود العنقي دون تحريك المريض أو إزالة طوق الرقبة: كسور الفقرات، الخلع، والانتفاخ قبل الفقري.",
+   "Initial cervical spine trauma assessment without moving the patient or removing the collar: fractures, dislocation and prevertebral swelling."
+  ],
+  "pos": [
+   "المريض مستلقٍ على ظهره بطوق الرقبة (Collar) دون أي تحريك للرأس أو الرقبة. يُوضع الكاسيت عمودياً ملاصقاً لأحد جانبي الكتف والرقبة. يُطلب من شخص محمي سحب الذراعين للأسفل بلطف (عند السماح الطبي فقط) لإظهار C7.",
+   "Patient supine in a cervical collar with zero movement of the head or neck. Place the detector upright against one shoulder/neck. If medically cleared, gently pull the arms downward to show C7."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند C4 (منتصف الرقبة) على مسافة 180 سم لتقليل التكبير.",
+   "Horizontal central ray perpendicular to the detector at C4 (mid-neck) at 180 cm SID to reduce magnification."
+  ],
+  "br": [
+   "حبس النفس بعد الزفير إن أمكن، أو التعريض الفوري للمريض غير الواعي.",
+   "Suspend after expiration if able, or expose immediately if unconscious."
+  ],
+  "crit": [
+   [
+    "من قاعدة الجمجمة (C1) حتى أعلى T1 (من الضروري رؤية كامل C7–T1).",
+    "From skull base (C1) down to T1 (visualising C7–T1 is essential)."
+   ],
+   [
+    "الخطوط الفقرية (الأمامي، الخلفي، الصفيحي الشوكي) متواصلة وبلا دوران.",
+    "Spinal lines (anterior, posterior, spinolaminar) continuous without rotation."
+   ],
+   [
+    "الحيز قبل الفقري ظاهر بوضوح.",
+    "Prevertebral soft-tissue space clearly visible."
+   ]
+  ],
+  "err": [
+   [
+    "إزالة الطوق أو تحريك الرقبة: خطر شديد على الحبل الشوكي.",
+    "Removing the collar or moving the head risks severe cord injury."
+   ],
+   [
+    "عدم ظهور C7–T1 بسبب ارتفاع الكتفين: يجب متابعتها بمسقط السباح أو CT.",
+    "C7–T1 missed due to high shoulders: must follow with a swimmer's view or CT."
+   ]
+  ],
+  "tips": [
+   "الأولوية القصوى لسلامة العمود: لا ترفع الرأس لوضع الكاسيت، ضعه بجانب الكتف فقط. إذا لم تظهر C7–T1 فالصورة غير مكتملة وتحتاج السباح أو CT. اسأل عن الحمل.",
+   "Spinal precautions first: never lift the head; rest the detector beside the shoulder. If C7–T1 is not seen, the study is incomplete and needs a swimmer's view or CT. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الجانب البعيد للرقبة عند C4 ويخرج من الجانب الملاصق للكاسيت العمودي.",
+   "The horizontal beam enters the far side of the neck at C4 and exits the side against the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "12–20",
+    "12–20"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.08 ث = 16 mAs",
+    "Example: 200 mA × 0.08 s = 16 mAs"
+   ],
+   "grid": [
+    "شبكة أو بدونها حسب الجهاز المتنقل",
+    "Grid or non-grid per mobile unit"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية وتأكد من تثبيت الرأس والطوق، واسأل عن الحمل.",
+    "Check the request and ID, ensure head/collar immobilisation, and ask about pregnancy."
+   ],
+   [
+    "ضع الكاسيت عمودياً بجانب الكتف والرقبة دون تحريك المريض.",
+    "Place the detector upright beside the shoulder and neck without moving the patient."
+   ],
+   [
+    "وجّه الأنبوب أفقياً نحو C4 بمسافة 180 سم وضيّق المجال.",
+    "Aim the tube horizontally at C4 at 180 cm SID and collimate."
+   ],
+   [
+    "إذا سمح الطبيب، تُسحب الذراعان للأسفل بلطف لخفض الكتفين.",
+    "If cleared by the physician, gently pull the arms down to lower the shoulders."
+   ],
+   [
+    "اطلب حبس النفس بعد الزفير (إن أمكن) ثم اعرّض.",
+    "Ask for breath-hold after expiration (if able), then expose."
+   ],
+   [
+    "تأكد من ظهور C1 إلى C7–T1 وسلامة المحاذاة وعلامة الجهة.",
+    "Confirm C1 to C7–T1 coverage, alignment and the side marker."
+   ]
+  ]
  }
 ]
