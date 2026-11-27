@@ -2874,7 +2874,8 @@
           "تمدد الشريان الأبهر والجدار الأمامي",
           "Aortic aneurysm and anterior wall"
          ],
-         "id": "cross-table-lateral"
+         "id": "cross-table-lateral",
+         "ex": "abd-cross-table-lat"
         },
         {
          "p": 1,
@@ -2882,7 +2883,8 @@
           "AP/PA منبطح",
           "PA/AP prone"
          ],
-         "id": "pa-ap-prone"
+         "id": "pa-ap-prone",
+         "ex": "abd-prone"
         },
         {
          "p": 1,
@@ -2890,7 +2892,8 @@
           "بطن الأطفال AP مستلقٍ",
           "Paediatric abdomen AP supine"
          ],
-         "id": "paediatric-abdomen-ap-supine"
+         "id": "paediatric-abdomen-ap-supine",
+         "ex": "abd-paed-supine"
         }
        ],
        "id": "plain-abdomen"
@@ -2920,7 +2923,8 @@
           "IVU: صورة الكلية (دقيقة)",
           "IVU: nephrogram (1 min)"
          ],
-         "id": "ivu-nephrogram-1-min"
+         "id": "ivu-nephrogram-1-min",
+         "ex": "ivu-1min"
         },
         {
          "p": 1,
@@ -2928,7 +2932,8 @@
           "IVU: بعد 5 دقائق",
           "IVU: 5-minute film"
          ],
-         "id": "ivu-5-minute-film"
+         "id": "ivu-5-minute-film",
+         "ex": "ivu-5min"
         },
         {
          "p": 1,
@@ -2936,7 +2941,8 @@
           "IVU: بعد 15 دقيقة",
           "IVU: 15-minute film"
          ],
-         "id": "ivu-15-minute-film"
+         "id": "ivu-15-minute-film",
+         "ex": "ivu-15min"
         },
         {
          "p": 1,
@@ -2944,7 +2950,8 @@
           "IVU: مائل (RPO/LPO)",
           "IVU: oblique (RPO/LPO)"
          ],
-         "id": "ivu-oblique-rpo-lpo"
+         "id": "ivu-oblique-rpo-lpo",
+         "ex": "ivu-oblique"
         },
         {
          "p": 1,
@@ -2952,7 +2959,8 @@
           "IVU: منبطح (الحالبان)",
           "IVU: prone (ureters)"
          ],
-         "id": "ivu-prone-ureters"
+         "id": "ivu-prone-ureters",
+         "ex": "ivu-prone"
         },
         {
          "p": 1,
@@ -2960,7 +2968,8 @@
           "IVU: بعد التبول",
           "IVU: post-void film"
          ],
-         "id": "ivu-post-void-film"
+         "id": "ivu-post-void-film",
+         "ex": "ivu-post-void"
         },
         {
          "p": 1,
@@ -2968,7 +2977,8 @@
           "تصوير الحويضة الراجع",
           "Retrograde pyelogram"
          ],
-         "id": "retrograde-pyelogram"
+         "id": "retrograde-pyelogram",
+         "ex": "urinary-rpg"
         },
         {
          "p": 1,
@@ -2976,7 +2986,8 @@
           "تصوير الحويضة الأمامي",
           "Antegrade pyelogram (nephrostogram)"
          ],
-         "id": "antegrade-pyelogram-nephrostogram"
+         "id": "antegrade-pyelogram-nephrostogram",
+         "ex": "urinary-antegrade"
         },
         {
          "p": 1,
@@ -2984,7 +2995,8 @@
           "تصوير المثانة AP/مائل",
           "Cystogram AP/oblique"
          ],
-         "id": "cystogram-ap-oblique"
+         "id": "cystogram-ap-oblique",
+         "ex": "urinary-cystogram"
         },
         {
          "p": 1,
@@ -2992,7 +3004,8 @@
           "تصوير المثانة أثناء التبول",
           "VCUG (micturating) AP/oblique/lateral"
          ],
-         "id": "vcug-micturating-ap-oblique-lateral"
+         "id": "vcug-micturating-ap-oblique-lateral",
+         "ex": "urinary-vcug"
         },
         {
          "p": 1,
@@ -3004,7 +3017,8 @@
           "مائل 35–40°",
           "Oblique 35–40°"
          ],
-         "id": "retrograde-urethrogram-rug"
+         "id": "retrograde-urethrogram-rug",
+         "ex": "urinary-rug"
         }
        ],
        "id": "urinary-system"
@@ -3027,7 +3041,8 @@
             "بلعة الباريوم AP/RAO",
             "Barium swallow AP/RAO"
            ],
-           "id": "barium-swallow-ap-rao"
+           "id": "barium-swallow-ap-rao",
+           "ex": "gi-barium-swallow-rao"
           },
           {
            "p": 1,
@@ -3035,7 +3050,8 @@
             "بلعة الباريوم جانبي",
             "Barium swallow lateral"
            ],
-           "id": "barium-swallow-lateral"
+           "id": "barium-swallow-lateral",
+           "ex": "gi-barium-swallow-lat"
           },
           {
            "p": 1,
@@ -3043,7 +3059,8 @@
             "تصوير البلع بالفلورسكوبي",
             "Videofluoroscopic swallow"
            ],
-           "id": "videofluoroscopic-swallow"
+           "id": "videofluoroscopic-swallow",
+           "ex": "gi-vfss"
           }
          ],
          "id": "oesophagus"
@@ -3060,7 +3077,8 @@
             "الجهاز الهضمي العلوي PA/AP",
             "Upper GI PA/AP"
            ],
-           "id": "upper-gi-pa-ap"
+           "id": "upper-gi-pa-ap",
+           "ex": "gi-upper-pa"
           },
           {
            "p": 1,
@@ -3068,7 +3086,8 @@
             "الجهاز الهضمي العلوي RAO",
             "Upper GI RAO"
            ],
-           "id": "upper-gi-rao"
+           "id": "upper-gi-rao",
+           "ex": "gi-upper-rao"
           },
           {
            "p": 1,
@@ -3076,7 +3095,8 @@
             "الجهاز الهضمي العلوي جانبي أيسر",
             "Upper GI left lateral"
            ],
-           "id": "upper-gi-left-lateral"
+           "id": "upper-gi-left-lateral",
+           "ex": "gi-upper-lat"
           },
           {
            "p": 1,
@@ -3084,7 +3104,8 @@
             "التباين المزدوج",
             "Double contrast"
            ],
-           "id": "double-contrast"
+           "id": "double-contrast",
+           "ex": "gi-upper-double"
           }
          ],
          "id": "stomach-duodenum"
@@ -3101,7 +3122,8 @@
             "متابعة الأمعاء الدقيقة PA",
             "Small bowel follow-through PA"
            ],
-           "id": "small-bowel-follow-through-pa"
+           "id": "small-bowel-follow-through-pa",
+           "ex": "gi-sbft"
           },
           {
            "p": 1,
@@ -3109,7 +3131,8 @@
             "الأمعاء الدقيقة بالحقن",
             "Enteroclysis"
            ],
-           "id": "enteroclysis"
+           "id": "enteroclysis",
+           "ex": "gi-enteroclysis"
           },
           {
            "p": 1,
@@ -3117,7 +3140,8 @@
             "اللفائفي الانتهائي (لقطة موضعية)",
             "Terminal ileum spot"
            ],
-           "id": "terminal-ileum-spot"
+           "id": "terminal-ileum-spot",
+           "ex": "gi-ti-spot"
           }
          ],
          "id": "small-bowel"
@@ -3134,7 +3158,8 @@
             "حقنة الباريوم AP/PA",
             "Barium enema AP/PA"
            ],
-           "id": "barium-enema-ap-pa"
+           "id": "barium-enema-ap-pa",
+           "ex": "gi-enema-ap"
           },
           {
            "p": 1,
@@ -3142,7 +3167,8 @@
             "حقنة الباريوم مائل",
             "Barium enema obliques"
            ],
-           "id": "barium-enema-obliques"
+           "id": "barium-enema-obliques",
+           "ex": "gi-enema-oblique"
           },
           {
            "p": 1,
@@ -3150,7 +3176,8 @@
             "المستقيم جانبي",
             "Lateral rectum"
            ],
-           "id": "lateral-rectum"
+           "id": "lateral-rectum",
+           "ex": "gi-rectum-lat"
           },
           {
            "p": 1,
@@ -3158,7 +3185,8 @@
             "استلقاء جانبي (تباين مزدوج)",
             "Decubitus (double contrast)"
            ],
-           "id": "decubitus-double-contrast"
+           "id": "decubitus-double-contrast",
+           "ex": "gi-enema-decub"
           },
           {
            "p": 1,
@@ -3166,7 +3194,8 @@
             "تصوير التغوط",
             "Defecography"
            ],
-           "id": "defecography"
+           "id": "defecography",
+           "ex": "gi-defecography"
           }
          ],
          "id": "large-bowel"
@@ -3190,7 +3219,8 @@
           "تكلسات وكبر الكبد",
           "Calcifications and liver size"
          ],
-         "id": "plain-abdomen-liver-gallstones"
+         "id": "plain-abdomen-liver-gallstones",
+         "ex": "liver-plain"
         },
         {
          "p": 1,
@@ -3198,7 +3228,8 @@
           "تصوير القناة الصفراوية (أنبوب T)",
           "T-tube cholangiogram"
          ],
-         "id": "t-tube-cholangiogram"
+         "id": "t-tube-cholangiogram",
+         "ex": "biliary-ttube"
         },
         {
          "p": 1,
@@ -3206,7 +3237,8 @@
           "تصوير الصفراوية أثناء الجراحة",
           "Operative cholangiogram"
          ],
-         "id": "operative-cholangiogram"
+         "id": "operative-cholangiogram",
+         "ex": "biliary-operative"
         },
         {
          "p": 1,
@@ -3214,7 +3246,8 @@
           "تصوير القنوات بالمنظار (ERCP)",
           "ERCP"
          ],
-         "id": "ercp"
+         "id": "ercp",
+         "ex": "biliary-ercp"
         },
         {
          "p": 1,
@@ -3222,7 +3255,8 @@
           "تصوير الصفراوية عبر الجلد والكبد",
           "Percutaneous transhepatic cholangiography"
          ],
-         "id": "percutaneous-transhepatic-cholangiograph"
+         "id": "percutaneous-transhepatic-cholangiograph",
+         "ex": "biliary-ptc"
         }
        ],
        "id": "liver-biliary"
@@ -3243,7 +3277,8 @@
           "الأشعة العادية محدودة؛ CT/MRI/US أفضل",
           "Plain film is limited; CT/MRI/US are better"
          ],
-         "id": "plain-abdomen-calcification"
+         "id": "plain-abdomen-calcification",
+         "ex": "pancreas-plain"
         },
         {
          "p": 1,
@@ -3251,7 +3286,8 @@
           "ERCP (القناة البنكرياسية)",
           "ERCP (pancreatic duct)"
          ],
-         "id": "ercp-pancreatic-duct"
+         "id": "ercp-pancreatic-duct",
+         "ex": "pancreas-ercp"
         }
        ],
        "id": "pancreas"
@@ -3268,7 +3304,8 @@
           "تصوير الرحم والبوقين (HSG)",
           "Hysterosalpingography (HSG)"
          ],
-         "id": "hysterosalpingography-hsg"
+         "id": "hysterosalpingography-hsg",
+         "ex": "repro-hsg"
         }
        ],
        "id": "reproductive-tract"

@@ -17417,5 +17417,4266 @@
    ]
   ],
   "hideArms": true
+ },
+ {
+  "id": "abd-cross-table-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "البطن جانبي بشعاع أفقي",
+   "Abdomen cross-table lateral"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L3$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^Liver$",
+   "^Vertebra L\\d$"
+  ],
+  "ind": [
+   "كشف الهواء الحر تحت جدار البطن الأمامي لدى المريض المستلقي الذي لا يمكن قلبه على جانبه، وتقييم تكلسات أم الدم الأبهرية البطنية (AAA) والأجسام الغريبة.",
+   "Detect free intraperitoneal air beneath the anterior abdominal wall in supine patients who cannot be turned, and assess abdominal aortic aneurysm calcification or foreign bodies."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر دون حركة، الكاسيت عمودياً ملاصقاً لجانب البطن، والذراعان مرفوعتان فوق الصدر أو الرأس.",
+   "Patient supine without turning, detector upright against one flank, arms raised over the chest or above the head."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مستوى عرف الحرقفة (L3–L4) على الخط الإبطي المتوسط.",
+   "Horizontal central ray perpendicular to the detector at the iliac crest level (L3–L4) in the mid-axillary plane."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "جدار البطن الأمامي والحجاب الحاجز الأمامي والعمود الفقري ظاهرة بوضوح.",
+    "Anterior abdominal wall, anterior diaphragm and lumbar spine visible."
+   ],
+   [
+    "أي هواء حر يتجمع مباشرة تحت الجدار الأمامي للبطن.",
+    "Any free air is seen collecting directly beneath the anterior abdominal wall."
+   ]
+  ],
+  "err": [
+   [
+    "تعريض زائد: يحرق منطقة الجدار البطني الأمامي ويخفي الهواء الحر.",
+    "Overexposure burns out the anterior abdominal wall and hides free air."
+   ],
+   [
+    "عدم شمول الجدار الأمامي للبطن في الصورة.",
+    "Anterior abdominal wall clipped off the image."
+   ]
+  ],
+  "tips": [
+   "تأكد من شمول الجدار البطني الأمامي بالكامل في الكاسيت لأن الهواء الحر يصعد لأعلى نقطة. اسأل عن الحمل.",
+   "Ensure the anterior abdominal wall is fully included since free air rises to the highest point. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الخاصرة البعيدة ويخرج من الخاصرة القريبة نحو الكاسيت.",
+   "The horizontal beam enters the far flank and exits the near flank onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check request, ID and pregnancy."
+   ],
+   [
+    "ضع الكاسيت عمودياً بجانب البطن بحيث يشمل الجدار الأمامي والظهر.",
+    "Place detector upright beside the abdomen covering anterior wall to back."
+   ],
+   [
+    "مركّز أفقياً عند عرف الحرقفة على الخط الإبطي المتوسط بمسافة 100 سم.",
+    "Centre horizontally at iliac crest in mid-axillary line at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration hold, then expose."
+   ],
+   [
+    "راجع الجدار الأمامي وعلامة الجهة.",
+    "Review anterior wall and side marker."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "abd-prone",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "البطن PA/AP منبطح",
+   "Abdomen PA/AP prone"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^(Ascending|Transverse|Descending|Sigmoid) colon$",
+   "^Kidney$"
+  ],
+  "ind": [
+   "إعادة توزيع الغازات المعوية (يصعد الغاز إلى المستقيم والقولون السيني والنازل)، وتقليل جرعة الأعضاء التناسلية، وتقييم الحالبين في فحوصات البول.",
+   "Redistribute bowel gas (gas rises into the rectum, sigmoid and descending colon), reduce gonadal dose, and assess ureters in urinary studies."
+  ],
+  "pos": [
+   "المريض منبطح على بطنه على الطاولة، الخط الناصف بالمنتصف دون دوران، الذراعان بجانب الرأس والساقان ممدودتان.",
+   "Patient prone on the table, midline centred without rotation, arms beside the head and legs extended."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى عرف الحرقفة (L4) على الخط الناصف.",
+   "Central ray perpendicular to the detector at the iliac crest (L4) on the midline."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "من الارتفاق العاني أسفلاً إلى أعلى البطن والكليتين أعلاً.",
+    "Pubic symphysis below to upper abdomen/kidneys above."
+   ],
+   [
+    "لا دوران: الحوض والعمود الفقري متناظران.",
+    "No rotation: pelvis and spine symmetric."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الحوض أو عدم تساوي الكتفين.",
+    "Pelvic rotation or tilted shoulders."
+   ],
+   [
+    "قطع الارتفاق العاني أو المستقيم.",
+    "Missing the symphysis or rectum."
+   ]
+  ],
+  "tips": [
+   "الضغط على البطن بالانبطاح يفرّق العرى المعوية ويساعد على رؤية الغاز في المستقيم للتفريق بين الانسداد الميكانيكي والعلوص الشللي. اسأل عن الحمل.",
+   "Prone compression spreads bowel loops and helps gas rise into the rectum to distinguish mechanical obstruction from ileus. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الظهر عند L4 ويخرج من جدار البطن الأمامي نحو الكاسيت.",
+   "The beam enters the back at L4 and exits the anterior abdomen onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check request, ID and pregnancy."
+   ],
+   [
+    "أزل المعادن وألبس المريض ثوباً.",
+    "Remove metal and provide a gown."
+   ],
+   [
+    "ضع المريض منبطحاً على بطنه دون دوران.",
+    "Lay the patient prone without rotation."
+   ],
+   [
+    "مركّز عند عرف الحرقفة على 100 سم وضيّق المجال.",
+    "Centre at iliac crest at 100 cm and collimate."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration hold, then expose."
+   ],
+   [
+    "راجع توزيع الغازات وعلامة الجهة.",
+    "Review gas distribution and side marker."
+   ]
+  ]
+ },
+ {
+  "id": "abd-paed-supine",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "بطن الأطفال AP مستلقٍ",
+   "Paediatric abdomen AP supine"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L3$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^(Ascending|Transverse|Descending|Sigmoid) colon$",
+   "^Kidney$"
+  ],
+  "ind": [
+   "التهاب الأمعاء والقولون الناخر (NEC) عند الخدج، الانسداد المعوي، الانغلاف، ابتلاع الأجسام الغريبة، والتحقق من موضع القساطر السرية.",
+   "Necrotising enterocolitis (NEC) in neonates, bowel obstruction, intussusception, ingested foreign bodies and umbilical catheter position."
+  ],
+  "pos": [
+   "الطفل مستلقٍ على الظهر دون دوران، الساقان ممدودتان برفق ومثبتتان، والذراعان مرفوعتان بعيداً عن البطن. يجب تغطية من الحجاب الحاجز إلى الارتفاق العاني.",
+   "Child supine without rotation, legs gently extended and secured, arms clear of the abdomen. Cover from diaphragm to pubic symphysis."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على منتصف البطن (مستوى السرة تقريباً عند الصغار، أو عرف الحرقفة عند الأكبر) على الخط الناصف.",
+   "Central ray perpendicular to mid-abdomen (about umbilical level in infants, iliac crest in older children) on the midline."
+  ],
+  "br": [
+   "التعريض السريع عند سكون الطفل أو نهاية الزفير.",
+   "Fast exposure during stillness or end-expiration."
+  ],
+  "crit": [
+   [
+    "من قبتي الحجاب الحاجز إلى الارتفاق العاني وجداري البطن الجانبيين.",
+    "Diaphragm to pubic symphysis and both lateral abdominal walls."
+   ],
+   [
+    "بلا حركة وبلا دوران، مع تضييق جيد للمجال.",
+    "No motion or rotation, with tight collimation."
+   ]
+  ],
+  "err": [
+   [
+    "زمن تعريض طويل: ضبابية حركة الأمعاء أو بكاء الطفل.",
+    "Long exposure time blurs motion."
+   ],
+   [
+    "ترك غطاء الحفاض أو مشابك معدنية فوق البطن.",
+    "Leaving diaper snaps or metal over the abdomen."
+   ]
+  ],
+  "tips": [
+   "استخدم أسرع زمن تعريض ممكن، وأزل الحفاض أو تأكد من خلوه من أي أجزاء معدنية/مقوية. راعِ الحماية الإشعاعية.",
+   "Use the shortest exposure time possible and remove/check the diaper for radiopaque snaps. Maintain strict paediatric radiation protection."
+  ],
+  "inout": [
+   "يدخل الشعاع من البطن الأمامي ويخرج من الظهر نحو الكاسيت.",
+   "The beam enters the anterior abdomen and exits the back onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "60–72",
+    "60–72"
+   ],
+   "mas": [
+    "2–6",
+    "2–6"
+   ],
+   "ex": [
+    "مثال للرضيع: 62 kVp و2–3 mAs بزمن قصير جداً",
+    "Infant example: 62 kVp, 2–3 mAs, very short time"
+   ],
+   "grid": [
+    "بدون شبكة للأطفال الصغار",
+    "No grid for infants/small children"
+   ],
+   "aec": [
+    "يدوي حسب العمر والوزن",
+    "Manual by age and weight"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية الطفل وتاريخ الصيام/الأعراض.",
+    "Check request, ID and clinical history."
+   ],
+   [
+    "أزل الحفاض أو أي أزرار/معادن فوق البطن والحوض.",
+    "Remove diaper snaps or metal over abdomen and pelvis."
+   ],
+   [
+    "ثبّت الطفل مستلقياً على الظهر دون دوران.",
+    "Immobilise supine without rotation."
+   ],
+   [
+    "مركّز عند منتصف البطن على 100 سم وضيّق المجال.",
+    "Centre at mid-abdomen at 100 cm and collimate."
+   ],
+   [
+    "اضبط تقنية الأطفال واعرض بسرعة عند السكون.",
+    "Set paediatric exposure and expose quickly during stillness."
+   ],
+   [
+    "راجع الشمول وعلامة الجهة.",
+    "Verify coverage and side marker."
+   ]
+  ]
+ },
+ {
+  "id": "ivu-1min",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "IVU: صورة الكلية (دقيقة واحدة)",
+   "IVU: nephrogram (1 min)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Kidney$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Kidney$"
+  ],
+  "ind": [
+   "إظهار الطور البرنشيمي للكليتين (nephrogram phase) مباشرة بعد حقن الصبغة الوريدية لتقييم حجم الكليتين، شكلهما، التندب القشري، أو الكتل الكلوية.",
+   "Demonstrate the renal parenchymal (nephrogram) phase immediately after IV contrast to assess renal size, contour, cortical scarring or masses."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر على الطاولة دون دوران، بعد حقن الصبغة الوريدية مباشرة (عند الدقيقة 1).",
+   "Patient supine on the table without rotation, imaged immediately (1 minute) after IV contrast injection."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت بالوضع العرضي عند مستوى L1–L2 (منتصف المسافة بين الرهابة وعرف الحرقفة) لتضمين الكليتين فقط.",
+   "Central ray perpendicular to a landscape detector at L1–L2 (midway between xiphoid and iliac crest) collimated to the kidneys only."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الكليتان كاملتان (من القطب العلوي إلى السفلي) ممتلئتان بالصبغة في الطور الكلوي.",
+    "Both kidneys fully included from upper to lower poles in the nephrogram phase."
+   ],
+   [
+    "تضييق جيد على منطقة الكليتين (البطن العلوي).",
+    "Tight collimation to the renal area."
+   ],
+   [
+    "علامة التوقيت (1 min) مسجلة على الصورة.",
+    "Time marker (1 min) clearly labelled."
+   ]
+  ],
+  "err": [
+   [
+    "التأخر عن الدقيقة 1: تبدأ الصبغة بالانتقال إلى الكؤوس والحويضة ويفوت الطور البرنشيمي النقي.",
+    "Delay beyond 1 min misses the pure parenchymal nephrogram phase."
+   ],
+   [
+    "مركزة منخفضة: قطع القطبين العلويين للكليتين.",
+    "Low centring clips the upper renal poles."
+   ]
+  ],
+  "tips": [
+   "تأكد من فحص وظائف الكلى (eGFR/Creatinine) والحساسية للصبغة والربو والميتفورمين قبل الحقن، ولا تعطِ الصبغة إلا بعد مراجعة صورة KUB التمهيدية. اسأل عن الحمل.",
+   "Check renal function, contrast allergy and metformin history before injection, and review the scout KUB first. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من البطن العلوي الأمامي عند L1–L2 ويخرج من الظهر نحو الكاسيت.",
+   "The beam enters the upper anterior abdomen at L1–L2 and exits posteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من الموافقة وفحص الكلى والحساسية وصورة KUB التمهيدية.",
+    "Verify consent, renal function, allergies and scout KUB."
+   ],
+   [
+    "احقن الصبغة الوريدية وابدأ المؤقت فوراً.",
+    "Inject IV contrast and start the timer immediately."
+   ],
+   [
+    "عند الدقيقة 1، مركّز على الكليتين (L1–L2) بالوضع العرضي على 100 سم.",
+    "At 1 min, centre over the kidneys (L1–L2) landscape at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض وضع علامة 1 min.",
+    "Ask for expiration hold, expose and label 1 min."
+   ]
+  ]
+ },
+ {
+  "id": "ivu-5min",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "IVU: صورة بعد 5 دقائق",
+   "IVU: 5-minute film"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Kidney$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Kidney$",
+   "^Ureter$"
+  ],
+  "ind": [
+   "تقييم إفراز الصبغة المبكر من الكليتين إلى الكؤوس الكلوية والحويضات وأعلى الحالبين ومقارنة تناظر الإفراز بين الكليتين.",
+   "Assess early contrast excretion into the calyces, renal pelves and proximal ureters, and compare bilateral symmetry."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر على الطاولة دون دوران.",
+   "Patient supine on the table without rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى L2–L3 (أو KUB كامل حسب البروتوكول) بعد 5 دقائق من الحقن.",
+   "Central ray perpendicular at L2–L3 (or full KUB per protocol) 5 minutes post-injection."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الكؤوس والحويضات الكلوية وأعلى الحالبين ممتلئة بالصبغة وواضحة.",
+    "Calyces, renal pelves and proximal ureters well opacified."
+   ],
+   [
+    "علامة التوقيت (5 min) مسجلة بوضوح.",
+    "5 min time marker clearly labelled."
+   ]
+  ],
+  "err": [
+   [
+    "نسيان علامة الوقت: يربك تقييم تأخر الإطراح الكلوي.",
+    "Missing time label impairs assessment of delayed excretion."
+   ],
+   [
+    "تأخر الإطراح في جهة واحدة يتطلب متابعة بصور متأخرة (15، 30، 60 دقيقة).",
+    "Delayed unilateral excretion requires delayed follow-up films."
+   ]
+  ],
+  "tips": [
+   "إذا كانت إحدى الكليتين متأخرة في الإطراح (انسداد بحصاة)، لا توقف الفحص وخذ صوراً متأخرة حسب البروتوكول. اسأل عن الحمل.",
+   "If one kidney shows delayed excretion (obstructing stone), obtain delayed films per protocol. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من البطن الأمامي عند L2–L3 ويخرج نحو الكاسيت.",
+   "The beam enters the anterior abdomen at L2–L3 and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "25–38",
+    "25–38"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "عند مرور 5 دقائق من الحقن، تأكد من وضعية المريض المستلقية دون دوران.",
+    "At 5 min post-injection, confirm supine alignment without rotation."
+   ],
+   [
+    "مركّز عند مستوى L2–L3 (أو عرف الحرقفة للـKUB الكامل) على 100 سم.",
+    "Centre at L2–L3 (or iliac crest for full KUB) at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض وضع علامة 5 min.",
+    "Ask for expiration hold, expose and label 5 min."
+   ]
+  ]
+ },
+ {
+  "id": "ivu-15min",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "IVU: صورة بعد 15 دقيقة",
+   "IVU: 15-minute film"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Kidney$",
+   "^Ureter$",
+   "^Urinary bladder$"
+  ],
+  "ind": [
+   "إظهار الحالبين بكامل طولهما والمثانة البولية بعد امتلائها بالصبغة لتقييم الحصى، التضيقات، أو عيوب الامتلاء.",
+   "Demonstrate the entire course of both ureters and the opacified urinary bladder to evaluate stones, strictures or filling defects."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر دون دوران (بعد فك حزام الضغط البطني إن استُخدم).",
+   "Patient supine without rotation (after releasing abdominal compression if used)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى عرف الحرقفة (L4) على الخط الناصف لتشمل من الكليتين إلى الارتفاق العاني.",
+   "Central ray perpendicular at the iliac crest (L4) on the midline covering kidneys to pubic symphysis."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الكليتان والحالبان والمثانة البولية ظاهرة وممتلئة بالصبغة.",
+    "Kidneys, full ureters and urinary bladder opacified."
+   ],
+   [
+    "علامة التوقيت (15 min) مسجلة على الصورة.",
+    "15 min time marker clearly labelled."
+   ]
+  ],
+  "err": [
+   [
+    "قطع المثانة أسفل الصورة: مركزة مرتفعة.",
+    "Bladder clipped below: centring too high."
+   ],
+   [
+    "عدم رؤية الحالبين بسبب التمعج الطبيعي: قد يلزم صورة منبطحة.",
+    "Unfilled ureteral segments due to peristalsis may need a prone film."
+   ]
+  ],
+  "tips": [
+   "تُظهر هذه الصورة كامل الجهاز البولي المفرز؛ إذا بقي جزء من الحالب غير ممتلئ أضف وضعية الانبطاح أو المائلة. اسأل عن الحمل.",
+   "Shows the full collecting system; add prone or oblique views if ureteric segments remain unopacified. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من البطن الأمامي عند عرف الحرقفة (L4) ويخرج نحو الكاسيت.",
+   "The beam enters the anterior abdomen at L4 and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "عند مرور 15 دقيقة (وبعد فك الضغط إن وجد)، أبقِ المريض مستلقياً دون دوران.",
+    "At 15 min (after releasing any compression), keep supine without rotation."
+   ],
+   [
+    "مركّز عند عرف الحرقفة (L4) لتشمل الكليتين والمثانة على 100 سم.",
+    "Centre at iliac crest (L4) covering kidneys to symphysis at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض وضع علامة 15 min.",
+    "Ask for expiration hold, expose and label 15 min."
+   ]
+  ]
+ },
+ {
+  "id": "ivu-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "IVU: مائل (RPO/LPO)",
+   "IVU: oblique (RPO/LPO)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Kidney$",
+   "^Ureter$",
+   "^Urinary bladder$"
+  ],
+  "ind": [
+   "فصل الكليتين والحالبين عن العمود الفقري وعن التكلسات البطنية المشتبه بها، وتقييم الوصل الحالبي المثاني (VUJ) وجدار المثانة الجانبي.",
+   "Separate the kidneys and ureters from the spine and overlying calcifications, and evaluate the vesicoureteric junction (VUJ) and lateral bladder wall."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر ثم يُدار بزاوية 30° في وضعية RPO وLPO ويُسند بإسفنجة.",
+   "Patient supine rotated 30° into RPO and LPO, supported on a wedge."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى عرف الحرقفة (أو على الجانب المراد) على الخط الناصف للجسم.",
+   "Central ray perpendicular at the iliac crest level centred to the torso."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الكلية والحالب البعيد عن الطاولة مفصولان عن العمود الفقري.",
+    "Upside kidney and ureter projected free of the spine."
+   ],
+   [
+    "الحوض والمثانة ظاهران بزاوية مائلة مع علامة RPO/LPO.",
+    "Pelvis and bladder shown obliquely with RPO/LPO marker."
+   ]
+  ],
+  "err": [
+   [
+    "دوران زائد (> 45°): تتراكب الهياكل الحوضية.",
+    "Excess rotation (> 45°) overlaps pelvic structures."
+   ]
+  ],
+  "tips": [
+   "يساعد المائل على تحديد هل التكلس داخل الحالب أم خارجه (مثل وريد متكلس phlebolith). اسأل عن الحمل.",
+   "Helps distinguish a true ureteric calculus from an extraurinary calcification (e.g. phlebolith). Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من البطن الأمامي مائلاً 30° ويخرج نحو الكاسيت.",
+   "The beam enters obliquely at 30° and exits posteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "أدر المريض 30° في وضعية RPO ثم LPO حسب الطلب.",
+    "Rotate patient 30° into RPO/LPO per request."
+   ],
+   [
+    "مركّز عند عرف الحرقفة على 100 سم.",
+    "Centre at iliac crest at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض وضع علامة الوضعية.",
+    "Ask for expiration hold, expose and label oblique side."
+   ]
+  ],
+  "rot": 30
+ },
+ {
+  "id": "ivu-prone",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "IVU: منبطح (إظهار الحالبين)",
+   "IVU: prone (ureters)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Kidney$",
+   "^Ureter$",
+   "^Urinary bladder$"
+  ],
+  "ind": [
+   "تحسين امتلاء الحالبين المتوسط والسفلي والوصل الحالبي الحويضي (PUJ) بمساعدة الجاذبية لأن الحالبين يتجهان للأمام تشريحياً.",
+   "Improve filling of the mid/distal ureters and pelviureteric junction (PUJ) using gravity since the ureters slope anteriorly."
+  ],
+  "pos": [
+   "المريض منبطح على بطنه على الطاولة دون دوران، والذراعان بجانب الرأس.",
+   "Patient prone on the table without rotation, arms beside the head."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى عرف الحرقفة (L4) على الخط الناصف.",
+   "Central ray perpendicular at the iliac crest (L4) on the midline."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "امتلاء كامل ومستمر للحالبين من الحويضة الكلوية حتى المثانة.",
+    "Continuous opacification of both ureters from renal pelvis to bladder."
+   ],
+   [
+    "لا دوران وعلامة Prone مسجلة.",
+    "No rotation and Prone label included."
+   ]
+  ],
+  "err": [
+   [
+    "عدم تضمين المثانة أسفلاً.",
+    "Clipping the bladder inferiorly."
+   ]
+  ],
+  "tips": [
+   "وضعية الانبطاح هي أفضل طريقة غير جراحية لملء الحالبين في IVU وتقليل الحاجة لصور متكررة. اسأل عن الحمل.",
+   "Prone positioning is the best non-invasive way to opacify the entire ureters on IVU. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الظهر عند L4 ويخرج من البطن نحو الكاسيت.",
+   "The beam enters the back at L4 and exits anteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "اقلب المريض منبطحاً على بطنه دون دوران.",
+    "Turn patient prone without rotation."
+   ],
+   [
+    "مركّز عند عرف الحرقفة (L4) على 100 سم.",
+    "Centre at iliac crest (L4) at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض وضع علامة Prone.",
+    "Ask for expiration hold, expose and label Prone."
+   ]
+  ]
+ },
+ {
+  "id": "ivu-post-void",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "IVU: صورة بعد التبول",
+   "IVU: post-void film"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Urinary bladder$",
+   "^Ureter$"
+  ],
+  "ind": [
+   "تقييم كفاءة تفريغ المثانة وحجم البول المتبقي (post-void residual) في حالات تضخم البروستاتا، وتفريغ أسفل الحالبين والكشف عن الأورام أو الحصى الصغيرة في المثانة.",
+   "Assess bladder emptying and post-void residual volume (e.g. BPH), distal ureteral drainage and small bladder tumours/stones."
+  ],
+  "pos": [
+   "يذهب المريض للتبول وتفريغ المثانة تماماً، ثم يستلقي على الظهر على الطاولة دون دوران.",
+   "Patient voids completely, then lies supine on the table without rotation."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت (أو مائل 10–15° ذيلياً) عند مستوى ~5 سم فوق الارتفاق العاني لتضمين المثانة وأسفل الحالبين.",
+   "Central ray perpendicular (or 10–15° caudad) ~5 cm above the pubic symphysis covering the bladder and distal ureters."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "المثانة البولية وأسفل الحالبين والارتفاق العاني ضمن الصورة.",
+    "Urinary bladder, distal ureters and pubic symphysis included."
+   ],
+   [
+    "علامة Post-void مسجلة بوضوح.",
+    "Post-void marker clearly labelled."
+   ]
+  ],
+  "err": [
+   [
+    "مركزة مرتفعة: قطع قاع المثانة والبروستاتا.",
+    "Centring too high clips the bladder base and prostate."
+   ],
+   [
+    "نسيان علامة Post-void: قد يُظن أنها صورة مثانة ممتلئة جزئياً.",
+    "Missing Post-void label causes confusion with partial filling."
+   ]
+  ],
+  "tips": [
+   "هذه هي الصورة الختامية القياسية لفحص IVU. اسأل عن الحمل.",
+   "Standard final film of an IVU study. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع فوق الارتفاق العاني بـ 5 سم ويخرج نحو الكاسيت.",
+   "The beam enters 5 cm above symphysis and exits posteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–32",
+    "20–32"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "اطلب من المريض تفريغ المثانة تماماً في دورة المياه.",
+    "Have the patient void completely."
+   ],
+   [
+    "استلقِ المريض على الظهر دون دوران.",
+    "Lay supine without rotation."
+   ],
+   [
+    "مركّز 5 سم فوق الارتفاق العاني على 100 سم وضيّق المجال.",
+    "Centre 5 cm above symphysis at 100 cm and collimate."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض وضع علامة Post-void.",
+    "Ask for expiration hold, expose and label Post-void."
+   ]
+  ]
+ },
+ {
+  "id": "urinary-rpg",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الحويضة الراجع (Retrograde pyelogram)",
+   "Retrograde pyelogram"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Kidney$",
+   "^Ureter$"
+  ],
+  "ind": [
+   "تقييم الحالب والحويضة والكؤوس الكلوية بحقن الصبغة مباشرة عبر قسطرة حالبية (بمنظار المثانة) عند فشل وظيفة الكلية أو موانع الصبغة الوريدية، لتحديد موضع الانسداد أو التضيق أو الناسور.",
+   "Opacify the ureter, renal pelvis and calyces via cystoscopic ureteric catheter when IV contrast is contraindicated or kidney is non-functioning, to localise obstruction, strictures or fistulae."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر على طاولة الجراحة البولية أو الفلورسكوبي (غالباً بوضعية استخراج الحصاة Lithotomy ثم بسط الساقين).",
+   "Patient supine on the urology/fluoroscopy table (often lithotomy initially, then supine)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على مستوى L2–L4 لتشمل الكلية والحالب المصابين تحت توجيه التنظير الفلوري، ثم لقطة KUB.",
+   "Central ray perpendicular at L2–L4 covering the target kidney and ureter under fluoroscopy."
+  ],
+  "br": [
+   "زفير وحبس النفس أثناء التقاط اللقطة.",
+   "Suspend on expiration during spot exposure."
+  ],
+  "crit": [
+   [
+    "امتلاء واضح للكؤوس والحويضة والحالب دون تسرب (extravasation) ناتج عن فرط الضغط.",
+    "Clear opacification of calyces, pelvis and ureter without over-distension extravasation."
+   ],
+   [
+    "تحديد دقيق لمستوى الانسداد أو عيب الامتلاء.",
+    "Precise localisation of obstruction or filling defect."
+   ]
+  ],
+  "err": [
+   [
+    "حقن فقاعات هواء مع الصبغة: تحاكي حصى أو أوراماً كاذبة.",
+    "Injecting air bubbles mimics stones or tumours."
+   ],
+   [
+    "حقن بضغط مفرط: يسبب ارتجاعاً كلوياً (pyelotubular/sinus backflow) وألماً.",
+    "Excess injection pressure causes backflow and pain."
+   ]
+  ],
+  "tips": [
+   "إجراء تعقيمي بالكامل يُنفذ بواسطة طبيب المسالك البولية مع تفريغ المحقنة من أي فقاعات هواء. اسأل عن الحمل.",
+   "Sterile urological procedure; ensure all air bubbles are purged from the syringe/catheter. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من البطن الأمامي ويخرج نحو الكاسيت تحت الطاولة.",
+   "The beam enters anteriorly and exits posteriorly onto the under-table detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "مثال: فلورسكوبي ولقطات موضعية 75–85 kVp",
+    "Fluoroscopy and spot films at 75–85 kVp"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية والجهة المطلوبة والتعقيم واسأل عن الحمل.",
+    "Check request, ID, target side, sterility and pregnancy."
+   ],
+   [
+    "خذ صورة تمهيدية (Scout) للتأكد من موضع القسطرة.",
+    "Take a scout film to check catheter position."
+   ],
+   [
+    "أثناء حقن الطبيب للصبغة برفق، التقط لقطات الحويضة ثم الحالب عند سحب القسطرة.",
+    "As contrast is gently injected, acquire pyelogram and withdrawal ureterogram films."
+   ],
+   [
+    "راجع وضوح الكؤوس والحالب وعلامة الجهة.",
+    "Review calyceal/ureteral detail and side marker."
+   ]
+  ]
+ },
+ {
+  "id": "urinary-antegrade",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الحويضة الأمامي (Nephrostogram)",
+   "Antegrade pyelogram (nephrostogram)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Kidney$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Kidney$",
+   "^Ureter$"
+  ],
+  "ind": [
+   "تقييم موضع أنبوب فغر الكلية (nephrostomy tube) وسالكيّة الحالب قبل إزالة الأنبوب أو بعد تركيب الدعامة (JJ stent)، والكشف عن التسرب أو التضيق.",
+   "Assess nephrostomy tube position, ureteral patency prior to tube removal or post-stenting, and detect leaks or strictures."
+  ],
+  "pos": [
+   "المريض منبطح أو مستلقٍ على الظهر مع إبقاء أنبوب فغر الكلية متاحاً ومعقماً.",
+   "Patient prone or supine with the nephrostomy tube accessible under sterile technique."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند الكلية والحالب المصابين تحت التوجيه الفلوري.",
+   "Central ray perpendicular over the target kidney and ureter under fluoroscopy."
+  ],
+  "br": [
+   "حبس النفس أثناء اللقطات.",
+   "Hold breath during spot exposures."
+  ],
+  "crit": [
+   [
+    "موضع طرف أنبوب فغر الكلية داخل الحويضة الكلوية واضح، مع تتبع الصبغة نزولاً عبر الحالب إلى المثانة.",
+    "Nephrostomy tip position in renal pelvis and contrast flow down the ureter to bladder clearly shown."
+   ]
+  ],
+  "err": [
+   [
+    "حقن الصبغة قبل سحب عينة/تخفيف الضغط في كلية مسدودة ملتهبة: خطر إنتان دموي.",
+    "Forceful injection into an obstructed infected system risks urosepsis."
+   ],
+   [
+    "عدم تعقيم وصلة الأنبوب.",
+    "Break in sterile technique at tube hub."
+   ]
+  ],
+  "tips": [
+   "في حال وجود انسداد والتهاب، يتم البزل وتخفيف الضغط بلطف دون حقن مفرط. اسأل عن الحمل.",
+   "In an obstructed/infected kidney, aspirate gently first and avoid over-pressurisation. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً عبر البطن/الظهر نحو المستقبل.",
+   "The beam passes vertically through the abdomen toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "فلورسكوبي ولقطات موضعية 75–85 kVp",
+    "Fluoroscopy and spot films at 75–85 kVp"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية والجهة واسأل عن الحمل.",
+    "Check request, ID, side and pregnancy."
+   ],
+   [
+    "خذ صورة تمهيدية قبل الحقن.",
+    "Acquire a scout image before injection."
+   ],
+   [
+    "عقّم الوصلة واحقن صبغة مخففة برفق تحت الفلورسكوبي، وتابع مرورها للمثانة.",
+    "Use sterile technique, gently inject dilute contrast under fluoroscopy and follow to bladder."
+   ],
+   [
+    "التقط صوراً AP ومائلة حسب اللزوم وضع علامة الجهة.",
+    "Acquire AP/oblique spot views and label side."
+   ]
+  ]
+ },
+ {
+  "id": "urinary-cystogram",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير المثانة AP/مائل (Cystogram)",
+   "Cystogram AP/oblique"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Urinary bladder$"
+  ],
+  "ind": [
+   "كشف تمزق المثانة (داخل الصفاق أو خارجه) بعد رضوض الحوض، تقييم الرتوج المثانية، النواسير، أو التسرب بعد الجراحة.",
+   "Detect bladder rupture (intraperitoneal vs extraperitoneal) in pelvic trauma, bladder diverticula, fistulae or post-operative leaks."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر مع قسطرة بولية (Foley) داخل المثانة، وتُؤخذ صور AP ومائلة (RPO/LPO) بعد ملء المثانة بالصبغة ثم صورة بعد التفريغ.",
+   "Patient supine with a Foley catheter in situ; AP and oblique (RPO/LPO) views taken after retrograde bladder filling, plus a post-drainage film."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي (أو 10–15° ذيلياً للابتعاد عن العظم العاني) عند ~5 سم فوق الارتفاق العاني.",
+   "Central ray perpendicular (or 10–15° caudad) ~5 cm above the pubic symphysis."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "المثانة ممتلئة بالكامل دون تسرب (أو إظهار واضح لموضع التسرب).",
+    "Fully distended bladder with clear delineation of intact wall or extravasation."
+   ],
+   [
+    "صورة ما بعد التفريغ (Post-drainage) ضرورية لكشف التسرب الخلفي الذي تخفيه المثانة الممتلئة.",
+    "Post-drainage view included to reveal posterior leaks hidden by the full bladder."
+   ]
+  ],
+  "err": [
+   [
+    "نسيان صورة ما بعد التفريغ في الرضوض: قد يفوّت تمزقاً خلفياً.",
+    "Omitting the post-drainage film in trauma can miss a posterior rupture."
+   ],
+   [
+    "عدم ملء المثانة بكمية كافية (~300 مل للبالغ) قد يغلق تمزقاً صغيراً.",
+    "Underfilling (< 300 mL in adults) may give a false negative."
+   ]
+  ],
+  "tips": [
+   "في رضوض الحوض، تأكد من عدم وجود إصابة إحليلية (دم عند الصماخ) قبل تركيب القسطرة (يُجرى RUG أولاً). اسأل عن الحمل.",
+   "In pelvic trauma, exclude urethral injury (RUG first) before Foley catheterisation. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أسفل البطن فوق الارتفاق العاني ويخرج نحو الكاسيت.",
+   "The beam enters above the symphysis and exits posteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية وخذ صورة تمهيدية واسأل عن الحمل.",
+    "Check request, ID, take scout film and ask about pregnancy."
+   ],
+   [
+    "تُملأ المثانة بالصبغة المخففة بالتنقيط حتى الامتلاء (حسب التحمل).",
+    "Fill bladder by gravity with dilute contrast to capacity."
+   ],
+   [
+    "التقط صوراً AP ومائلة يميناً ويساراً (إذا سمحت حالة المريض).",
+    "Acquire AP and bilateral oblique views (if safe)."
+   ],
+   [
+    "فرّغ المثانة عبر القسطرة والتقط صورة Post-drainage.",
+    "Drain the bladder and acquire a post-drainage film."
+   ]
+  ]
+ },
+ {
+  "id": "urinary-vcug",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير المثانة أثناء التبول (VCUG)",
+   "VCUG (micturating cystourethrogram)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Urinary bladder$",
+   "^Kidney$",
+   "^Ureter$"
+  ],
+  "ind": [
+   "تشخيص الارتجاع المثاني الحالبي (VUR) وتدريجه، صمامات الإحليل الخلفية (PUV) عند الأطفال الذكور، وتضيقات الإحليل أو سلس البول.",
+   "Diagnose and grade vesicoureteric reflux (VUR), posterior urethral valves (PUV) in boys, urethral strictures and voiding dysfunction."
+  ],
+  "pos": [
+   "المريض مستلقٍ على طاولة الفلورسكوبي لمرحلة الملء (AP)، ثم يُدار بزاوية مائلة خفيفة أثناء التبول لإظهار الإحليل كاملاً، وبعده لقطة لأعلى البطن/الكليتين.",
+   "Patient supine on fluoroscopy table during filling, then oblique during voiding to profile the urethra, followed by renal/upper tract views."
+  ],
+  "crt": [
+   "تحت التنظير الفلوري المتقطع: لقطات مبكرة، عند الامتلاء، أثناء التبول (مع الإحليل)، وبعد التبول.",
+   "Intermittent fluoroscopy: early fill, full bladder, voiding (including urethra) and post-void views."
+  ],
+  "br": [
+   "الثبات أثناء اللقطات.",
+   "Stay still during spot exposures."
+  ],
+  "crit": [
+   [
+    "إظهار كامل الإحليل والمثانة أثناء التبول، وتوثيق وجود أو غياب ارتجاع إلى الحالبين والكليتين.",
+    "Entire urethra and bladder seen during voiding, with renal fossae checked for reflux."
+   ],
+   [
+    "أقل جرعة إشعاعية ممكنة (خاصة عند الأطفال).",
+    "ALARA low-dose pulsed fluoroscopy (especially in children)."
+   ]
+  ],
+  "err": [
+   [
+    "عدم تصوير الإحليل أثناء التبول الفعلي: يفوّت صمامات الإحليل الخلفية أو التضيق.",
+    "Failing to capture active voiding misses PUV or strictures."
+   ],
+   [
+    "عدم تصوير الكليتين بعد التبول: يفوّت الارتجاع الخفيف.",
+    "Missing renal fossa view misses reflux."
+   ]
+  ],
+  "tips": [
+   "استعمل الفلورسكوبي النبضي منخفض الجرعة وتجنب استمرار الأشعة دون حاجة. اسأل عن الحمل لدى البالغات.",
+   "Use low-dose pulsed fluoroscopy to minimise paediatric dose. Ask about pregnancy in adult females."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً أو مائلاً عبر الحوض نحو مستقبل الفلورسكوبي.",
+   "The beam passes vertically/obliquely through the pelvis to the fluoroscopy detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "5–20",
+    "5–20"
+   ],
+   "ex": [
+    "فلورسكوبي نبضي منخفض الجرعة",
+    "Low-dose pulsed fluoroscopy"
+   ],
+   "grid": [
+    "حسب العمر والحجم",
+    "Per age and size"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واستبعد التهاب المسالك النشط واسأل عن الحمل.",
+    "Check request, ID, exclude active UTI and ask about pregnancy."
+   ],
+   [
+    "تُملأ المثانة عبر قسطرة رفيعة وتؤخذ لقطة ملء مبكر وامتلاء تام.",
+    "Fill via thin catheter; take early-fill and full-bladder spots."
+   ],
+   [
+    "أزل القسطرة والتقط لقطات مائلة أثناء التبول لإظهار الإحليل.",
+    "Remove catheter and take oblique spots during voiding to profile urethra."
+   ],
+   [
+    "التقط صورة بعد التبول على المثانة ومنطقة الكليتين.",
+    "Acquire post-void bladder and renal-fossa views."
+   ]
+  ]
+ },
+ {
+  "id": "urinary-rug",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الإحليل الراجع (RUG)",
+   "Retrograde urethrogram (RUG)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Urinary bladder$"
+  ],
+  "ind": [
+   "كشف تمزق الإحليل بعد رضوض الحوض قبل تركيب القسطرة البولية، وتقييم تضيقات الإحليل، الرتوج، أو النواسير عند الذكور.",
+   "Exclude urethral injury after pelvic trauma prior to Foley placement, and evaluate male urethral strictures, diverticula or fistulae."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر ثم يُدار بوضعية RPO (أو LPO) بزاوية 35–40° مع ثني الساق السفلية قليلاً وسحب القضيب بلطف فوق الفخذ السفلي لإفراد الإحليل ومنع تراكبه على العظم.",
+   "Patient supine rotated 35–40° into RPO (or LPO), downside leg flexed and penis gently positioned over the lower thigh to unfold the urethra off bone."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند الارتفاق العاني / قاعدة القضيب، وتُلتقط الصورة أثناء الحقن المستمر للصبغة.",
+   "Central ray perpendicular at the pubic symphysis/penile base, exposed during active contrast injection."
+  ],
+  "br": [
+   "الثبات التام أثناء الحقن والتصوير.",
+   "Stay completely still during injection and exposure."
+  ],
+  "crit": [
+   [
+    "الإحليل الأمامي والخلفي ممتد بالكامل وممتلئ بالصبغة حتى عنق المثانة دون تراكب العظم.",
+    "Entire anterior and posterior urethra stretched and opacified up to the bladder neck without bony overlap."
+   ],
+   [
+    "وضوح أي تضيق أو تسرب للصبغة.",
+    "Any stricture or extravasation clearly delineated."
+   ]
+  ],
+  "err": [
+   [
+    "التصوير بعد انتهاء الحقن: يفرغ الإحليل بسرعة وتضيع التفاصيل.",
+    "Exposing after stopping injection: the urethra empties and collapses."
+   ],
+   [
+    "عدم تدوير الحوض 35–40°: يتراكب الإحليل البصلي على نفسه.",
+    "No 35–40° oblique foreshortens the bulbous urethra."
+   ]
+  ],
+  "tips": [
+   "يجب التقاط الصورة **أثناء** حقن الصبغة وليس بعده. أفرغ المحقنة من الهواء تماماً.",
+   "Expose **during** active contrast injection, not afterwards, and purge all air bubbles."
+  ],
+  "inout": [
+   "يدخل الشعاع من الحوض الأمامي مائلاً 35–40° عند الارتفاق العاني نحو الكاسيت.",
+   "The beam enters obliquely at 35–40° over the symphysis onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–80",
+    "70–80"
+   ],
+   "mas": [
+    "15–25",
+    "15–25"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.1 ث = 20 mAs",
+    "Example: 200 mA × 0.1 s = 20 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي أو تلقائي",
+    "Manual or AEC"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واستخدم أسلوباً معقماً.",
+    "Check request, ID and maintain sterile technique."
+   ],
+   [
+    "أدر المريض 35–40° (RPO/LPO) وخذ صورة تمهيدية.",
+    "Rotate 35–40° (RPO/LPO) and take a scout film."
+   ],
+   [
+    "أثناء حقن الطبيب للصبغة برفق عبر طرف الإحليل، التقط الصورة فوراً.",
+    "Expose immediately while contrast is actively injected."
+   ],
+   [
+    "راجع امتداد الإحليل ووصول الصبغة للمثانة.",
+    "Verify full urethral opacification up to bladder neck."
+   ]
+  ],
+  "rot": 38
+ },
+ {
+  "id": "gi-barium-swallow-rao",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "بلعة الباريوم للمريء AP/RAO",
+   "Barium swallow AP/RAO"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "erect",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T6$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra T\\d+$"
+  ],
+  "ind": [
+   "تقييم عسر البلع، تضيقات المريء، الدوالي، الفتق الحجابي، الارتجاع، واضطرابات الحركية (مثل الأكالازيا).",
+   "Evaluate dysphagia, oesophageal strictures, varices, hiatal hernia, reflux and motility disorders (e.g. achalasia)."
+  ],
+  "pos": [
+   "المريض واقف (أو مستلقٍ لدراسة الحركية والارتجاع) بوضعية RAO بزاوية 35–40° (لإبعاد المريء عن العمود الفقري وظل القلب) مع كوب الباريوم في يده اليسرى.",
+   "Patient erect (or prone/recumbent for motility/reflux) in a 35–40° RAO position to project the oesophagus between the spine and heart shadow, holding the barium cup in the left hand."
+  ],
+  "crt": [
+   "الشعاع المركزي عند T5–T6 تحت التوجيه الفلوري ليشمل المريء من البلعوم السفلي إلى الوصل المريئي المعدي.",
+   "Central ray at T5–T6 under fluoroscopy covering pharynx to gastro-oesophageal junction."
+  ],
+  "br": [
+   "حبس النفس فور البلع لالتقاط اللقطات الموضعية دون حركة.",
+   "Hold breath immediately after swallowing for sharp spot films."
+  ],
+  "crit": [
+   [
+    "المريء مملوءاً بالباريوم (أو بالتباين المزدوج) ومفصولاً بوضوح بين العمود الفقري والقلب.",
+    "Oesophagus well opacified and projected clear between spine and heart."
+   ],
+   [
+    "ظهور الوصل المريئي المعدي والمعدة القريبة.",
+    "GE junction and proximal stomach shown."
+   ]
+  ],
+  "err": [
+   [
+    "عدم تدوير المريض 35–40° RAO: يتراكب المريء على العمود الفقري.",
+    "Insufficient RAO leaves the oesophagus superimposed on the spine."
+   ],
+   [
+    "استخدام الباريوم عند اشتباه انثقاب المريء: يجب استخدام صبغة مائية (Water-soluble) بدلاً منه!",
+    "Using barium when oesophageal perforation is suspected: use water-soluble contrast instead!"
+   ]
+  ],
+  "tips": [
+   "إذا كان هناك اشتباه بانثقاب المريء أو ناسور رغامى مريئي، استعمل صبغة مائية غير أيونية بدلاً من الباريوم. اسأل عن الحمل.",
+   "If perforation is suspected, use water-soluble contrast instead of barium. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الظهر مائلاً 35–40° ويخرج من الصدر الأمامي نحو المستقبل.",
+   "The beam enters posteriorly at 35–40° and exits anteriorly toward the detector."
+  ],
+  "exp": {
+   "kv": [
+    "90–110",
+    "90–110"
+   ],
+   "mas": [
+    "5–15",
+    "5–15"
+   ],
+   "ex": [
+    "تباين عالي الاختراق لاختراق الباريوم 90–110 kVp",
+    "High kVp (90–110) to penetrate barium column"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والحساسية واستبعد اشتباه الانثقاب واسأل عن الحمل.",
+    "Check request, exclude perforation risk and ask about pregnancy."
+   ],
+   [
+    "ضع المريض بوضعية RAO 35–40° وأعطه كوب الباريوم.",
+    "Position in 35–40° RAO with barium cup."
+   ],
+   [
+    "اطلب البلع وتابع بالفلورسكوبي، والتقط لقطات المريء العلوي والأوسط والسفلي.",
+    "Follow swallow fluoroscopically and capture upper, mid and distal oesophagus spots."
+   ],
+   [
+    "اطلب الاستلقاء (RAO منبطحاً) لتقييم الحركية والارتجاع عند اللزوم.",
+    "Assess motility/reflux in recumbent RAO if indicated."
+   ]
+  ],
+  "rot": 38
+ },
+ {
+  "id": "gi-barium-swallow-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "بلعة الباريوم جانبي",
+   "Barium swallow lateral"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra T6$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Vertebra T\\d+$"
+  ],
+  "ind": [
+   "تقييم المريء بالمنظر الجانبي الحقيقي: ضغط خارجي من القلب أو الأبهر، الرتوج الخلفية (رتج زينكر Zenker)، والبلعوم السفلي.",
+   "Lateral oesophageal assessment: extrinsic compression (left atrium/aorta), posterior diverticula (Zenker) and hypopharynx."
+  ],
+  "pos": [
+   "المريض واقف بوضعية جانبية حقيقية مع رفع الذراعين للأمام أو فوق الرأس.",
+   "Patient erect in true lateral with arms raised forward or above the head."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي عند T5–T6 (أو أعلى عند الرقبة لرتج زينكر).",
+   "Horizontal central ray at T5–T6 (or neck level for Zenker diverticulum)."
+  ],
+  "br": [
+   "حبس النفس لحظة اللقطة بعد البلع.",
+   "Hold breath briefly after swallow."
+  ],
+  "crit": [
+   [
+    "المريء بوضعية جانبية صافية بين القصبة/القلب والعمود الفقري دون تراكب الذراعين.",
+    "Oesophagus in clean lateral profile between heart/trachea and spine, arms clear."
+   ]
+  ],
+  "err": [
+   [
+    "بقاء الذراعين أمام المريء: يحجبانه.",
+    "Arms left across the chest obscure the oesophagus."
+   ]
+  ],
+  "tips": [
+   "مهم جداً في كشف رتج زينكر الخلفي وتضيقات المريء العلوي. اسأل عن الحمل.",
+   "Essential for posterior Zenker diverticulum and upper oesophageal webs. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن ويخرج من الأيسر نحو المستقبل.",
+   "The beam enters the right side and exits the left onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "95–110",
+    "95–110"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "95–110 kVp لاختراق الباريوم والكتفين",
+    "95–110 kVp to penetrate barium and shoulders"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض جانبياً واطلب رفع الذراعين للأمام.",
+    "Position true lateral with arms raised forward."
+   ],
+   [
+    "اطلب من المريض أخذ رشفة باريوم وابتلاعها عند الإشارة.",
+    "Have patient hold a sip and swallow on cue."
+   ],
+   [
+    "تابع المريء بالفلورسكوبي والتقط لقطات جانبية للعلوي والأوسط والسفلي.",
+    "Acquire lateral spots of upper, mid and lower oesophagus."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "gi-vfss",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير البلع الديناميكي بالفلورسكوبي (VFSS)",
+   "Videofluoroscopic swallow study (VFSS)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra C4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Trachea$",
+   "^Mandible$",
+   "^Vertebra C\\d$"
+  ],
+  "ind": [
+   "تقييم آلية البلع الفموية البلعومية (oropharyngeal dysphagia) والكشف عن الاختناق أو الاستنشاق الصامت (silent aspiration) بقوامات طعام مختلفة بالتعاون مع أخصائي النطق والبلع.",
+   "Dynamic evaluation of oropharyngeal swallowing and silent aspiration across different food/liquid consistencies with a speech-language pathologist."
+  ],
+  "pos": [
+   "المريض جالساً على كرسي فحص خاص بوضعية جانبية حقيقية (مع تثبيت الرأس بوضع طبيعي دون دوران)، ثم تؤخذ لقطة AP في نهاية الفحص عند الحاجة.",
+   "Patient seated upright in true lateral (followed by AP if needed), natural head posture."
+  ],
+  "crt": [
+   "مجال الفحص يشمل الشفتين أماماً، الحنك الصلب أعلاً، جدار البلعوم الخلفي خلفاً، والمدخل المريئي أسفلاً (~C6–C7).",
+   "Field covers lips anteriorly, hard palate superiorly, posterior pharyngeal wall and upper oesophageal sphincter (~C6–C7) inferiorly."
+  ],
+  "br": [
+   "تنفس طبيعي مع بلع قوامات الباريوم المتدرجة (سائل رقيق، سميك، مهروس، صلب).",
+   "Normal breathing while swallowing graded barium consistencies."
+  ],
+  "crit": [
+   [
+    "تسجيل فيديو متواصل (25–30 إطار/ثانية) يوثق مراحل البلع الفموية والبلعومية دون قطع الحنجرة.",
+    "Continuous cine/video (25–30 fps) capturing oral and pharyngeal phases with larynx in view."
+   ]
+  ],
+  "err": [
+   [
+    "معدل إطارات منخفض جداً: يفوّت لحظة الاستنشاق السريعة.",
+    "Low frame rate misses rapid aspiration events."
+   ],
+   [
+    "عدم وجود طوارئ شفط جاهزة للمرضى ذوي الخطر العالي.",
+    "Lack of suction readiness for high-risk aspiration patients."
+   ]
+  ],
+  "tips": [
+   "توقف فوراً إذا حدث استنشاق كبير في القصبة الهوائية؛ أبقِ جهاز الشفط جاهزاً في الغرفة. اسأل عن الحمل.",
+   "Stop immediately if frank tracheal aspiration occurs; keep suction available. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع جانبياً عبر الفم والبلعوم والحنجرة نحو مستقبل الفلورسكوبي.",
+   "The beam passes laterally across the mouth, pharynx and larynx to the detector."
+  ],
+  "exp": {
+   "kv": [
+    "65–80",
+    "65–80"
+   ],
+   "mas": [
+    "2–8",
+    "2–8"
+   ],
+   "ex": [
+    "تسجيل فيديو فلورسكوبي 25–30 إطار/ثانية",
+    "Videofluoroscopy recording at 25–30 fps"
+   ],
+   "grid": [
+    "بدون شبكة غالباً",
+    "Often gridless"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب وهوية المريض وجاهزية أخصائي النطق وجهاز الشفط.",
+    "Check request, ID, SLP presence and suction readiness."
+   ],
+   [
+    "أجلس المريض جانبياً واضبط المجال من الشفتين إلى مدخل المريء.",
+    "Seat patient laterally; frame lips to upper oesophageal sphincter."
+   ],
+   [
+    "سجّل البلع مع القوامات المتدرجة ثم لقطة AP سريعة عند اللزوم.",
+    "Record swallows across graded textures, plus brief AP view if needed."
+   ]
+  ]
+ },
+ {
+  "id": "gi-upper-pa",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجهاز الهضمي العلوي PA/AP (المعدة والاثنا عشري)",
+   "Upper GI PA/AP"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Stomach$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "تقييم المعدة والاثنا عشري بشكل شامل: القرحة الهضمية، الأورام، الفتق الحجابي، تضيق البواب، وحركة التفريغ المعدي.",
+   "Overall evaluation of stomach and duodenum: peptic ulcer disease, masses, hiatal hernia, gastric outlet obstruction and emptying."
+  ],
+  "pos": [
+   "المريض صائم 6–8 ساعات؛ يستلقي منبطحاً (PA) أو على الظهر (AP) على طاولة الفلورسكوبي لتوزيع الباريوم في قاع المعدة أو الغار والاثنا عشري.",
+   "Patient fasted 6–8 hours; positioned prone (PA) or supine (AP) on the fluoroscopy table to distribute barium in the fundus, antrum and duodenum."
+  ],
+  "crt": [
+   "الشعاع المركزي عند L1–L2 (منتصف المسافة بين الرهابة وعرف الحرقفة) ليشمل كامل المعدة وعروة الاثنا عشري.",
+   "Central ray at L1–L2 covering the entire stomach and C-loop of the duodenum."
+  ],
+  "br": [
+   "زفير وحبس النفس أثناء اللقطات.",
+   "Suspend on expiration during spot films."
+  ],
+  "crit": [
+   [
+    "المعدة كاملة من القاع إلى البواب وعروة الاثنا عشري مملوءة بالباريوم دون حركة.",
+    "Entire stomach from fundus to pylorus and duodenal C-loop opacified without motion."
+   ],
+   [
+    "ظهور الطيات المخاطية بوضوح.",
+    "Gastric mucosal folds clearly delineated."
+   ]
+  ],
+  "err": [
+   [
+    "عدم صيام المريض: بقايا الطعام تحاكي أوراماً أو قرحاً.",
+    "Unfasted patient: food residue mimics polyps or masses."
+   ],
+   [
+    "استخدام الباريوم في اشتباه انثقاب معدي.",
+    "Using barium when perforation is suspected."
+   ]
+  ],
+  "tips": [
+   "في الوضعية المستلقية (AP) يتجمع الباريوم في القاع ويصعد الهواء للغار؛ وفي المنبطحة (PA) يحدث العكس. اسأل عن الحمل.",
+   "Supine pools barium in the fundus; prone pools barium in the body/antrum and duodenum. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً عبر البطن العلوي عند L1–L2 نحو المستقبل.",
+   "The beam passes vertically through the upper abdomen at L1–L2."
+  ],
+  "exp": {
+   "kv": [
+    "95–110",
+    "95–110"
+   ],
+   "mas": [
+    "15–30",
+    "15–30"
+   ],
+   "ex": [
+    "95–110 kVp للتباين المفرد، 85–95 للتباين المزدوج",
+    "95–110 kVp single contrast, 85–95 double contrast"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من صيام المريض (6–8 ساعات) واسأل عن الحمل.",
+    "Verify 6–8 hour fast and ask about pregnancy."
+   ],
+   [
+    "أعطِ الباريوم تحت الفلورسكوبي ثم التقط صوراً PA وAP شاملة.",
+    "Administer barium under fluoroscopy and acquire PA/AP overhead/spot films."
+   ],
+   [
+    "راجع شمول قاع المعدة والاثنا عشري وعلامة الجهة.",
+    "Review fundus, duodenum coverage and side marker."
+   ]
+  ]
+ },
+ {
+  "id": "gi-upper-rao",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجهاز الهضمي العلوي RAO (البواب والاثنا عشري)",
+   "Upper GI RAO"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Duodenum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "أفضل وضعية لإظهار الانحناء الصغير للمعدة، غار المعدة، قناة البواب، وبصلة الاثنا عشري (duodenal bulb) وعروته مفتوحة دون تراكب.",
+   "Best view to demonstrate the lesser curvature, gastric antrum, pyloric canal and duodenal bulb/C-loop unfolded without overlap."
+  ],
+  "pos": [
+   "المريض منبطحاً ثم يُدار بزاوية 40–70° في وضعية RAO (الجانب الأيمن ملاصق للطاولة والركبة اليسرى مثنية للثبات).",
+   "Patient prone rotated 40–70° into RAO (right side down against table, left knee flexed for support)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند L1–L2 على منتصف المعدة والبواب.",
+   "Central ray perpendicular at L1–L2 centred over the stomach/pylorus."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "غار المعدة، البواب، وبصلة الاثنا عشري مفتوحة بوضوح ومنفردة عن العمود الفقري.",
+    "Antrum, pylorus and duodenal bulb clearly profiled free of spine."
+   ],
+   [
+    "رسم واضح للانحناءين الصغير والكبير.",
+    "Lesser and greater curvatures well outlined."
+   ]
+  ],
+  "err": [
+   [
+    "دوران قليل (< 35°): تتراكب بصلة الاثنا عشري خلف الغار.",
+    "Under-rotation (< 35°) overlaps the duodenal bulb behind the antrum."
+   ]
+  ],
+  "tips": [
+   "في البنية البدينة قد يحتاج المريض دوراناً أكبر (حتى 70°) لفتح البصلة، وفي النحيفين تكفي 40°. اسأل عن الحمل.",
+   "Hypersthenic patients need steeper RAO (~70°); asthenic patients need ~40°. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الظهر مائلاً 40–70° ويخرج من البطن الأمامي الأيمن نحو المستقبل.",
+   "The beam enters posteriorly at 40–70° and exits the right upper abdomen onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "95–110",
+    "95–110"
+   ],
+   "mas": [
+    "15–30",
+    "15–30"
+   ],
+   "ex": [
+    "95–110 kVp لاختراق الباريوم",
+    "95–110 kVp to penetrate barium"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "أدر المريض المنبطح 40–70° إلى وضعية RAO.",
+    "Rotate prone patient 40–70° into RAO."
+   ],
+   [
+    "راقب امتلاء البواب وبصلة الاثنا عشري بالفلورسكوبي.",
+    "Observe pylorus and duodenal bulb filling under fluoroscopy."
+   ],
+   [
+    "اطلب حبس النفس والتقط اللقطات الموضعية.",
+    "Ask for breath-hold and acquire spot views."
+   ]
+  ],
+  "rot": 50
+ },
+ {
+  "id": "gi-upper-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجهاز الهضمي العلوي جانبي أيسر",
+   "Upper GI left lateral"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "lat-L",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Stomach$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "تقييم الحيز خلف المعدة (retrogastric space) والجدارين الأمامي والخلفي للمعدة، والوصل المريئي المعدي من الجانب.",
+   "Assess the retrogastric space, anterior/posterior gastric walls and GE junction in true lateral profile."
+  ],
+  "pos": [
+   "المريض مستلقٍ على جانبه الأيسر (أو الأيمن للوضوح البوابي) بوضعية جانبية حقيقية دون دوران، والركبتان مثنيتان للثبات.",
+   "Patient lying on the left side (true lateral) without rotation, knees flexed for stability."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى L1–L2 على المستوى الإبطي الأمامي المتوسط.",
+   "Central ray perpendicular at L1–L2 slightly anterior to the mid-axillary line."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الحيز خلف المعدة بين المعدة والعمود الفقري واضح.",
+    "Retrogastric space between stomach and spine clearly shown."
+   ],
+   [
+    "ظهور قاع المعدة والانحناءات بوضع جانبي.",
+    "Fundus and gastric contours shown laterally."
+   ]
+  ],
+  "err": [
+   [
+    "دوران الجسم: يقصر الحيز خلف المعدة.",
+    "Body rotation narrows the retrogastric space falsely."
+   ]
+  ],
+  "tips": [
+   "ازدياد المسافة خلف المعدة قد يشير لكتلة بنكرياسية أو خلف الصفاق. اسأل عن الحمل.",
+   "Widening of the retrogastric space may indicate a pancreatic or retroperitoneal mass. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الجانب الأيمن للبطن العلوي ويخرج من الأيسر نحو الكاسيت.",
+   "The beam enters the right upper flank and exits the left onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "95–110",
+    "95–110"
+   ],
+   "mas": [
+    "25–45",
+    "25–45"
+   ],
+   "ex": [
+    "95–110 kVp",
+    "95–110 kVp"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض على جانبه الأيسر بوضعية جانبية حقيقية.",
+    "Lay patient on left side in true lateral."
+   ],
+   [
+    "مركّز عند L1–L2 أمام الخط الإبطي المتوسط.",
+    "Centre at L1–L2 anterior to mid-axillary line."
+   ],
+   [
+    "اطلب حبس النفس بعد الزفير ثم اعرّض.",
+    "Ask for expiration hold, then expose."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "gi-upper-double",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "الجهاز الهضمي العلوي بالتباين المزدوج",
+   "Upper GI double contrast"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Stomach$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Stomach$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "إظهار التفاصيل المخاطية الدقيقة للمعدة والاثنا عشري (الالتهاب، القرح السطحية، الزوائد اللحمية المبكرة) بطلاء الباريوم الكثيف مع نفخ الغاز.",
+   "High-resolution mucosal detail of stomach and duodenum (gastritis, shallow ulcers, small polyps) using high-density barium coating plus gas distension."
+  ],
+  "pos": [
+   "يبتلع المريض حبيبات فوارة منتجة للغاز ثم باريوماً عالي الكثافة، ويتقلب على الطاولة (يميناً، يساراً، على البطن، وعلى الظهر) لطلاء كامل الغشاء المخاطي، وتؤخذ لقطات LPO وRAO ومستلقية وواقفة.",
+   "Patient swallows effervescent gas-producing granules and high-density barium, rolls 360° to coat the mucosa, with LPO, RAO, supine and erect views taken."
+  ],
+  "crt": [
+   "تحت التنظير الفلوري مع لقطات متعددة للمناطق المغطاة بالهواء والباريوم.",
+   "Fluoroscopy-guided spot films of air-distended, barium-coated gastric/duodenal segments."
+  ],
+  "br": [
+   "حبس النفس فور كل لقطة.",
+   "Hold breath for each spot exposure."
+  ],
+  "crit": [
+   [
+    "طلاء رقيق ومتجانس للباريوم على الغشاء المخاطي مع انتفاخ هوائي جيد يظهر الباحة المعدية (areae gastricae).",
+    "Thin, uniform mucosal coating with good gas distension showing areae gastricae."
+   ],
+   [
+    "تصوير قاع المعدة والجسم والغار وبصلة الاثنا عشري بالتباين المزدوج.",
+    "Fundus, body, antrum and duodenal bulb all shown in double contrast."
+   ]
+  ],
+  "err": [
+   [
+    "تجشؤ المريض للغاز باكراً: تنكمش المعدة وتفقد التباين المزدوج.",
+    "Belching out the gas collapses the stomach and loses double contrast."
+   ],
+   [
+    "وجود سائل صائم متبقي في المعدة: يمنع التصاق الباريوم بالمخاطية.",
+    "Residual gastric fluid prevents mucosal barium coating."
+   ]
+  ],
+  "tips": [
+   "اطلب من المريض عدم التجشؤ رغم الشعور بالامتلاء. قد يُعطى دواء مرخٍ للأمعاء (مثل Buscopan أو Glucagon) حسب البروتوكول. اسأل عن الحمل.",
+   "Instruct the patient not to belch. A hypotonic agent (e.g. Buscopan/glucagon) may be given per protocol. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً أو مائلاً عبر البطن العلوي حسب وضعية الالتقاط.",
+   "The beam passes vertically or obliquely through the upper abdomen per view."
+  ],
+  "exp": {
+   "kv": [
+    "85–95",
+    "85–95"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "85–95 kVp لإبراز التباين المخاطي الدقيق",
+    "85–95 kVp to preserve fine mucosal contrast"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC تلقائي",
+    "Automatic AEC"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من الصيام التام واسأل عن الحمل وموانع الأدوية المرخية.",
+    "Confirm fasting, ask about pregnancy and check contraindications to hypotonic agents."
+   ],
+   [
+    "أعطِ الحبيبات الفوارة مع قليل من الماء ثم الباريوم عالي الكثافة.",
+    "Give effervescent granules then high-density barium."
+   ],
+   [
+    "اطلب من المريض الدوران 360° لطلاء جدار المعدة.",
+    "Roll patient 360° to coat the mucosa."
+   ],
+   [
+    "التقط لقطات LPO وSupine وRAO وErect بتباين مزدوج.",
+    "Acquire LPO, supine, RAO and erect double-contrast spots."
+   ]
+  ]
+ },
+ {
+  "id": "gi-sbft",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "متابعة الأمعاء الدقيقة PA (SBFT)",
+   "Small bowel follow-through PA"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L3$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Duodenum$",
+   "^Ascending colon$"
+  ],
+  "ind": [
+   "تقييم أمراض الأمعاء الدقيقة (داء كرون Crohn's، التضيقات، النواسير، الكتل، سوء الامتصاص) بمتابعة مرور الباريوم من المعدة حتى الأعور.",
+   "Evaluate small bowel pathology (Crohn's disease, strictures, fistulae, masses, malabsorption) by tracking barium from stomach to caecum."
+  ],
+  "pos": [
+   "يشرب المريض الباريوم المخفف (~400–600 مل) ويستلقي منبطحاً (PA) لتفريق العرى المعوية، وتُؤخذ صور متسلسلة كل 15–30 دقيقة حتى وصول الصبغة إلى الأعور.",
+   "Patient drinks dilute barium (~400–600 mL) and is imaged prone (PA) to separate bowel loops at timed intervals (15–30 min) until barium reaches the caecum."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند L2–L3 (الصور المبكرة) ثم عند عرف الحرقفة (L4) ليشمل كامل البطن والحوض، مع علامة التوقيت.",
+   "Central ray perpendicular at L2–L3 (early) then iliac crest (L4) covering the entire abdomen and pelvis, with time markers."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "جميع عرى الصائم واللفائفي ظاهرة ومفصولة عن بعضها حتى الوصل اللفائفي الأعوري.",
+    "All jejunal and ileal loops shown separated up to the ileocaecal junction."
+   ],
+   [
+    "علامة التوقيت (15 min, 30 min, 60 min...) على كل صورة.",
+    "Elapsed time marker on every film."
+   ]
+  ],
+  "err": [
+   [
+    "صور AP مستلقية فقط: تتراكب العرى المعوية ويصعب كشف التضيقات.",
+    "Supine AP alone leaves loops overlapped."
+   ],
+   [
+    "إنهاء الفحص قبل وصول الباريوم إلى الأعور.",
+    "Ending study before barium reaches the caecum."
+   ]
+  ],
+  "tips": [
+   "استلقاء المريض على جانبه الأيمن بين الصور يسرّع تفريغ المعدة، والانبطاح (PA) يفرّق العرى المعوية. اسأل عن الحمل.",
+   "Lying on the right side between films speeds gastric emptying; prone (PA) spreads loops apart. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الظهر عند L3–L4 ويخرج من البطن نحو الكاسيت.",
+   "The beam enters the back at L3–L4 and exits anteriorly onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "95–110",
+    "95–110"
+   ],
+   "mas": [
+    "15–30",
+    "15–30"
+   ],
+   "ex": [
+    "95–110 kVp لاختراق العرى المملوءة بالباريوم",
+    "95–110 kVp to penetrate barium-filled loops"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من الصيام 8 ساعات وخذ صورة تمهيدية واسأل عن الحمل.",
+    "Verify 8-hour fast, take scout KUB and ask about pregnancy."
+   ],
+   [
+    "يشرب المريض الباريوم ويُضبط المؤقت.",
+    "Have patient drink barium and start timer."
+   ],
+   [
+    "التقط صوراً منبطحة (PA) كل 15–30 دقيقة مع تسجيل الوقت.",
+    "Acquire timed prone (PA) films every 15–30 min."
+   ],
+   [
+    "عند وصول الصبغة للأعور، انتقل للقطة اللفائفي الانتهائي الموضعية.",
+    "Once barium reaches the caecum, take terminal ileum spot compression views."
+   ]
+  ]
+ },
+ {
+  "id": "gi-enteroclysis",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "حقن الأمعاء الدقيقة بالأنبوب (Enteroclysis)",
+   "Small bowel enteroclysis"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L3$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Duodenum$",
+   "^Ascending colon$"
+  ],
+  "ind": [
+   "دراسة الأمعاء الدقيقة بتفصيل عالٍ عبر أنبوب أنفي-صائمي يوضع عند الرباط تريتس (duodenojejunal flexure) وحقن الباريوم ثم الميثيل سيلولوز للحصول على تباين مزدوج ونفخ متجانس.",
+   "High-detail small bowel study via nasojejunal tube placed beyond the ligament of Treitz, infusing barium then methylcellulose for uniform distension and double contrast."
+  ],
+  "pos": [
+   "المريض مستلقٍ أو منبطحاً على طاولة الفلورسكوبي بعد تثبيت الأنبوب في بداية الصائم، مع التقاط لقطات مضغوطة ومائلة.",
+   "Patient supine or prone on fluoroscopy table with nasojejunal tube positioned at the duodenojejunal junction, using compression and oblique spots."
+  ],
+  "crt": [
+   "تحت التنظير الفلوري عبر كامل البطن والحوض لتغطية الصائم واللفائفي.",
+   "Fluoroscopy-guided spot and overhead films covering jejunum and ileum."
+  ],
+  "br": [
+   "حبس النفس أثناء اللقطات.",
+   "Hold breath during spot exposures."
+  ],
+  "crit": [
+   [
+    "نفخ متجانس وشفافية عبر عرى الصائم واللفائفي تسمح برؤية الطيات المخاطية والآفات الصغيرة.",
+    "Uniform distension and see-through double contrast of jejunum and ileum."
+   ],
+   [
+    "الوصول حتى اللفائفي الانتهائي والأعور.",
+    "Visualisation through to terminal ileum and caecum."
+   ]
+  ],
+  "err": [
+   [
+    "تراجع طرف الأنبوب للمعدة: يتجمع الباريوم في المعدة ويفشل التباين المزدوج.",
+    "Tube recoiling into stomach spoils the enteroclysis."
+   ],
+   [
+    "ضخ سريع جداً يسبب تشنجاً أو قيئاً.",
+    "Too rapid infusion causes spasm or vomiting."
+   ]
+  ],
+  "tips": [
+   "أصبح هذا الفحص نادراً اليوم بعد انتشار التصوير المقطعي والرنين للأمعاء (CT/MR Enterography). اسأل عن الحمل.",
+   "Largely replaced today by CT/MR enterography where available. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عمودياً عبر البطن نحو مستقبل الفلورسكوبي.",
+   "The beam passes vertically through the abdomen to the fluoroscopy detector."
+  ],
+  "exp": {
+   "kv": [
+    "90–110",
+    "90–110"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "90–110 kVp أثناء الفلورسكوبي واللقطات",
+    "90–110 kVp for fluoroscopy and spots"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من الصيام واسأل عن الحمل.",
+    "Confirm fasting and ask about pregnancy."
+   ],
+   [
+    "يُمرَّر الأنبوب تحت التنظير الفلوري حتى بداية الصائم.",
+    "Advance nasojejunal tube under fluoroscopy to duodenojejunal junction."
+   ],
+   [
+    "يُحقن الباريوم ثم الميثيل سيلولوز بانتظام وتُلتقط اللقطات الموضعية.",
+    "Infuse barium followed by methylcellulose and capture compression spots."
+   ],
+   [
+    "تُؤخذ صور شاملة حتى الأعور ثم يُسحب الأنبوب.",
+    "Acquire overheads up to caecum, then remove tube."
+   ]
+  ]
+ },
+ {
+  "id": "gi-ti-spot",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "اللفائفي الانتهائي (لقطة موضعية بالضغط)",
+   "Terminal ileum spot compression"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Hip bone$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Ascending colon$"
+  ],
+  "ind": [
+   "تقييم اللفائفي الانتهائي (TI) وصمام اللفائفي الأعوري بدقة عالية للكشف عن التهاب داء كرون (علامة الخيط String sign)، القرح، أو الكتل.",
+   "High-detail evaluation of the terminal ileum and ileocaecal valve for Crohn's disease (string sign), ulceration or masses."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر أو في وضعية LPO خفيفة عند وصول الباريوم إلى الربع السفلي الأيمن (RLQ)، مع استخدام مضرب الضغط (compression paddle) لإبعاد العرى المعوية المتراكبة.",
+   "Patient supine or slight LPO once barium reaches the RLQ, applying graded compression with a paddle to displace overlapping ileal loops."
+  ],
+  "crt": [
+   "الشعاع المركزي عند الربع السفلي الأيمن (RLQ) مع تضييق شديد على اللفائفي الانتهائي والأعور.",
+   "Central ray centred over the right lower quadrant, tightly collimated to the terminal ileum and caecum."
+  ],
+  "br": [
+   "حبس النفس أثناء اللقطة.",
+   "Hold breath during spot exposure."
+  ],
+  "crit": [
+   [
+    "اللفائفي الانتهائي مفصولاً عن بقية العرى ومفتوحاً حتى اتصاله بالأعور.",
+    "Terminal ileum isolated from adjacent loops and clearly seen entering the caecum."
+   ],
+   [
+    "تفاصيل المخاطية وقطر اللمعة واضحة.",
+    "Mucosal pattern and luminal calibre clear."
+   ]
+  ],
+  "err": [
+   [
+    "عدم استخدام الضغط أو التدوير: تبقى العرى متراكبة على اللفائفي الانتهائي.",
+    "No compression or obliquity leaves loops superimposed over the TI."
+   ],
+   [
+    "ممارسة ضغط قوي على مريض يعاني من خراج حاد أو انثقاب مشتبه.",
+    "Heavy compression in suspected acute abscess/perforation."
+   ]
+  ],
+  "tips": [
+   "لقطة أساسية لإتمام فحص متابعة الأمعاء الدقيقة (SBFT). اسأل عن الحمل.",
+   "Essential final spot view of a small bowel follow-through. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع في الربع السفلي الأيمن من البطن ويخرج نحو الكاسيت.",
+   "The beam enters the right lower quadrant and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "95–110",
+    "95–110"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "95–110 kVp أثناء الضغط",
+    "95–110 kVp under compression"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "عند وصول الباريوم للأعور، ضع المريض مستلقياً أو بوضعية LPO خفيفة.",
+    "When barium reaches caecum, place supine or slight LPO."
+   ],
+   [
+    "استخدم مضرب الضغط لفصل اللفائفي الانتهائي عن العرى المجاورة.",
+    "Apply paddle compression to isolate the terminal ileum."
+   ],
+   [
+    "التقط لقطات موضعية مع تضييق المجال وحبس النفس.",
+    "Acquire tightly collimated spot films on breath-hold."
+   ]
+  ]
+ },
+ {
+  "id": "gi-enema-ap",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "حقنة الباريوم للقولون AP/PA",
+   "Barium enema AP/PA"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^(Ascending|Transverse|Descending|Sigmoid) colon$"
+  ],
+  "ind": [
+   "تقييم القولون كاملاً: الزوائد اللحمية، الأورام (علامة قلب التفاحة)، الرتوج (diverticulosis)، التهاب القولون التقرحي، أو الانغلاف.",
+   "Evaluate the entire large bowel: polyps, carcinoma (apple-core lesion), diverticulosis, ulcerative colitis or intussusception."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر (AP) أو منبطحاً (PA) بعد تحضير وتنظيف القولون وحقن الباريوم (مع الهواء للتباين المزدوج) عبر قسطرة مستقيمية.",
+   "Patient supine (AP) or prone (PA) after bowel prep and rectal instillation of barium (plus air for double contrast)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند مستوى عرف الحرقفة (L4) على الخط الناصف ليشمل من المستقيم إلى الأعور والانثناءين القولونيين.",
+   "Central ray perpendicular at the iliac crest (L4) covering rectum to caecum and both flexures."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "القولون كاملاً من المستقيم إلى الأعور مع الانثناءين الكبدي والطحالي ضمن الصورة.",
+    "Entire colon from rectum to caecum including hepatic and splenic flexures."
+   ],
+   [
+    "انتفاخ هوائي وطلاء باريوم متجانس في التباين المزدوج.",
+    "Good distension and uniform barium coating."
+   ]
+  ],
+  "err": [
+   [
+    "تحضير غير كافٍ: بقايا البراز تحاكي زوائد لحمية.",
+    "Poor bowel prep leaves faecal residue mimicking polyps."
+   ],
+   [
+    "استخدام الباريوم في اشتباه انثقاب أو التهاب قولون سمي حاد.",
+    "Using barium in suspected perforation or toxic megacolon."
+   ]
+  ],
+  "tips": [
+   "تأكد من تحضير القولون الجيد واستبعد انثقاب الأمعاء أو خزعة القولون الحديثة (خلال أيام) قبل حقن الباريوم. اسأل عن الحمل.",
+   "Ensure thorough bowel prep and exclude perforation or recent deep biopsy before barium instillation. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من البطن الأمامي (AP) أو الظهر (PA) عند L4 نحو الكاسيت.",
+   "The beam enters at L4 and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "90–110",
+    "90–110"
+   ],
+   "mas": [
+    "15–30",
+    "15–30"
+   ],
+   "ex": [
+    "90–100 kVp للتباين المزدوج، 105–115 للتباين المفرد",
+    "90–100 kVp double contrast, 105–115 single contrast"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والتحضير وصورة البطن التمهيدية واسأل عن الحمل.",
+    "Check request, prep, scout KUB and pregnancy."
+   ],
+   [
+    "بعد حقن الباريوم والهواء، ضع المريض مستلقياً (AP) ومنبطحاً (PA).",
+    "After barium/air instillation, position supine (AP) and prone (PA)."
+   ],
+   [
+    "مركّز عند L4 على 100 سم، اطلب حبس النفس ثم اعرّض.",
+    "Centre at L4 at 100 cm, ask for breath-hold and expose."
+   ],
+   [
+    "راجع شمول القولون كاملاً وعلامة الجهة.",
+    "Verify entire colon coverage and side marker."
+   ]
+  ]
+ },
+ {
+  "id": "gi-enema-oblique",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "حقنة الباريوم مائل (الزوايا والقولون السيني)",
+   "Barium enema obliques"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^(Ascending|Transverse|Descending|Sigmoid) colon$"
+  ],
+  "ind": [
+   "فتح الانثناء الكبدي (LAO/RPO) والانثناء الطحالي (RAO/LPO) وإفراد عرى القولون السيني دون تراكب.",
+   "Unfold the hepatic flexure (LAO/RPO), splenic flexure (RAO/LPO) and sigmoid colon loops free of superimposition."
+  ],
+  "pos": [
+   "المريض مستلقٍ (RPO/LPO) أو منبطحاً (RAO/LAO) ويُدار بزاوية 35–45° لإظهار الانثناء المطلوب، مع إضافة ميلان 30–35° ذيلياً/رأسياً في لقطات السيني عند اللزوم.",
+   "Patient supine (RPO/LPO) or prone (RAO/LAO) rotated 35–45° to open the target flexure, plus axial angulation for the sigmoid if needed."
+  ],
+  "crt": [
+   "الشعاع المركزي عند مستوى L4 (أو أعلى قليلاً للانثناءين، وأسفل للقولون السيني).",
+   "Central ray at L4 (slightly higher for flexures, lower for sigmoid)."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الانثناء الكبدي مفتوحاً في LAO/RPO والانثناء الطحالي مفتوحاً في RAO/LPO دون تراكب العرى.",
+    "Hepatic flexure open on LAO/RPO and splenic flexure open on RAO/LPO."
+   ]
+  ],
+  "err": [
+   [
+    "زاوية دوران غير كافية: تبقى عرى الانثناءات متراكبة.",
+    "Insufficient obliquity leaves flexures overlapped."
+   ]
+  ],
+  "tips": [
+   "تذكّر: في وضعية الظهر المائلة (RPO) ينفتح الانثناء الكبدي؛ وفي LPO ينفتح الانثناء الطحالي. اسأل عن الحمل.",
+   "Remember: RPO opens the hepatic flexure; LPO opens the splenic flexure. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع مائلاً 35–45° عبر البطن نحو الكاسيت.",
+   "The beam enters obliquely at 35–45° through the abdomen onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "90–110",
+    "90–110"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "90–110 kVp",
+    "90–110 kVp"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "أدر المريض 35–45° إلى RPO/LAO ثم LPO/RAO.",
+    "Rotate patient 35–45° into RPO/LAO and LPO/RAO."
+   ],
+   [
+    "مركّز على الانثناء أو السيني المطلوب على 100 سم.",
+    "Centre on the target flexure or sigmoid at 100 cm."
+   ],
+   [
+    "اطلب حبس النفس ثم اعرّض وضع علامة الوضعية.",
+    "Ask for breath-hold, expose and label oblique side."
+   ]
+  ],
+  "rot": 40
+ },
+ {
+  "id": "gi-rectum-lat",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "المستقيم جانبي (حقنة الباريوم)",
+   "Lateral rectum"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "lat-L",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sacrum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Sigmoid colon$",
+   "^Sacrum$"
+  ],
+  "ind": [
+   "تقييم المستقيم والحيز خلف المستقيم (presacral/retrorectal space) للكشف عن الأورام، النواسير الشرجية-المهبلية، والتهاب المستقيم.",
+   "Evaluate the rectum and presacral (retrorectal) space for masses, rectovaginal fistulae or proctitis."
+  ],
+  "pos": [
+   "المريض مستلقٍ على جانبه الأيسر (أو الأيمن) بوضعية جانبية حقيقية دون دوران، والركبتان مثنيتان للثبات.",
+   "Patient lying on left (or right) side in true lateral without rotation, knees flexed for stability."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الكاسيت عند مستوى ~5–8 سم فوق الارتفاق العاني على المستوى الإبطي المتوسط (نقطة الوسط بين الـASIS والعصعص).",
+   "Central ray perpendicular to the detector at the mid-axillary plane ~5–8 cm above the pubic symphysis (midway between ASIS and coccyx)."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "المستقيم والوصل المستقيمي السيني والعجز ظاهرة بوضع جانبي نقي.",
+    "Rectum, rectosigmoid junction and sacrum shown in true lateral profile."
+   ],
+   [
+    "الحيز أمام العجز واضح (طبيعياً < 1.5 سم).",
+    "Presacral space clearly demonstrated (normally < 1.5 cm)."
+   ]
+  ],
+  "err": [
+   [
+    "عدم نزع طرف القسطرة المستقيمية عند تقييم القناة الشرجية السفلية.",
+    "Forgetting to deflate/remove rectal tip if lower rectum is obscured."
+   ],
+   [
+    "تعريض غير كافٍ عبر الوركين.",
+    "Underexposure through hip thickness."
+   ]
+  ],
+  "tips": [
+   "يُؤخذ بعد تفريغ أو عند التباين المزدوج مع إبقاء المريض على الجانب. اسأل عن الحمل.",
+   "Taken during double-contrast enema in true lateral. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الورك الأيمن ويخرج من الأيسر نحو الكاسيت.",
+   "The beam enters the right hip region and exits the left onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "90–105",
+    "90–105"
+   ],
+   "mas": [
+    "35–60",
+    "35–60"
+   ],
+   "ex": [
+    "مثال: 300 mA × 0.15 ث = 45 mAs",
+    "Example: 300 mA × 0.15 s = 45 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid) ضرورية",
+    "Grid needed"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض على جانبه الأيسر بوضعية جانبية حقيقية دون دوران.",
+    "Lay patient on left side in true lateral."
+   ],
+   [
+    "مركّز على منتصف الحوض (بين ASIS والعصعص) على 100 سم.",
+    "Centre mid-pelvis (between ASIS and coccyx) at 100 cm."
+   ],
+   [
+    "اضبط تعريضاً عالياً لاختراق الوركين، اطلب حبس النفس ثم اعرّض.",
+    "Set higher exposure, ask for breath-hold, then expose."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "gi-enema-decub",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "استلقاء جانبي للقولون (تباين مزدوج)",
+   "Colon lateral decubitus (double contrast)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "lat-L",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Vertebra L4$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^(Ascending|Transverse|Descending|Sigmoid) colon$"
+  ],
+  "ind": [
+   "إظهار الجدارين العلويين للقولون (الجانب المرتفع المملوء بالهواء) بالتباين المزدوج النقي في فحص حقنة الباريوم (الاستلقاء الأيمن يظهر القولون الأيسر، والاستلقاء الأيسر يظهر القولون الأيمن).",
+   "Demonstrate the non-dependent (air-filled) colon wall in crisp double contrast (right lateral decubitus shows the left colon; left lateral decubitus shows the right colon)."
+  ],
+  "pos": [
+   "المريض مستلقٍ على جنبه الأيمن (Right lateral decubitus) ثم الأيسر (Left lateral decubitus) على الطاولة، مع بقاء الحوض والكتفين عموديين والكاسيت عمودياً خلف الظهر أو أمام البطن.",
+   "Patient lying on the right side then left side with an upright detector behind the back (or in front) and horizontal X-ray beam."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي وعمودي على الكاسيت عند مستوى عرف الحرقفة (L4) على الخط الناصف.",
+   "Horizontal central ray perpendicular at the iliac crest (L4) on the midline."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "تجمع الباريوم في الجانب السفلي وصعود الهواء إلى الجانب العلوي مبرزاً الزوائد اللحمية بوضوح.",
+    "Barium pooled dependently and air rising to the upper colon wall outlining polyps clearly."
+   ],
+   [
+    "علامة الوضعية (Right Decubitus / Left Decubitus) مسجلة.",
+    "Decubitus side marker clearly labelled."
+   ]
+  ],
+  "err": [
+   [
+    "تدوير المريض أثناء الاستلقاء: لا يستقر مستوى السائل-الهواء أفقياً.",
+    "Rolling forward/back tilts the air-fluid interface."
+   ],
+   [
+    "استخدام شعاع عمودي بدل الأفقي: يضيع مبدأ الاستلقاء الجانبي.",
+    "Using a vertical beam instead of horizontal loses the air-fluid level."
+   ]
+  ],
+  "tips": [
+   "في التباين المزدوج للقولون، تُؤخذ صورتا الاستلقاء الجانبي الأيمن والأيسر معاً لفحص نصفي القولون. اسأل عن الحمل.",
+   "Both right and left lateral decubitus views are taken to assess both halves of the colon. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من الأمام ويخرج من الظهر نحو الكاسيت العمودي.",
+   "The horizontal beam enters anteriorly and exits posteriorly onto the upright detector."
+  ],
+  "exp": {
+   "kv": [
+    "90–100",
+    "90–100"
+   ],
+   "mas": [
+    "20–35",
+    "20–35"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.12 ث = 24 mAs",
+    "Example: 200 mA × 0.12 s = 24 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "يدوي غالباً",
+    "Usually manual"
+   ]
+  },
+  "steps": [
+   [
+    "ضع المريض على جنبه الأيمن ثم الأيسر أمام الكاسيت العمودي.",
+    "Place patient on right side then left side against upright detector."
+   ],
+   [
+    "مركّز الشعاع الأفقي عند عرف الحرقفة (L4) على 100 سم.",
+    "Centre horizontal beam at iliac crest (L4) at 100 cm."
+   ],
+   [
+    "اطلب حبس النفس بعد الزفير ثم اعرّض وضع علامة Decubitus.",
+    "Ask for expiration hold, expose and label Decubitus side."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "gi-defecography",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير التغوط بالفلورسكوبي (Defecography)",
+   "Fluoroscopic defecography"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "erect",
+  "beam": "R-L",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sacrum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Sacrum$",
+   "^Coccyx$",
+   "^Sigmoid colon$"
+  ],
+  "ind": [
+   "تقييم اضطرابات قاع الحوض والتغوط المتعسر: القيلة المستقيمية (rectocele)، انغلاف المستقيم، هبوط قاع الحوض، والقيلة المعوية (enterocele).",
+   "Evaluate pelvic floor disorders and obstructed defecation: rectocele, rectal intussusception, pelvic floor descent and enterocele."
+  ],
+  "pos": [
+   "يُملأ المستقيم بعجينة باريوم سميكة تحاكي قوام البراز، ويجلس المريض جانبياً على مقعد خاص شفاف للأشعة (commode) أمام مستقبل الفلورسكوبي.",
+   "Thick barium paste is instilled into the rectum, and the patient sits laterally on a radiolucent commode before the fluoroscopy detector."
+  ],
+  "crt": [
+   "الشعاع المركزي أفقي على قاع الحوض في وضعية الجلوس الجانبية لتشمل العجز والعصعص والمستقيم والقناة الشرجية، ويُسجل أثناء الراحة، الشد (squeeze)، الحزق (strain)، والتفريغ.",
+   "Horizontal beam centred on the pelvic floor in seated lateral profile, recording at rest, squeeze, strain and evacuation."
+  ],
+  "br": [
+   "التنفس الطبيعي أثناء المراحل المطلوبة.",
+   "Normal breathing during dynamic phases."
+  ],
+  "crit": [
+   [
+    "إظهار الزاوية الشرجية المستقيمية ومستوى قاع الحوض في الراحة والشد والتفريغ.",
+    "Anorectal angle and pelvic floor position clearly seen across rest, squeeze and evacuation."
+   ],
+   [
+    "مراعاة خصوصية المريض وراحته النفسية طوال الفحص.",
+    "Strict patient privacy maintained throughout."
+   ]
+  ],
+  "err": [
+   [
+    "عجينة باريوم سائلة جداً: تتسرب قبل التصوير ولا تحاكي التفريغ الطبيعي.",
+    "Too liquid barium leaks prematurely and fails to simulate stool."
+   ],
+   [
+    "دوران الحوض في المقعد.",
+    "Pelvic rotation on the commode."
+   ]
+  ],
+  "tips": [
+   "حافظ على خصوصية المريض التامة وتقليل الطاقم داخل الغرفة. اليوم يتزايد استخدام الرنين المغناطيسي الحركي لقاع الحوض (MR Defecography). اسأل عن الحمل.",
+   "Minimise staff in the room for patient privacy. MR defecography is increasingly used as a radiation-free alternative. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع أفقياً من أحد جانبي الحوض ويخرج من الجانب الآخر نحو المستقبل.",
+   "The horizontal beam enters one side of the pelvis and exits the other onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "85–100",
+    "85–100"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "فلورسكوبي نبضي/فيديو أثناء الجلوس الجانبي",
+    "Pulsed fluoroscopy/cine in seated lateral"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واشرح الإجراء بخصوصية واسأل عن الحمل.",
+    "Check request, ID, explain privately and ask about pregnancy."
+   ],
+   [
+    "احقن عجينة الباريوم في المستقيم وأجلس المريض جانبياً على المقعد الخاص.",
+    "Instil barium paste and seat patient laterally on radiolucent commode."
+   ],
+   [
+    "سجّل المراحل الأربع: الراحة (Rest)، الشد (Squeeze)، الحزق (Strain)، والتفريغ (Evacuation).",
+    "Record Rest, Squeeze, Strain and Evacuation phases."
+   ]
+  ],
+  "hideArms": true
+ },
+ {
+  "id": "liver-plain",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "البطن (الكبد والحصى المرارية)",
+   "Plain abdomen (liver & gallstones)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Liver$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Liver$",
+   "^Gallbladder$"
+  ],
+  "ind": [
+   "البحث عن حصى المرارة المتكلسة (10–20% فقط معتمة للأشعة)، المرارة الخزفية (porcelain gallbladder)، هواء في القنوات الصفراوية (pneumobilia)، أو ضخامة الكبد.",
+   "Look for calcified gallstones (only 10–20% radio-opaque), porcelain gallbladder, pneumobilia or gross hepatomegaly."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر على الطاولة دون دوران (أو RAO خفيفة لإبعاد المرارة عن العمود الفقري).",
+   "Patient supine without rotation (or slight RAO to project gallbladder off the spine)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند الربع العلوي الأيمن (RUQ) أو عرف الحرقفة لصورة البطن الشاملة.",
+   "Central ray perpendicular over the right upper quadrant (or iliac crest for full abdomen)."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "الربع العلوي الأيمن وظل الكبد والحافة السفلية للكبد ظاهرة بوضوح.",
+    "RUQ, liver outline and inferior hepatic margin clearly visible."
+   ],
+   [
+    "بلا حركة (تظهر الحصى الدقيقة أو الغاز الصفراوي).",
+    "No motion blur."
+   ]
+  ],
+  "err": [
+   [
+    "الاعتماد على الأشعة العادية لنفي حصى المرارة: 80–90% من الحصى شفافة للأشعة وتحتاج سونار (Ultrasound).",
+    "Relying on plain X-ray to exclude gallstones: 80–90% are radiolucent and require ultrasound."
+   ]
+  ],
+  "tips": [
+   "الموجات فوق الصوتية (الإيكو) هي الفحص الأول والأساسي للكبد والمرارة؛ الأشعة العادية محدودة جداً هنا. اسأل عن الحمل.",
+   "Ultrasound is the primary modality for liver and gallbladder; plain radiography has limited sensitivity. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الربع العلوي الأيمن للبطن ويخرج نحو الكاسيت.",
+   "The beam enters the right upper abdomen and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check request, ID and pregnancy."
+   ],
+   [
+    "ضع المريض مستلقياً على الظهر دون دوران.",
+    "Lay supine without rotation."
+   ],
+   [
+    "مركّز على الربع العلوي الأيمن (أو منتصف البطن) على 100 سم.",
+    "Centre over RUQ (or mid-abdomen) at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration hold, then expose."
+   ]
+  ]
+ },
+ {
+  "id": "biliary-ttube",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير القناة الصفراوية عبر أنبوب T",
+   "T-tube cholangiogram"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Liver$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Liver$",
+   "^Gallbladder$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "فحص القنوات الصفراوية بعد استئصال المرارة أو استكشاف القناة الصفراوية المشتركة (CBD) وقبل سحب أنبوب T للتأكد من خلوها من الحصى المتبقية وسالكيّة العبور إلى الاثنا عشري.",
+   "Post-operative biliary assessment via T-tube prior to removal to exclude retained CBD stones, strictures or leaks and confirm free flow into the duodenum."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر على طاولة الفلورسكوبي ثم يُدار بزاوية RPO خفيفة (15–20°) لإبعاد القناة الصفراوية المشتركة عن العمود الفقري.",
+   "Patient supine on fluoroscopy table, rotated slightly 15–20° RPO to project the CBD clear of the spine."
+  ],
+  "crt": [
+   "الشعاع المركزي عند الربع العلوي الأيمن (L1–L2) تحت التوجيه الفلوري.",
+   "Central ray over the right upper quadrant (L1–L2) under fluoroscopy."
+  ],
+  "br": [
+   "زفير وحبس النفس أثناء اللقطات.",
+   "Suspend on expiration during spot exposures."
+  ],
+  "crit": [
+   [
+    "القنوات الصفراوية داخل الكبد وخارجه مملوءة بالصبغة مع تدفق حر إلى الاثنا عشري.",
+    "Intrahepatic and extrahepatic bile ducts opacified with free spill into the duodenum."
+   ],
+   [
+    "خلو الأنبوب والقنوات من فقاعات الهواء التي تحاكي الحصى.",
+    "Free of air bubbles mimicking retained stones."
+   ]
+  ],
+  "err": [
+   [
+    "حقن فقاعات هواء داخل أنبوب T: تظهر كعيوب امتلاء تشبه الحصى!",
+    "Injecting air bubbles mimics retained CBD stones!"
+   ],
+   [
+    "حقن بضغط مرتفع: يسبب ألماً شديداً أو التهاب أقنية صفراوية صاعد.",
+    "High-pressure injection risks pain or cholangitis."
+   ]
+  ],
+  "tips": [
+   "اسحب الصفراء برفق وأفرغ المحقنة والوصلة من الهواء تماماً قبل الحقن، واحقن صبغة مائية مخففة بالجاذبية أو ببطء شديد. اسأل عن الحمل.",
+   "Aspirate bile gently and purge all air bubbles before slow, low-pressure injection of dilute water-soluble contrast. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من الربع العلوي الأيمن ويخرج نحو المستقبل.",
+   "The beam enters the RUQ and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "15–30",
+    "15–30"
+   ],
+   "ex": [
+    "فلورسكوبي ولقطات موضعية 75–85 kVp",
+    "Fluoroscopy and spot films at 75–85 kVp"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check request, ID and pregnancy."
+   ],
+   [
+    "خذ صورة تمهيدية للربع العلوي الأيمن.",
+    "Take a scout film of the RUQ."
+   ],
+   [
+    "عقّم طرف أنبوب T وأفرغ الهواء تماماً ثم احقن الصبغة المخففة ببطء.",
+    "Use sterile technique, purge air completely and inject dilute contrast slowly."
+   ],
+   [
+    "التقط لقطات AP وRPO مع إظهار تدفق الصبغة للاثنا عشري.",
+    "Acquire AP and RPO spots showing duodenal spill."
+   ]
+  ]
+ },
+ {
+  "id": "biliary-operative",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير القنوات الصفراوية أثناء الجراحة",
+   "Operative cholangiogram"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Liver$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Liver$",
+   "^Gallbladder$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "تقييم القنوات الصفراوية وتشريحها أثناء جراحة استئصال المرارة (بالمنظار أو الفتح) للكشف عن الحصى الصامتة في القناة المشتركة ومنع إصابة القنوات.",
+   "Intra-operative biliary ductal mapping during cholecystectomy to detect occult CBD stones and define biliary anatomy."
+  ],
+  "pos": [
+   "المريض مستلقٍ على طاولة العمليات الشفافة للأشعة مع إمالة طفيفة لليمين أو وضع C-arm عمودياً على الربع العلوي الأيمن.",
+   "Patient supine on radiolucent operating table with C-arm positioned over the RUQ."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الربع العلوي الأيمن بعد حقن الجراح للصبغة عبر القناة المرارية.",
+   "Central ray perpendicular over RUQ as the surgeon injects contrast via the cystic duct."
+  ],
+  "br": [
+   "يوقف طبيب التخدير جهاز التنفس الصناعي لحظياً (Apnoea) أثناء اللقطة لمنع الحركة.",
+   "Anaesthetist briefly holds ventilation during exposure to prevent motion."
+  ],
+  "crit": [
+   [
+    "القناة المرارية والقناة الصفراوية المشتركة وتفرعاتها داخل الكبد ظاهرة بوضوح مع عبور الصبغة للاثنا عشري.",
+    "Cystic duct, CBD, intrahepatic radicals and duodenal flow clearly visualised."
+   ],
+   [
+    "انعدام الحركة التام وبُعد الأدوات المعدنية الجراحية عن مسار القناة.",
+    "No motion and surgical instruments retracted clear of the duct."
+   ]
+  ],
+  "err": [
+   [
+    "ترك ملقط أو أداة جراحية فوق القناة الصفراوية المشتركة.",
+    "Surgical clips/instruments obscuring the CBD."
+   ],
+   [
+    "فقاعات هواء في قسطرة الحقن.",
+    "Air bubbles in the cholangiogram catheter."
+   ]
+  ],
+  "tips": [
+   "نسّق مع الجراح وطبيب التخدير لحظة إيقاف التنفس، وتأكد من ارتداء الطاقم مآزر الرصاص. اسأل عن الحمل قبل العملية.",
+   "Coordinate breath-hold with anaesthesia and ensure OR staff wear lead aprons."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر الربع العلوي الأيمن نحو مستقبل جهاز C-arm.",
+   "The beam passes across the RUQ to the C-arm detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "جهاز C-arm في غرفة العمليات",
+    "C-arm fluoroscopy in theatre"
+   ],
+   "grid": [
+    "تلقائي",
+    "Automatic"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "جهّز جهاز C-arm وارتدِ الوقاية الإشعاعية داخل غرفة العمليات.",
+    "Position C-arm and wear lead protection in theatre."
+   ],
+   [
+    "تأكد من إبعاد الأدوات المعدنية وأخذ لقطة تمهيدية.",
+    "Confirm instruments are clear and take a scout view."
+   ],
+   [
+    "أوقف التنفس بالتنسيق مع التخدير والتقط الصور أثناء حقن الصبغة.",
+    "Coordinate brief apnoea and expose during contrast injection."
+   ],
+   [
+    "تأكد من عبور الصبغة للاثنا عشري وخلوها من الحصى.",
+    "Verify duodenal spill and absence of filling defects."
+   ]
+  ]
+ },
+ {
+  "id": "biliary-ercp",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير القنوات الصفراوية بالمنظار (ERCP)",
+   "ERCP (biliary)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Duodenum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Liver$",
+   "^Duodenum$",
+   "^Gallbladder$"
+  ],
+  "ind": [
+   "تشخيص وعلاج انسداد القنوات الصفراوية (استخراج حصى القناة المشتركة، توسيع التضيقات، وتركيب الدعامات الصفراوية) باستخدام المنظار الهضمي العلوي والفلورسكوبي.",
+   "Diagnostic and therapeutic biliary endoscopy (CBD stone extraction, sphincterotomy, stricture dilation and stenting) under fluoroscopy."
+  ],
+  "pos": [
+   "المريض منبطح على بطنه (أو نصف منبطح للأيسر) على طاولة الفلورسكوبي مع إدخال المنظار الجانبي الرؤية إلى الحليمة الإثنا عشرية.",
+   "Patient prone (or semi-prone left) on fluoroscopy table with side-viewing duodenoscope cannulating the ampulla of Vater."
+  ],
+  "crt": [
+   "تحت التوجيه الفلوري على الربع العلوي الأيمن (L1–L2) لمتابعة قسطرة القناة وحقن الصبغة وسحب الحصى أو وضع الدعامة.",
+   "Fluoroscopy centred over the RUQ (L1–L2) tracking cannulation, contrast opacification and intervention."
+  ],
+  "br": [
+   "تحت التهدئة الواعية أو التخدير العام.",
+   "Performed under conscious sedation or general anaesthesia."
+  ],
+  "crit": [
+   [
+    "تحديد دقيق لموضع القسطرة داخل القناة الصفراوية المشتركة (وليس البنكرياسية ما لم يُطلب)، ووضوح الحصى أو التضيق أو الدعامة.",
+    "Clear confirmation of CBD cannulation, stone/stricture delineation and stent placement."
+   ],
+   [
+    "تقليل زمن الإشعاع الفلوري قدر الإمكان (ALARA).",
+    "Minimised fluoroscopy time (ALARA)."
+   ]
+  ],
+  "err": [
+   [
+    "حقن صبغة كثيفة جداً تخفي الحصى الصغيرة.",
+    "Overly dense contrast obscures small stones."
+   ],
+   [
+    "تراكب المنظار على الجزء السفلي من القناة المشتركة دون تعديل الزاوية.",
+    "Duodenoscope overlying the distal CBD without angle adjustment."
+   ]
+  ],
+  "tips": [
+   "استعمل الفلورسكوبي النبضي وتضييق المجال لتقليل الجرعة على المريض والطاقم الطبي حول الطاولة. اسأل عن الحمل.",
+   "Use pulsed fluoroscopy and tight collimation to protect patient and endoscopy team. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر الربع العلوي الأيمن نحو مستقبل الفلورسكوبي.",
+   "The beam passes across the RUQ to the fluoroscopy detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–90",
+    "75–90"
+   ],
+   "mas": [
+    "5–20",
+    "5–20"
+   ],
+   "ex": [
+    "فلورسكوبي نبضي مع لقطات موضعية",
+    "Pulsed fluoroscopy and spot grabs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والموافقة ومراقبة المريض واسأل عن الحمل.",
+    "Check request, consent, monitoring and pregnancy."
+   ],
+   [
+    "ضع المريض منبطحاً ومركّز الفلورسكوبي على الربع العلوي الأيمن.",
+    "Position prone and centre fluoroscopy over RUQ."
+   ],
+   [
+    "وجّه الفلورسكوبي أثناء القسطرة وحقن الصبغة واستخراج الحصى/وضع الدعامة.",
+    "Provide pulsed fluoroscopy during cannulation, opacification and intervention."
+   ],
+   [
+    "احفظ اللقطات النهائية الموثقة للنتيجة.",
+    "Save final documentation spot images."
+   ]
+  ]
+ },
+ {
+  "id": "biliary-ptc",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير القنوات الصفراوية عبر الجلد والكبد (PTC)",
+   "Percutaneous transhepatic cholangiography (PTC)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Liver$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Liver$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "تصوير وتصريف القنوات الصفراوية المتوسعة (PTBD) عند فشل أو تعذر إجراء ERCP، وتحديد مستوى الانسداد الصفراوي العلوي بدقة.",
+   "Biliary access and percutaneous drainage (PTBD) when ERCP fails or is impossible, defining proximal biliary obstruction."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر على طاولة الأشعة التداخلية مع تعقيم الجانب الأيمن للصدر والبطن العلوي.",
+   "Patient supine on the interventional table with sterile prep of the right lateral lower chest/upper abdomen."
+  ],
+  "crt": [
+   "توجيه فلوري (وسونار) على الكبد والربع العلوي الأيمن لتوجيه إبرة شيبا (Chiba) نحو القناة الصفراوية.",
+   "Fluoroscopy (with ultrasound) over the liver and RUQ guiding Chiba needle entry into a bile duct."
+  ],
+  "br": [
+   "حبس النفس لحظياً أثناء إدخال الإبرة داخل الكبد.",
+   "Brief breath-hold during needle passage into the liver."
+  ],
+  "crit": [
+   [
+    "دخول ناجح للقناة الصفراوية، رسم الشجرة الصفراوية وموضع الانسداد، وتثبيت أنبوب التصريف عند اللزوم.",
+    "Successful biliary duct opacification, stricture delineation and drain/stent placement."
+   ],
+   [
+    "عدم وجود تسرب دموي أو صفراوي شاذ.",
+    "No abnormal extravasation."
+   ]
+  ],
+  "err": [
+   [
+    "الحقن المفرط في أقنية مسدودة ملتهبة: خطر إنتان الدم.",
+    "Over-injection into an obstructed biliary tree risks sepsis."
+   ],
+   [
+    "تنفس المريض أثناء مرور الإبرة عبر الكبد: قد يسبب تمزقاً كبدياً.",
+    "Breathing during needle pass risks liver laceration."
+   ]
+  ],
+  "tips": [
+   "تأكد من فحوصات التجلط (INR/Platelets) والمضادات الحيوية الوقائية قبل الإجراء. اسأل عن الحمل.",
+   "Verify coagulation profile (INR/platelets) and prophylactic antibiotics prior to puncture. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر الكبد والربع العلوي الأيمن نحو المستقبل.",
+   "The beam passes across the liver and RUQ to the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–90",
+    "75–90"
+   ],
+   "mas": [
+    "10–25",
+    "10–25"
+   ],
+   "ex": [
+    "فلورسكوبي نبضي ولقطات DSA/موضعية",
+    "Pulsed fluoroscopy and spot grabs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من التجلط، المضادات الحيوية، الموافقة، واسأل عن الحمل.",
+    "Verify coagulation, antibiotics, consent and pregnancy."
+   ],
+   [
+    "استلقِ المريض على الظهر وعقّم الجانب الأيمن.",
+    "Position supine and prep right flank/RUQ."
+   ],
+   [
+    "وفّر التوجيه الفلوري أثناء البزل وحقن الصبغة وتركيب التصريف.",
+    "Provide fluoroscopic guidance for puncture, cholangiogram and drainage."
+   ],
+   [
+    "احفظ اللقطات النهائية وتأكد من تثبيت القسطرة.",
+    "Save final images and verify catheter position."
+   ]
+  ]
+ },
+ {
+  "id": "pancreas-plain",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "البطن (تكلسات البنكرياس)",
+   "Plain abdomen (pancreatic calcification)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Pancreas$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.35,
+   0.43,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Pancreas$",
+   "^Vertebra L\\d$"
+  ],
+  "ind": [
+   "البحث عن التكلسات البنكرياسية في التهاب البنكرياس المزمن (تظهر كشريط متكلس يمتد عبر L1–L2)، أو علامة «العروة الحارسة» (sentinel loop) في الالتهاب الحاد.",
+   "Look for pancreatic calcifications in chronic pancreatitis (stippled calcification across L1–L2) or a sentinel loop in acute pancreatitis."
+  ],
+  "pos": [
+   "المريض مستلقٍ على الظهر على الطاولة دون دوران (كما في صورة البطن العادية).",
+   "Patient supine on the table without rotation (as for plain abdomen)."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي عند مستوى L1–L2 (أو عرف الحرقفة لصورة البطن الكاملة).",
+   "Central ray perpendicular at L1–L2 (or iliac crest for full abdomen)."
+  ],
+  "br": [
+   "زفير وحبس النفس.",
+   "Suspend on expiration."
+  ],
+  "crit": [
+   [
+    "منطقة البنكرياس عبر L1–L2 واضحة دون حركة.",
+    "Pancreatic bed across L1–L2 sharp without motion."
+   ],
+   [
+    "تباين مناسب يميز التكلسات الدقيقة عن العمود الفقري.",
+    "Contrast sufficient to detect fine calcifications across the spine."
+   ]
+  ],
+  "err": [
+   [
+    "الاعتماد على الأشعة العادية لتشخيص أمراض البنكرياس: حساسيتها منخفضة جداً وتحتاج CT/MRI/US.",
+    "Relying on plain X-ray for pancreatic disease: very low sensitivity; CT/MRI/EUS are required."
+   ]
+  ],
+  "tips": [
+   "الأشعة العادية محدودة جداً للبنكرياس؛ التصوير المقطعي (CT) أو الرنين (MRCP) هما المعيار التشخيصي. اسأل عن الحمل.",
+   "Plain radiography has very limited sensitivity for the pancreas; CT or MRI/MRCP is the diagnostic standard. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أعلى البطن عند L1–L2 ويخرج نحو الكاسيت.",
+   "The beam enters the upper abdomen at L1–L2 and exits onto the detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–85",
+    "75–85"
+   ],
+   "mas": [
+    "25–40",
+    "25–40"
+   ],
+   "ex": [
+    "مثال: 200 mA × 0.15 ث = 30 mAs",
+    "Example: 200 mA × 0.15 s = 30 mAs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "AEC: الغرفة الوسطى",
+    "AEC: centre chamber"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والهوية واسأل عن الحمل.",
+    "Check request, ID and pregnancy."
+   ],
+   [
+    "ضع المريض مستلقياً على الظهر دون دوران.",
+    "Lay supine without rotation."
+   ],
+   [
+    "مركّز عند L1–L2 (أو منتصف البطن) على 100 سم.",
+    "Centre at L1–L2 (or mid-abdomen) at 100 cm."
+   ],
+   [
+    "اطلب زفيراً وحبس النفس ثم اعرّض.",
+    "Ask for expiration hold, then expose."
+   ]
+  ]
+ },
+ {
+  "id": "pancreas-ercp",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "ERCP (القناة البنكرياسية)",
+   "ERCP (pancreatic duct)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "PA",
+  "tilt": 0,
+  "cr": {
+   "s": "^Pancreas$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "portrait"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Pancreas$",
+   "^Duodenum$"
+  ],
+  "ind": [
+   "تقييم وتصريف القناة البنكرياسية الرئيسية (قناة ويرسونغ): التهاب البنكرياس المزمن (سلسلة البحيرات)، التضيقات، الحصى البنكرياسية، أو تسرب القناة ووضع الدعامات.",
+   "Evaluate and treat main pancreatic duct (Wirsung) pathology: chronic pancreatitis (chain of lakes), strictures, pancreatic duct stones, leaks and stenting."
+  ],
+  "pos": [
+   "المريض منبطح على بطنه على طاولة الفلورسكوبي أثناء قسطرة القناة البنكرياسية عبر المنظار.",
+   "Patient prone on the fluoroscopy table during endoscopic cannulation of the pancreatic duct."
+  ],
+  "crt": [
+   "توجيه فلوري مركز على منطقة رأس وجسم وذيل البنكرياس (L1–L2) مع التقاط لقطات سريعة.",
+   "Fluoroscopy centred over the pancreatic head, body and tail (L1–L2) with rapid spot grabs."
+  ],
+  "br": [
+   "تحت التهدئة أو التخدير العام.",
+   "Under sedation or general anaesthesia."
+  ],
+  "crit": [
+   [
+    "تحديد دقيق لمسار القناة البنكرياسية دون حقن مفرط في البرنشيمة (acinarisation).",
+    "Clear pancreatic duct delineation without excessive parenchymal acinarisation."
+   ],
+   [
+    "أقل كمية صبغة وأقل زمن فلورسكوبي لتفادي التهاب البنكرياس بعد ERCP.",
+    "Minimal contrast volume and fluoroscopy time to reduce post-ERCP pancreatitis risk."
+   ]
+  ],
+  "err": [
+   [
+    "الحقن المفرط بالضغط العالي (acinarisation): يزيد خطر التهاب البنكرياس الحاد بعد الفحص.",
+    "Over-injection causing acinarisation increases post-ERCP pancreatitis risk."
+   ]
+  ],
+  "tips": [
+   "احقن أقل كمية ممكنة من الصبغة وبرفق شديد، واليوم يُفضَّل MRCP للتشخيص فقط ويُحصر ERCP بالتدخل العلاجي. اسأل عن الحمل.",
+   "Inject minimal contrast gently; MRCP is preferred for pure diagnosis, reserving ERCP for therapy. Ask about pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع عبر أعلى البطن (L1–L2) نحو مستقبل الفلورسكوبي.",
+   "The beam passes across the upper abdomen (L1–L2) to the fluoroscopy detector."
+  ],
+  "exp": {
+   "kv": [
+    "75–90",
+    "75–90"
+   ],
+   "mas": [
+    "5–20",
+    "5–20"
+   ],
+   "ex": [
+    "فلورسكوبي نبضي ولقطات موضعية",
+    "Pulsed fluoroscopy and spot grabs"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تحقق من الطلب والموافقة واسأل عن الحمل.",
+    "Check request, consent and pregnancy."
+   ],
+   [
+    "ضع المريض منبطحاً ومركّز على L1–L2.",
+    "Position prone and centre at L1–L2."
+   ],
+   [
+    "راقب قسطرة القناة وحقن الصبغة برفق بالفلورسكوبي والتقط اللقطات.",
+    "Monitor gentle duct opacification fluoroscopically and capture spots."
+   ],
+   [
+    "احفظ اللقطات النهائية لمسار القناة أو الدعامة.",
+    "Save final duct/stent documentation."
+   ]
+  ]
+ },
+ {
+  "id": "repro-hsg",
+  "mod": "xray",
+  "type": "xray",
+  "name": [
+   "تصوير الرحم والبوقين (HSG)",
+   "Hysterosalpingography (HSG)"
+  ],
+  "region": [
+   "البطن",
+   "Abdomen"
+  ],
+  "pose": "supine",
+  "beam": "AP",
+  "tilt": 0,
+  "cr": {
+   "s": "^Sacrum$"
+  },
+  "sid": 1.0,
+  "det": [
+   0.24,
+   0.3,
+   "landscape"
+  ],
+  "layers": [
+   "skeleton",
+   "viscera"
+  ],
+  "targets": [
+   "^Urinary bladder$",
+   "^Sacrum$",
+   "^Hip bone$"
+  ],
+  "ind": [
+   "فحص خاص بالإناث لتقييم تجويف الرحم وسالكيّة قناتي فالوب في حالات تأخر الإنجاب أو الإجهاض المتكرر: تشوهات الرحم الخلقية، الالتصاقات (أشرمان)، الأورام الليفية تحت المخاطية، وانسداد البوقين أو استسقائهما.",
+   "Female-specific examination evaluating the uterine cavity and fallopian tube patency in infertility or recurrent miscarriage: congenital anomalies, adhesions (Asherman), submucosal fibroids and tubal occlusion/hydrosalpinx."
+  ],
+  "pos": [
+   "المريضة مستلقية على الظهر بوضعية الفحص النسائي (Lithotomy) ثم تُبسط الساقان عند التصوير إن لزم، ويوضع منظار مهبلي وقسطرة رفيعة داخل عنق الرحم.",
+   "Patient supine in lithotomy position on the fluoroscopy table (legs may be extended if comfortable) with speculum and thin cervical cannula/catheter placed."
+  ],
+  "crt": [
+   "الشعاع المركزي عمودي على الحوض الصغير (~5 سم فوق الارتفاق العاني) تحت التوجيه الفلوري: صورة تمهيدية، ملء مبكر للرحم، امتلاء كامل مع البوقين، وصورة انتشار الصبغة في الحوض (peritoneal spill).",
+   "Central ray perpendicular over the true pelvis (~5 cm above pubic symphysis) under fluoroscopy: scout, early uterine fill, full cavity/tubal fill, and bilateral peritoneal spill views."
+  ],
+  "br": [
+   "حبس النفس لحظياً أثناء كل لقطة.",
+   "Brief breath-hold during each spot exposure."
+  ],
+  "crit": [
+   [
+    "تجويف الرحم مثلث الشكل بوضوح، وقناتا فالوب ممتدتان مع تدفق حر للصبغة إلى تجويف الصفاق في الجهتين.",
+    "Triangular uterine cavity, both fallopian tubes and free bilateral peritoneal spill clearly shown."
+   ],
+   [
+    "تضييق جيد على الحوض الصغير لتقليل جرعة المبيضين.",
+    "Tight collimation to the true pelvis to minimise ovarian dose."
+   ]
+  ],
+  "err": [
+   [
+    "إجراء الفحص مع احتمال حمل أو التهاب حوضي نشط (PID): ممنوع تماماً!",
+    "Performing during possible pregnancy or active PID: strictly contraindicated!"
+   ],
+   [
+    "حقن فقاعات هواء: تحاكي زوائد لحمية أو التصاقات كاذبة.",
+    "Air bubbles mimic polyps or intrauterine adhesions."
+   ]
+  ],
+  "tips": [
+   "ملاحظة للعرض ثلاثي الأبعاد: هذا الفحص مخصص للأنثى (الرحم وقناتا فالوب)، بينما يعرض المجسم ثلاثي الأبعاد العام في الموقع مسار الحزمة داخل الحوض الصغير. القاعدة الذهبية: يُجرى في الأيام 7–10 من الدورة الشهرية (بعد انتهاء الطمث وقبل الإباضة) مع استبعاد الحمل تماماً.",
+   "3D viewer note: HSG is a female-only exam (uterus and fallopian tubes), while the site's general 3D model illustrates pelvic beam geometry. Rule of 10: perform on days 7–10 of the menstrual cycle after bleeding stops and before ovulation, ensuring no pregnancy."
+  ],
+  "inout": [
+   "يدخل الشعاع من أسفل البطن فوق الارتفاق العاني بـ 5 سم ويخرج نحو مستقبل الفلورسكوبي.",
+   "The beam enters 5 cm above the pubic symphysis and exits posteriorly onto the fluoroscopy detector."
+  ],
+  "exp": {
+   "kv": [
+    "70–85",
+    "70–85"
+   ],
+   "mas": [
+    "5–15",
+    "5–15"
+   ],
+   "ex": [
+    "فلورسكوبي نبضي منخفض الجرعة لحماية المبيضين",
+    "Low-dose pulsed fluoroscopy to protect the ovaries"
+   ],
+   "grid": [
+    "شبكة (Grid)",
+    "Grid"
+   ],
+   "aec": [
+    "تلقائي",
+    "Automatic"
+   ]
+  },
+  "steps": [
+   [
+    "تأكد من توقيت الدورة الشهرية (اليوم 7–10)، واستبعاد الحمل والالتهاب الحوضي، والحساسية للصبغة.",
+    "Confirm cycle timing (days 7–10), negative pregnancy status, no active PID and no contrast allergy."
+   ],
+   [
+    "خذ صورة تمهيدية للحوض الصغير بعد تفريغ المثانة.",
+    "Void bladder and acquire a scout film of the true pelvis."
+   ],
+   [
+    "أثناء حقن الصبغة ببطء، التقط لقطات: الملء المبكر، الامتلاء الكامل والبوقين، والانتشار الصفاقي (مع لقطات مائلة عند اللزوم).",
+    "During slow injection, capture early fill, full uterine/tubal fill and peritoneal spill spots (plus obliques if needed)."
+   ],
+   [
+    "راجع تدفق الصبغة من البوقين وعلامة الجهة.",
+    "Verify bilateral tubal spill and side marker."
+   ]
+  ]
  }
 ]
